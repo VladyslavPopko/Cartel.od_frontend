@@ -3,6 +3,8 @@ import { changeColor } from "../redux/slices/colorSlice";
 import { addToCart, } from "../redux/slices/cartSlice";
 import { DATA } from "../constanses/data";
 import HeaderBlock from "../blocks/HeaderBlock/HeaderBlock";
+import HeroBlock from "../blocks/HeroBlock/HeroBlock";
+import AboutBlock from "../blocks/AboutBlock/AboutBlock";
 
 const Shirts = () => {
   
@@ -32,6 +34,8 @@ const Shirts = () => {
       <button onClick={handleAddToCart}>Add to Cart</button>
 
       <HeaderBlock />
+      <HeroBlock />
+      <AboutBlock />
       
       
       

@@ -1,0 +1,29 @@
+.color_list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  &_item {
+    width: 30px;
+    height: 20px;
+    top: 322px;
+    left: 103px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      
+    }
+
+    &:nth-child(1){
+      background-color: var(--ONE);
+      box-shadow: var(--border-ONE);
+    }
+    &:nth-child(2){
+      background-color: var(--TWO);
+      box-shadow: var(--border-TWO);
+    }
+    &:nth-child(3){
+      background-color: var(--THREE);
+      box-shadow: var(--border-THREE);
+    }
+  }
+}

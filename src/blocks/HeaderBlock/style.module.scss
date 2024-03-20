@@ -1,13 +1,21 @@
 .wrapper {
   background: var(--header-background);
   padding: 15px;
-  color: var(--header-color);
 }
 .content {
-  max-width: 1080px;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--header-color);
+  font-family: var(--font-family);
+  &_button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+  }
 }
 .button {
   border-radius: var(--button-border-radius);
@@ -17,4 +25,36 @@
   border: 0;
   outline: none;
   cursor: pointer;
+  font-weight: 800;
+  font-family: var(--font-family);
+  font-size: 14px;
+  transition: all var(--transition-ms);
+  &:hover {
+    background-color: var(--header-color);
+    color: var(--header-selected);
+  }
+}
+.text {
+  font-weight: 800;
+  font-size: 14px;
+}
+.img {
+  width: 64px;
+  height: 64px;
+  &_text {
+    border-radius: var(--button-border-radius);
+    background-color: var(--header-selected);
+    color: var(--header-color);
+    padding: 5px;
+    width: 48px;
+    transform: translate(17px, 15px);
+    text-align: center;
+  }
+}
+.cart {
+  transition: filter var(--transition-ms);
+  cursor: pointer;
+  &:hover {
+    filter: invert(100%);
+  }
 }

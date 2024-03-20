@@ -1,0 +1,36 @@
+:root {
+  // header
+  --header-background: rgba(224, 0, 0, 1);
+  --header-color: rgba(255, 255, 255, 1);
+  --header-selected: rgba(0, 0, 0, 1);
+
+  // hero
+  --hero-background: rgba(0, 0, 0, 1);
+  --hero-color: rgba(255, 255, 255, 1);
+  --hero-select-color: rgba(255, 0, 0, 1);
+
+  //
+  --primary-color: rgba(255, 255, 255, 1);
+  --secondary-color: rgba(0, 0, 0, 1);
+  --select-color: rgba(255, 0, 0, 1);
+  //border-radius
+  --button-border-radius: 15px;
+
+  // font
+  --font-family: "Montserrat", sans-serif;
+
+  //max-width
+  --content-max-width: 1080px;
+
+  //transition
+  --transition-ms: 300ms;
+
+  //colors
+  --ONE: rgba(177, 94, 34, 1);
+  --TWO: rgba(169, 170, 169, 1);
+  --THREE: rgba(251, 255, 64, 1);
+
+  --border-ONE: 0px 0px 20px #ffffff;
+  --border-TWO: 0;
+  --border-THREE: 0;
+}

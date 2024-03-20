@@ -1,17 +1,19 @@
+import { ONE, THREE, TWO } from "./constanses";
+
 export const DATA = [
     {
       id: 1,
-      color: "Brown",
+      color: ONE,
       price: 999,
     },
     {
       id: 2,
-      color: "White",
+      color: TWO,
       price: 999,
     },
     {
       id: 3,
-      color: "Yellow",
+      color: THREE,
       price: 999,
     },
   ];

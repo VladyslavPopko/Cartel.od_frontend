@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { ONE } from "../../constanses/constanses";
 
-const initialState = { selectedColor: "Brown" };
+const initialState = { selectedColor: ONE };
 
 const colorSlice = createSlice({
   name: "color",

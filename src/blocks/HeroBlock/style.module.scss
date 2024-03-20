@@ -1,0 +1,114 @@
+.wrapper {
+  transition: all var(--transition-ms);
+  background-color: var(--hero-background);
+  padding: 104px 15px 63px;
+}
+.content {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  color: var(--hero-color);
+  font-family: var(--font-family);
+  text-align: left;
+
+  &_top {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  &_bottom {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.img {
+  width: 100%;
+}
+.title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.title:nth-child(1) {
+  margin-bottom: 5px;
+}
+.title:nth-child(2) {
+  margin-bottom: 20px;
+}
+.text {
+  &_color {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.color_list {
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 32px;
+  font-weight: 900px;
+  margin-bottom: 20px;
+  &_select {
+    color: var(--hero-select-color);
+    filter: drop-shadow(0px 0px 1px black);
+  }
+  &_text {
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  &_old {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-decoration: line-through;
+  }
+}
+.size {
+  display: flex;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  &_text {
+    font-size: 12px;
+  }
+  &_table {
+    font-size: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.select {
+  margin-bottom: 10px;
+}
+.btn {
+  cursor: pointer;
+  outline: none;
+  width: 80%;
+  border: 1px solid var(--hero-color);
+  padding: 15px;
+  border-radius: var(--button-border-radius);
+  text-transform: uppercase;
+  background-color: var(--hero-background);
+  color: var(--hero-color);
+  font-family: var(--font-family);
+  transition: all var(--transition-ms);
+  &:hover {
+    background-color: var(--hero-color);
+    color: var(--hero-background);
+  }
+}
+
+@media (min-width: 600px) {
+  .content_top_item:nth-child(2) {
+    min-width: 553px;
+    min-height: 537px;
+  }
+}
