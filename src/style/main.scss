@@ -1,0 +1,15 @@
+@import '../constanses/colors.scss';
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.link{
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    
+}
+.link.active{
+    background-color:black ;
+    color: white;
+}
