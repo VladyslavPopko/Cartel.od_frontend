@@ -50,6 +50,18 @@ const cartSlice = createSlice({
       const item = state.items.find((item) => item.id === payload.id);
       if (item.qty <= 1) {
         state.items = state.items.filter((item) => item.id !== payload.id);
+        if (state.qty > 1) {
+          item.price = 999;
+          state.items.forEach((el)=> el.price = 999);
+        }
+        if (state.qty > 2) {
+          item.price = 849;
+          state.items.forEach((el)=> el.price = 849);
+        }
+        if (state.qty > 3) {
+          item.price = 799;
+          state.items.forEach((el)=> el.price = 799);
+        }
       } else {
         if (state.qty > 1) {
           item.price = 999;
