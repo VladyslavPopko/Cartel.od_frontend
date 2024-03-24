@@ -1,12 +1,12 @@
-import React from "react";
+import styles from './style.module.scss'
 
 const Button = (props) => {
-  const { text, className, href } = props;
+  const { text, className, href, onSubmit, onClick, type } = props;
 
   return (
     <div>
-      <a href={href}>
-        <button className={className} type="button">
+      <a className={styles.a} href={href}>
+        <button onSubmit={onSubmit} onClick={onClick} className={className} type={type}>
           {text}
         </button>
       </a>

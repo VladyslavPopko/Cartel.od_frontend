@@ -1,0 +1,24 @@
+.box {
+  background-color: var(--primary-color);
+  font-family: var(--font-family);
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: var(--section-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 17px 32px;
+  align-items: center;
+  text-align: center;
+  max-width: 110px;
+  max-height: 125px;
+}
+.img {
+  width: 30px;
+  height: 30px;
+}
+.text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: center;
+}

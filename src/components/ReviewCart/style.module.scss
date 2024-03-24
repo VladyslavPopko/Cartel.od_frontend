@@ -1,0 +1,20 @@
+.section {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: var(--font-family);
+  align-items: center;
+  .title {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41.02px;
+    text-align: center;
+  }
+  .text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26.82px;
+    text-align: center;
+  }
+}

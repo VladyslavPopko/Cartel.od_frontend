@@ -1,0 +1,40 @@
+.form {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27.5px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+.select {
+  color: var(--select-color);
+  position: relative;
+}
+.input {
+  display: none;
+  &:checked + .label::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -35px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+  }
+}
+.label {
+  position: relative;
+  margin-left: 40px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -40px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+  }
+}

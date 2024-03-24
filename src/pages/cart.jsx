@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decrementQty, deleteFromCart, incrementQty } from "../redux/slices/cartSlice";
+import Cartblock from "../blocks/CartBlock/Cartblock";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -11,6 +12,7 @@ const Cart = () => {
 
   return (
     <div>
+      <Cartblock />
       <p>Итоговая цена: {finalPrice}</p>
       <p>Всего товаров: {qty}</p>
       <ul>

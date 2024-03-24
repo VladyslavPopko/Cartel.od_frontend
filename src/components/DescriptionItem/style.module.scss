@@ -1,0 +1,25 @@
+.section {
+  display: flex;
+  gap: 30px;
+  font-family: var(--font-family);
+
+  &_title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18.29px;
+    text-align: left;
+  }
+  &_subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.85px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+  }
+}

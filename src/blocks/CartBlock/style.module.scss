@@ -1,0 +1,21 @@
+.section{
+    max-width: var(--content-max-width);
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    border-radius: var(--section-border-radius);
+    overflow: hidden;
+    .header{
+        padding: 25px;
+        background-color: var(--modal-background);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer{
+        padding: 50px;
+        background-color: var(--modal-background);
+    }
+    .main{
+        
+    }
+}
