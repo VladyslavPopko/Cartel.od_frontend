@@ -6,7 +6,7 @@
   margin: 0 auto;
   max-width: var(--content-max-width);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: var(--header-color);
   font-family: var(--font-family);
@@ -39,15 +39,15 @@
   font-size: 14px;
 }
 .img {
-  width: 64px;
-  height: 64px;
+  width: 36px;
+  height: 36px;
   &_text {
     border-radius: var(--button-border-radius);
     background-color: var(--header-selected);
     color: var(--header-color);
     padding: 5px;
     width: 48px;
-    transform: translate(17px, 15px);
+    transform: translate(10px, 10px);
     text-align: center;
   }
 }

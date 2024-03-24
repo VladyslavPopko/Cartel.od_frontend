@@ -9,6 +9,7 @@ import Thankyou from "./pages/thankyou";
 
 import "reset-css";
 import "./style/main.scss";
+import Submit from "./pages/submit";
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
         </NavLink>
         <NavLink className="link" to="/cart">
           Cart
+        </NavLink>
+        <NavLink className="link" to="/submit">
+          SubmitForm
         </NavLink>
         <NavLink className="link" to="/assign">
           Assign
@@ -40,6 +44,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Shirts />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/submit" element={<Submit />} />
         <Route path="/assign" element={<Assign />} />
         <Route path="/politics" element={<Politics />} />
         <Route path="/review" element={<Review />} />

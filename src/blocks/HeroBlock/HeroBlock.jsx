@@ -4,13 +4,22 @@ import img1 from "../../img/HeroBlock/img1.png";
 import img2 from "../../img/HeroBlock/img2.png";
 import img3 from "../../img/HeroBlock/img3.png";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ONE, THREE, TWO } from "../../constanses/constanses";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
+import { addToCart } from "../../redux/slices/cartSlice";
+import { DATA } from "../../constanses/data";
 
 const HeroBlock = () => {
+  const data = DATA;
+  const dispatch = useDispatch();
+
+  const handleAddToCart = () => {
+    const info = data.filter((el) => el.color === selectedColor);
+    info.map((e) => dispatch(addToCart(e)));
+  };
   const selectedColor = useSelector((state) => state.color.selectedColor);
   return (
     <div>
@@ -34,10 +43,15 @@ const HeroBlock = () => {
                 <p className={styles.size_table}>таблиця розмірів</p>
               </div>
               <div className={styles.select}>
-              <Select />
+                <Select />
               </div>
               <div className={styles.button}>
-                <Button className={styles.btn} href="#submitForm" text="Швидке замовлення"/>
+                <Button
+                  onClick={handleAddToCart}
+                  className={styles.btn}
+                  href="#submitForm"
+                  text="В кошик"
+                />
               </div>
             </div>
             <div className={styles.content_top_item}>

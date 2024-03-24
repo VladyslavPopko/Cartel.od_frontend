@@ -1,0 +1,80 @@
+.section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-family: var(--font-family);
+  .img {
+    max-width: 250px;
+  }
+  .list {
+    flex: 1 1 auto;
+    .title {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24.38px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .text_color {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.5px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    .color {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24.38px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    .size {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.5px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 43.88px;
+      color: var(--select-color);
+      &_old {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.38px;
+        text-align: left;
+        text-decoration: line-through;
+        text-align: right;
+      }
+    }
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_left{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+    .input {
+      
+      padding: 0px 27px 0px 27px;
+      border-radius: var(--button-border-radius);
+      border: 1px solid var(--secondary-color);
+      font-family: var(--font-family);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29.26px;
+    }
+    .increment,
+    .decrement {
+      font-size: 36px;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}

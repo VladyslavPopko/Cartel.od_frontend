@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import cn from "classnames";
 import img from "../../img/HeaderBlock/cart.svg";
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
 const HeaderBlock = () => {
   const qty = useSelector((state) => state.cart.qty);
@@ -16,10 +17,12 @@ const HeaderBlock = () => {
             className={styles.button}
             text="ЗАМОВИТИ"
           />
-          <div className={styles.cart}>
-            <p className={styles.img_text}>{qty}</p>
-            <img className={styles.img} src={img} alt="" />
-          </div>
+          <NavLink to="/cart">
+            <div className={styles.cart}>
+              <p className={styles.img_text}>{qty}</p>
+              <img className={styles.img} src={img} alt="" />
+            </div>
+          </NavLink>
         </div>
       </div>
     </div>
