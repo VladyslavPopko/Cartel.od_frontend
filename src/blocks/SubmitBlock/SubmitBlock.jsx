@@ -11,7 +11,13 @@ import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 
-const SubmitBlock = ({ isVisibleSubmit, setIsVisibleSubmit, setIsVisibleThankyou}) => {
+const SubmitBlock = ({
+  isVisibleSubmit,
+  setIsVisibleSubmit,
+  setIsVisibleThankyou,
+  setIsVisibleAssign,
+  setIsVisiblePolitics,
+}) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
@@ -21,10 +27,10 @@ const SubmitBlock = ({ isVisibleSubmit, setIsVisibleSubmit, setIsVisibleThankyou
   const handleCloseSubmit = () => {
     setIsVisibleSubmit(false);
   };
-  const handleSubmit = () =>{
+  const handleSubmit = () => {
     setIsVisibleSubmit(false);
     setIsVisibleThankyou(true);
-  }
+  };
   return (
     <div
       className={cn(styles.wrapper, isVisibleSubmit && styles.active)}
@@ -75,7 +81,11 @@ const SubmitBlock = ({ isVisibleSubmit, setIsVisibleSubmit, setIsVisibleThankyou
               type="text"
               placeholder="Промокод на знижку"
             />
-            <SubmitBox handleSubmit={handleSubmit}/>
+            <SubmitBox
+              handleSubmit={handleSubmit}
+              setIsVisibleAssign={setIsVisibleAssign}
+              setIsVisiblePolitics={setIsVisiblePolitics}
+            />
           </div>
         </footer>
       </div>

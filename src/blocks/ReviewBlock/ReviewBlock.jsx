@@ -5,7 +5,7 @@ import img2 from "../../img/ReviewBlock/img2.png";
 import img3 from "../../img/ReviewBlock/img3.png";
 import Button from "../../components/Button/Button";
 
-const ReviewBlock = () => {
+const ReviewBlock = ({ handleReview }) => {
   return (
     <div className={styles.section}>
       <h2 className={styles.title}>Відгуки:</h2>
@@ -26,7 +26,12 @@ const ReviewBlock = () => {
           text="Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось."
         />
       </div>
-      <Button className={styles.button} text="Залишити відгук" type="button"/>
+      <Button
+        onClick={handleReview}
+        className={styles.button}
+        text="Залишити відгук"
+        type="button"
+      />
     </div>
   );
 };

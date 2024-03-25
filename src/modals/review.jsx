@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import ReviewModalBlock from "../blocks/ReviewModalBlock/ReviewModalBlock";
 
-const Review = () => {
+const Review = ({
+  isVisibleReview,
+  setIsVisibleReview,
+  setIsVisibleReviewThankyou,
+}) => {
   return (
-    <div>review</div>
-  )
-}
+    <div>
+      <ReviewModalBlock
+        isVisibleReview={isVisibleReview}
+        setIsVisibleReview={setIsVisibleReview}
+        setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+      />
+    </div>
+  );
+};
 
-export default Review
+export default Review;

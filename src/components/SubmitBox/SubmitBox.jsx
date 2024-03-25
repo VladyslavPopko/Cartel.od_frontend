@@ -2,7 +2,17 @@ import { useSelector } from "react-redux";
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
 
-const SubmitBox = ({ handleSubmit }) => {
+const SubmitBox = ({
+  handleSubmit,
+  setIsVisibleAssign,
+  setIsVisiblePolitics,
+}) => {
+  const handleViewAssign = () =>{
+    setIsVisibleAssign(true);
+  }
+  const handleViewPolitics = () =>{
+    setIsVisiblePolitics(true);
+  }
   const qty = useSelector((state) => state.cart.qty);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
   return (
@@ -31,13 +41,13 @@ const SubmitBox = ({ handleSubmit }) => {
         <h3 className={styles.footer_title}>
           Підтверджуючи замовлення, я приймаю умови:
         </h3>
-        <a className={styles.link} href="#">
+        <span className={styles.link} onClick={handleViewPolitics}>
           Положення про збирання та захист персональних даних
-        </a>
+        </span>
         <br></br>
-        <a className={styles.link} href="#">
+        <span className={styles.link} onClick={handleViewAssign} >
           Користувальницької угоди
-        </a>
+        </span>
       </div>
     </div>
   );

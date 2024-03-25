@@ -15,6 +15,8 @@ import Cart from "../modals/cart";
 import Submit from "../modals/submit";
 import Thankyou from "../modals/thankyou";
 import { CONTENT_SHIRTS } from "../contents/shirts";
+import Review from "../modals/review";
+import ReviewThankyou from "../modals/reviewThankyou";
 
 const Shirts = () => {
   const shirtsSelectedColor = useSelector(
@@ -30,6 +32,18 @@ const Shirts = () => {
   const [isVisibleReview, setIsVisibleReview] = useState(false); // Review Form Modal
   const [isVisibleReviewThankyou, setIsVisibleReviewThankyou] = useState(false); // Review Thankyou Modal
 
+  const handleReview = () => {
+    setIsVisibleReview(true);
+  };
+
+  const handleAssign = () => {
+    setIsVisibleAssign(true);
+  };
+
+  const handlePolitics = () => {
+    setIsVisiblePolitics(true);
+  };
+
   const content = CONTENT_SHIRTS;
   return (
     <>
@@ -42,7 +56,7 @@ const Shirts = () => {
         selected={selected}
         setSelected={setSelected}
         selectedColor={shirtsSelectedColor}
-        price= {content.hero_price}
+        price={content.hero_price}
         old_price={content.hero_old_price}
         title={content.hero_title}
         subtitle={content.hero_subtitle}
@@ -51,7 +65,7 @@ const Shirts = () => {
       <AboutBlock radioId1="radio1" radioId2="radio2" radioId3="radio3" />
       <DescriptionBlock />
       <AboutUsBlock />
-      <ReviewBlock />
+      <ReviewBlock handleReview={handleReview} />
       <GalleryBlock />
       <SizetableBlock />
       <AdvantageBlock />
@@ -78,10 +92,21 @@ const Shirts = () => {
         isVisibleSubmit={isVisibleSubmit}
         setIsVisibleSubmit={setIsVisibleSubmit}
         setIsVisibleThankyou={setIsVisibleThankyou}
+        setIsVisibleAssign={setIsVisibleAssign}
+        setIsVisiblePolitics={setIsVisiblePolitics}
       />
       <Thankyou
         isVisibleThankyou={isVisibleThankyou}
         setIsVisibleThankyou={setIsVisibleThankyou}
+      />
+      <Review
+        isVisibleReview={isVisibleReview}
+        setIsVisibleReview={setIsVisibleReview}
+        setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+      />
+      <ReviewThankyou
+        isVisibleReviewThankyou={isVisibleReviewThankyou}
+        setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
       />
     </>
   );
