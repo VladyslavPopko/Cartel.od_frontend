@@ -7,10 +7,12 @@ import img2 from "../img/shirts/img1.jpg"
 import img3 from "../img/shirts/img1.jpg"
 
 const category = "shirts";
+const name = "Весняна сорочка в клітинку";
 
 export const DATA_SHIRTS = [
     {
       category: category,
+      name: name,
       id: 1,
       color: ONE_SHIRT,
       price: 999,
@@ -19,6 +21,7 @@ export const DATA_SHIRTS = [
     },
     {
       category: category,
+      name: name,
       id: 2,
       color: TWO_SHIRT,
       price: 999,
@@ -27,6 +30,7 @@ export const DATA_SHIRTS = [
     },
     {
       category: category,
+      name: name,
       id: 3,
       color: THREE_SHIRT,
       price: 999,

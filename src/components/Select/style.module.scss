@@ -1,0 +1,22 @@
+.select{
+    cursor: pointer;
+    outline: none;
+    width: 80%;
+    border: 1px solid var(--hero-color);
+    padding: 15px;
+    border-radius: var(--button-border-radius);
+    text-transform: uppercase;
+    background-color: var(--hero-background);
+    color: var(--hero-color);
+    font-family: var(--font-family);
+    transition: all var(--transition-ms);
+    text-align: center;
+    // &:hover{
+    //     background-color: var(--hero-color);
+    //     color: var(--hero-background);
+    // }
+}
+.select_list_item:hover{
+    background-color: var(--hero-color);
+    color: var(--hero-background);
+}

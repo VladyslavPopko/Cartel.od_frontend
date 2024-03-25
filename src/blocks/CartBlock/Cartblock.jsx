@@ -15,7 +15,6 @@ const Cartblock = () => {
   const finalPrice = useSelector((state) => state.cart.finalPrice);
   const oldPrice = useSelector((state) => state.cart.finalOldPrice);
   const qty = useSelector((state) => state.cart.qty);
-  const title = "Весняна сорочка в клітинку";
 
   return (
     <div className={styles.section}>
@@ -28,9 +27,9 @@ const Cartblock = () => {
           {cart.map((el) => (
             <CartBox
               img={el.img}
-              title={title}
+              title={el.name}
               color={el.color}
-              size="S"
+              size={el.size}
               count={el.qty}
               old_price={el.old_price}
               price={el.price}

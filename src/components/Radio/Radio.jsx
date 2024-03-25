@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
 
-const Radio = () => {
+const Radio = ({radioId1, radioId2,radioId3}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -12,10 +12,10 @@ const Radio = () => {
           className={styles.input}
           type="radio"
           name="radio"
-          id="radio1"
+          id={radioId1}
           value="999"
         />
-        <label className={styles.label} htmlFor="radio1">
+        <label className={styles.label} htmlFor={radioId1}>
           1 Сорочка 999 ₴{" "}
         </label>
       </div>
@@ -24,10 +24,10 @@ const Radio = () => {
           className={styles.input}
           type="radio"
           name="radio"
-          id="radio2"
+          id={radioId2}
           value="1699"
         />
-        <label className={styles.label} htmlFor="radio2">
+        <label className={styles.label} htmlFor={radioId2}>
           2 сорочки <span className={styles.select}> 1 699</span> ₴ (додаткова
           економія <span className={styles.select}>299</span> ₴)
         </label>
@@ -37,10 +37,10 @@ const Radio = () => {
           className={styles.input}
           type="radio"
           name="radio"
-          id="radio3"
+          id={radioId3}
           value="1699"
         />
-        <label className={styles.label} htmlFor="radio3">
+        <label className={styles.label} htmlFor={radioId3}>
           3 сорочки<span className={styles.select}> 2 399</span> ₴ (додаткова
           економія <span className={styles.select}>598</span> ₴)
         </label>

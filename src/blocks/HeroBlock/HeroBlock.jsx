@@ -9,17 +9,58 @@ import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
-import { DATA_SHIRTS, ONE_SHIRT, THREE_SHIRT, TWO_SHIRT } from "../../constanses/data_shirts";
+import {
+  DATA_SHIRTS,
+  ONE_SHIRT,
+  THREE_SHIRT,
+  TWO_SHIRT,
+} from "../../constanses/data_shirts";
 
-const HeroBlock = () => {
-  const data = DATA_SHIRTS;
+const HeroBlock = ({
+  data,
+  selectedColor,
+  old_price,
+  price,
+  selected,
+  setSelected,
+}) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
+    
     const info = data.filter((el) => el.color === selectedColor);
+    let size;
+    switch (selected) {
+      case "Розмір: S": {
+        size = "S";
+        break;
+      }
+      case "Розмір: M": {
+        size = "M";
+        break;
+      }
+      case "Розмір: L": {
+        size = "L";
+        break;
+      }
+      case "Розмір: XL": {
+        size = "XL";
+        break;
+      }
+      case "Розмір: XXL": {
+        size = "XXL";
+        break;
+      }
+      default: {
+        size = "Уточнити"
+        break;
+      }
+    }
+    info[0].size = size;
+    console.log(info);
     info.map((e) => dispatch(addToCart(e)));
   };
-  const selectedColor = useSelector((state) => state.shirtsColor.selectedColor);
+
   return (
     <div>
       <div className={styles.wrapper}>
@@ -30,19 +71,21 @@ const HeroBlock = () => {
               <p className={styles.title}>сорочка в клітинку</p>
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
-                <ColorCircle />
+                <ColorCircle color={ONE_SHIRT} />
+                <ColorCircle color={TWO_SHIRT} />
+                <ColorCircle color={THREE_SHIRT} />
               </div>
               <p className={styles.price_text}>Стара ціна:</p>
-              <p className={styles.price_old}>1 599 грн</p>
+              <p className={styles.price_old}>{old_price} грн</p>
               <p className={styles.price}>
-                <span className={styles.price_select}>999</span> грн.
+                <span className={styles.price_select}>{price}</span> грн.
               </p>
               <div className={styles.size}>
                 <p className={styles.size_text}>Розмір:</p>
                 <p className={styles.size_table}>таблиця розмірів</p>
               </div>
               <div className={styles.select}>
-                <Select />
+                <Select selected={selected} setSelected={setSelected} />
               </div>
               <div className={styles.button}>
                 <Button
