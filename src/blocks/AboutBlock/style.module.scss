@@ -75,3 +75,20 @@
     
   }
 }
+.galery {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: var(--primary-color);
+}
+.link {
+  font-size: 12px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 200;
+  line-height: 14.52px;
+  text-align: center;
+}

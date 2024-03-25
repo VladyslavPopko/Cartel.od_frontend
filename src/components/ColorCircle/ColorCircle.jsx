@@ -1,8 +1,8 @@
 import { useDispatch } from "react-redux";
 import styles from "./style.module.scss";
 import cn from "classnames";
-import { changeColor } from "../../redux/slices/colorSlice";
-import { ONE, THREE, TWO } from "../../constanses/constanses";
+import { shirtsChangeColor } from "../../redux/slices/shirtsColorSlice";
+import { ONE_SHIRT, THREE_SHIRT, TWO_SHIRT } from "../../constanses/data_shirts";
 
 const ColorCircle = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const ColorCircle = () => {
     root.style.setProperty("--border-ONE", "0px 0px 20px #FFFFFF");
     root.style.setProperty("--border-TWO", "0");
     root.style.setProperty("--border-THREE", "0");
-    dispatch(changeColor(ONE));
+    dispatch(shirtsChangeColor(ONE_SHIRT));
   };
   const handleSetColorTwo = () => {
     const root = document.querySelector(":root");
@@ -25,7 +25,7 @@ const ColorCircle = () => {
     root.style.setProperty("--border-ONE", "0");
     root.style.setProperty("--border-TWO", "0px 0px 20px black");
     root.style.setProperty("--border-THREE", "0");
-    dispatch(changeColor(TWO));
+    dispatch(shirtsChangeColor(TWO_SHIRT));
   };
   const handleSetColorThree = () => {
     const root = document.querySelector(":root");
@@ -35,7 +35,7 @@ const ColorCircle = () => {
     root.style.setProperty("--border-ONE", "0");
     root.style.setProperty("--border-TWO", "0");
     root.style.setProperty("--border-THREE", "0px 0px 20px black");
-    dispatch(changeColor(THREE));
+    dispatch(shirtsChangeColor(THREE_SHIRT));
   };
 
   return (

@@ -2,6 +2,7 @@
   transition: all var(--transition-ms);
   background-color: var(--hero-background);
   padding: 104px 15px 63px;
+  overflow: hidden;
 }
 .content {
   max-width: var(--content-max-width);
@@ -26,6 +27,7 @@
 }
 .img {
   width: 100%;
+  
 }
 .title {
   font-size: 32px;
@@ -100,11 +102,16 @@
   color: var(--hero-color);
   font-family: var(--font-family);
   transition: all var(--transition-ms);
+  
+
   &:hover {
     background-color: var(--hero-color);
     color: var(--hero-background);
+    
   }
 }
+
+
 
 @media (min-width: 600px) {
   .content_top_item:nth-child(2) {

@@ -1,26 +1,25 @@
 import styles from "./style.module.scss";
 
-import img1 from "../../img/HeroBlock/img1.png";
-import img2 from "../../img/HeroBlock/img2.png";
-import img3 from "../../img/HeroBlock/img3.png";
+import img1 from "../../img/HeroBlock/shirts/img1.png";
+import img2 from "../../img/HeroBlock/shirts/img2.png";
+import img3 from "../../img/HeroBlock/shirts/img3.png";
 
 import { useDispatch, useSelector } from "react-redux";
-import { ONE, THREE, TWO } from "../../constanses/constanses";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
-import { DATA } from "../../constanses/data";
+import { DATA_SHIRTS, ONE_SHIRT, THREE_SHIRT, TWO_SHIRT } from "../../constanses/data_shirts";
 
 const HeroBlock = () => {
-  const data = DATA;
+  const data = DATA_SHIRTS;
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
     const info = data.filter((el) => el.color === selectedColor);
     info.map((e) => dispatch(addToCart(e)));
   };
-  const selectedColor = useSelector((state) => state.color.selectedColor);
+  const selectedColor = useSelector((state) => state.shirtsColor.selectedColor);
   return (
     <div>
       <div className={styles.wrapper}>
@@ -55,13 +54,13 @@ const HeroBlock = () => {
               </div>
             </div>
             <div className={styles.content_top_item}>
-              {selectedColor === ONE && (
+              {selectedColor === ONE_SHIRT && (
                 <img src={img1} alt="" className={styles.img} />
               )}
-              {selectedColor === TWO && (
+              {selectedColor === TWO_SHIRT && (
                 <img src={img2} alt="" className={styles.img} />
               )}
-              {selectedColor === THREE && (
+              {selectedColor === THREE_SHIRT && (
                 <img src={img3} alt="" className={styles.img} />
               )}
             </div>

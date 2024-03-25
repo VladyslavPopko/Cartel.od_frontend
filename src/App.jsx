@@ -1,15 +1,16 @@
 import { NavLink, Route, Routes } from "react-router-dom";
-import Shirts from "./pages/main";
-import Cart from "./pages/cart";
-import Assign from "./pages/assign";
-import Politics from "./pages/politics";
-import Review from "./pages/review";
-import ReviewThankyou from "./pages/reviewThankyou";
-import Thankyou from "./pages/thankyou";
+import Cart from "./modals/cart";
+import Assign from "./modals/assign";
+import Politics from "./modals/politics";
+import Review from "./modals/review";
+import ReviewThankyou from "./modals/reviewThankyou";
+import Thankyou from "./modals/thankyou";
 
 import "reset-css";
 import "./style/main.scss";
-import Submit from "./pages/submit";
+import Submit from "./modals/submit";
+import Shirts from "./pages/Shirts";
+
 
 const App = () => {
   return (

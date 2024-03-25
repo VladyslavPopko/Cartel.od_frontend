@@ -5,18 +5,13 @@ import img from "../../img/HeaderBlock/cart.svg";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
-const HeaderBlock = () => {
+const HeaderBlock = ({title}) => {
   const qty = useSelector((state) => state.cart.qty);
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <p className={styles.text}>ВЕСНЯНИЙ РОЗПРОДАЖ -60% ВІД СТОРОЇ ЦІНИ</p>
+        <p className={styles.text}>{title}</p>
         <div className={styles.content_button}>
-          <Button
-            href="#submitForm"
-            className={styles.button}
-            text="ЗАМОВИТИ"
-          />
           <NavLink to="/cart">
             <div className={styles.cart}>
               <p className={styles.img_text}>{qty}</p>

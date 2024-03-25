@@ -2,6 +2,7 @@ import styles from "./style.module.scss";
 import img1 from "../../img/AboutBlock/img1.png";
 import img2 from "../../img/AboutBlock/img2.png";
 import Box from "../../components/Box/Box";
+import arrow from "../../img/PriceBlock/arrow.svg";
 import PriceBlock from "../PriceBlock/PriceBlock";
 const AboutBlock = () => {
   return (

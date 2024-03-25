@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import ColorReducer from "./slices/colorSlice";
 import cartReducer from "./slices/cartSlice";
+import shirtsColorReducer from "./slices/shirtsColorSlice";
 
 export const store = configureStore({
     reducer: {
-        color: ColorReducer,
+        shirtsColor: shirtsColorReducer,
         cart: cartReducer,
     }
 })

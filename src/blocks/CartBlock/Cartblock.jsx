@@ -27,7 +27,7 @@ const Cartblock = () => {
         <div className={styles.main_list}>
           {cart.map((el) => (
             <CartBox
-              img={img1}
+              img={el.img}
               title={title}
               color={el.color}
               size="S"
