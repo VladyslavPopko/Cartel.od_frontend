@@ -1,8 +1,11 @@
 import React from 'react'
+import ThankyouBlock from '../blocks/ThanyouBlock/ThankyouBlock'
 
-const Thankyou = () => {
+const Thankyou = ({isVisibleThankyou, setIsVisibleThankyou}) => {
   return (
-    <div>Thankyou</div>
+    <div>
+      <ThankyouBlock isVisibleThankyou={isVisibleThankyou} setIsVisibleThankyou={setIsVisibleThankyou}/>
+    </div>
   )
 }
 

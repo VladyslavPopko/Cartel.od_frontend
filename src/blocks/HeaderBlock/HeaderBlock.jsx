@@ -5,19 +5,20 @@ import img from "../../img/HeaderBlock/cart.svg";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
-const HeaderBlock = ({title}) => {
+const HeaderBlock = ({ title, setIsVivsibleCart }) => {
   const qty = useSelector((state) => state.cart.qty);
+  const handleCart = () => {
+    setIsVivsibleCart(true);
+  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <p className={styles.text}>{title}</p>
         <div className={styles.content_button}>
-          <NavLink to="/cart">
-            <div className={styles.cart}>
-              <p className={styles.img_text}>{qty}</p>
-              <img className={styles.img} src={img} alt="" />
-            </div>
-          </NavLink>
+          <div className={styles.cart} onClick={handleCart}>
+            <p className={styles.img_text}>{qty}</p>
+            <img className={styles.img} src={img} alt=""  />
+          </div>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import Cartblock from "../blocks/CartBlock/Cartblock";
 
-const Cart = () => {
+const Cart = ({ isVisibleCart , setIsVivsibleCart, setIsVisibleSubmit }) => {
   return (
     <div>
-      <Cartblock />
+      <Cartblock isVisibleCart={isVisibleCart} setIsVivsibleCart={setIsVivsibleCart} setIsVisibleSubmit={setIsVisibleSubmit} />
     </div>
   );
 };

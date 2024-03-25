@@ -27,7 +27,6 @@
 }
 .img {
   width: 100%;
-  
 }
 .title {
   font-size: 32px;
@@ -52,7 +51,7 @@
 .color_list {
   margin-bottom: 20px;
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
 .price {
   font-size: 32px;
@@ -76,8 +75,8 @@
 }
 .size {
   display: flex;
-  gap: 60px;
-  align-items: end;
+  width: 80%;
+  justify-content: space-between;
   margin-bottom: 5px;
   text-transform: uppercase;
   &_text {
@@ -91,6 +90,7 @@
 }
 .select {
   margin-bottom: 10px;
+  width: 80%;
 }
 .btn {
   cursor: pointer;
@@ -104,20 +104,30 @@
   color: var(--hero-color);
   font-family: var(--font-family);
   transition: all var(--transition-ms);
-  
 
   &:hover {
     background-color: var(--hero-color);
     color: var(--hero-background);
-    
   }
 }
-
-
 
 @media (min-width: 600px) {
   .content_top_item:nth-child(2) {
     min-width: 553px;
     min-height: 537px;
+  }
+}
+@media (max-width: 970px) {
+  .content_top {
+    gap: 35px;
+  }
+  .select,
+  .btn,
+  .size {
+    width: 100%;
+  }
+  .content_top_item:nth-child(2) {
+    max-width: 553px;
+    max-height: 537px;
   }
 }

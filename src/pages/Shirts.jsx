@@ -1,4 +1,3 @@
-
 import HeaderBlock from "../blocks/HeaderBlock/HeaderBlock";
 import HeroBlock from "../blocks/HeroBlock/HeroBlock";
 import AboutBlock from "../blocks/AboutBlock/AboutBlock";
@@ -12,23 +11,78 @@ import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
 import { DATA_SHIRTS } from "../constanses/data_shirts";
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import Cart from "../modals/cart";
+import Submit from "../modals/submit";
+import Thankyou from "../modals/thankyou";
+import { CONTENT_SHIRTS } from "../contents/shirts";
 
 const Shirts = () => {
-  const shirtsSelectedColor = useSelector((state) => state.shirtsColor.selectedColor);
+  const shirtsSelectedColor = useSelector(
+    (state) => state.shirtsColor.selectedColor
+  );
   const [selected, setSelected] = useState(null); // size
+
+  const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
+  const [isVisibleSubmit, setIsVisibleSubmit] = useState(false); // Submit Modal
+  const [isVisibleThankyou, setIsVisibleThankyou] = useState(false); // Thankyou Modal
+  const [isVisibleAssign, setIsVisibleAssign] = useState(false); // Assign Modal
+  const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
+  const [isVisibleReview, setIsVisibleReview] = useState(false); // Review Form Modal
+  const [isVisibleReviewThankyou, setIsVisibleReviewThankyou] = useState(false); // Review Thankyou Modal
+
+  const content = CONTENT_SHIRTS;
   return (
     <>
-      <HeaderBlock title="ВЕСНЯНИЙ РОЗПРОДАЖ -60% ВІД СТАРОЇ ЦІНИ" />
-      <HeroBlock data={DATA_SHIRTS} selected={selected} setSelected={setSelected} selectedColor={shirtsSelectedColor} price="999" old_price="1 599"/>
-      <AboutBlock radioId1="radio1" radioId2="radio2" radioId3="radio3"/>
+      <HeaderBlock
+        title={content.header_title}
+        setIsVivsibleCart={setIsVivsibleCart}
+      />
+      <HeroBlock
+        data={DATA_SHIRTS}
+        selected={selected}
+        setSelected={setSelected}
+        selectedColor={shirtsSelectedColor}
+        price= {content.hero_price}
+        old_price={content.hero_old_price}
+        title={content.hero_title}
+        subtitle={content.hero_subtitle}
+        footerText={content.hero_footerText}
+      />
+      <AboutBlock radioId1="radio1" radioId2="radio2" radioId3="radio3" />
       <DescriptionBlock />
       <AboutUsBlock />
       <ReviewBlock />
       <GalleryBlock />
       <SizetableBlock />
       <AdvantageBlock />
-      <AboutBlock radioId1="radio4" radioId2="radio5" radioId3="radio6"/>
-      <HeroBlock data={DATA_SHIRTS} selected={selected} setSelected={setSelected} selectedColor={shirtsSelectedColor} price="999" old_price="1 599"/>
+      <AboutBlock radioId1="radio4" radioId2="radio5" radioId3="radio6" />
+      <HeroBlock
+        data={DATA_SHIRTS}
+        selected={selected}
+        setSelected={setSelected}
+        selectedColor={shirtsSelectedColor}
+        price="999"
+        old_price="1 599"
+        title="Весняна"
+        subtitle="сорочка в клітинку"
+        footerText="втілення якості та стилю"
+      />
+
+      {/* modals  */}
+      <Cart
+        isVisibleCart={isVisibleCart}
+        setIsVivsibleCart={setIsVivsibleCart}
+        setIsVisibleSubmit={setIsVisibleSubmit}
+      />
+      <Submit
+        isVisibleSubmit={isVisibleSubmit}
+        setIsVisibleSubmit={setIsVisibleSubmit}
+        setIsVisibleThankyou={setIsVisibleThankyou}
+      />
+      <Thankyou
+        isVisibleThankyou={isVisibleThankyou}
+        setIsVisibleThankyou={setIsVisibleThankyou}
+      />
     </>
   );
 };

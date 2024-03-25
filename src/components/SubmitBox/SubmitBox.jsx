@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
 
-const SubmitBox = () => {
+const SubmitBox = ({ handleSubmit }) => {
   const qty = useSelector((state) => state.cart.qty);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
   return (
@@ -21,7 +21,11 @@ const SubmitBox = () => {
         <h3>ДО СПЛАТИ: </h3>
         <h4>{finalPrice} ₴</h4>
       </div>
-      <Button text="ЗАМОВЛЕННЯ ПІДТВЕРДЖУЮ" className={styles.button} />
+      <Button
+        onClick={handleSubmit}
+        text="ЗАМОВЛЕННЯ ПІДТВЕРДЖУЮ"
+        className={styles.button}
+      />
       <hr />
       <div className={styles.footer}>
         <h3 className={styles.footer_title}>

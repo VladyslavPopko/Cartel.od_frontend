@@ -1,8 +1,5 @@
 import styles from "./style.module.scss";
 
-import img1 from "../../img/HeroBlock/shirts/img1.png";
-import img2 from "../../img/HeroBlock/shirts/img2.png";
-import img3 from "../../img/HeroBlock/shirts/img3.png";
 
 import { useDispatch, useSelector } from "react-redux";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
@@ -23,11 +20,13 @@ const HeroBlock = ({
   price,
   selected,
   setSelected,
+  title,
+  subtitle,
+  footerText
 }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    
     const info = data.filter((el) => el.color === selectedColor);
     let size;
     switch (selected) {
@@ -52,7 +51,7 @@ const HeroBlock = ({
         break;
       }
       default: {
-        size = "Уточнити"
+        size = "Уточнити";
         break;
       }
     }
@@ -67,13 +66,13 @@ const HeroBlock = ({
         <div className={styles.content}>
           <div className={styles.content_top}>
             <div className={styles.content_top_item}>
-              <p className={styles.title}>Весняна</p>
-              <p className={styles.title}>сорочка в клітинку</p>
+              <p className={styles.title}>{title}</p>
+              <p className={styles.title}>{subtitle}</p>
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
-                <ColorCircle color={ONE_SHIRT} />
-                <ColorCircle color={TWO_SHIRT} />
-                <ColorCircle color={THREE_SHIRT} />
+                {data.map((el) => (
+                  <ColorCircle color={el.color} />
+                ))}
               </div>
               <p className={styles.price_text}>Стара ціна:</p>
               <p className={styles.price_old}>{old_price} грн</p>
@@ -97,18 +96,12 @@ const HeroBlock = ({
               </div>
             </div>
             <div className={styles.content_top_item}>
-              {selectedColor === ONE_SHIRT && (
-                <img src={img1} alt="" className={styles.img} />
-              )}
-              {selectedColor === TWO_SHIRT && (
-                <img src={img2} alt="" className={styles.img} />
-              )}
-              {selectedColor === THREE_SHIRT && (
-                <img src={img3} alt="" className={styles.img} />
-              )}
+              {data.map((el)=>(selectedColor === el.color && (
+                <img src={el.hero_img} alt="" className={styles.img} />
+              )))}
             </div>
           </div>
-          <p className={styles.content_bottom}>втілення якості та стилю</p>
+          <p className={styles.content_bottom}>{footerText}</p>
         </div>
       </div>
     </div>

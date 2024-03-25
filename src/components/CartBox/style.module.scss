@@ -30,6 +30,11 @@
       text-align: left;
       margin-bottom: 50px;
     }
+    @media (max-width: 760px) {
+      .color {
+        margin-bottom: 5px;
+      }
+    }
     .size {
       font-size: 16px;
       font-weight: 700;
@@ -55,14 +60,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &_left{
+      &_left {
         display: flex;
         gap: 5px;
         align-items: center;
       }
     }
     .input {
-      
       padding: 0px 27px 0px 27px;
       border-radius: var(--button-border-radius);
       border: 1px solid var(--secondary-color);
@@ -76,6 +80,16 @@
       font-size: 36px;
       font-weight: 400;
       cursor: pointer;
+    }
+    @media (max-width: 550px) {
+      .price,
+      .increment,
+      .decrement {
+        font-size: 24px;
+      }
+      .input {
+        padding: 0 10px;
+      }
     }
   }
 }

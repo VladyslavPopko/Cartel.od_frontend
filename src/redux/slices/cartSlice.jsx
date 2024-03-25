@@ -21,7 +21,8 @@ const cartSlice = createSlice({
       if (item) {
         item.qty = item.qty + 1;
       } else {
-        state.items.push({ ...payload, qty: 1 });
+        const index = payload.id + payload.category + payload.size;
+        state.items.push({ ...payload, qty: 1, index: index });
       }
       if (state.qty >= 1) {
         state.items.forEach((el) => (el.price = 849));
@@ -33,7 +34,6 @@ const cartSlice = createSlice({
       state.finalPrice = state.finalPrice + payload.price;
       state.finalOldPrice = state.finalOldPrice + payload.old_price;
       state.qty = state.qty + 1;
-      console.log(state.items);
     },
     deleteFromCart: (state, { payload }) => {
       state.items = state.items.filter((item) => item.id !== payload.id);
@@ -50,10 +50,7 @@ const cartSlice = createSlice({
           item.size === payload.size
       );
       if (item.qty <= 1) {
-        state.items = state.items.filter(
-          (item) =>
-            item.size !== payload.size
-        );
+        state.items = state.items.filter((item) => item.index !== payload.index);
         if (state.qty > 1) {
           state.items.forEach((el) => (el.price = 999));
         }
@@ -76,7 +73,9 @@ const cartSlice = createSlice({
         item.qty = item.qty - 1;
       }
       state.finalPrice = 0;
-      state.items.map((el) => state.finalPrice = state.finalPrice + el.price * el.qty);
+      state.items.map(
+        (el) => (state.finalPrice = state.finalPrice + el.price * el.qty)
+      );
       state.finalOldPrice = state.finalOldPrice - payload.old_price;
       state.qty = state.qty - 1;
     },
