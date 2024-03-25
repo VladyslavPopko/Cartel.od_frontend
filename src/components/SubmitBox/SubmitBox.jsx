@@ -30,6 +30,7 @@ const SubmitBox = () => {
         <a className={styles.link} href="#">
           Положення про збирання та захист персональних даних
         </a>
+        <br></br>
         <a className={styles.link} href="#">
           Користувальницької угоди
         </a>

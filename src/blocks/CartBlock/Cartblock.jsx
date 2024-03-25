@@ -8,6 +8,7 @@ import Button from "../../components/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
 import { NavLink } from "react-router-dom";
+import cartImg from "../../img/CartBlock/cart.svg";
 
 const Cartblock = () => {
   const dispatch = useDispatch();
@@ -23,39 +24,56 @@ const Cartblock = () => {
         <img src={close} alt="" />
       </header>
       <main className={styles.main}>
-        <div className={styles.main_list}>
-          {cart.map((el) => (
-            <CartBox
-              img={el.img}
-              title={el.name}
-              color={el.color}
-              size={el.size}
-              count={el.qty}
-              old_price={el.old_price}
-              price={el.price}
-              onClickInc={() => dispatch(incrementQty(el))}
-              onClickDec={() => dispatch(decrementQty(el))}
+        {qty === 0 && (
+          <div className={styles.cart_free}>
+            <img className={styles.cart_free_img} src={cartImg} alt="" />
+            <h3 className={styles.cart_free_title}>Кошик пустий.</h3>
+            <h4 className={styles.cart_free_text}>
+              Але це можна легко виправити)
+            </h4>
+            <Button
+              text="Продовжити покупки"
+              className={styles.button_continue}
             />
-          ))}
-        </div>
-        <div className={styles.main_buttons}>
-          <Button
-            text="Продовжити покупки"
-            className={styles.button_continue}
-          />
-          <div className={styles.main_buttons_right}>
-            <div className="">
-              <p className={styles.old_price}>{oldPrice} ₴</p>
-              <p className={styles.price}>{finalPrice} ₴</p>
-            </div>
-            <NavLink to="/submit">
-              <Button
-                text="Оформити замовлення"
-                className={styles.button_submit}
-              />
-            </NavLink>
           </div>
-        </div>
+        )}
+        {qty > 0 && (
+          <>
+            <div className={styles.main_list}>
+              {cart.map((el) => (
+                <CartBox
+                  img={el.img}
+                  title={el.name}
+                  color={el.color}
+                  size={el.size}
+                  count={el.qty}
+                  old_price={el.old_price}
+                  price={el.price}
+                  onClickInc={() => dispatch(incrementQty(el))}
+                  onClickDec={() => dispatch(decrementQty(el))}
+                />
+              ))}
+            </div>
+            <div className={styles.main_buttons}>
+              <Button
+                text="Продовжити покупки"
+                className={styles.button_continue}
+              />
+              <div className={styles.main_buttons_right}>
+                <div className="">
+                  <p className={styles.old_price}>{oldPrice} ₴</p>
+                  <p className={styles.price}>{finalPrice} ₴</p>
+                </div>
+                <NavLink to="/submit">
+                  <Button
+                    text="Оформити замовлення"
+                    className={styles.button_submit}
+                  />
+                </NavLink>
+              </div>
+            </div>
+          </>
+        )}
       </main>
       <footer className={styles.footer}></footer>
     </div>

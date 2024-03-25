@@ -75,7 +75,8 @@ const cartSlice = createSlice({
         }
         item.qty = item.qty - 1;
       }
-      state.finalPrice = state.finalPrice - payload.price;
+      state.finalPrice = 0;
+      state.items.map((el) => state.finalPrice = state.finalPrice + el.price * el.qty);
       state.finalOldPrice = state.finalOldPrice - payload.old_price;
       state.qty = state.qty - 1;
     },

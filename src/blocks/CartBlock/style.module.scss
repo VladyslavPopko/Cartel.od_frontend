@@ -99,3 +99,27 @@
     color: var(--secondary-color);
   }
 }
+.cart_free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  color: var(--secondary-color);
+  &_img{
+    max-width: 250px;
+    max-height: 250px;
+  }
+  &_title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.76px;
+    text-align: left;
+  }
+  &_text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39.01px;
+    text-align: left;
+    color: var(--subtext-color);
+  }
+}
