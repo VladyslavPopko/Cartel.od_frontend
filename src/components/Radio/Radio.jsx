@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
 
-const Radio = ({radioId1, radioId2,radioId3}) => {
+const Radio = ({ radioId1, radioId2, radioId3, register }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -11,9 +11,9 @@ const Radio = ({radioId1, radioId2,radioId3}) => {
         <input
           className={styles.input}
           type="radio"
-          name="radio"
+          {...register("value")}
           id={radioId1}
-          value="999"
+          value="1"
         />
         <label className={styles.label} htmlFor={radioId1}>
           1 Сорочка 999 ₴{" "}
@@ -23,9 +23,9 @@ const Radio = ({radioId1, radioId2,radioId3}) => {
         <input
           className={styles.input}
           type="radio"
-          name="radio"
+          {...register("value")}
           id={radioId2}
-          value="1699"
+          value="2"
         />
         <label className={styles.label} htmlFor={radioId2}>
           2 сорочки <span className={styles.select}> 1 699</span> ₴ (додаткова
@@ -36,9 +36,9 @@ const Radio = ({radioId1, radioId2,radioId3}) => {
         <input
           className={styles.input}
           type="radio"
-          name="radio"
+          {...register("value")}
           id={radioId3}
-          value="1699"
+          value="3"
         />
         <label className={styles.label} htmlFor={radioId3}>
           3 сорочки<span className={styles.select}> 2 399</span> ₴ (додаткова

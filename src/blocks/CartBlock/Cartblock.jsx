@@ -8,7 +8,11 @@ import { NavLink } from "react-router-dom";
 import cartImg from "../../img/CartBlock/cart.svg";
 import cn from "classnames";
 
-const Cartblock = ({ isVisibleCart, setIsVivsibleCart, setIsVisibleSubmit }) => {
+const Cartblock = ({
+  isVisibleCart,
+  setIsVivsibleCart,
+  setIsVisibleSubmit,
+}) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
@@ -20,7 +24,7 @@ const Cartblock = ({ isVisibleCart, setIsVivsibleCart, setIsVisibleSubmit }) => 
   const handleOpenSubmit = () => {
     setIsVivsibleCart(false);
     setIsVisibleSubmit(true);
-  }
+  };
 
   return (
     <div

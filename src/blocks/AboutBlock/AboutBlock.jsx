@@ -4,7 +4,7 @@ import img2 from "../../img/AboutBlock/img2.png";
 import Box from "../../components/Box/Box";
 import arrow from "../../img/PriceBlock/arrow.svg";
 import PriceBlock from "../PriceBlock/PriceBlock";
-const AboutBlock = ({ radioId1, radioId2, radioId3 }) => {
+const AboutBlock = ({ radioId1, radioId2, radioId3, data, selected }) => {
   return (
     <div>
       <div className={styles.wrapper}>
@@ -44,7 +44,13 @@ const AboutBlock = ({ radioId1, radioId2, radioId3 }) => {
             </div>
           </div>
         </div>
-        <PriceBlock radioId1={radioId1} radioId2={radioId2} radioId3={radioId3} />
+        <PriceBlock
+          radioId1={radioId1}
+          radioId2={radioId2}
+          radioId3={radioId3}
+          data={data}
+          selected={selected}
+        />
       </div>
     </div>
   );

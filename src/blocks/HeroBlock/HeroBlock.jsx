@@ -56,7 +56,6 @@ const HeroBlock = ({
       }
     }
     info[0].size = size;
-    console.log(info);
     info.map((e) => dispatch(addToCart(e)));
   };
 

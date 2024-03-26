@@ -3,7 +3,6 @@ import Button from "../Button/Button";
 import styles from "./style.module.scss";
 
 const SubmitBox = ({
-  handleSubmit,
   setIsVisibleAssign,
   setIsVisiblePolitics,
 }) => {
@@ -32,7 +31,7 @@ const SubmitBox = ({
         <h4>{finalPrice} ₴</h4>
       </div>
       <Button
-        onClick={handleSubmit}
+        type="submit"
         text="ЗАМОВЛЕННЯ ПІДТВЕРДЖУЮ"
         className={styles.button}
       />

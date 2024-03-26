@@ -62,7 +62,13 @@ const Shirts = () => {
         subtitle={content.hero_subtitle}
         footerText={content.hero_footerText}
       />
-      <AboutBlock radioId1="radio1" radioId2="radio2" radioId3="radio3" />
+      <AboutBlock
+        radioId1="radio1"
+        radioId2="radio2"
+        radioId3="radio3"
+        data={DATA_SHIRTS}
+        selected={selected}
+      />
       <DescriptionBlock />
       <AboutUsBlock />
       <ReviewBlock handleReview={handleReview} />
