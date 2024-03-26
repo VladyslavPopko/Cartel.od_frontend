@@ -8,7 +8,14 @@ import { radiosValidationSchema } from "../../validationSchemas/radioValidationS
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/slices/cartSlice";
 
-const PriceBlock = ({ radioId1, radioId2, radioId3, selected, data }) => {
+const PriceBlock = ({
+  radioId1,
+  radioId2,
+  radioId3,
+  selected,
+  data,
+  addNotification,
+}) => {
   const {
     register,
     handleSubmit,
@@ -77,6 +84,8 @@ const PriceBlock = ({ radioId1, radioId2, radioId3, selected, data }) => {
         break;
       }
     }
+    addNotification(true);
+    setTimeout(addNotification, 2000, false);
   };
 
   return (

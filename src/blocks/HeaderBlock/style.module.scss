@@ -55,7 +55,6 @@
     width: 48px;
     transform: translate(10px, 10px);
     text-align: center;
-      animation: rotate 0.8s infinite alternate;
   }
 }
 .cart {
@@ -65,5 +64,21 @@
     filter: invert(100%);
   }
 }
+.active{
+  animation: up 0.5s  alternate;
+}
 
+@keyframes up{
+  0%{
+    transform: translateY(0);
+  } 
+  50%{
+    transform: translateY(-10%);
+    filter:invert(100%);
+  }
+  100%{
+    transform: translateY(0);
+    filter:invert(0);
+  }
+}
 

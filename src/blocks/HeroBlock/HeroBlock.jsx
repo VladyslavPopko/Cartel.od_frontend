@@ -1,6 +1,5 @@
 import styles from "./style.module.scss";
 
-
 import { useDispatch, useSelector } from "react-redux";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
@@ -22,11 +21,13 @@ const HeroBlock = ({
   setSelected,
   title,
   subtitle,
-  footerText
+  footerText,
+  addNotification,
 }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
+    
     const info = data.filter((el) => el.color === selectedColor);
     let size;
     switch (selected) {
@@ -57,6 +58,8 @@ const HeroBlock = ({
     }
     info[0].size = size;
     info.map((e) => dispatch(addToCart(e)));
+    addNotification(true);
+    setTimeout(addNotification, 2000, false);
   };
 
   return (
@@ -95,9 +98,12 @@ const HeroBlock = ({
               </div>
             </div>
             <div className={styles.content_top_item}>
-              {data.map((el)=>(selectedColor === el.color && (
-                <img src={el.hero_img} alt="" className={styles.img} />
-              )))}
+              {data.map(
+                (el) =>
+                  selectedColor === el.color && (
+                    <img src={el.hero_img} alt="" className={styles.img} />
+                  )
+              )}
             </div>
           </div>
           <p className={styles.content_bottom}>{footerText}</p>

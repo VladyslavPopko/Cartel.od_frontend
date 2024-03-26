@@ -17,6 +17,9 @@ import Thankyou from "../modals/thankyou";
 import { CONTENT_SHIRTS } from "../contents/shirts";
 import Review from "../modals/review";
 import ReviewThankyou from "../modals/reviewThankyou";
+import NotificationBox from "../components/NotificationBox/NotificationBox";
+
+import agree from "../img/Notifications/agree.svg";
 
 const Shirts = () => {
   const shirtsSelectedColor = useSelector(
@@ -31,6 +34,9 @@ const Shirts = () => {
   const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
   const [isVisibleReview, setIsVisibleReview] = useState(false); // Review Form Modal
   const [isVisibleReviewThankyou, setIsVisibleReviewThankyou] = useState(false); // Review Thankyou Modal
+
+  const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
+    useState(false);
 
   const handleReview = () => {
     setIsVisibleReview(true);
@@ -47,11 +53,18 @@ const Shirts = () => {
   const content = CONTENT_SHIRTS;
   return (
     <>
+      <NotificationBox
+        text="Товар додано до кошика"
+        img={agree}
+        isVisibleNotificationAddtoCart={isVisibleNotificationAddtoCart}
+      />
       <HeaderBlock
+        isVisibleNotificationAddtoCart={isVisibleNotificationAddtoCart}
         title={content.header_title}
         setIsVivsibleCart={setIsVivsibleCart}
       />
       <HeroBlock
+        addNotification={setisVisibleNotificationAddtoCart}
         data={DATA_SHIRTS}
         selected={selected}
         setSelected={setSelected}
@@ -63,6 +76,7 @@ const Shirts = () => {
         footerText={content.hero_footerText}
       />
       <AboutBlock
+        addNotification={setisVisibleNotificationAddtoCart}
         radioId1="radio1"
         radioId2="radio2"
         radioId3="radio3"
@@ -75,8 +89,16 @@ const Shirts = () => {
       <GalleryBlock />
       <SizetableBlock />
       <AdvantageBlock />
-      <AboutBlock radioId1="radio4" radioId2="radio5" radioId3="radio6" />
+      <AboutBlock
+        addNotification={setisVisibleNotificationAddtoCart}
+        radioId1="radio4"
+        radioId2="radio5"
+        radioId3="radio6"
+        data={DATA_SHIRTS}
+        selected={selected}
+      />
       <HeroBlock
+        addNotification={setisVisibleNotificationAddtoCart}
         data={DATA_SHIRTS}
         selected={selected}
         setSelected={setSelected}
