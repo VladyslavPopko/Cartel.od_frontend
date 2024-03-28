@@ -4,10 +4,12 @@ import ReviewThankyouBlock from "../blocks/ReviewThankyouBlock/ReviewThankyouBlo
 const ReviewThankyou = ({
   isVisibleReviewThankyou,
   setIsVisibleReviewThankyou,
+  content,
 }) => {
   return (
     <div>
       <ReviewThankyouBlock
+        content={content}
         isVisibleReviewThankyou={isVisibleReviewThankyou}
         setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
       />

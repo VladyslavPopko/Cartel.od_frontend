@@ -7,8 +7,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { reviewValidationSchema } from "../../validationSchemas/reviewValidationsSchema";
 import useFetchToGoogle from "../../hooks/useFetchToGoogle";
 
-
-
 const ReviewModalBlock = ({
   isVisibleReview,
   setIsVisibleReview,
@@ -16,8 +14,10 @@ const ReviewModalBlock = ({
   setIsLoading,
   itemName,
   googleSheet,
-  googleList
+  googleList,
+  content,
 }) => {
+  const { title } = content;
   const handleCloseReview = () => {
     setIsVisibleReview(false);
   };
@@ -52,7 +52,6 @@ const ReviewModalBlock = ({
     reset();
     setIsVisibleReview(false);
     setIsVisibleReviewThankyou(true);
-
   };
   return (
     <div
@@ -61,11 +60,16 @@ const ReviewModalBlock = ({
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <img draggable="false" src={close} alt="" onClick={handleCloseReview} />
+          <img
+            draggable="false"
+            src={close}
+            alt=""
+            onClick={handleCloseReview}
+          />
         </header>
         <main className={styles.main}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <h2 className={styles.title}>Залиште ваш відгук</h2>
+            <h2 className={styles.title}>{title}</h2>
             <div className={styles.input_list}>
               <input
                 {...register("name")}
@@ -84,14 +88,22 @@ const ReviewModalBlock = ({
                 placeholder="Введіть Ваш телефон"
                 className={styles.input}
               />
-              {errors.tel && <p className={styles.error}>Перевірте введений номер телефону. Приклад: "+380505555555"</p>}
+              {errors.tel && (
+                <p className={styles.error}>
+                  Перевірте введений номер телефону. Приклад: "+380505555555"
+                </p>
+              )}
               <input
                 {...register("email")}
                 type="email"
                 placeholder="Введіть Ваш Email"
                 className={styles.input}
               />
-              {errors.email && <p className={styles.error}>Перевірте введену пошту. Приклад: "email@gmail.com"</p>}
+              {errors.email && (
+                <p className={styles.error}>
+                  Перевірте введену пошту. Приклад: "email@gmail.com"
+                </p>
+              )}
               <textarea
                 {...register("text")}
                 type="text"
@@ -100,11 +112,7 @@ const ReviewModalBlock = ({
               />
               {errors.text && <p className={styles.error}>Введіть відгук</p>}
             </div>
-            <Button
-              text="відправити"
-              type="submit"
-              className={styles.btn}
-            />
+            <Button text="відправити" type="submit" className={styles.btn} />
           </form>
         </main>
       </div>

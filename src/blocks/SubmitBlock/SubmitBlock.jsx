@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import close from "../../img/SubmitBlock/close.svg";
-import img from "../../img/SubmitBlock/img.svg";
+
 import Form from "../../components/Form/Form";
 import CartBox from "../../components/CartBox/CartBox";
 import SubmitBox from "../../components/SubmitBox/SubmitBox";
@@ -22,7 +22,9 @@ const SubmitBlock = ({
   googleSheet,
   googleList,
   setIsLoading,
+  content,
 }) => {
+  const { title_name, content_title, content_text, img } = content;
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
@@ -78,7 +80,7 @@ const SubmitBlock = ({
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <h2 className={styles.title}>Оформлення замовлення</h2>
+          <h2 className={styles.title}>{title_name}</h2>
           <img
             draggable="false"
             className={styles.close}
@@ -91,12 +93,8 @@ const SubmitBlock = ({
           <main className={styles.main}>
             <div className={styles.main_header}>
               <div className="">
-                <h3 className={styles.main_title}>
-                  Укажіть свої контактні дані
-                </h3>
-                <h4 className={styles.main_text}>
-                  Ми зв’яжемося з вами у найближчий час
-                </h4>
+                <h3 className={styles.main_title}>{content_title}</h3>
+                <h4 className={styles.main_text}>{content_text}</h4>
               </div>
               <img draggable="false" src={img} alt="" />
             </div>

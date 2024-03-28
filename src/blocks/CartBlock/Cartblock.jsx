@@ -4,15 +4,15 @@ import CartBox from "../../components/CartBox/CartBox";
 import Button from "../../components/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
-import { NavLink } from "react-router-dom";
-import cartImg from "../../img/CartBlock/cart.svg";
 import cn from "classnames";
 
 const Cartblock = ({
   isVisibleCart,
   setIsVivsibleCart,
   setIsVisibleSubmit,
+  content,
 }) => {
+  const { title, empty_text, empty_subtext, empty_img } = content;
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
@@ -34,7 +34,7 @@ const Cartblock = ({
       <div className={styles.section_content}>
         <div className={styles.section} onClick={(e) => e.stopPropagation()}>
           <header className={styles.header}>
-            <h2 className={styles.header_title}>Кошик</h2>
+            <h2 className={styles.header_title}>{title}</h2>
             <img
               draggable="false"
               className={styles.close}
@@ -49,13 +49,11 @@ const Cartblock = ({
                 <img
                   draggable="false"
                   className={styles.cart_free_img}
-                  src={cartImg}
+                  src={empty_img}
                   alt=""
                 />
-                <h3 className={styles.cart_free_title}>Кошик пустий.</h3>
-                <h4 className={styles.cart_free_text}>
-                  Але це можна легко виправити)
-                </h4>
+                <h3 className={styles.cart_free_title}>{empty_text}</h3>
+                <h4 className={styles.cart_free_text}>{empty_subtext}</h4>
                 <Button
                   text="Продовжити покупки"
                   className={styles.button_continue}

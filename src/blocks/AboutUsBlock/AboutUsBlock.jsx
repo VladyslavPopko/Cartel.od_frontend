@@ -1,13 +1,19 @@
 import AboutUsBox from "../../components/AboutUsBox/AboutUsBox";
 import styles from "./style.module.scss";
-import img1 from "../../img/AboutUsBlock/img1.svg";
-import img2 from "../../img/AboutUsBlock/img2.svg";
 
-const AboutUsBlock = () => {
+const AboutUsBlock = ({ content }) => {
+  const {
+    item1_img1,
+    item2_img1,
+    item1_title,
+    item1_text,
+    item2_title,
+    item2_text,
+  } = content;
   return (
     <div className={styles.section}>
-      <AboutUsBox img={img1} title="100" text="Замовлень" />
-      <AboutUsBox img={img2} title="60" text="Відгуків" />
+      <AboutUsBox img={item1_img1} title={item1_title} text={item1_text} />
+      <AboutUsBox img={item2_img1} title={item2_title} text={item2_text} />
     </div>
   );
 };

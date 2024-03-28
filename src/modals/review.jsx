@@ -8,10 +8,12 @@ const Review = ({
   itemName,
   googleSheet,
   googleList,
+  content,
 }) => {
   return (
     <div>
       <ReviewModalBlock
+        content={content}
         itemName={itemName}
         googleSheet={googleSheet}
         googleList={googleList}

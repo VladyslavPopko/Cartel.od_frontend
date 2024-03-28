@@ -11,10 +11,12 @@ const Submit = ({
   googleSheet,
   googleList,
   setIsLoading,
+  content,
 }) => {
   return (
     <div>
       <SubmitBlock
+        content={content}
         itemName={itemName}
         googleSheet={googleSheet}
         googleList={googleList}

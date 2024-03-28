@@ -4,7 +4,9 @@ import cn from "classnames";
 const ReviewThankyouBlock = ({
   isVisibleReviewThankyou,
   setIsVisibleReviewThankyou,
+  content
 }) => {
+  const {text} = content;
   const handleCloseThankyou = () => {
     setIsVisibleReviewThankyou(false);
   };
@@ -14,7 +16,7 @@ const ReviewThankyouBlock = ({
       onClick={handleCloseThankyou}
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        Дякуємо за відгук!
+        {text}
       </div>
     </div>
   );

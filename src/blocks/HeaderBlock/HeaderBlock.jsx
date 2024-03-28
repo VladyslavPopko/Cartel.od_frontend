@@ -4,7 +4,7 @@ import img from "../../img/HeaderBlock/cart.svg";
 import { useSelector } from "react-redux";
 
 const HeaderBlock = ({
-  title,
+  content,
   setIsVivsibleCart,
   isVisibleNotificationAddtoCart,
 }) => {
@@ -12,6 +12,7 @@ const HeaderBlock = ({
   const handleCart = () => {
     setIsVivsibleCart(true);
   };
+  const { title } = content;
   return (
     <div className={cn(styles.wrapper)}>
       <div className={styles.content}>

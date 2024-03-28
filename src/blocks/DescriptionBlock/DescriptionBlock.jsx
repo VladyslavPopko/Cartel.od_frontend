@@ -1,43 +1,59 @@
 import styles from "./style.module.scss";
-import img1 from "../../img/DescriptionBlock/img1.svg";
-import img2 from "../../img/DescriptionBlock/img2.svg";
-import img3 from "../../img/DescriptionBlock/img3.svg";
-import img4 from "../../img/DescriptionBlock/img4.svg";
 import DescriptionItem from "../../components/DescriptionItem/DescriptionItem";
 
-const DescriptionBlock = () => {
+const DescriptionBlock = ({ content }) => {
+  const {
+    title,
+    item1_logo,
+    item1_logotext,
+    item1_title,
+    item1_subtitle,
+    item1_text,
+    item2_logo,
+    item2_logotext,
+    item2_title,
+    item2_text,
+    item3_logo,
+    item4_logo,
+    item3_logotext,
+    item3_title,
+    item3_text,
+    item4_logotext,
+    item4_title,
+    item4_subtitle,
+    item4_text
+  } = content;
   return (
     <div className={styles.section}>
       <div className={styles.section_content}>
-        <h2 className={styles.section_title}>Опис товару</h2>
+        <h2 className={styles.section_title}>{title}</h2>
         <div className={styles.section_list}>
           <DescriptionItem
-            img={img1}
-            logotext="Матеріал бавовна"
-            title="Преміум тканина :"
-            subtitle="70% Бавовна 30% Поліестер "
-            text="Тканина твід - це витончений та вишуканий матеріал, що поєднує в собі класичну елегантність і комфорт сучасності. Її м'яка текстура дарує відчуття приємності при контакті з шкірою, а також забезпечує відмінну вентиляцію та зносостійкість."
+            img={item1_logo}
+            logotext={item1_logotext}
+            title={item1_title}
+            subtitle={item1_subtitle}
+            text={item1_text}
           />
           <DescriptionItem
-            img={img2}
-            logotext="Якісний пошив"
-            title="Країна виробник: Турречина"
-            text="Тканина, виготовлена в Туреччині, вражає своєю вишуканістю та якістю, яка є відбитком майстерності турецьких текстильних виробників. Комбінація традиційних технологій та сучасного дизайну робить її неперевершеним вибором для вишуканих модних виробів."
+            img={item2_logo}
+            logotext={item2_logotext}
+            title={item2_title}
+            text={item2_text}
           />
           <DescriptionItem
-            img={img3}
-            logotext="Зручний крій"
-            title="Вільний крій"
-            text="Колекція вільного крою пропонує зручність і стиль у щоденному гардеробі. Розміри від S до XL, кожен зможе знайти ідеально сидячу модель, яка підкреслить їхню індивідуальність."
+            img={item3_logo}
+            logotext={item3_logotext}
+            title={item3_title}
+            text={item3_text}
           />
           <DescriptionItem
-            img={img4}
-            logotext="Приємна тканина"
-            title="Щільна тепла сорочка"
-            subtitle="Сезон : весна/осінь"
-            text="Ця щільна тепла сорочка ідеально підходить для весняних та осінніх днів, коли потрібно трохи більше тепла, але ще не час для важких курток. Виготовлена з високоякісного матеріалу, вона забезпечує комфорт і стиль одночасно."
+            img={item4_logo}
+            logotext={item4_logotext}
+            title={item4_title}
+            subtitle={item4_subtitle}
+            text={item4_text}
           />
-          
         </div>
       </div>
     </div>

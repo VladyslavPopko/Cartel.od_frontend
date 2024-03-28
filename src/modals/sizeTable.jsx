@@ -1,13 +1,16 @@
-import React from 'react'
-import SizetableModalBlock from '../blocks/SizetableModalBlock/SizetableModalBlock'
+import React from "react";
+import SizetableModalBlock from "../blocks/SizetableModalBlock/SizetableModalBlock";
 
-const SizeTable = ({isVisibleSizetable, setIsVisibleSizetable}) => {
+const SizeTable = ({ isVisibleSizetable, setIsVisibleSizetable, content }) => {
   return (
     <>
-      <SizetableModalBlock isVisibleSizetable={isVisibleSizetable}
-      setIsVisibleSizetable={setIsVisibleSizetable} />
+      <SizetableModalBlock
+        content={content}
+        isVisibleSizetable={isVisibleSizetable}
+        setIsVisibleSizetable={setIsVisibleSizetable}
+      />
     </>
-  )
-}
+  );
+};
 
-export default SizeTable
+export default SizeTable;

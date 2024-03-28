@@ -1,7 +1,12 @@
 import styles from "./style.module.scss";
 import cn from "classnames";
 
-const PoliticsBlock = ({ isVisiblePolitics, setIsVisiblePolitics }) => {
+const PoliticsBlock = ({
+  isVisiblePolitics,
+  setIsVisiblePolitics,
+  content,
+}) => {
+  const {title, link} = content;
   const handleClose = () => {
     setIsVisiblePolitics(false);
   };
@@ -11,10 +16,10 @@ const PoliticsBlock = ({ isVisiblePolitics, setIsVisiblePolitics }) => {
       onClick={handleClose}
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        <h2 className={styles.title}>Політика конфіденційності</h2>
+        <h2 className={styles.title}>{title}</h2>
         <div className={styles.text}>
           <p>
-            Користуючись послугами інтернет-магазину hoodie.cartel.od.ua (далі
+            Користуючись послугами інтернет-магазину {link} (далі
             Інтернет-Магазин), користувач висловлює свою згоду з Політикою
             Конфіденційності. Інтернет-Магазин залишає за собою право вносити
             зміни в Політику Конфіденційності на свій розсуд. Користувач бере на

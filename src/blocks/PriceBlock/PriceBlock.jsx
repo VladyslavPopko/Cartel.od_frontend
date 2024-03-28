@@ -15,6 +15,7 @@ const PriceBlock = ({
   selected,
   data,
   addNotification,
+  content,
 }) => {
   const {
     register,
@@ -99,6 +100,7 @@ const PriceBlock = ({
       <div className={styles.section_content}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Radio
+            content={content}
             errors={errors.value}
             register={register}
             radioId1={radioId1}

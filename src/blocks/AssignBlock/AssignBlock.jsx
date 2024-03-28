@@ -1,7 +1,8 @@
 import styles from "./style.module.scss";
 import cn from "classnames";
 
-const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign }) => {
+const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
+  const { link, title } = content;
   const handleClose = () => {
     setIsVisibleAssign(false);
   };
@@ -11,16 +12,15 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign }) => {
       onClick={handleClose}
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        <h2 className={styles.title}>Користувацька угода</h2>
+        <h2 className={styles.title}>{title}</h2>
         <div className={styles.text}>
           <p> Загальні положення</p>
           <p>
-            1.1.Договір оферти, є офіційною пропозицією hoodie.cartel.od.ua,
-            далі за текстом - «Продавець», укласти Договір купівлі-продажу
-            товарів дистанційним способом, а саме через Інтернет-магазин, далі
-            по тексту - «Договір», і розміщує Публічну оферту (пропозицію) на
-            офіційному інтернет-сайті Продавця hoodie.cartel.od.ua (далі -
-            «Інтернет-сайт»).
+            1.1.Договір оферти, є офіційною пропозицією {link}, далі за текстом
+            - «Продавець», укласти Договір купівлі-продажу товарів дистанційним
+            способом, а саме через Інтернет-магазин, далі по тексту - «Договір»,
+            і розміщує Публічну оферту (пропозицію) на офіційному інтернет-сайті
+            Продавця {link} (далі - «Інтернет-сайт»).
           </p>
           <p>
             1.2.Моментом повного і безумовного прийняття Покупцем пропозиції від
@@ -191,7 +191,7 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign }) => {
             {" "}
             9.1.Інтернет-магазин залишає за собою право в односторонньому
             порядку вносити зміни до цього Договору, за умови попередньої
-            публікації його на сайті hoodie.cartel.od.ua
+            публікації його на сайті {link}
           </p>
           <p>
             {" "}
@@ -272,10 +272,10 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign }) => {
           </p>
           <p>
             {" "}
-            Звертаємо вашу увагу, що інтернет-магазин hoodie.cartel.od.ua на
-            офіційному інтернет-сайті hoodie.cartel.od.ua, має право, відповідно
-            до законодавства України, надавати право користування інтернет
-            платформою ФОП і юридичним особам для реалізації товару.
+            Звертаємо вашу увагу, що інтернет-магазин {link} на офіційному
+            інтернет-сайті {link}, має право, відповідно до законодавства
+            України, надавати право користування інтернет платформою ФОП і
+            юридичним особам для реалізації товару.
           </p>
         </div>
       </div>

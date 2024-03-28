@@ -1,9 +1,13 @@
 import styles from "./style.module.scss";
 import close from "../../img/ThankyouBlock/close.svg";
-import box from "../../img/ThankyouBlock/box.jpg";
 import cn from "classnames";
 
-const ThankyouBlock = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
+const ThankyouBlock = ({
+  isVisibleThankyou,
+  setIsVisibleThankyou,
+  content,
+}) => {
+  const {title, text, img, status} = content;
   const handleCloseThankYou = () => {
     setIsVisibleThankyou(false);
   };
@@ -23,13 +27,10 @@ const ThankyouBlock = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
           />
         </header>
         <main className={styles.main}>
-          <h2 className={styles.title}>Дякуємо за замовлення!</h2>
-          <h3 className={styles.text}>
-            Очікуйте на менеджера для уточнення адреси доставки та способу
-            оплати
-          </h3>
-          <img draggable="false" className={styles.img} src={box} alt="" />
-          <h3 className={styles.status}>Стан замовлення: упаковується</h3>
+          <h2 className={styles.title}>{title}</h2>
+          <h3 className={styles.text}>{text}</h3>
+          <img draggable="false" className={styles.img} src={img} alt="" />
+          <h3 className={styles.status}>{status}</h3>
         </main>
       </div>
     </div>
