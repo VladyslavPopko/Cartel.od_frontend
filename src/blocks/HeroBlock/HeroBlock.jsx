@@ -6,8 +6,6 @@ import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
 import cn from "classnames";
-import { motion } from "framer-motion";
-import AnimationScaleY from "../../wrappers/animationScaleY";
 
 const HeroBlock = ({
   setIsVisibleSizetable,
@@ -69,7 +67,6 @@ const HeroBlock = ({
         <div className={styles.content}>
           <div className={styles.content_top}>
             <div className={styles.content_top_item}>
-            
               <p className={styles.title}>{title}</p>
 
               <p className={styles.title}>{subtitle}</p>

@@ -29,24 +29,8 @@ import {
   ITEM,
 } from "../constanses/shirts/constanses";
 import { REVIEW_LIST } from "../constanses/constanses";
-import AnimationOpacity from "../wrappers/animationOpacity";
 
-function onEntry(entry) {
-  entry.forEach((change) => {
-    if (change.isIntersecting) {
-      change.target.classList.add("element-show");
-    }
-  });
-}
-let options = {
-  threshold: [0.5],
-};
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll(".element-animation");
-
-for (let elm of elements) {
-  observer.observe(elm);
-}
+import AnimationWrapper from "../wrappers/AnimationWrapper";
 
 const Shirts = () => {
   const [selected, setSelected] = useState(null); // size
@@ -85,7 +69,7 @@ const Shirts = () => {
         title={content.header_title}
         setIsVivsibleCart={setIsVivsibleCart}
       />
-      <AnimationOpacity>
+      <AnimationWrapper>
         <HeroBlock
           setIsVisibleSizetable={setIsVisibleSizetable}
           isColor={isColor}
@@ -100,8 +84,8 @@ const Shirts = () => {
           subtitle={content.hero_subtitle}
           footerText={content.hero_footerText}
         />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <AboutBlock
           addNotification={setisVisibleNotificationAddtoCart}
           radioId1="radio1"
@@ -110,30 +94,30 @@ const Shirts = () => {
           data={DATA_SHIRTS}
           selected={selected}
         />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <DescriptionBlock />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <AboutUsBlock />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <ReviewBlock handleReview={handleReview} />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <GalleryBlock
           data={DATA_SHIRTS}
           isColor={isColor}
           setIsColor={setIsColor}
         />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <AdvantageBlock />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <AboutBlock
           addNotification={setisVisibleNotificationAddtoCart}
           radioId1="radio4"
@@ -142,8 +126,8 @@ const Shirts = () => {
           data={DATA_SHIRTS}
           selected={selected}
         />
-      </AnimationOpacity>
-      <AnimationOpacity>
+      </AnimationWrapper>
+      <AnimationWrapper>
         <HeroBlock
           setIsVisibleSizetable={setIsVisibleSizetable}
           isColor={isColor}
@@ -158,7 +142,7 @@ const Shirts = () => {
           subtitle={content.hero_subtitle}
           footerText={content.hero_footerText}
         />
-      </AnimationOpacity>
+      </AnimationWrapper>
       {/* modals  */}
       <Cart
         isVisibleCart={isVisibleCart}
