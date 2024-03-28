@@ -3,7 +3,7 @@ import cn from "classnames";
 import "./colors.scss";
 
 
-const ColorCircle = ({ color,setIsColor }) => {
+const ColorCircle = ({ color,setIsColor,isColor}) => {
   
 
   const handleSetColor = () => {
@@ -44,7 +44,7 @@ const ColorCircle = ({ color,setIsColor }) => {
     <div className={styles.color_list}>
       <div
         onClick={handleSetColor}
-        className={cn(styles.color_list_item, color)}
+        className={cn(styles.color_list_item, color,color===isColor && styles.active)}
       ></div>
       {/* <div onClick={handleSetColorTwo} className={styles.color_list_item}></div>
       <div

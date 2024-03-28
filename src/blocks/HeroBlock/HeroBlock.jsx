@@ -71,7 +71,7 @@ const HeroBlock = ({
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
                 {data.map((el) => (
-                  <ColorCircle color={el.color} key={el.id} setIsColor={setIsColor} />
+                  <ColorCircle color={el.color} key={el.id} setIsColor={setIsColor} isColor={isColor} />
                 ))}
               </div>
               <p className={styles.price_text}>Стара ціна:</p>

@@ -82,7 +82,7 @@ const Shirts = () => {
       <DescriptionBlock />
       <AboutUsBlock />
       <ReviewBlock handleReview={handleReview} />
-      <GalleryBlock />
+      <GalleryBlock data={DATA_SHIRTS} isColor={isColor} setIsColor={setIsColor} />
       <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
       <AdvantageBlock />
       <AboutBlock

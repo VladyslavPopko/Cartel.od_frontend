@@ -33,6 +33,7 @@ const SubmitBlock = ({
   const onSubmit = (data) => {
     setIsVisibleSubmit(false);
     setIsVisibleThankyou(true);
+    data.cart = cart;
     console.log(data);
   };
 
