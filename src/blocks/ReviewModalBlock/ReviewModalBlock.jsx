@@ -47,7 +47,6 @@ const ReviewModalBlock = ({
     formBody.push("google=" + googleSheet);
     formBody.push("list=" + googleList);
     formBody = formBody.join("&");
-    console.log(formBody);
     useFetchToGoogle(formBody, setIsLoading);
     setIsLoading(true);
     reset();

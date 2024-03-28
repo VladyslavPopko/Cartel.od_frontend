@@ -14,7 +14,6 @@ const useFetchToGoogle = (formBody, setIsLoading) => {
       .catch((err) => {
         setIsLoading(false);
       });
-    console.log(result);
     if (result.type === "success") {
       setIsLoading(false);
     }

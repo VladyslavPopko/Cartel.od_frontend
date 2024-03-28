@@ -3,8 +3,8 @@ export const TWO_SHIRT = "Чорно-білий";
 export const THREE_SHIRT = "Жовто-чорний";
 
 import img1 from "../img/shirts/img1.jpg";
-import img2 from "../img/shirts/img1.jpg";
-import img3 from "../img/shirts/img1.jpg";
+import img2 from "../img/shirts/img2.jpg";
+import img3 from "../img/shirts/img3.jpg";
 
 import heroImg1 from "../img/shirts/heroImg1.png";
 import heroImg2 from "../img/shirts/heroImg2.png";

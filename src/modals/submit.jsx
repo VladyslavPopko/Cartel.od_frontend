@@ -6,16 +6,23 @@ const Submit = ({
   setIsVisibleSubmit,
   setIsVisibleThankyou,
   setIsVisibleAssign,
-  setIsVisiblePolitics
-  
+  setIsVisiblePolitics,
+  itemName,
+  googleSheet,
+  googleList,
+  setIsLoading,
 }) => {
   return (
     <div>
       <SubmitBlock
+        itemName={itemName}
+        googleSheet={googleSheet}
+        googleList={googleList}
+        setIsLoading={setIsLoading}
         isVisibleSubmit={isVisibleSubmit}
         setIsVisibleSubmit={setIsVisibleSubmit}
         setIsVisibleThankyou={setIsVisibleThankyou}
-        setIsVisibleAssign ={setIsVisibleAssign}
+        setIsVisibleAssign={setIsVisibleAssign}
         setIsVisiblePolitics={setIsVisiblePolitics}
       />
     </div>

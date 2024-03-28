@@ -70,14 +70,20 @@ const PriceBlock = ({
       }
       case "2": {
         const info = data.filter((el) => el.id === 1 || el.id === 2);
-        info.map((el) => dispatch(addToCart(el)));
+        info.map((el) => {
+          el.size = size;
+          dispatch(addToCart(el));
+        });
         break;
       }
       case "3": {
         const info = data.filter(
           (el) => el.id === 1 || el.id === 2 || el.id === 3
         );
-        info.map((el) => dispatch(addToCart(el)));
+        info.map((el) => {
+          el.size = size;
+          dispatch(addToCart(el));
+        });
         break;
       }
       default: {

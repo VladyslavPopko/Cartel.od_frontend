@@ -8,7 +8,7 @@ import ReviewBlock from "../blocks/ReviewBlock/ReviewBlock";
 import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
 import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
 import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
-import { DATA_SHIRTS, ONE_SHIRT } from "../constanses/data_shirts";
+import { DATA_SHIRTS, ONE_SHIRT } from "../datas/data_shirts";
 import { useState } from "react";
 import Cart from "../modals/cart";
 import Submit from "../modals/submit";
@@ -23,7 +23,11 @@ import Assign from "../modals/assign";
 import Politics from "../modals/politics";
 import SizeTable from "../modals/sizeTable";
 import LoadingBox from "../components/LoadingBox/LoadingBox";
-import { GOOGLE_LIST, GOOGLE_SHEET, ITEM } from "../constanses/shirts/constanses";
+import {
+  GOOGLE_LIST,
+  GOOGLE_SHEET,
+  ITEM,
+} from "../constanses/shirts/constanses";
 import { REVIEW_LIST } from "../constanses/constanses";
 
 const Shirts = () => {
@@ -123,6 +127,10 @@ const Shirts = () => {
         setIsVisibleSubmit={setIsVisibleSubmit}
       />
       <Submit
+        itemName={ITEM}
+        googleSheet={GOOGLE_SHEET}
+        googleList={GOOGLE_LIST}
+        setIsLoading={setIsLoading}
         isVisibleSubmit={isVisibleSubmit}
         setIsVisibleSubmit={setIsVisibleSubmit}
         setIsVisibleThankyou={setIsVisibleThankyou}

@@ -3,9 +3,6 @@ import close from "../../img/SubmitBlock/close.svg";
 import img from "../../img/SubmitBlock/img.svg";
 import Form from "../../components/Form/Form";
 import CartBox from "../../components/CartBox/CartBox";
-import img1 from "../../img/CartBlock/img1.jpg";
-import img2 from "../../img/CartBlock/img2.jpg";
-import img3 from "../../img/CartBlock/img3.jpg";
 import SubmitBox from "../../components/SubmitBox/SubmitBox";
 import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,6 +10,7 @@ import cn from "classnames";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
+import useFetchToGoogle from "../../hooks/useFetchToGoogle";
 
 const SubmitBlock = ({
   isVisibleSubmit,
@@ -20,6 +18,10 @@ const SubmitBlock = ({
   setIsVisibleThankyou,
   setIsVisibleAssign,
   setIsVisiblePolitics,
+  itemName,
+  googleSheet,
+  googleList,
+  setIsLoading,
 }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
@@ -31,10 +33,28 @@ const SubmitBlock = ({
     setIsVisibleSubmit(false);
   };
   const onSubmit = (data) => {
+    console.log(cart);
+    cart.map((el) => {
+      let formBody = [];
+      for (let property in data) {
+        let encodedKey = encodeURIComponent(property);
+        let encodedValue = encodeURIComponent(data[property]);
+        formBody.push(encodedKey + "=" + encodedValue);
+      }
+      formBody.push("item=" + itemName);
+      formBody.push("google=" + googleSheet);
+      formBody.push("list=" + googleList);
+      formBody.push("price=" + el.price);
+      formBody.push("color=" + el.color);
+      formBody.push("size=" + el.size);
+      formBody = formBody.join("&");
+      useFetchToGoogle(formBody, setIsLoading);
+      console.log(formBody);
+    });
+
+    setIsLoading(true);
     setIsVisibleSubmit(false);
     setIsVisibleThankyou(true);
-    data.cart = cart;
-    console.log(data);
   };
 
   const {
@@ -88,7 +108,7 @@ const SubmitBlock = ({
               {cart.map((el) => (
                 <CartBox
                   key={el.id}
-                  img={img1}
+                  img={el.img}
                   title={title}
                   color={el.color}
                   size={el.size}
