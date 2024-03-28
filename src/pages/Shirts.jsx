@@ -9,7 +9,6 @@ import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
 import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
 import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
 import { DATA_SHIRTS, ONE_SHIRT } from "../constanses/data_shirts";
-import { useSelector } from "react-redux";
 import { useState } from "react";
 import Cart from "../modals/cart";
 import Submit from "../modals/submit";
@@ -23,10 +22,14 @@ import agree from "../img/Notifications/agree.svg";
 import Assign from "../modals/assign";
 import Politics from "../modals/politics";
 import SizeTable from "../modals/sizeTable";
+import LoadingBox from "../components/LoadingBox/LoadingBox";
+import { GOOGLE_LIST, GOOGLE_SHEET, ITEM } from "../constanses/shirts/constanses";
+import { REVIEW_LIST } from "../constanses/constanses";
 
 const Shirts = () => {
   const [selected, setSelected] = useState(null); // size
   const [isColor, setIsColor] = useState(ONE_SHIRT); // color
+  const [isLoading, setIsLoading] = useState(false); // loading
 
   const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
   const [isVisibleSubmit, setIsVisibleSubmit] = useState(false); // Submit Modal
@@ -47,6 +50,7 @@ const Shirts = () => {
   const content = CONTENT_SHIRTS;
   return (
     <>
+      {isLoading && <LoadingBox type="bars" color="red" />}
       <NotificationBox
         text="Товар додано до кошика"
         img={agree}
@@ -82,7 +86,11 @@ const Shirts = () => {
       <DescriptionBlock />
       <AboutUsBlock />
       <ReviewBlock handleReview={handleReview} />
-      <GalleryBlock data={DATA_SHIRTS} isColor={isColor} setIsColor={setIsColor} />
+      <GalleryBlock
+        data={DATA_SHIRTS}
+        isColor={isColor}
+        setIsColor={setIsColor}
+      />
       <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
       <AdvantageBlock />
       <AboutBlock
@@ -126,9 +134,13 @@ const Shirts = () => {
         setIsVisibleThankyou={setIsVisibleThankyou}
       />
       <Review
+        itemName={ITEM}
+        googleSheet={GOOGLE_SHEET}
+        googleList={REVIEW_LIST}
         isVisibleReview={isVisibleReview}
         setIsVisibleReview={setIsVisibleReview}
         setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+        setIsLoading={setIsLoading}
       />
       <ReviewThankyou
         isVisibleReviewThankyou={isVisibleReviewThankyou}

@@ -81,3 +81,9 @@
 
   }
 }
+
+.error{
+  font-weight: 600;
+  color: var(--select-color);
+  animation: animate 1s infinite alternate;
+}

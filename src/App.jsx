@@ -1,15 +1,22 @@
 import { Route, Routes } from "react-router-dom";
+import { Suspense, lazy } from "react";
 
 import "reset-css";
 import "./style/main.scss";
-import Shirts from "./pages/Shirts";
+import LoadingBox from "./components/LoadingBox/LoadingBox";
+
+const ShirtsLazy = lazy(() => import ("./pages/Shirts"));
 
 const App = () => {
   return (
     <>
+    <Suspense fallback={
+      <LoadingBox type="bars" color="red" />
+    } >
       <Routes>
-        <Route path="/" element={<Shirts />} />
+        <Route path="/" element={<ShirtsLazy />} />
       </Routes>
+      </Suspense>
     </>
   );
 };

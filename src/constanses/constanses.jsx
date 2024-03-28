@@ -1,0 +1,6 @@
+export const GOOGLE_API = "https://script.google.com/macros/s/AKfycbzSqo1B8YVr8CyHGRWViChTHe38YKhWBlFo75QOhwl796mZlMgdqBQnYKDSBBaPcXt8WA/exec"
+export const REVIEW_LIST = "Review"
+export const INSTAGRAM = "https://www.instagram.com/cartel.0d?igsh=MTdvemw4bm9vNjA3bg%3D%3D&utm_source=qr"
+export const TELEGRAM = "https://t.me/+gZ4ABaIQq5JkYjgy"
+export const CRM_API = "e025771fc0bd4498181fe74548d75bedb4109d83"
+export const CRM = "https://backend.mydrop.com.ua/dropshipper/api/orders"

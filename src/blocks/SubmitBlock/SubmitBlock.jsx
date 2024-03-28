@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { shirtsValidationSchema } from "../../validationSchemas/shirtsValidationsSchema";
+import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
 
 const SubmitBlock = ({
   isVisibleSubmit,
@@ -48,7 +48,7 @@ const SubmitBlock = ({
       email: "",
       tel: "",
     },
-    resolver: yupResolver(shirtsValidationSchema),
+    resolver: yupResolver(formValidationSchema),
     mode: "onChange",
   });
   return (
