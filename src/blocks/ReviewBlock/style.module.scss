@@ -20,6 +20,13 @@
     flex-wrap: wrap;
     margin-bottom: 75px;
   }
+  @media (max-width: 855px) {
+    .list {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
   .button {
     width: 60%;
     border: 1px solid rgba(0, 0, 0, 1);
@@ -36,9 +43,17 @@
     text-align: center;
     color: var(--secondary-color);
     transition: all var(--transition-ms);
-    &:hover{
+    &:hover {
       background-color: var(--secondary-color);
       color: var(--primary-color);
+    }
+  }
+  @media (max-width: 480px) {
+    .title {
+      margin-bottom: 35px;
+    }
+    .list {
+      margin-bottom: 15px;
     }
   }
 }

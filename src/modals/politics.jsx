@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import PoliticsBlock from "../blocks/PoliticsBlock/PoliticsBlock";
 
-const Politics = () => {
+const Politics = ({isVisiblePolitics, setIsVisiblePolitics}) => {
   return (
-    <div>politics</div>
-  )
-}
+    <>
+      <PoliticsBlock
+        isVisiblePolitics={isVisiblePolitics}
+        setIsVisiblePolitics={setIsVisiblePolitics}
+      />
+    </>
+  );
+};
 
-export default Politics
+export default Politics;

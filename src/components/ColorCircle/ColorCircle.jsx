@@ -1,20 +1,13 @@
-import { useDispatch, useSelector } from "react-redux";
 import styles from "./style.module.scss";
 import cn from "classnames";
 import "./colors.scss";
-import { shirtsChangeColor } from "../../redux/slices/shirtsColorSlice";
-import {
-  ONE_SHIRT,
-  THREE_SHIRT,
-  TWO_SHIRT,
-} from "../../constanses/data_shirts";
-import { useEffect, useState } from "react";
 
-const ColorCircle = ({ color }) => {
-  const dispatch = useDispatch();
+
+const ColorCircle = ({ color,setIsColor }) => {
+  
 
   const handleSetColor = () => {
-    dispatch(shirtsChangeColor(color));
+    setIsColor(color);
     // console.log(color);
     // const root = document.querySelector(":root");
 

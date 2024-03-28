@@ -93,12 +93,15 @@ const PriceBlock = ({
       <div className={styles.section_content}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Radio
+            errors={errors.value}
             register={register}
             radioId1={radioId1}
             radioId2={radioId2}
             radioId3={radioId3}
           />
-          {errors.value && <p>{errors.value.message}</p>}
+          {errors.value && (
+            <p className={styles.error}>Виберіть один із варіантів вище</p>
+          )}
           <p className={styles.text}>До кінця АКЦІЇ залишилось:</p>
           <Time />
           <Button

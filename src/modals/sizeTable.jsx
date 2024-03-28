@@ -1,8 +1,12 @@
 import React from 'react'
+import SizetableModalBlock from '../blocks/SizetableModalBlock/SizetableModalBlock'
 
-const SizeTable = () => {
+const SizeTable = ({isVisibleSizetable, setIsVisibleSizetable}) => {
   return (
-    <div>SizeTable</div>
+    <>
+      <SizetableModalBlock isVisibleSizetable={isVisibleSizetable}
+      setIsVisibleSizetable={setIsVisibleSizetable} />
+    </>
   )
 }
 

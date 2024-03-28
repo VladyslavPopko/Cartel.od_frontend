@@ -1,13 +1,14 @@
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
+import cn from "classnames"
 
-const Radio = ({ radioId1, radioId2, radioId3, register }) => {
+const Radio = ({ radioId1, radioId2, radioId3, register, errors }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
-    <form action="" onSubmit={handleSubmit} className={styles.form}>
-      <div className={styles.fomrm_section}>
+    <form action="" onSubmit={handleSubmit} className={cn(styles.form,errors && styles.error)}>
+      <div className={styles.form_section}>
         <input
           className={styles.input}
           type="radio"

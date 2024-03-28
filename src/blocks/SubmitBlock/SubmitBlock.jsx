@@ -11,7 +11,7 @@ import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup"
+import { yupResolver } from "@hookform/resolvers/yup";
 import { shirtsValidationSchema } from "../../validationSchemas/shirtsValidationsSchema";
 
 const SubmitBlock = ({
@@ -36,7 +36,12 @@ const SubmitBlock = ({
     console.log(data);
   };
 
-  const { register, handleSubmit, formState: {errors} , reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
     defaultValues: {
       name: "",
       email: "",
@@ -74,13 +79,14 @@ const SubmitBlock = ({
               <img src={img} alt="" />
             </div>
 
-            <Form register={register} errors={errors}/>
+            <Form register={register} errors={errors} />
           </main>
           <footer className={styles.footer}>
             <div className={styles.footer_left}>
               <h3 className={styles.footer_title}>Ваше замовлення:</h3>
               {cart.map((el) => (
                 <CartBox
+                  key={el.id}
                   img={img1}
                   title={title}
                   color={el.color}

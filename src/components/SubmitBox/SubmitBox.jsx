@@ -40,13 +40,13 @@ const SubmitBox = ({
         <h3 className={styles.footer_title}>
           Підтверджуючи замовлення, я приймаю умови:
         </h3>
-        <span className={styles.link} onClick={handleViewPolitics}>
+        <a className={styles.link} onClick={handleViewPolitics}>
           Положення про збирання та захист персональних даних
-        </span>
+        </a>
         <br></br>
-        <span className={styles.link} onClick={handleViewAssign} >
+        <a className={styles.link} onClick={handleViewAssign} >
           Користувальницької угоди
-        </span>
+        </a>
       </div>
     </div>
   );

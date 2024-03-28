@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import AssignBlock from "../blocks/AssignBlock/AssignBlock";
 
-const Assign = () => {
+const Assign = ({ isVisibleAssign, setIsVisibleAssign }) => {
   return (
-    <div>assign</div>
-  )
-}
+    <>
+      <AssignBlock
+        isVisibleAssign={isVisibleAssign}
+        setIsVisibleAssign={setIsVisibleAssign}
+      />
+    </>
+  );
+};
 
-export default Assign
+export default Assign;

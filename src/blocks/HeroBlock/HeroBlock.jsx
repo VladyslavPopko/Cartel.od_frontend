@@ -1,20 +1,14 @@
 import styles from "./style.module.scss";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
-import {
-  DATA_SHIRTS,
-  ONE_SHIRT,
-  THREE_SHIRT,
-  TWO_SHIRT,
-} from "../../constanses/data_shirts";
 
 const HeroBlock = ({
+  setIsVisibleSizetable,
   data,
-  selectedColor,
   old_price,
   price,
   selected,
@@ -23,12 +17,13 @@ const HeroBlock = ({
   subtitle,
   footerText,
   addNotification,
+  isColor,
+  setIsColor,
 }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    
-    const info = data.filter((el) => el.color === selectedColor);
+    const info = data.filter((el) => el.color === isColor);
     let size;
     switch (selected) {
       case "Розмір: S": {
@@ -61,6 +56,9 @@ const HeroBlock = ({
     addNotification(true);
     setTimeout(addNotification, 2000, false);
   };
+  const handleSizetable = () => {
+    setIsVisibleSizetable(true);
+  }
 
   return (
     <div>
@@ -73,7 +71,7 @@ const HeroBlock = ({
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
                 {data.map((el) => (
-                  <ColorCircle color={el.color} />
+                  <ColorCircle color={el.color} key={el.id} setIsColor={setIsColor} />
                 ))}
               </div>
               <p className={styles.price_text}>Стара ціна:</p>
@@ -83,7 +81,7 @@ const HeroBlock = ({
               </p>
               <div className={styles.size}>
                 <p className={styles.size_text}>Розмір:</p>
-                <p className={styles.size_table}>таблиця розмірів</p>
+                <p className={styles.size_table} onClick={handleSizetable}>таблиця розмірів</p>
               </div>
               <div className={styles.select}>
                 <Select selected={selected} setSelected={setSelected} />
@@ -100,8 +98,8 @@ const HeroBlock = ({
             <div className={styles.content_top_item}>
               {data.map(
                 (el) =>
-                  selectedColor === el.color && (
-                    <img src={el.hero_img} alt="" className={styles.img} />
+                  isColor === el.color && (
+                    <img src={el.hero_img} key={el.id} alt="" className={styles.img} />
                   )
               )}
             </div>

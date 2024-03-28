@@ -10,6 +10,7 @@
   transform: scale(0);
   transition: all var(--transition-ms);
   overflow: auto;
+  padding: 15px;
 }
 .wrapper.active {
   opacity: 1;
@@ -58,6 +59,22 @@
   .img {
     max-width: 385px;
     max-height: 385px;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    .main {
+      gap: 5px;
+      padding-bottom:15px;
+    }
+
+    .title,
+    .text,
+    .status {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 

@@ -93,3 +93,12 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .section{
+    flex-direction: column;
+    .img{
+      width: 100%;
+    }
+  }
+  
+}

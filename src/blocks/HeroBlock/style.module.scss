@@ -4,6 +4,11 @@
   padding: 104px 15px 63px;
   overflow: hidden;
 }
+@media (max-width: 975px) {
+  .wrapper {
+    padding: 35px 15px;
+  }
+}
 .content {
   max-width: var(--content-max-width);
   margin: 0 auto;
@@ -26,7 +31,20 @@
   }
 }
 .img {
-  width: 100%;
+  width: 550px;
+  height: 535px;
+}
+@media (max-width: 600px) {
+  .img {
+    width: 350px;
+    height: 340px;
+  }
+}
+@media (max-width: 375px) {
+  .img {
+    width: 250px;
+    height: 242px;
+  }
 }
 .title {
   font-size: 32px;

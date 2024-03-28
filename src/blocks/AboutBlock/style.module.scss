@@ -33,7 +33,7 @@
     p {
       font-size: 16px;
       font-weight: 500;
-      line-height: 11px;
+      line-height: 20px;
       letter-spacing: 1.600000023841858px;
       text-align: left;
     }
@@ -44,6 +44,20 @@
     justify-content: center;
     gap: 10px;
   }
+}
+.list_item:nth-child(1){
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 908px) {
+  .list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .list_item:nth-child(1){
+    width: 100%;
+  }
+  
 }
 .price {
   &_list {
@@ -75,3 +89,9 @@
     
   }
 }
+@media (max-width: 480px) {
+  .img{
+    width: 100%;
+  }
+}
+

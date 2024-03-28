@@ -8,7 +8,7 @@ import ReviewBlock from "../blocks/ReviewBlock/ReviewBlock";
 import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
 import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
 import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
-import { DATA_SHIRTS } from "../constanses/data_shirts";
+import { DATA_SHIRTS, ONE_SHIRT } from "../constanses/data_shirts";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import Cart from "../modals/cart";
@@ -20,12 +20,13 @@ import ReviewThankyou from "../modals/reviewThankyou";
 import NotificationBox from "../components/NotificationBox/NotificationBox";
 
 import agree from "../img/Notifications/agree.svg";
+import Assign from "../modals/assign";
+import Politics from "../modals/politics";
+import SizeTable from "../modals/sizeTable";
 
 const Shirts = () => {
-  const shirtsSelectedColor = useSelector(
-    (state) => state.shirtsColor.selectedColor
-  );
   const [selected, setSelected] = useState(null); // size
+  const [isColor, setIsColor] = useState(ONE_SHIRT); // color
 
   const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
   const [isVisibleSubmit, setIsVisibleSubmit] = useState(false); // Submit Modal
@@ -34,20 +35,13 @@ const Shirts = () => {
   const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
   const [isVisibleReview, setIsVisibleReview] = useState(false); // Review Form Modal
   const [isVisibleReviewThankyou, setIsVisibleReviewThankyou] = useState(false); // Review Thankyou Modal
+  const [isVisibleSizetable, setIsVisibleSizetable] = useState(false); // Modal SizeTable
 
   const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
     useState(false);
 
   const handleReview = () => {
     setIsVisibleReview(true);
-  };
-
-  const handleAssign = () => {
-    setIsVisibleAssign(true);
-  };
-
-  const handlePolitics = () => {
-    setIsVisiblePolitics(true);
   };
 
   const content = CONTENT_SHIRTS;
@@ -64,11 +58,13 @@ const Shirts = () => {
         setIsVivsibleCart={setIsVivsibleCart}
       />
       <HeroBlock
+        setIsVisibleSizetable={setIsVisibleSizetable}
+        isColor={isColor}
+        setIsColor={setIsColor}
         addNotification={setisVisibleNotificationAddtoCart}
         data={DATA_SHIRTS}
         selected={selected}
         setSelected={setSelected}
-        selectedColor={shirtsSelectedColor}
         price={content.hero_price}
         old_price={content.hero_old_price}
         title={content.hero_title}
@@ -87,7 +83,7 @@ const Shirts = () => {
       <AboutUsBlock />
       <ReviewBlock handleReview={handleReview} />
       <GalleryBlock />
-      <SizetableBlock />
+      <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
       <AdvantageBlock />
       <AboutBlock
         addNotification={setisVisibleNotificationAddtoCart}
@@ -98,16 +94,18 @@ const Shirts = () => {
         selected={selected}
       />
       <HeroBlock
+        setIsVisibleSizetable={setIsVisibleSizetable}
+        isColor={isColor}
+        setIsColor={setIsColor}
         addNotification={setisVisibleNotificationAddtoCart}
         data={DATA_SHIRTS}
         selected={selected}
         setSelected={setSelected}
-        selectedColor={shirtsSelectedColor}
-        price="999"
-        old_price="1 599"
-        title="Весняна"
-        subtitle="сорочка в клітинку"
-        footerText="втілення якості та стилю"
+        price={content.hero_price}
+        old_price={content.hero_old_price}
+        title={content.hero_title}
+        subtitle={content.hero_subtitle}
+        footerText={content.hero_footerText}
       />
 
       {/* modals  */}
@@ -135,6 +133,18 @@ const Shirts = () => {
       <ReviewThankyou
         isVisibleReviewThankyou={isVisibleReviewThankyou}
         setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+      />
+      <Assign
+        isVisibleAssign={isVisibleAssign}
+        setIsVisibleAssign={setIsVisibleAssign}
+      />
+      <Politics
+        isVisiblePolitics={isVisiblePolitics}
+        setIsVisiblePolitics={setIsVisiblePolitics}
+      />
+      <SizeTable
+        isVisibleSizetable={isVisibleSizetable}
+        setIsVisibleSizetable={setIsVisibleSizetable}
       />
     </>
   );

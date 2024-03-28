@@ -10,6 +10,7 @@
   transform: scale(0);
   transition: all var(--transition-ms);
   overflow: auto;
+  padding: 15px;
 }
 .wrapper.active {
   opacity: 1;
@@ -101,10 +102,18 @@
     @media (max-width: 830px) {
       .main_buttons {
         gap: 10px;
+        justify-content: center;
+      }
+    }
+    @media (max-width: 480px) {
+      .main_buttons_right {
+        flex-direction: column;
+        width: 100%;
       }
     }
   }
 }
+
 .price {
   font-size: 32px;
   font-style: italic;
@@ -137,6 +146,7 @@
     color: var(--secondary-color);
   }
 }
+
 .cart_free {
   display: flex;
   flex-direction: column;

@@ -1,9 +1,14 @@
-.section{
-    font-family: var(--font-family);
-    color: var(--secondary-color);
-    padding: 125px 15px;
-    display: flex;
-    justify-content: center;
-    gap: 75px;
-    flex-wrap: wrap;
+.section {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  padding: 125px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 35px 15px;
+  }
 }

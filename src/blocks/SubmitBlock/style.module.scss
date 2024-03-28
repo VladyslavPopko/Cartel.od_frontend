@@ -10,6 +10,7 @@
   transform: scale(0);
   transition: all var(--transition-ms);
   overflow: auto;
+  padding: 15px;
 }
 .wrapper.active {
   opacity: 1;
@@ -93,6 +94,9 @@
   &_left,
   &_right {
     width: 450px;
+  }
+  &_right{
+    margin-bottom: 15px;
   }
 }
 .close {

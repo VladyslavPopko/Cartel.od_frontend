@@ -10,6 +10,7 @@
   transform: scale(0);
   transition: all var(--transition-ms);
   overflow: auto;
+  padding: 15px;
 }
 .wrapper.active {
   opacity: 1;
