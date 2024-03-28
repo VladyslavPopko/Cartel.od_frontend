@@ -24,6 +24,10 @@
 @media (max-width: 480px) {
   .section{
     padding: 35px 15px;
+    .title{
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
     .list{
       gap: 15px;
     }

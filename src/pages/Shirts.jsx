@@ -8,7 +8,7 @@ import ReviewBlock from "../blocks/ReviewBlock/ReviewBlock";
 import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
 import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
 import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
-import { DATA_SHIRTS, ONE_SHIRT } from "../datas/data_shirts";
+import { DATA_SHIRTS, ONE } from "../datas/data_shirts";
 import { useState } from "react";
 import Cart from "../modals/cart";
 import Submit from "../modals/submit";
@@ -29,10 +29,28 @@ import {
   ITEM,
 } from "../constanses/shirts/constanses";
 import { REVIEW_LIST } from "../constanses/constanses";
+import AnimationOpacity from "../wrappers/animationOpacity";
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    }
+  });
+}
+let options = {
+  threshold: [0.5],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".element-animation");
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
 
 const Shirts = () => {
   const [selected, setSelected] = useState(null); // size
-  const [isColor, setIsColor] = useState(ONE_SHIRT); // color
+  const [isColor, setIsColor] = useState(ONE); // color
   const [isLoading, setIsLoading] = useState(false); // loading
 
   const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
@@ -52,9 +70,11 @@ const Shirts = () => {
   };
 
   const content = CONTENT_SHIRTS;
+
   return (
     <>
       {isLoading && <LoadingBox type="bars" color="red" />}
+
       <NotificationBox
         text="Товар додано до кошика"
         img={agree}
@@ -65,61 +85,80 @@ const Shirts = () => {
         title={content.header_title}
         setIsVivsibleCart={setIsVivsibleCart}
       />
-      <HeroBlock
-        setIsVisibleSizetable={setIsVisibleSizetable}
-        isColor={isColor}
-        setIsColor={setIsColor}
-        addNotification={setisVisibleNotificationAddtoCart}
-        data={DATA_SHIRTS}
-        selected={selected}
-        setSelected={setSelected}
-        price={content.hero_price}
-        old_price={content.hero_old_price}
-        title={content.hero_title}
-        subtitle={content.hero_subtitle}
-        footerText={content.hero_footerText}
-      />
-      <AboutBlock
-        addNotification={setisVisibleNotificationAddtoCart}
-        radioId1="radio1"
-        radioId2="radio2"
-        radioId3="radio3"
-        data={DATA_SHIRTS}
-        selected={selected}
-      />
-      <DescriptionBlock />
-      <AboutUsBlock />
-      <ReviewBlock handleReview={handleReview} />
-      <GalleryBlock
-        data={DATA_SHIRTS}
-        isColor={isColor}
-        setIsColor={setIsColor}
-      />
-      <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
-      <AdvantageBlock />
-      <AboutBlock
-        addNotification={setisVisibleNotificationAddtoCart}
-        radioId1="radio4"
-        radioId2="radio5"
-        radioId3="radio6"
-        data={DATA_SHIRTS}
-        selected={selected}
-      />
-      <HeroBlock
-        setIsVisibleSizetable={setIsVisibleSizetable}
-        isColor={isColor}
-        setIsColor={setIsColor}
-        addNotification={setisVisibleNotificationAddtoCart}
-        data={DATA_SHIRTS}
-        selected={selected}
-        setSelected={setSelected}
-        price={content.hero_price}
-        old_price={content.hero_old_price}
-        title={content.hero_title}
-        subtitle={content.hero_subtitle}
-        footerText={content.hero_footerText}
-      />
-
+      <AnimationOpacity>
+        <HeroBlock
+          setIsVisibleSizetable={setIsVisibleSizetable}
+          isColor={isColor}
+          setIsColor={setIsColor}
+          addNotification={setisVisibleNotificationAddtoCart}
+          data={DATA_SHIRTS}
+          selected={selected}
+          setSelected={setSelected}
+          price={content.hero_price}
+          old_price={content.hero_old_price}
+          title={content.hero_title}
+          subtitle={content.hero_subtitle}
+          footerText={content.hero_footerText}
+        />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <AboutBlock
+          addNotification={setisVisibleNotificationAddtoCart}
+          radioId1="radio1"
+          radioId2="radio2"
+          radioId3="radio3"
+          data={DATA_SHIRTS}
+          selected={selected}
+        />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <DescriptionBlock />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <AboutUsBlock />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <ReviewBlock handleReview={handleReview} />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <GalleryBlock
+          data={DATA_SHIRTS}
+          isColor={isColor}
+          setIsColor={setIsColor}
+        />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <SizetableBlock setIsVisibleSizetable={setIsVisibleSizetable} />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <AdvantageBlock />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <AboutBlock
+          addNotification={setisVisibleNotificationAddtoCart}
+          radioId1="radio4"
+          radioId2="radio5"
+          radioId3="radio6"
+          data={DATA_SHIRTS}
+          selected={selected}
+        />
+      </AnimationOpacity>
+      <AnimationOpacity>
+        <HeroBlock
+          setIsVisibleSizetable={setIsVisibleSizetable}
+          isColor={isColor}
+          setIsColor={setIsColor}
+          addNotification={setisVisibleNotificationAddtoCart}
+          data={DATA_SHIRTS}
+          selected={selected}
+          setSelected={setSelected}
+          price={content.hero_price}
+          old_price={content.hero_old_price}
+          title={content.hero_title}
+          subtitle={content.hero_subtitle}
+          footerText={content.hero_footerText}
+        />
+      </AnimationOpacity>
       {/* modals  */}
       <Cart
         isVisibleCart={isVisibleCart}

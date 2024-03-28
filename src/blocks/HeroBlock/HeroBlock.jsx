@@ -5,6 +5,9 @@ import ColorCircle from "../../components/ColorCircle/ColorCircle";
 import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
+import cn from "classnames";
+import { motion } from "framer-motion";
+import AnimationScaleY from "../../wrappers/animationScaleY";
 
 const HeroBlock = ({
   setIsVisibleSizetable,
@@ -58,20 +61,27 @@ const HeroBlock = ({
   };
   const handleSizetable = () => {
     setIsVisibleSizetable(true);
-  }
+  };
 
   return (
     <div>
-      <div className={styles.wrapper}>
+      <div className={cn(styles.wrapper)}>
         <div className={styles.content}>
           <div className={styles.content_top}>
             <div className={styles.content_top_item}>
+            
               <p className={styles.title}>{title}</p>
+
               <p className={styles.title}>{subtitle}</p>
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
                 {data.map((el) => (
-                  <ColorCircle color={el.color} key={el.id} setIsColor={setIsColor} isColor={isColor} />
+                  <ColorCircle
+                    color={el.color}
+                    key={el.id}
+                    setIsColor={setIsColor}
+                    isColor={isColor}
+                  />
                 ))}
               </div>
               <p className={styles.price_text}>Стара ціна:</p>
@@ -81,7 +91,9 @@ const HeroBlock = ({
               </p>
               <div className={styles.size}>
                 <p className={styles.size_text}>Розмір:</p>
-                <p className={styles.size_table} onClick={handleSizetable}>таблиця розмірів</p>
+                <p className={styles.size_table} onClick={handleSizetable}>
+                  таблиця розмірів
+                </p>
               </div>
               <div className={styles.select}>
                 <Select selected={selected} setSelected={setSelected} />
@@ -99,7 +111,13 @@ const HeroBlock = ({
               {data.map(
                 (el) =>
                   isColor === el.color && (
-                    <img src={el.hero_img} key={el.id} alt="" className={styles.img} />
+                    <img
+                      draggable="false"
+                      src={el.hero_img}
+                      key={el.id}
+                      alt=""
+                      className={styles.img}
+                    />
                   )
               )}
             </div>

@@ -15,13 +15,13 @@ const HeaderBlock = ({
     setIsVivsibleCart(true);
   };
   return (
-    <div className={styles.wrapper}>
+    <div className={cn(styles.wrapper)}>
       <div className={styles.content}>
         <p className={styles.text}>{title}</p>
         <div className={styles.content_button}>
           <div className={cn(styles.cart,isVisibleNotificationAddtoCart && styles.active)} onClick={handleCart}>
             <p className={styles.img_text}>{qty}</p>
-            <img className={styles.img} src={img} alt="" />
+            <img draggable="false" className={styles.img} src={img} alt="" />
           </div>
         </div>
       </div>

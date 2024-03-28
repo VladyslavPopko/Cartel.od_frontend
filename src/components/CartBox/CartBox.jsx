@@ -1,10 +1,20 @@
 import styles from "./style.module.scss";
 
 const CartBox = (props) => {
-  const { img, title, color, size, count, old_price, price,onClickInc, onClickDec } = props;
+  const {
+    img,
+    title,
+    color,
+    size,
+    count,
+    old_price,
+    price,
+    onClickInc,
+    onClickDec,
+  } = props;
   return (
     <div className={styles.section}>
-      <img className={styles.img} src={img} alt="" />
+      <img draggable="false" className={styles.img} src={img} alt="" />
       <div className={styles.list}>
         <p className={styles.title}>{title}</p>
         <p className={styles.text_color}>Колір:</p>
@@ -13,9 +23,13 @@ const CartBox = (props) => {
         <p className={styles.price_old}>{old_price} ₴</p>
         <div className={styles.list_item}>
           <div className={styles.list_item_left}>
-            <span onClick={onClickDec} className={styles.decrement}>-</span>
+            <span onClick={onClickDec} className={styles.decrement}>
+              -
+            </span>
             <span className={styles.input}>{count} </span>
-            <span onClick={onClickInc} className={styles.increment}>+</span>
+            <span onClick={onClickInc} className={styles.increment}>
+              +
+            </span>
           </div>
           <div className={styles.list_item_right}>
             <p className={styles.price}>{price} ₴</p>

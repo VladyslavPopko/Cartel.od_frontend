@@ -12,17 +12,17 @@ const ReviewBlock = ({ handleReview }) => {
       <div className={styles.list}>
         <ReviewCart
           img={img1}
-          title="Іван"
+          name="Іван"
           text="Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений"
         />
         <ReviewCart
           img={img2}
-          title="Дмитро"
+          name="Дмитро"
           text="Тепла та комфортна. На весню/осінь - ідеально"
         />
         <ReviewCart
           img={img3}
-          title="Іван"
+          name="Іван"
           text="Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось."
         />
       </div>

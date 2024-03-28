@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import close from "../../img/ThankyouBlock/close.svg";
 import box from "../../img/ThankyouBlock/box.jpg";
-import cn from "classnames"
+import cn from "classnames";
 
 const ThankyouBlock = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
   const handleCloseThankYou = () => {
@@ -14,7 +14,13 @@ const ThankyouBlock = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <img className={styles.close} src={close} alt="" onClick={handleCloseThankYou}/>
+          <img
+            draggable="false"
+            className={styles.close}
+            src={close}
+            alt=""
+            onClick={handleCloseThankYou}
+          />
         </header>
         <main className={styles.main}>
           <h2 className={styles.title}>Дякуємо за замовлення!</h2>
@@ -22,7 +28,7 @@ const ThankyouBlock = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
             Очікуйте на менеджера для уточнення адреси доставки та способу
             оплати
           </h3>
-          <img className={styles.img} src={box} alt="" />
+          <img draggable="false" className={styles.img} src={box} alt="" />
           <h3 className={styles.status}>Стан замовлення: упаковується</h3>
         </main>
       </div>

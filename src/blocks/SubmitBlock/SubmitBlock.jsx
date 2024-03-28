@@ -80,6 +80,7 @@ const SubmitBlock = ({
         <header className={styles.header}>
           <h2 className={styles.title}>Оформлення замовлення</h2>
           <img
+            draggable="false"
             className={styles.close}
             src={close}
             alt=""
@@ -97,7 +98,7 @@ const SubmitBlock = ({
                   Ми зв’яжемося з вами у найближчий час
                 </h4>
               </div>
-              <img src={img} alt="" />
+              <img draggable="false" src={img} alt="" />
             </div>
 
             <Form register={register} errors={errors} />

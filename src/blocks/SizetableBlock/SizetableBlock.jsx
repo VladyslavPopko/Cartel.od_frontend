@@ -8,7 +8,7 @@ const SizetableBlock = ({ setIsVisibleSizetable }) => {
   return (
     <div className={styles.section}>
       <h2 className={styles.title}>Таблиця розмірів</h2>
-      <img onClick={handleSizetable} className={styles.img} src={table} alt="" />
+      <img draggable="false" onClick={handleSizetable} className={styles.img} src={table} alt="" />
     </div>
   );
 };

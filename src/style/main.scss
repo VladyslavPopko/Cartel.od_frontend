@@ -1,18 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '../constanses/constanses.scss';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../constanses/constanses.scss";
 
-*,*::after,*::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-.link{
-    padding: 10px;
-    border: 1px solid black;
-    display: inline-block;
-    
+.link {
+  padding: 10px;
+  border: 1px solid black;
+  display: inline-block;
 }
-.link.active{
-    background-color:black ;
-    color: white;
+.link.active {
+  background-color: black;
+  color: white;
 }
-
-
+html {
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

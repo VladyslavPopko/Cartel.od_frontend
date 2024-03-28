@@ -31,72 +31,80 @@ const Cartblock = ({
       className={cn(styles.wrapper, isVisibleCart && styles.active)}
       onClick={handleCloseCart}
     >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        <header className={styles.header}>
-          <h2 className={styles.header_title}>Кошик</h2>
-          <img
-            className={styles.close}
-            src={close}
-            alt=""
-            onClick={handleCloseCart}
-          />
-        </header>
-        <main className={styles.main}>
-          {qty === 0 && (
-            <div className={styles.cart_free}>
-              <img className={styles.cart_free_img} src={cartImg} alt="" />
-              <h3 className={styles.cart_free_title}>Кошик пустий.</h3>
-              <h4 className={styles.cart_free_text}>
-                Але це можна легко виправити)
-              </h4>
-              <Button
-                text="Продовжити покупки"
-                className={styles.button_continue}
-                onClick={handleCloseCart}
-              />
-            </div>
-          )}
-          {qty > 0 && (
-            <>
-              <div className={styles.main_list}>
-                {cart.map((el) => (
-                  <CartBox
-                    key={el.id}
-                    img={el.img}
-                    title={el.name}
-                    color={el.color}
-                    size={el.size}
-                    count={el.qty}
-                    old_price={el.old_price}
-                    price={el.price}
-                    onClickInc={() => dispatch(incrementQty(el))}
-                    onClickDec={() => dispatch(decrementQty(el))}
-                  />
-                ))}
-              </div>
-              <div className={styles.main_buttons}>
+      <div className={styles.section_content}>
+        <div className={styles.section} onClick={(e) => e.stopPropagation()}>
+          <header className={styles.header}>
+            <h2 className={styles.header_title}>Кошик</h2>
+            <img
+              draggable="false"
+              className={styles.close}
+              src={close}
+              alt=""
+              onClick={handleCloseCart}
+            />
+          </header>
+          <main className={styles.main}>
+            {qty === 0 && (
+              <div className={styles.cart_free}>
+                <img
+                  draggable="false"
+                  className={styles.cart_free_img}
+                  src={cartImg}
+                  alt=""
+                />
+                <h3 className={styles.cart_free_title}>Кошик пустий.</h3>
+                <h4 className={styles.cart_free_text}>
+                  Але це можна легко виправити)
+                </h4>
                 <Button
                   text="Продовжити покупки"
                   className={styles.button_continue}
                   onClick={handleCloseCart}
                 />
-                <div className={styles.main_buttons_right}>
-                  <div className="">
-                    <p className={styles.old_price}>{oldPrice} ₴</p>
-                    <p className={styles.price}>{finalPrice} ₴</p>
-                  </div>
-
-                  <Button
-                    text="Оформити замовлення"
-                    className={styles.button_submit}
-                    onClick={handleOpenSubmit}
-                  />
-                </div>
               </div>
-            </>
-          )}
-        </main>
-        <footer className={styles.footer}></footer>
+            )}
+            {qty > 0 && (
+              <>
+                <div className={styles.main_list}>
+                  {cart.map((el) => (
+                    <CartBox
+                      key={el.id}
+                      img={el.img}
+                      title={el.name}
+                      color={el.color}
+                      size={el.size}
+                      count={el.qty}
+                      old_price={el.old_price}
+                      price={el.price}
+                      onClickInc={() => dispatch(incrementQty(el))}
+                      onClickDec={() => dispatch(decrementQty(el))}
+                    />
+                  ))}
+                </div>
+                <div className={styles.main_buttons}>
+                  <Button
+                    text="Продовжити покупки"
+                    className={styles.button_continue}
+                    onClick={handleCloseCart}
+                  />
+                  <div className={styles.main_buttons_right}>
+                    <div className="">
+                      <p className={styles.old_price}>{oldPrice} ₴</p>
+                      <p className={styles.price}>{finalPrice} ₴</p>
+                    </div>
+
+                    <Button
+                      text="Оформити замовлення"
+                      className={styles.button_submit}
+                      onClick={handleOpenSubmit}
+                    />
+                  </div>
+                </div>
+              </>
+            )}
+          </main>
+          <footer className={styles.footer}></footer>
+        </div>
       </div>
     </div>
   );

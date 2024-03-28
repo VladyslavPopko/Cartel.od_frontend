@@ -61,7 +61,7 @@ const ReviewModalBlock = ({
     >
       <div className={styles.section} onClick={(e) => e.stopPropagation()}>
         <header className={styles.header}>
-          <img src={close} alt="" onClick={handleCloseReview} />
+          <img draggable="false" src={close} alt="" onClick={handleCloseReview} />
         </header>
         <main className={styles.main}>
           <form onSubmit={handleSubmit(onSubmit)}>

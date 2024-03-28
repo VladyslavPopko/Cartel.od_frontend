@@ -22,7 +22,7 @@ const AboutBlock = ({
           </p>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img className={styles.img} src={img1} alt="" />
+              <img draggable="false" className={styles.img} src={img1} alt="" />
             </div>
             <div className={styles.list_item}>
               <p>пРИ ЗАМОЛВЕННІ 2 СОРОЧОК ЗНИЖКА:</p>
@@ -37,7 +37,7 @@ const AboutBlock = ({
           </div>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img className={styles.img} src={img2} alt="" />
+              <img draggable="false" className={styles.img} src={img2} alt="" />
             </div>
             <div className={styles.list_item}>
               <p>пРИ ЗАМОЛВЕННІ 3 СОРОЧОК ЗНИЖКА: </p>
