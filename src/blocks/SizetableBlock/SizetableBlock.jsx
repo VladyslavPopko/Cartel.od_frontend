@@ -1,8 +1,8 @@
 import styles from "./style.module.scss";
-import table from "../../img/SizetableBlock/table.jpg";
+
 
 const SizetableBlock = ({ setIsVisibleSizetable, content }) => {
-  const { title } = content;
+  const { title, img } = content;
   const handleSizetable = () => {
     setIsVisibleSizetable(true);
   };
@@ -13,7 +13,7 @@ const SizetableBlock = ({ setIsVisibleSizetable, content }) => {
         draggable="false"
         onClick={handleSizetable}
         className={styles.img}
-        src={table}
+        src={img}
         alt=""
       />
     </div>

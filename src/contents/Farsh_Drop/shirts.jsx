@@ -20,6 +20,8 @@ import advantageItem4Img from "../../img/_Farsh_Drop/shirts/advantageImg4.svg";
 import advantageItem5Img from "../../img/_Farsh_Drop/shirts/advantageImg5.svg";
 import advantageItem6Img from "../../img/_Farsh_Drop/shirts/advantageImg6.svg";
 
+import table from "../../img/_Farsh_Drop/shirts/table.jpg";
+
 
 export const CONTENT = {
   contentHero: {
@@ -110,6 +112,7 @@ export const CONTENT = {
   },
   contentSizeTable: {
     title: "Таблиця розмірів",
+    img : table,
   },
   contentAdvantage: {
     title: "Наші переваги:",
@@ -146,5 +149,6 @@ export const CONTENT = {
   },
   contentModalSizeTable: {
     title: "Таблиця розмірів",
+    img : table,
   },
 };

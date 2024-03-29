@@ -21,7 +21,7 @@
   position: fixed;
   top: 35px;
   max-width: var(--content-max-width);
-  z-index: 105;
+  z-index: 20;
   transform: scaleY(0);
   text-align: center;
 
@@ -50,16 +50,22 @@
 .submenu {
   opacity: 0;
   transform: scaleY(0);
-  display: none;
   font-size: 16px;
+  display: none;
+  transition: all var(--transition-ms);
   &.active {
     display: flex;
-    opacity: 1;
     transform: scaleY(1);
+    opacity: 1;
+    height: auto;
   }
 }
 @media (max-width: 480px) {
   .section {
     flex-direction: column;
+    width: 100%;
+    height: calc(100% - 55px);
+    justify-content: center;
+    align-items: center;
   }
 }

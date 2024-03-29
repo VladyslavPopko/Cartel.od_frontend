@@ -1,25 +1,26 @@
-import aboutImg1 from "../../img/_Farsh_Drop/shirts/aboutImg1.png";
-import aboutImg2 from "../../img/_Farsh_Drop/shirts/aboutImg2.png";
+import aboutImg1 from "../../img/_Slavs_Drop/sweatshirt_SI/aboutImg1.png";
+import aboutImg2 from "../../img/_Slavs_Drop/sweatshirt_SI/aboutImg2.png";
 
-import description_item1_logo from "../../img/_Farsh_Drop/shirts/descriptionImg1.svg";
-import description_item2_logo from "../../img/_Farsh_Drop/shirts/descriptionImg2.svg";
-import description_item3_logo from "../../img/_Farsh_Drop/shirts/descriptionImg3.svg";
-import description_item4_logo from "../../img/_Farsh_Drop/shirts/descriptionImg4.svg";
+import description_item1_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg1.svg";
+import description_item2_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg2.svg";
+import description_item3_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg3.svg";
+import description_item4_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg4.svg";
 
-import aboutusItem1Img from "../../img/_Farsh_Drop/shirts/aboutUsImg1.svg";
-import aboutusItem2Img from "../../img/_Farsh_Drop/shirts/aboutUsImg2.svg";
+import aboutusItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/aboutUsImg1.svg";
+import aboutusItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/aboutUsImg2.svg";
 
-import reviewItem1Img from "../../img/_Farsh_Drop/shirts/reviewImg1.png";
-import reviewItem2Img from "../../img/_Farsh_Drop/shirts/reviewImg2.png";
-import reviewItem3Img from "../../img/_Farsh_Drop/shirts/reviewImg3.png";
+import reviewItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg1.png";
+import reviewItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg2.png";
+import reviewItem3Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg3.png";
 
-import advantageItem1Img from "../../img/_Farsh_Drop/shirts/advantageImg1.svg";
-import advantageItem2Img from "../../img/_Farsh_Drop/shirts/advantageImg2.svg";
-import advantageItem3Img from "../../img/_Farsh_Drop/shirts/advantageImg3.svg";
-import advantageItem4Img from "../../img/_Farsh_Drop/shirts/advantageImg4.svg";
-import advantageItem5Img from "../../img/_Farsh_Drop/shirts/advantageImg5.svg";
-import advantageItem6Img from "../../img/_Farsh_Drop/shirts/advantageImg6.svg";
+import advantageItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg1.svg";
+import advantageItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg2.svg";
+import advantageItem3Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg3.svg";
+import advantageItem4Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg4.svg";
+import advantageItem5Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg5.svg";
+import advantageItem6Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg6.svg";
 
+import table from "../../img/_Slavs_Drop/sweatshirt_SI/table.jpg";
 
 export const CONTENT = {
   contentHero: {
@@ -110,6 +111,7 @@ export const CONTENT = {
   },
   contentSizeTable: {
     title: "Таблиця розмірів",
+    img: table,
   },
   contentAdvantage: {
     title: "Наші переваги:",
@@ -146,5 +148,6 @@ export const CONTENT = {
   },
   contentModalSizeTable: {
     title: "Таблиця розмірів",
+    img: table,
   },
 };
