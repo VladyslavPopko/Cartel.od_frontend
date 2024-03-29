@@ -31,7 +31,7 @@ const ReviewModalBlock = ({
       name: "",
       email: "",
       tel: "",
-      text: "",
+      price: "",
     },
     resolver: yupResolver(reviewValidationSchema),
     mode: "onChange",
@@ -105,7 +105,7 @@ const ReviewModalBlock = ({
                 </p>
               )}
               <textarea
-                {...register("text")}
+                {...register("price")}
                 type="text"
                 placeholder="Введіть Ваш відгук"
                 className={styles.input}

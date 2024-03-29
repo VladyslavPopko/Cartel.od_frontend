@@ -25,13 +25,16 @@ const cartSlice = createSlice({
         state.items.push({ ...payload, qty: 1, index: index });
       }
       if (state.qty >= 1) {
-        state.items.forEach((el) => (el.price = 849));
+        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
       }
       if (state.qty >= 2) {
-        state.items.forEach((el) => (el.price = 799));
+        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
       }
 
-      state.finalPrice = state.finalPrice + payload.price;
+      state.finalPrice = 0;
+      state.items.map(
+        (el) => (state.finalPrice = state.finalPrice + el.price * el.qty)
+      );
       state.finalOldPrice = state.finalOldPrice + payload.old_price;
       state.qty = state.qty + 1;
     },
@@ -50,25 +53,27 @@ const cartSlice = createSlice({
           item.size === payload.size
       );
       if (item.qty <= 1) {
-        state.items = state.items.filter((item) => item.index !== payload.index);
+        state.items = state.items.filter(
+          (item) => item.index !== payload.index
+        );
         if (state.qty > 1) {
-          state.items.forEach((el) => (el.price = 999));
+          state.items.forEach((el) => (el.price = el.price_const));
         }
         if (state.qty > 2) {
-          state.items.forEach((el) => (el.price = 849));
+          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
         }
         if (state.qty > 3) {
-          state.items.forEach((el) => (el.price = 799));
+          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
         }
       } else {
         if (state.qty > 1) {
-          state.items.forEach((el) => (el.price = 999));
+          state.items.forEach((el) => (el.price = el.price_const));
         }
         if (state.qty > 2) {
-          state.items.forEach((el) => (el.price = 849));
+          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
         }
         if (state.qty > 3) {
-          state.items.forEach((el) => (el.price = 799));
+          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
         }
         item.qty = item.qty - 1;
       }
@@ -87,19 +92,34 @@ const cartSlice = createSlice({
           item.size === payload.size
       );
       if (state.qty >= 1) {
-        state.items.forEach((el) => (el.price = 849));
+        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
       }
       if (state.qty >= 2) {
-        state.items.forEach((el) => (el.price = 799));
+        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
       }
       item.qty = item.qty + 1;
-      state.finalPrice = state.finalPrice + payload.price;
+      state.finalPrice = 0;
+      state.items.map(
+        (el) => (state.finalPrice = state.finalPrice + el.price * el.qty)
+      );
       state.finalOldPrice = state.finalOldPrice + payload.old_price;
       state.qty = state.qty + 1;
+    },
+    deleteCart: (state) => {
+      delete state.items;
+      state.items = [];
+      state.finalPrice = 0;
+      state.finalOldPrice = 0;
+      state.qty = 0;
     },
   },
 });
 
-export const { addToCart, deleteFromCart, incrementQty, decrementQty } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  deleteFromCart,
+  incrementQty,
+  decrementQty,
+  deleteCart,
+} = cartSlice.actions;
 export default cartSlice.reducer;

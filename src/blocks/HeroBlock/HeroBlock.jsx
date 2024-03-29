@@ -6,10 +6,7 @@ import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
 import cn from "classnames";
-import AnimationTranslateXRight from "../../wrappers/AnimationTranslateXRight";
-import AnimationTranslateXLeft from "../../wrappers/AnimationTranslateXLeft";
-import AnimationTranslateXDown from "../../wrappers/AnimationTranslateXDown";
-import AnimationTranslateXUp from "../../wrappers/AnimationTranslateXUp";
+import { memo } from "react";
 
 const HeroBlock = ({
   setIsVisibleSizetable,
@@ -20,39 +17,14 @@ const HeroBlock = ({
   addNotification,
   isColor,
   setIsColor,
+  sizeValue,
 }) => {
-  const { price, old_price, title, subtitle, footer_text } = content;
+  const { price, old_price, title, subtitle, footer_text, size } = content;
+  document.title = `Cartel - ${title} ${subtitle}`;
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     const info = data.filter((el) => el.color === isColor);
-    let size;
-    switch (selected) {
-      case "Розмір: S": {
-        size = "S";
-        break;
-      }
-      case "Розмір: M": {
-        size = "M";
-        break;
-      }
-      case "Розмір: L": {
-        size = "L";
-        break;
-      }
-      case "Розмір: XL": {
-        size = "XL";
-        break;
-      }
-      case "Розмір: XXL": {
-        size = "XXL";
-        break;
-      }
-      default: {
-        size = "Уточнити";
-        break;
-      }
-    }
-    info[0].size = size;
+    info[0].size = sizeValue;
     info.map((e) => dispatch(addToCart(e)));
     addNotification(true);
     setTimeout(addNotification, 2000, false);
@@ -67,64 +39,58 @@ const HeroBlock = ({
         <div className={styles.content}>
           <div className={styles.content_top}>
             <div className={styles.content_top_item}>
-              <AnimationTranslateXUp>
-                <p className={styles.title}>{title}</p>
-                <p className={styles.title}>{subtitle}</p>
-              </AnimationTranslateXUp>
-              <AnimationTranslateXLeft>
-                <p className={styles.text_color}>колір:</p>
-                <div className={styles.color_list}>
-                  {data.map((el) => (
-                    <ColorCircle
-                      color={el.color}
-                      key={el.id}
-                      setIsColor={setIsColor}
-                      isColor={isColor}
-                    />
-                  ))}
-                </div>
-                <p className={styles.price_text}>Стара ціна:</p>
-                <p className={styles.price_old}>{old_price} грн</p>
-                <p className={styles.price}>
-                  <span className={styles.price_select}>{price}</span> грн.
-                </p>
-              </AnimationTranslateXLeft>
-              <AnimationTranslateXDown>
-                <div className={styles.size}>
-                  <p className={styles.size_text}>Розмір:</p>
-                  <p className={styles.size_table} onClick={handleSizetable}>
-                    таблиця розмірів
-                  </p>
-                </div>
-                <div className={styles.select}>
-                  <Select selected={selected} setSelected={setSelected} />
-                </div>
-                <div className={styles.button}>
-                  <Button
-                    onClick={handleAddToCart}
-                    className={styles.btn}
-                    href="#submitForm"
-                    text="В кошик"
+              <p className={styles.title}>{title}</p>
+              <p className={styles.title}>{subtitle}</p>
+
+              <p className={styles.text_color}>колір:</p>
+              <div className={styles.color_list}>
+                {data.map((el) => (
+                  <ColorCircle
+                    color={el.color}
+                    key={el.id}
+                    setIsColor={setIsColor}
+                    isColor={isColor}
                   />
-                </div>
-              </AnimationTranslateXDown>
-            </div>
-            <AnimationTranslateXRight>
-              <div className={styles.content_top_item}>
-                {data.map(
-                  (el) =>
-                    isColor === el.color && (
-                      <img
-                        draggable="false"
-                        src={el.hero_img}
-                        key={el.id}
-                        alt=""
-                        className={styles.img}
-                      />
-                    )
-                )}
+                ))}
               </div>
-            </AnimationTranslateXRight>
+              <p className={styles.price_text}>Стара ціна:</p>
+              <p className={styles.price_old}>{old_price} грн</p>
+              <p className={styles.price}>
+                <span className={styles.price_select}>{price}</span> грн.
+              </p>
+
+              <div className={styles.size}>
+                <p className={styles.size_text}>Розмір:</p>
+                <p className={styles.size_table} onClick={handleSizetable}>
+                  таблиця розмірів
+                </p>
+              </div>
+              <div className={styles.select}>
+                <Select selected={selected} setSelected={setSelected} />
+              </div>
+              <div className={styles.button}>
+                <Button
+                  onClick={handleAddToCart}
+                  className={styles.btn}
+                  text="В кошик"
+                />
+              </div>
+            </div>
+
+            <div className={styles.content_top_item}>
+              {data.map(
+                (el) =>
+                  isColor === el.color && (
+                    <img
+                      draggable="false"
+                      src={el.hero_img}
+                      key={el.id}
+                      alt=""
+                      className={styles.img}
+                    />
+                  )
+              )}
+            </div>
           </div>
           <p className={styles.content_bottom}>{footer_text}</p>
         </div>

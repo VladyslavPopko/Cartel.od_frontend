@@ -7,6 +7,7 @@
     #3e3e3e 100%
   );
   overflow: hidden;
+  padding-bottom: 25px;
 }
 .content {
   font-family: var(--font-family);
@@ -45,19 +46,18 @@
     gap: 10px;
   }
 }
-.list_item:nth-child(1){
+.list_item:nth-child(1) {
   width: 50%;
   text-align: center;
 }
 @media (max-width: 908px) {
-  .list{
+  .list {
     flex-direction: column;
     align-items: center;
   }
-  .list_item:nth-child(1){
+  .list_item:nth-child(1) {
     width: 100%;
   }
-  
 }
 .price {
   &_list {
@@ -85,13 +85,13 @@
         color: var(--select-color);
       }
     }
-
-    
   }
 }
+.select {
+  color: var(--select-color);
+}
 @media (max-width: 480px) {
-  .img{
+  .img {
     width: 100%;
   }
 }
-

@@ -36,7 +36,6 @@
   &:hover {
     background-color: var(--header-color);
     color: var(--header-selected);
-    
   }
 }
 .text {
@@ -46,14 +45,17 @@
 .img {
   width: 36px;
   height: 36px;
-  
+
   &_text {
     border-radius: var(--button-border-radius);
-    background-color: var(--header-selected);
-    color: var(--header-color);
-    padding: 5px;
-    width: 48px;
-    transform: translate(10px, 10px);
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+    width: 20px;
+    /* padding: 0px; */
+    background-color: var(--primary-color);
+    box-shadow: 0 0 2px var(--secondary-color);
+    transform: translate(25px, 19px);
     text-align: center;
   }
 }
@@ -64,22 +66,28 @@
     filter: invert(100%);
   }
 }
-.active{
-  animation: up 0.5s  alternate;
+.active {
+  animation: up 0.5s alternate;
+}
+.menu_hamburger {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: center;
 }
 
-@keyframes up{
-  0%{
+@keyframes up {
+  0% {
     transform: translateY(0);
-  } 
-  50%{
+  }
+  50% {
     transform: translateY(-10%);
-    filter:invert(100%);
+    filter: invert(100%);
   }
-  100%{
+  100% {
     transform: translateY(0);
-    filter:invert(0);
+    filter: invert(0);
   }
 }
-
-

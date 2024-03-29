@@ -1,8 +1,7 @@
 import styles from "./style.module.scss";
-import img1 from "../../img/AboutBlock/img1.png";
-import img2 from "../../img/AboutBlock/img2.png";
 import Box from "../../components/Box/Box";
 import PriceBlock from "../PriceBlock/PriceBlock";
+import { memo } from "react";
 const AboutBlock = ({
   radioId1,
   radioId2,
@@ -15,14 +14,21 @@ const AboutBlock = ({
   const {
     second_title,
     title,
-    subtitle_first,
+    subtitle_first_text1,
+    subtitle_first_text2,
+    subtitle_first_text3,
+    subtitle_second_text1,
+    subtitle_second_text2,
+    subtitle_second_text3,
     subtitle_first_old_price,
     subtitle_first_price,
     subtitle_first_value,
-    subtitle_second,
     subtitle_second_old_price,
     subtitle_second_price,
     subtitle_second_value,
+    subtitle_first_img,
+    subtitle_second_img,
+
   } = content;
   return (
     <div>
@@ -35,10 +41,14 @@ const AboutBlock = ({
           </p>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img draggable="false" className={styles.img} src={img1} alt="" />
+              <img draggable="false" className={styles.img} src={subtitle_first_img} alt="" />
             </div>
             <div className={styles.list_item}>
-              <p>{subtitle_first}</p>
+              <p>
+                {subtitle_first_text1}{" "}
+                <span className={styles.select}>{subtitle_first_text2}</span>
+                {subtitle_first_text3}
+              </p>
               <div className={styles.price_list}>
                 <div className={styles.price_list_item}>
                   <p> {subtitle_first_old_price} </p>
@@ -50,10 +60,14 @@ const AboutBlock = ({
           </div>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img draggable="false" className={styles.img} src={img2} alt="" />
+              <img draggable="false" className={styles.img} src={subtitle_second_img} alt="" />
             </div>
             <div className={styles.list_item}>
-              <p>{subtitle_second}</p>
+              <p>
+                {subtitle_second_text1}{" "}
+                <span className={styles.select}>{subtitle_second_text2}</span>
+                {subtitle_second_text3}
+              </p>
               <div className={styles.price_list}>
                 <div className={styles.price_list_item}>
                   <p>{subtitle_second_old_price}</p>

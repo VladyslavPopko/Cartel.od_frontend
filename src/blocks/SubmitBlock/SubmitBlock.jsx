@@ -4,13 +4,14 @@ import close from "../../img/SubmitBlock/close.svg";
 import Form from "../../components/Form/Form";
 import CartBox from "../../components/CartBox/CartBox";
 import SubmitBox from "../../components/SubmitBox/SubmitBox";
-import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
+import { decrementQty, deleteCart, incrementQty } from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
 import useFetchToGoogle from "../../hooks/useFetchToGoogle";
+import useFetchToCRM from "../../hooks/useFetchToCRM";
 
 const SubmitBlock = ({
   isVisibleSubmit,
@@ -18,7 +19,6 @@ const SubmitBlock = ({
   setIsVisibleThankyou,
   setIsVisibleAssign,
   setIsVisiblePolitics,
-  itemName,
   googleSheet,
   googleList,
   setIsLoading,
@@ -35,7 +35,6 @@ const SubmitBlock = ({
     setIsVisibleSubmit(false);
   };
   const onSubmit = (data) => {
-    console.log(cart);
     cart.map((el) => {
       let formBody = [];
       for (let property in data) {
@@ -43,17 +42,49 @@ const SubmitBlock = ({
         let encodedValue = encodeURIComponent(data[property]);
         formBody.push(encodedKey + "=" + encodedValue);
       }
-      formBody.push("item=" + itemName);
+      formBody.push("item=" + el.category);
       formBody.push("google=" + googleSheet);
       formBody.push("list=" + googleList);
       formBody.push("price=" + el.price);
-      formBody.push("color=" + el.color);
+      formBody.push("color=" + el.id);
       formBody.push("size=" + el.size);
+      formBody.push("count=" + el.qty);
+      formBody.push("vendor=" + el.vendor);
       formBody = formBody.join("&");
+
       useFetchToGoogle(formBody, setIsLoading);
-      console.log(formBody);
+    });
+    const products = [];
+
+    cart.map((el) => {
+      const product_not_exist_vendor_not_exist = {
+        vendor_name: el.vendor, // название поставщика (заменить)
+        product_title: el.full_name, // название нового товара
+        drop_price: 0,
+        price: el.price, // цена продажи товара (заменить)
+        amount: el.qty, // количество товара
+        size_title: el.size, // размер товара (необязательно)
+        size_note: el.color, // примечание к размеру (необязательно)
+      };
+      products.push(product_not_exist_vendor_not_exist);
     });
 
+    const data_prod = {
+      name: data.name, // имя покупателя
+      phone: data.tel, // телефон
+      products: products, // массив с товарами заказа
+      order_source: "", // источник заказа (необязательно)
+      traffic_source: "", // источник трафика (необязательно)
+      utm_source: "", // utm_source (необязательно)
+      utm_medium: "", // utm_medium (необязательно)
+      utm_term: "", // utm_term (необязательно)
+      utm_content: "", // utm_content (необязательно)
+      utm_campaign: "", // utm_campaign (необязательно)
+    };
+
+    useFetchToCRM(data_prod, setIsLoading);
+    dispatch(deleteCart());
+    reset();
     setIsLoading(true);
     setIsVisibleSubmit(false);
     setIsVisibleThankyou(true);

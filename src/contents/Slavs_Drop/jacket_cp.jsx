@@ -1,47 +1,48 @@
-import description_item1_logo from "../../img/DescriptionBlock/img1.svg";
-import description_item2_logo from "../../img/DescriptionBlock/img2.svg";
-import description_item3_logo from "../../img/DescriptionBlock/img3.svg";
-import description_item4_logo from "../../img/DescriptionBlock/img4.svg";
+import aboutImg1 from "../../img/_Farsh_Drop/shirts/aboutImg1.png";
+import aboutImg2 from "../../img/_Farsh_Drop/shirts/aboutImg2.png";
 
-import aboutusItem1Img from "../../img/AboutUsBlock/img1.svg";
-import aboutusItem2Img from "../../img/AboutUsBlock/img2.svg";
+import description_item1_logo from "../../img/_Farsh_Drop/shirts/descriptionImg1.svg";
+import description_item2_logo from "../../img/_Farsh_Drop/shirts/descriptionImg2.svg";
+import description_item3_logo from "../../img/_Farsh_Drop/shirts/descriptionImg3.svg";
+import description_item4_logo from "../../img/_Farsh_Drop/shirts/descriptionImg4.svg";
 
-import reviewItem1Img from "../../img/ReviewBlock/img1.png";
-import reviewItem2Img from "../../img/ReviewBlock/img2.png";
-import reviewItem3Img from "../../img/ReviewBlock/img3.png";
+import aboutusItem1Img from "../../img/_Farsh_Drop/shirts/aboutUsImg1.svg";
+import aboutusItem2Img from "../../img/_Farsh_Drop/shirts/aboutUsImg2.svg";
 
-import advantageItem1Img from "../../img/AdvantageBlock/img1.svg";
-import advantageItem2Img from "../../img/AdvantageBlock/img2.svg";
-import advantageItem3Img from "../../img/AdvantageBlock/img3.svg";
-import advantageItem4Img from "../../img/AdvantageBlock/img4.svg";
-import advantageItem5Img from "../../img/AdvantageBlock/img5.svg";
-import advantageItem6Img from "../../img/AdvantageBlock/img6.svg";
+import reviewItem1Img from "../../img/_Farsh_Drop/shirts/reviewImg1.png";
+import reviewItem2Img from "../../img/_Farsh_Drop/shirts/reviewImg2.png";
+import reviewItem3Img from "../../img/_Farsh_Drop/shirts/reviewImg3.png";
 
-import cartEmptyImg from "../../img/CartBlock/cart.svg";
+import advantageItem1Img from "../../img/_Farsh_Drop/shirts/advantageImg1.svg";
+import advantageItem2Img from "../../img/_Farsh_Drop/shirts/advantageImg2.svg";
+import advantageItem3Img from "../../img/_Farsh_Drop/shirts/advantageImg3.svg";
+import advantageItem4Img from "../../img/_Farsh_Drop/shirts/advantageImg4.svg";
+import advantageItem5Img from "../../img/_Farsh_Drop/shirts/advantageImg5.svg";
+import advantageItem6Img from "../../img/_Farsh_Drop/shirts/advantageImg6.svg";
 
-import submitImg from "../../img/SubmitBlock/img.svg";
-
-import contentImg from "../../img/ThankyouBlock/box.jpg";
 
 export const CONTENT = {
-  contentHeader: {
-    title: "ВЕСНЯНИЙ РОЗПРОДАЖ -60% ВІД СТАРОЇ ЦІНИ",
-  },
   contentHero: {
-    price: "999",
-    old_price: "1 599",
-    title: "Весняна",
-    subtitle: "сорочка в клітинку",
+    price: "2 499",
+    old_price: "3 499",
+    title: "Куртка",
+    subtitle: "Легендарного бренду",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
     title: "Замовляй комплекти",
     second_title: "СОРОЧОК з додатковою знижкою",
-    subtitle_first: "пРИ ЗАМОЛВЕННІ 2 СОРОЧОК ЗНИЖКА:",
+    subtitle_first_img: aboutImg1,
+    subtitle_second_img: aboutImg2,
+    subtitle_first_text1: "пРИ ЗАМОЛВЕННІ ",
+    subtitle_first_text2: "2 СОРОЧОК",
+    subtitle_first_text3: " ЗНИЖКА:",
     subtitle_first_old_price: "1 998 ₴",
     subtitle_first_price: "1 699 ₴",
     subtitle_first_value: "-15%",
-    subtitle_second: "пРИ ЗАМОЛВЕННІ 3 СОРОЧОК ЗНИЖКА:",
+    subtitle_second_text1: "пРИ ЗАМОЛВЕННІ ",
+    subtitle_second_text2: "3 СОРОЧОК",
+    subtitle_second_text3: " ЗНИЖКА:",
     subtitle_second_old_price: "2 997 ₴",
     subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-20%",
@@ -136,39 +137,14 @@ export const CONTENT = {
     item6_text:
       "Оплата за замовлення проводиться після отримання та перевірки товару.",
   },
-  contentCart: {
-    title:"Кошик",
-    empty_img: cartEmptyImg,
-    empty_text: "Кошик пустий.",
-    empty_subtext: "Але це можна легко виправити)",
-  },
-  contentSubmit: {
-    title_name: "Оформлення замовлення",
-    content_title: "Укажіть свої контактні дані",
-    content_text: "Ми зв’яжемося з вами у найближчий час",
-    img: submitImg,
-  },
-  contentThankYou: {
-    title: "Дякуємо за замовлення!" ,
-    text: "Очікуйте на менеджера для уточнення адреси доставки та способу оплати",
-    img: contentImg,
-    status: "Стан замовлення: упаковується",
-  },
+
   contentReviewModal: {
     title: "Залиште ваш відгук",
   },
   contentReviewThankYou: {
     text: "Дякуємо за відгук!",
   },
-  contentAssign: {
-    title: "Користувацька угода",
-    link: "cartel.od.ua",
-  },
-  contentPolitics: {
-    title: "Політика конфіденційності",
-    link:"cartel.od.ua",
-  },
   contentModalSizeTable: {
     title: "Таблиця розмірів",
-  }
+  },
 };

@@ -7,7 +7,6 @@ const Submit = ({
   setIsVisibleThankyou,
   setIsVisibleAssign,
   setIsVisiblePolitics,
-  itemName,
   googleSheet,
   googleList,
   setIsLoading,
@@ -17,7 +16,6 @@ const Submit = ({
     <div>
       <SubmitBlock
         content={content}
-        itemName={itemName}
         googleSheet={googleSheet}
         googleList={googleList}
         setIsLoading={setIsLoading}

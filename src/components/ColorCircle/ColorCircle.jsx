@@ -1,11 +1,8 @@
 import styles from "./style.module.scss";
 import cn from "classnames";
-import "./colors.scss";
+import "../../constanses/colors.scss";
 
-
-const ColorCircle = ({ color,setIsColor,isColor}) => {
-  
-
+const ColorCircle = ({ color, setIsColor, isColor }) => {
   const handleSetColor = () => {
     setIsColor(color);
     // console.log(color);
@@ -44,7 +41,11 @@ const ColorCircle = ({ color,setIsColor,isColor}) => {
     <div className={styles.color_list}>
       <div
         onClick={handleSetColor}
-        className={cn(styles.color_list_item, color,color===isColor && styles.active)}
+        className={cn(
+          styles.color_list_item,
+          color,
+          color === isColor && styles.active
+        )}
       ></div>
       {/* <div onClick={handleSetColorTwo} className={styles.color_list_item}></div>
       <div

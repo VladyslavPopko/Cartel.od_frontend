@@ -8,12 +8,11 @@ const GalleryBlock = ({ isColor, setIsColor, data, content }) => {
     <div className={styles.section}>
       <h2 className={styles.title}>{title}</h2>
       <GaleryListChoose data={data} isColor={isColor} setIsColor={setIsColor} />
-      <div className={styles.list}>
+      <div>
         {data.map(
           (el) =>
             isColor === el.color && (
-              <div key={el.id}>
-                {" "}
+              <div className={styles.list} key={el.id}>
                 <GalleryBox img={el.galery_img1} />
                 <GalleryBox img={el.galery_img2} />
                 <GalleryBox img={el.galery_img3} />
