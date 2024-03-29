@@ -77,7 +77,7 @@ import Img12_galery_img4 from "../../img/_Slavs_Drop/sweatshirt_SI/img12_galery_
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Shirts";
+export const GOOGLE_LIST = "Sweetshirt_SI";
 
 export const S = "S";
 export const M = "M";
@@ -106,12 +106,12 @@ const VENDOR_NAME = "Slavs Drop";
 const price = 1499;
 const old_price = 2099;
 
-export const DATA_SHIRTS = [
+export const DATA = [
   {
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка коричнева",
+    full_name: "Світшот чорний SI",
     id: 1,
     color: ONE,
     price: price,
@@ -128,7 +128,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка чорно біла",
+    full_name: "Світшот жовтий SI",
     id: 2,
     color: TWO,
     price: price,
@@ -145,7 +145,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка жовто чорна",
+    full_name: "Світшот лимонний SI",
     id: 3,
     color: THREE,
     price: price,
@@ -162,7 +162,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка коричнева",
+    full_name: " Світшот блакитний SI",
     id: 4,
     color: FOUR,
     price: price,
@@ -179,7 +179,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка чорно біла",
+    full_name: "Світшот олива SI",
     id: 5,
     color: FIVE,
     price: price,
@@ -196,7 +196,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка жовто чорна",
+    full_name: "Світшот білий SI",
     id: 6,
     color: SIX,
     price: price,
@@ -213,7 +213,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка коричнева",
+    full_name: "Світшот рожевий SI",
     id: 7,
     color: SEVEN,
     price: price,
@@ -230,7 +230,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка чорно біла",
+    full_name: "Світшот зелений SI",
     id: 8,
     color: EIGHT,
     price: price,
@@ -247,7 +247,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка жовто чорна",
+    full_name: "Світшот бежевий SI",
     id: 9,
     color: NINE,
     price: price,
@@ -264,7 +264,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка коричнева",
+    full_name: "Світшот джинс SI",
     id: 10,
     color: TEN,
     price: price,
@@ -281,7 +281,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка чорно біла",
+    full_name: "Світшот синьо-фіолетовий SI",
     id: 11,
     color: ELEVEN,
     price: price,
@@ -298,7 +298,7 @@ export const DATA_SHIRTS = [
     category: category,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Тепла сорочка жовто чорна",
+    full_name: "Світшот ментол SI",
     id: 12,
     color: TWELVE,
     price: price,

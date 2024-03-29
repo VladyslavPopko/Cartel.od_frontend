@@ -42,7 +42,7 @@ const VENDOR_NAME = "Farsh Drop";
 const price = 999;
 const old_price = 1599;
 
-export const DATA_SHIRTS = [
+export const DATA = [
   {
     category: category,
     name: name,

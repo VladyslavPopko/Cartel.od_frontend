@@ -22,7 +22,7 @@ import Main from "../Main";
 import { useState } from "react";
 import { CONTENT } from "../../contents/Slavs_Drop/jacket_cp";
 import {
-  DATA_SHIRTS,
+  DATA,
   GOOGLE_LIST,
   GOOGLE_SHEET,
   L,
@@ -107,7 +107,7 @@ const Jacket_CP = () => {
             isColor={isColor}
             setIsColor={setIsColor}
             addNotification={setisVisibleNotificationAddtoCart}
-            data={DATA_SHIRTS}
+            data={DATA}
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
@@ -120,7 +120,7 @@ const Jacket_CP = () => {
             radioId1="radio1"
             radioId2="radio2"
             radioId3="radio3"
-            data={DATA_SHIRTS}
+            data={DATA}
             selected={selected}
           />
         </AnimationWrapper>
@@ -136,7 +136,7 @@ const Jacket_CP = () => {
         <AnimationWrapper>
           <GalleryBlock
             content={contentGallery}
-            data={DATA_SHIRTS}
+            data={DATA}
             isColor={isColor}
             setIsColor={setIsColor}
           />
@@ -157,7 +157,7 @@ const Jacket_CP = () => {
             radioId1="radio4"
             radioId2="radio5"
             radioId3="radio6"
-            data={DATA_SHIRTS}
+            data={DATA}
             selected={selected}
           />
         </AnimationWrapper>
@@ -168,7 +168,7 @@ const Jacket_CP = () => {
             isColor={isColor}
             setIsColor={setIsColor}
             addNotification={setisVisibleNotificationAddtoCart}
-            data={DATA_SHIRTS}
+            data={DATA}
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
