@@ -1,25 +1,27 @@
-import img1 from "../../img/_Farsh_Drop/shirts/img1.jpg";
-import img2 from "../../img/_Farsh_Drop/shirts/img2.jpg";
-import img3 from "../../img/_Farsh_Drop/shirts/img3.jpg";
+import img1 from "../../img/_Slavs_Drop/hoodie_SI/img1.jpg";
+import img2 from "../../img/_Slavs_Drop/hoodie_SI/img2.jpg";
+import img3 from "../../img/_Slavs_Drop/hoodie_SI/img3.jpg";
 
-import heroImg1 from "../../img/_Farsh_Drop/shirts/heroImg1.png";
-import heroImg2 from "../../img/_Farsh_Drop/shirts/heroImg2.png";
-import heroImg3 from "../../img/_Farsh_Drop/shirts/heroImg3.png";
 
-import Img1_galery_img1 from "../../img/_Farsh_Drop/shirts/img1_galery_img1.jpg";
-import Img1_galery_img2 from "../../img/_Farsh_Drop/shirts/img1_galery_img2.jpg";
-import Img1_galery_img3 from "../../img/_Farsh_Drop/shirts/img1_galery_img3.jpg";
-import Img1_galery_img4 from "../../img/_Farsh_Drop/shirts/img1_galery_img4.jpg";
+import heroImg1 from "../../img/_Slavs_Drop/hoodie_SI/heroImg1.png";
+import heroImg2 from "../../img/_Slavs_Drop/hoodie_SI/heroImg2.png";
+import heroImg3 from "../../img/_Slavs_Drop/hoodie_SI/heroImg3.png";
+import heroImg4 from "../../img/_Slavs_Drop/hoodie_SI/heroImg4.png";
 
-import Img2_galery_img1 from "../../img/_Farsh_Drop/shirts/img2_galery_img1.jpg";
-import Img2_galery_img2 from "../../img/_Farsh_Drop/shirts/img2_galery_img2.jpg";
-import Img2_galery_img3 from "../../img/_Farsh_Drop/shirts/img2_galery_img3.jpg";
-import Img2_galery_img4 from "../../img/_Farsh_Drop/shirts/img2_galery_img4.jpg";
+import Img1_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img1.jpg";
+import Img1_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img2.jpg";
+import Img1_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img3.jpg";
+import Img1_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img4.jpg";
 
-import Img3_galery_img1 from "../../img/_Farsh_Drop/shirts/img3_galery_img1.jpg";
-import Img3_galery_img2 from "../../img/_Farsh_Drop/shirts/img3_galery_img2.jpg";
-import Img3_galery_img3 from "../../img/_Farsh_Drop/shirts/img3_galery_img3.jpg";
-import Img3_galery_img4 from "../../img/_Farsh_Drop/shirts/img3_galery_img4.jpg";
+import Img2_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img1.jpg";
+import Img2_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img2.jpg";
+import Img2_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img3.jpg";
+import Img2_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img4.jpg";
+
+import Img3_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img1.jpg";
+import Img3_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img2.jpg";
+import Img3_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img3.jpg";
+import Img3_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img4.jpg";
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
@@ -105,7 +107,7 @@ export const DATA_SHIRTS = [
     price_const: price,
     old_price: old_price,
     img: img3,
-    hero_img: heroImg3,
+    hero_img: heroImg4,
     galery_img1: Img3_galery_img1,
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
