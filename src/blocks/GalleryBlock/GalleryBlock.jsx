@@ -1,6 +1,7 @@
 import GalleryBox from "../../components/GalleryBox/GalleryBox";
 import styles from "./style.module.scss";
 import GaleryListChoose from "../../components/GaleryListChoose/GaleryListChoose";
+import { memo } from "react";
 
 const GalleryBlock = ({ isColor, setIsColor, data, content }) => {
   const { title } = content;
@@ -25,4 +26,4 @@ const GalleryBlock = ({ isColor, setIsColor, data, content }) => {
   );
 };
 
-export default GalleryBlock;
+export default memo(GalleryBlock);

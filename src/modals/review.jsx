@@ -1,3 +1,4 @@
+import { memo } from "react";
 import ReviewModalBlock from "../blocks/ReviewModalBlock/ReviewModalBlock";
 
 const Review = ({
@@ -26,4 +27,4 @@ const Review = ({
   );
 };
 
-export default Review;
+export default memo(Review);

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
@@ -132,4 +133,4 @@ const PoliticsBlock = ({
   );
 };
 
-export default PoliticsBlock;
+export default memo(PoliticsBlock);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import Cart from "../modals/cart";
 import Submit from "../modals/submit";
 import Thankyou from "../modals/thankyou";
@@ -79,4 +79,4 @@ const Main = ({ children }) => {
   );
 };
 
-export default Main;
+export default memo(Main);

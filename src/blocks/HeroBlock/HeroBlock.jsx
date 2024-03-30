@@ -99,4 +99,4 @@ const HeroBlock = ({
   );
 };
 
-export default HeroBlock;
+export default memo(HeroBlock);

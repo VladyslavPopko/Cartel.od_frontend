@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './style.module.scss'
 
 const Box = (props) => {
@@ -8,4 +8,4 @@ const Box = (props) => {
   )
 }
 
-export default Box
+export default memo(Box);

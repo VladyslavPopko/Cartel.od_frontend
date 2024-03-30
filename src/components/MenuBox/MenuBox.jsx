@@ -2,7 +2,7 @@ import "./style.scss";
 import { NavLink } from "react-router-dom";
 import { MENU } from "../../datas/data";
 import cn from "classnames";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 const MenuBox = ({ isMenu, setIsMenu }) => {
   const menu = MENU;
@@ -37,4 +37,4 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
   );
 };
 
-export default MenuBox;
+export default memo(MenuBox);

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 const AnimationTranslateXRight = ({ children }) => {
   return (
@@ -20,4 +21,4 @@ const AnimationTranslateXRight = ({ children }) => {
   );
 };
 
-export default AnimationTranslateXRight;
+export default memo(AnimationTranslateXRight);

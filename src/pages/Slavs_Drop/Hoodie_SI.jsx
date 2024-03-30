@@ -13,7 +13,7 @@ import NotificationBox from "../../components/NotificationBox/NotificationBox";
 import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
 import agree from "../../img/Notifications/agree.svg";
-import { useState } from "react";
+import { memo, useState } from "react";
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
 
@@ -200,4 +200,4 @@ const Hoodie_SI = () => {
   );
 };
 
-export default Hoodie_SI;
+export default memo(Hoodie_SI);

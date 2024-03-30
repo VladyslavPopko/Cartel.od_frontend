@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Cartblock from "../blocks/CartBlock/Cartblock";
 
 const Cart = ({
@@ -18,4 +19,4 @@ const Cart = ({
   );
 };
 
-export default Cart;
+export default memo(Cart);

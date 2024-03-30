@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 
 const AdvantageBox = (props) => {
@@ -13,4 +14,4 @@ const AdvantageBox = (props) => {
   );
 };
 
-export default AdvantageBox;
+export default memo(AdvantageBox);

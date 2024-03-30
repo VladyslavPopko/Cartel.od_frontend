@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import AdvantageBox from "../../components/AdvantageBox/AdvantageBox";
+import { memo } from "react";
 
 const AdvantageBlock = ({ content }) => {
   const {
@@ -38,4 +39,4 @@ const AdvantageBlock = ({ content }) => {
   );
 };
 
-export default AdvantageBlock;
+export default memo(AdvantageBlock);

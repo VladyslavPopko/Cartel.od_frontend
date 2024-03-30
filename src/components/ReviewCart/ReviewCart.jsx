@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import star from "../../img/ReviewBlock/star.svg";
+import { memo } from "react";
 
 const ReviewCart = (props) => {
   const { img, name, text } = props;
@@ -19,4 +20,4 @@ const ReviewCart = (props) => {
   );
 };
 
-export default ReviewCart;
+export default memo(ReviewCart);

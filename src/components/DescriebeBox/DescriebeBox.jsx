@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 
 const DescriebeBox = (props) => {
@@ -10,4 +11,4 @@ const DescriebeBox = (props) => {
   );
 };
 
-export default DescriebeBox;
+export default memo(DescriebeBox);

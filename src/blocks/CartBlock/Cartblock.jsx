@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { decrementQty, incrementQty } from "../../redux/slices/cartSlice";
 import cn from "classnames";
+import { memo } from "react";
 
 const Cartblock = ({
   isVisibleCart,
@@ -108,4 +109,4 @@ const Cartblock = ({
   );
 };
 
-export default Cartblock;
+export default memo(Cartblock);

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import styles from "./style.module.scss";
 
 const Time = () => {
@@ -50,4 +50,4 @@ const Time = () => {
   );
 };
 
-export default Time;
+export default memo(Time);

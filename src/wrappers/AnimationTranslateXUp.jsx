@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 const AnimationTranslateXUp = ({ children }) => {
   return (
@@ -20,4 +21,4 @@ const AnimationTranslateXUp = ({ children }) => {
   );
 };
 
-export default AnimationTranslateXUp;
+export default memo(AnimationTranslateXUp);

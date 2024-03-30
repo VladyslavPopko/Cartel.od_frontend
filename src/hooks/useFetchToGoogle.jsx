@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { GOOGLE_API } from "../constanses/constanses";
 
 const useFetchToGoogle = (formBody, setIsLoading) => {
@@ -24,4 +25,4 @@ const useFetchToGoogle = (formBody, setIsLoading) => {
   return postData();
 };
 
-export default useFetchToGoogle;
+export default memo(useFetchToGoogle);

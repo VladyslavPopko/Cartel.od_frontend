@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import AssignBlock from "../blocks/AssignBlock/AssignBlock";
 
 const Assign = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
@@ -13,4 +13,4 @@ const Assign = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
   );
 };
 
-export default Assign;
+export default memo(Assign);

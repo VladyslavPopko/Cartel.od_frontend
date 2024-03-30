@@ -16,7 +16,7 @@ const App = () => {
         <Routes>
           {routes.map((el) => (
             <>
-              <Route key={el.path} path={el.path} element={el.element} />
+              <Route key={el.path}  path={el.path} element={el.element} />
               {el.submenu.map((e) => (
                 <Route key={e.path} path={e.path} element={e.element} />
               ))}

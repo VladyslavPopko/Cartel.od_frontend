@@ -16,7 +16,7 @@ import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
 
 import agree from "../../img/Notifications/agree.svg";
-import { useState } from "react";
+import { memo, useState } from "react";
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
 
@@ -203,4 +203,4 @@ const ZipHoodie_SI = () => {
   );
 };
 
-export default ZipHoodie_SI;
+export default memo(ZipHoodie_SI);

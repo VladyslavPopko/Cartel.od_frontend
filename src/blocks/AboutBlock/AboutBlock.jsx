@@ -28,7 +28,6 @@ const AboutBlock = ({
     subtitle_second_value,
     subtitle_first_img,
     subtitle_second_img,
-
   } = content;
   return (
     <div>
@@ -41,7 +40,12 @@ const AboutBlock = ({
           </p>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img draggable="false" className={styles.img} src={subtitle_first_img} alt="" />
+              <img
+                draggable="false"
+                className={styles.img}
+                src={subtitle_first_img}
+                alt=""
+              />
             </div>
             <div className={styles.list_item}>
               <p>
@@ -60,7 +64,12 @@ const AboutBlock = ({
           </div>
           <div className={styles.list}>
             <div className={styles.list_item}>
-              <img draggable="false" className={styles.img} src={subtitle_second_img} alt="" />
+              <img
+                draggable="false"
+                className={styles.img}
+                src={subtitle_second_img}
+                alt=""
+              />
             </div>
             <div className={styles.list_item}>
               <p>
@@ -92,4 +101,4 @@ const AboutBlock = ({
   );
 };
 
-export default AboutBlock;
+export default memo(AboutBlock);

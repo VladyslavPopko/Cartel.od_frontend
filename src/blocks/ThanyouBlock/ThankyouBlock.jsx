@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import close from "../../img/ThankyouBlock/close.svg";
 import cn from "classnames";
+import { memo } from "react";
 
 const ThankyouBlock = ({
   isVisibleThankyou,
@@ -37,4 +38,4 @@ const ThankyouBlock = ({
   );
 };
 
-export default ThankyouBlock;
+export default memo(ThankyouBlock);

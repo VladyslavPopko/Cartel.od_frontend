@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import SubmitBlock from "../blocks/SubmitBlock/SubmitBlock";
 
 const Submit = ({
@@ -29,4 +29,4 @@ const Submit = ({
   );
 };
 
-export default Submit;
+export default memo(Submit);

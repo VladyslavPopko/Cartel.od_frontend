@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import SizetableModalBlock from "../blocks/SizetableModalBlock/SizetableModalBlock";
 
 const SizeTable = ({ isVisibleSizetable, setIsVisibleSizetable, content }) => {
@@ -13,4 +13,4 @@ const SizeTable = ({ isVisibleSizetable, setIsVisibleSizetable, content }) => {
   );
 };
 
-export default SizeTable;
+export default memo(SizeTable);

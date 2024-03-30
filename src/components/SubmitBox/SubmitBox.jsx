@@ -1,17 +1,15 @@
 import { useSelector } from "react-redux";
 import Button from "../Button/Button";
 import styles from "./style.module.scss";
+import { memo } from "react";
 
-const SubmitBox = ({
-  setIsVisibleAssign,
-  setIsVisiblePolitics,
-}) => {
-  const handleViewAssign = () =>{
+const SubmitBox = ({ setIsVisibleAssign, setIsVisiblePolitics }) => {
+  const handleViewAssign = () => {
     setIsVisibleAssign(true);
-  }
-  const handleViewPolitics = () =>{
+  };
+  const handleViewPolitics = () => {
     setIsVisiblePolitics(true);
-  }
+  };
   const qty = useSelector((state) => state.cart.qty);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
   return (
@@ -44,7 +42,7 @@ const SubmitBox = ({
           Положення про збирання та захист персональних даних
         </a>
         <br></br>
-        <a className={styles.link} onClick={handleViewAssign} >
+        <a className={styles.link} onClick={handleViewAssign}>
           Користувальницької угоди
         </a>
       </div>
@@ -52,4 +50,4 @@ const SubmitBox = ({
   );
 };
 
-export default SubmitBox;
+export default memo(SubmitBox);

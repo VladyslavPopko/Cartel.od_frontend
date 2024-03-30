@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 
 
@@ -20,4 +21,4 @@ const SizetableBlock = ({ setIsVisibleSizetable, content }) => {
   );
 };
 
-export default SizetableBlock;
+export default memo(SizetableBlock);

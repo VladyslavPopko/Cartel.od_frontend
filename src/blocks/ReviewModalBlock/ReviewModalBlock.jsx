@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { reviewValidationSchema } from "../../validationSchemas/reviewValidationsSchema";
 import useFetchToGoogle from "../../hooks/useFetchToGoogle";
+import { memo } from "react";
 
 const ReviewModalBlock = ({
   isVisibleReview,
@@ -120,4 +121,4 @@ const ReviewModalBlock = ({
   );
 };
 
-export default ReviewModalBlock;
+export default memo(ReviewModalBlock);

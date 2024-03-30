@@ -7,6 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { radiosValidationSchema } from "../../validationSchemas/radioValidationSchema";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/slices/cartSlice";
+import { memo } from "react";
 
 const PriceBlock = ({
   radioId1,
@@ -123,4 +124,4 @@ const PriceBlock = ({
   );
 };
 
-export default PriceBlock;
+export default memo(PriceBlock);

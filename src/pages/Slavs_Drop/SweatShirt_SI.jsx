@@ -17,7 +17,7 @@ import AnimationWrapper from "../../wrappers/AnimationWrapper";
 
 import agree from "../../img/Notifications/agree.svg";
 import { REVIEW_LIST } from "../../constanses/constanses";
-import { useState } from "react";
+import { memo, useState } from "react";
 import Main from "../Main";
 
 import {
@@ -204,4 +204,4 @@ const Sweatshirt_SI = () => {
   );
 };
 
-export default Sweatshirt_SI;
+export default memo(Sweatshirt_SI);

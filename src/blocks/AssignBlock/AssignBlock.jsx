@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
@@ -283,4 +284,4 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
   );
 };
 
-export default AssignBlock;
+export default memo(AssignBlock);

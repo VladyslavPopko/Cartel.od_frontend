@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 const AnimationTranslateXDown = ({ children }) => {
   return (
@@ -20,4 +21,4 @@ const AnimationTranslateXDown = ({ children }) => {
   );
 };
 
-export default AnimationTranslateXDown;
+export default memo(AnimationTranslateXDown);

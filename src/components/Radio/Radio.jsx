@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
@@ -64,11 +65,12 @@ const Radio = ({ radioId1, radioId2, radioId3, register, errors, content }) => {
           {radio_third_1}
           <span className={styles.select}>{radio_third_2}</span>
           {radio_third_3}
-          <span className={styles.select}>{radio_third_4}</span>{radio_third_5}
+          <span className={styles.select}>{radio_third_4}</span>
+          {radio_third_5}
         </label>
       </div>
     </form>
   );
 };
 
-export default Radio;
+export default memo(Radio);

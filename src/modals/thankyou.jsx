@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ThankyouBlock from "../blocks/ThanyouBlock/ThankyouBlock";
 
 const Thankyou = ({ isVisibleThankyou, setIsVisibleThankyou, content }) => {
@@ -13,4 +13,4 @@ const Thankyou = ({ isVisibleThankyou, setIsVisibleThankyou, content }) => {
   );
 };
 
-export default Thankyou;
+export default memo(Thankyou);

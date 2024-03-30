@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 
 const CartBox = (props) => {
@@ -40,4 +41,4 @@ const CartBox = (props) => {
   );
 };
 
-export default CartBox;
+export default memo(CartBox);

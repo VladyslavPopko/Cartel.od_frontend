@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
@@ -16,4 +17,4 @@ const NotificationBox = (props) => {
   );
 };
 
-export default NotificationBox;
+export default memo(NotificationBox);

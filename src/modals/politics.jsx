@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import PoliticsBlock from "../blocks/PoliticsBlock/PoliticsBlock";
 
 const Politics = ({ isVisiblePolitics, setIsVisiblePolitics, content }) => {
@@ -13,4 +13,4 @@ const Politics = ({ isVisiblePolitics, setIsVisiblePolitics, content }) => {
   );
 };
 
-export default Politics;
+export default memo(Politics);

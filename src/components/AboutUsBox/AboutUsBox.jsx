@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 
 const AboutUsBox = (props) => {
@@ -14,4 +15,4 @@ const AboutUsBox = (props) => {
   );
 };
 
-export default AboutUsBox;
+export default memo(AboutUsBox);

@@ -28,7 +28,7 @@ import {
   XL,
   XXL,
 } from "../../datas/Farsh_Drop/data_shirts";
-import { useState } from "react";
+import { memo, useState } from "react";
 import { CONTENT } from "../../contents/Farsh_Drop/shirts";
 
 import { REVIEW_LIST } from "../../constanses/constanses";
@@ -204,4 +204,4 @@ const Shirts = () => {
   );
 };
 
-export default Shirts;
+export default memo(Shirts);

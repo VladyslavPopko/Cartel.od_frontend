@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import DescriptionItem from "../../components/DescriptionItem/DescriptionItem";
+import { memo } from "react";
 
 const DescriptionBlock = ({ content }) => {
   const {
@@ -60,4 +61,4 @@ const DescriptionBlock = ({ content }) => {
   );
 };
 
-export default DescriptionBlock;
+export default memo(DescriptionBlock);

@@ -2,6 +2,7 @@ import ReviewCart from "../../components/ReviewCart/ReviewCart";
 import styles from "./style.module.scss";
 
 import Button from "../../components/Button/Button";
+import { memo } from "react";
 
 const ReviewBlock = ({ handleReview, content }) => {
   const {
@@ -34,4 +35,4 @@ const ReviewBlock = ({ handleReview, content }) => {
   );
 };
 
-export default ReviewBlock;
+export default memo(ReviewBlock);

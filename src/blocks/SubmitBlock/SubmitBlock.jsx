@@ -12,6 +12,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
 import useFetchToGoogle from "../../hooks/useFetchToGoogle";
 import useFetchToCRM from "../../hooks/useFetchToCRM";
+import { memo } from "react";
 
 const SubmitBlock = ({
   isVisibleSubmit,
@@ -168,4 +169,4 @@ const SubmitBlock = ({
   );
 };
 
-export default SubmitBlock;
+export default memo(SubmitBlock);

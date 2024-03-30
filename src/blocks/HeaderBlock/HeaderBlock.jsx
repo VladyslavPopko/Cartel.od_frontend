@@ -31,4 +31,4 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu }) => {
   );
 };
 
-export default HeaderBlock;
+export default memo(HeaderBlock);

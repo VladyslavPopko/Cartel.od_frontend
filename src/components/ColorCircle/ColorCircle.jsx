@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import cn from "classnames";
 import "../../constanses/colors.scss";
+import { memo } from "react";
 
 const ColorCircle = ({ color, setIsColor, isColor }) => {
   const handleSetColor = () => {
@@ -56,4 +57,4 @@ const ColorCircle = ({ color, setIsColor, isColor }) => {
   );
 };
 
-export default ColorCircle;
+export default memo(ColorCircle);

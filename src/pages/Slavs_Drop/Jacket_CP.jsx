@@ -19,7 +19,7 @@ import agree from "../../img/Notifications/agree.svg";
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
 
-import { useState } from "react";
+import { memo, useState } from "react";
 import { CONTENT } from "../../contents/Slavs_Drop/jacket_cp";
 import {
   DATA,
@@ -203,4 +203,4 @@ const Jacket_CP = () => {
   );
 };
 
-export default Jacket_CP;
+export default memo(Jacket_CP);

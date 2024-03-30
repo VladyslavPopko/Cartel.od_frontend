@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ReviewThankyouBlock from "../blocks/ReviewThankyouBlock/ReviewThankyouBlock";
 
 const ReviewThankyou = ({
@@ -17,4 +17,4 @@ const ReviewThankyou = ({
   );
 };
 
-export default ReviewThankyou;
+export default memo(ReviewThankyou);

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import AboutUsBox from "../../components/AboutUsBox/AboutUsBox";
 import styles from "./style.module.scss";
 
@@ -18,4 +19,4 @@ const AboutUsBlock = ({ content }) => {
   );
 };
 
-export default AboutUsBlock;
+export default memo(AboutUsBlock);

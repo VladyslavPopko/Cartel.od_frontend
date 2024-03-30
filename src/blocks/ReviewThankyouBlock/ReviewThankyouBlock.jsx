@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
@@ -22,4 +23,4 @@ const ReviewThankyouBlock = ({
   );
 };
 
-export default ReviewThankyouBlock;
+export default memo(ReviewThankyouBlock);

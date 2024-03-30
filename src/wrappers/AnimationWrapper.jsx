@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { memo } from "react";
 
 
 const AnimationWrapper = ({ children }) => {
@@ -21,4 +22,4 @@ const AnimationWrapper = ({ children }) => {
   );
 };
 
-export default AnimationWrapper;
+export default memo(AnimationWrapper);
