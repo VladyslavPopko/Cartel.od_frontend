@@ -1,4 +1,12 @@
+.section{
+    overflow: hidden;
+    border-radius: var(--section-border-radius);
+}
 .img{
     width: 100%;
     border-radius: var(--section-border-radius);
+    transition: all var(--transition-ms);
+    &:hover{
+        transform: scale(1.2);
+    }
 }

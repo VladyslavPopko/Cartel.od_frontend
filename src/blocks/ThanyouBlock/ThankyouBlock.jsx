@@ -8,6 +8,7 @@ const ThankyouBlock = ({
   setIsVisibleThankyou,
   content,
 }) => {
+   
   const {title, text, img, status} = content;
   const handleCloseThankYou = () => {
     setIsVisibleThankyou(false);

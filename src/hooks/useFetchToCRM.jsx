@@ -28,4 +28,4 @@ const useFetchToCRM = (data, setIsLoading) => {
   return postData();
 };
 
-export default memo(useFetchToCRM);
+export default useFetchToCRM;

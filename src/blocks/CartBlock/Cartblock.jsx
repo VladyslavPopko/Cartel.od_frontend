@@ -25,6 +25,9 @@ const Cartblock = ({
   const handleOpenSubmit = () => {
     setIsVivsibleCart(false);
     setIsVisibleSubmit(true);
+    // start facebook event pixel
+    // fbq("track", "InitiateCheckout");
+    // end facebook event pixel
   };
 
   return (

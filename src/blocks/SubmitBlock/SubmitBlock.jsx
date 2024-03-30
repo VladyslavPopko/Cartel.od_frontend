@@ -4,7 +4,11 @@ import close from "../../img/SubmitBlock/close.svg";
 import Form from "../../components/Form/Form";
 import CartBox from "../../components/CartBox/CartBox";
 import SubmitBox from "../../components/SubmitBox/SubmitBox";
-import { decrementQty, deleteCart, incrementQty } from "../../redux/slices/cartSlice";
+import {
+  decrementQty,
+  deleteCart,
+  incrementQty,
+} from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 import { useForm } from "react-hook-form";
@@ -89,6 +93,9 @@ const SubmitBlock = ({
     setIsLoading(true);
     setIsVisibleSubmit(false);
     setIsVisibleThankyou(true);
+    // start facebook event pixel
+    // fbq("track", "Purchase");
+    // end facebook event pixel
   };
 
   const {

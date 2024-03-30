@@ -25,10 +25,14 @@ const cartSlice = createSlice({
         state.items.push({ ...payload, qty: 1, index: index });
       }
       if (state.qty >= 1) {
-        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
+        state.items.forEach(
+          (el) => (el.price = Math.round(el.price_const * 0.85))
+        );
       }
       if (state.qty >= 2) {
-        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
+        state.items.forEach(
+          (el) => (el.price = Math.round(el.price_const * 0.8))
+        );
       }
 
       state.finalPrice = 0;
@@ -37,6 +41,9 @@ const cartSlice = createSlice({
       );
       state.finalOldPrice = state.finalOldPrice + payload.old_price;
       state.qty = state.qty + 1;
+      //start facebook pixels event
+      // fbq("track", "AddToCart");
+      //end facebook pixels event
     },
     deleteFromCart: (state, { payload }) => {
       state.items = state.items.filter((item) => item.id !== payload.id);
@@ -60,20 +67,28 @@ const cartSlice = createSlice({
           state.items.forEach((el) => (el.price = el.price_const));
         }
         if (state.qty > 2) {
-          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
+          state.items.forEach(
+            (el) => (el.price = Math.round(el.price_const * 0.85))
+          );
         }
         if (state.qty > 3) {
-          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
+          state.items.forEach(
+            (el) => (el.price = Math.round(el.price_const * 0.8))
+          );
         }
       } else {
         if (state.qty > 1) {
           state.items.forEach((el) => (el.price = el.price_const));
         }
         if (state.qty > 2) {
-          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
+          state.items.forEach(
+            (el) => (el.price = Math.round(el.price_const * 0.85))
+          );
         }
         if (state.qty > 3) {
-          state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
+          state.items.forEach(
+            (el) => (el.price = Math.round(el.price_const * 0.8))
+          );
         }
         item.qty = item.qty - 1;
       }
@@ -92,10 +107,14 @@ const cartSlice = createSlice({
           item.size === payload.size
       );
       if (state.qty >= 1) {
-        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.85)));
+        state.items.forEach(
+          (el) => (el.price = Math.round(el.price_const * 0.85))
+        );
       }
       if (state.qty >= 2) {
-        state.items.forEach((el) => (el.price = Math.round(el.price_const * 0.8)));
+        state.items.forEach(
+          (el) => (el.price = Math.round(el.price_const * 0.8))
+        );
       }
       item.qty = item.qty + 1;
       state.finalPrice = 0;

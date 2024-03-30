@@ -25,4 +25,4 @@ const useFetchToGoogle = (formBody, setIsLoading) => {
   return postData();
 };
 
-export default memo(useFetchToGoogle);
+export default useFetchToGoogle;
