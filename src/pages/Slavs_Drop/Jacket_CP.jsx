@@ -59,6 +59,7 @@ const Jacket_CP = () => {
     contentReviewModal,
     contentReviewThankYou,
     contentModalSizeTable,
+    sizeArray,
   } = CONTENT;
 
   let size;
@@ -102,6 +103,7 @@ const Jacket_CP = () => {
 
         <AnimationWrapper>
           <HeroBlock
+            sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}

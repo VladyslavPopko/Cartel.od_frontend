@@ -60,6 +60,7 @@ const ZipSweatshirt_SI = () => {
     contentReviewModal,
     contentReviewThankYou,
     contentModalSizeTable,
+    sizeArray,
   } = CONTENT;
 
   let size;
@@ -103,6 +104,7 @@ const ZipSweatshirt_SI = () => {
 
         <AnimationWrapper>
           <HeroBlock
+            sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}

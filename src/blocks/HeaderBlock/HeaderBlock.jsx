@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { memo } from "react";
 import imgham from "../../img/MenuBox/menu.svg";
 import close from "../../img/MenuBox/close.svg";
+import icon from "../../img/icon.jpg";
 
 const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
   const qty = useSelector((state) => state.cart.qty);
@@ -16,6 +17,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
     <div className={cn(styles.wrapper)}>
       <div className={styles.content}>
         <div onClick={handleMenu} className={styles.menu_hamburger}>
+          {/* <img className={styles.logo} src={icon} alt="" /> */}
           <img
             className={cn(styles.hamburger, !isMenu && styles.active)}
             src={imgham}
@@ -26,6 +28,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
             src={close}
             alt=""
           />
+          
           <p>Меню</p>
         </div>
 

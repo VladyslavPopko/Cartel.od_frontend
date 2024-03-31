@@ -56,6 +56,7 @@ const Hoodie_SI = () => {
     contentReviewModal,
     contentReviewThankYou,
     contentModalSizeTable,
+    sizeArray,
   } = CONTENT;
 
   let size;
@@ -99,6 +100,7 @@ const Hoodie_SI = () => {
 
         <AnimationWrapper>
           <HeroBlock
+            sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}
