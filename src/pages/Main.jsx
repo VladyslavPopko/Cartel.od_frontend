@@ -23,6 +23,9 @@ const Main = ({ children }) => {
   const handleMenu = () => {
     setIsMenu(!isMenu);
   };
+  const handleCloseMenu = () => {
+    setIsMenu(false);
+  };
 
   const {
     contentHeader,
@@ -38,11 +41,13 @@ const Main = ({ children }) => {
       <MenuBox isMenu={isMenu} setIsMenu={setIsMenu} />
       {isLoading && <LoadingBox type="bars" color="red" />}
       <HeaderBlock
+        isMenu={isMenu}
         handleMenu={handleMenu}
         content={contentHeader}
         setIsVivsibleCart={setIsVivsibleCart}
       />
-      {children}
+      <div onClick={handleCloseMenu}>{children}</div>
+
       <Cart
         content={contentCart}
         isVisibleCart={isVisibleCart}

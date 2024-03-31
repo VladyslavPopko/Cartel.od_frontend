@@ -23,6 +23,12 @@ import advantageItem6Img from "../../img/_Slavs_Drop/hoodie_SI/advantageImg6.svg
 import table from "../../img/_Slavs_Drop/hoodie_SI/table.jpg";
 
 export const CONTENT = {
+  sizeArray: [
+    { id: 1, value: "S" },
+    { id: 2, value: "M" },
+    { id: 3, value: "L" },
+    { id: 4, value: "XL" },
+  ],
   contentHero: {
     price: "1 749",
     old_price: "2 269",

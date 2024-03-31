@@ -176,4 +176,4 @@ const SubmitBlock = ({
   );
 };
 
-export default memo(SubmitBlock);
+export default SubmitBlock;

@@ -39,4 +39,4 @@ const Form = ({ register, errors }) => {
   );
 };
 
-export default memo(Form);
+export default Form;

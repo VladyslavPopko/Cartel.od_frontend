@@ -1,26 +1,26 @@
-import aboutImg1 from "../../img/_Farsh_Drop/shirts/aboutImg1.png";
-import aboutImg2 from "../../img/_Farsh_Drop/shirts/aboutImg2.png";
+import aboutImg1 from "../../img/_Slavs_Drop/sweatshirt_SI/aboutImg1.png";
+import aboutImg2 from "../../img/_Slavs_Drop/sweatshirt_SI/aboutImg2.png";
 
-import description_item1_logo from "../../img/_Farsh_Drop/shirts/descriptionImg1.svg";
-import description_item2_logo from "../../img/_Farsh_Drop/shirts/descriptionImg2.svg";
-import description_item3_logo from "../../img/_Farsh_Drop/shirts/descriptionImg3.svg";
-import description_item4_logo from "../../img/_Farsh_Drop/shirts/descriptionImg4.svg";
+import description_item1_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg1.svg";
+import description_item2_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg2.svg";
+import description_item3_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg3.svg";
+import description_item4_logo from "../../img/_Slavs_Drop/sweatshirt_SI/descriptionImg4.svg";
 
-import aboutusItem1Img from "../../img/_Farsh_Drop/shirts/aboutUsImg1.svg";
-import aboutusItem2Img from "../../img/_Farsh_Drop/shirts/aboutUsImg2.svg";
+import aboutusItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/aboutUsImg1.svg";
+import aboutusItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/aboutUsImg2.svg";
 
-import reviewItem1Img from "../../img/_Farsh_Drop/shirts/reviewImg1.png";
-import reviewItem2Img from "../../img/_Farsh_Drop/shirts/reviewImg2.png";
-import reviewItem3Img from "../../img/_Farsh_Drop/shirts/reviewImg3.png";
+import reviewItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg1.png";
+import reviewItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg2.png";
+import reviewItem3Img from "../../img/_Slavs_Drop/sweatshirt_SI/reviewImg3.png";
 
-import advantageItem1Img from "../../img/_Farsh_Drop/shirts/advantageImg1.svg";
-import advantageItem2Img from "../../img/_Farsh_Drop/shirts/advantageImg2.svg";
-import advantageItem3Img from "../../img/_Farsh_Drop/shirts/advantageImg3.svg";
-import advantageItem4Img from "../../img/_Farsh_Drop/shirts/advantageImg4.svg";
-import advantageItem5Img from "../../img/_Farsh_Drop/shirts/advantageImg5.svg";
-import advantageItem6Img from "../../img/_Farsh_Drop/shirts/advantageImg6.svg";
+import advantageItem1Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg1.svg";
+import advantageItem2Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg2.svg";
+import advantageItem3Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg3.svg";
+import advantageItem4Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg4.svg";
+import advantageItem5Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg5.svg";
+import advantageItem6Img from "../../img/_Slavs_Drop/sweatshirt_SI/advantageImg6.svg";
 
-import table from "../../img/_Farsh_Drop/shirts/table.jpg";
+import table from "../../img/_Slavs_Drop/sweatshirt_SI/table.jpg";
 
 export const CONTENT = {
   sizeArray: [
@@ -30,10 +30,10 @@ export const CONTENT = {
     { id: 4, value: "XL" },
   ],
   contentHero: {
-    price: "999",
-    old_price: "1 599",
-    title: "Весняна",
-    subtitle: "сорочка в клітинку",
+    price: "1 499",
+    old_price: "2 099",
+    title: "Зіп Світшот",
+    subtitle: "Легендарного бренду",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -68,27 +68,27 @@ export const CONTENT = {
   contentDesciption: {
     title: "Опис товару",
     item1_logo: description_item1_logo,
-    item1_logotext: "Матеріал бавовна",
-    item1_title: "Преміум тканина :",
-    item1_subtitle: "70% Бавовна 30% Поліестер ",
+    item1_logotext: "Зручний крій",
+    item1_title: "Вільний крій",
+    // item1_subtitle: "70% Бавовна 30% Поліестер ",
     item1_text:
-      "Тканина твід - це витончений та вишуканий матеріал, що поєднує в собі класичну елегантність і комфорт сучасності. Її м'яка текстура дарує відчуття приємності при контакті з шкірою, а також забезпечує відмінну вентиляцію та зносостійкість.",
+      "Колекція вільного крою пропонує зручність і стиль у щоденному гардеробі. Розміри від S до XL, кожен зможе знайти ідеально сидячу модель, яка підкреслить їхню індивідуальність.",
     item2_logo: description_item2_logo,
     item2_logotext: "Якісний пошив",
-    item2_title: "Країна виробник: Турречина",
+    item2_title: "Найліпша якість",
     item2_text:
-      "Тканина, виготовлена в Туреччині, вражає своєю вишуканістю та якістю, яка є відбитком майстерності турецьких текстильних виробників. Комбінація традиційних технологій та сучасного дизайну робить її неперевершеним вибором для вишуканих модних виробів.",
+      "Наявні картонні та тканні бірки. QR код пробивається і переходить на головну сторінку certilogo. Тканина не втрачає форму та колір.",
     item3_logo: description_item3_logo,
-    item3_logotext: "Зручний крій",
-    item3_title: "Вільний крій",
+    item3_logotext: "Матеріал бавовна",
+    item3_title: "Преміум тканина :",
     item3_text:
-      "Колекція вільного крою пропонує зручність і стиль у щоденному гардеробі. Розміри від S до XL, кожен зможе знайти ідеально сидячу модель, яка підкреслить їхню індивідуальність.",
+      "Приємний матеріал найвищої якості. Без відмінностей від оригіналу. Тканина не втрачає форму та колір.",
     item4_logo: description_item4_logo,
     item4_logotext: "Приємна тканина",
-    item4_title: "Щільна тепла сорочка",
-    item4_subtitle: "Сезон : весна/осінь",
+    item4_title: "Неперевершена якість",
+    // item4_subtitle: "Сезон : весна/осінь",
     item4_text:
-      "Ця щільна тепла сорочка ідеально підходить для весняних та осінніх днів, коли потрібно трохи більше тепла, але ще не час для важких курток. Виготовлена з високоякісного матеріалу, вона забезпечує комфорт і стиль одночасно.",
+      "Цей світшот ідеально підходить для будь-яких днів, коли потрібно трохи більше тепла. Виготовлен з високоякісного матеріалу, він забезпечує комфорт і стиль одночасно.",
   },
   contentAboutUs: {
     item1_img1: aboutusItem1Img,
@@ -103,14 +103,13 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
+    item1_name: "Ігор",
+    item1_text: "Дякую, переконався, якість дійсно на висоті.",
+    item2_name: "Олег",
+    item2_text: "Топовий світшот, дякую! Патч ідеальний.",
+    item3_name: "Катя",
     item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+      "Замовила хлопцю, не очікувала, що буде насітльки задоволений).",
   },
   contentGallery: {
     title: "Галерея",

@@ -6,6 +6,7 @@ const Hoodie_SILazy = lazy(() => import ("../pages/Slavs_Drop/Hoodie_SI"));
 const ZipHoodie_SILazy = lazy(() => import ("../pages/Slavs_Drop/ZipHoodie_SI"));
 const Sweatshirt_SILazy = lazy(() => import ("../pages/Slavs_Drop/SweatShirt_SI"));
 const Jacket_CPLazy = lazy(() => import ("../pages/Slavs_Drop/Jacket_CP"));
+const ZipSweatshirt_SILazy = lazy(() => import ("../pages/Slavs_Drop/ZipSweatshirt_SI"));
 
 export const MENU = [
   {
@@ -32,6 +33,11 @@ export const MENU = [
         path: "/premium/jackect_cp",
         title: "Jacket CP",
         element:<Jacket_CPLazy />,
+      },
+      {
+        path: "/premium/zipsweatshirt",
+        title: "Zipsweatshirt SI",
+        element:<ZipSweatshirt_SILazy />,
       },
     ],
   },

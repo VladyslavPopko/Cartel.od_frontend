@@ -2,13 +2,7 @@ import React, { memo, useState } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 
-const Select = ({ selected, setSelected }) => {
-  const options = [
-    { id: 1, value: "S" },
-    { id: 2, value: "M" },
-    { id: 3, value: "L" },
-    { id: 4, value: "XL" },
-  ];
+const Select = ({ selected, setSelected, sizeArray }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={cn(styles.select)}>
@@ -20,7 +14,7 @@ const Select = ({ selected, setSelected }) => {
       </div>
       {isOpen && (
         <ul className={styles.select_list}>
-          {options.map((option) => {
+          {sizeArray.map((option) => {
             return (
               <li
                 className={styles.select_list_item}

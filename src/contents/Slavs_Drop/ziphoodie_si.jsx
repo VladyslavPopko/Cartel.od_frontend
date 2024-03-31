@@ -23,10 +23,16 @@ import advantageItem6Img from "../../img/_Slavs_Drop/ziphoodie_SI/advantageImg6.
 import table from "../../img/_Slavs_Drop/ziphoodie_SI/table.jpg";
 
 export const CONTENT = {
+  sizeArray: [
+    { id: 1, value: "S" },
+    { id: 2, value: "M" },
+    { id: 3, value: "L" },
+    { id: 4, value: "XL" },
+  ],
   contentHero: {
     price: "1 949",
     old_price: "2 720",
-    title: "Зіпхуді",
+    title: "Зіп Худі",
     subtitle: "Легендарного бренду",
     footer_text: "втілення якості та стилю",
   },

@@ -18,8 +18,9 @@ const HeroBlock = ({
   isColor,
   setIsColor,
   sizeValue,
+  sizeArray,
 }) => {
-  const { price, old_price, title, subtitle, footer_text, size } = content;
+  const { price, old_price, title, subtitle, footer_text } = content;
   document.title = `Cartel - ${title} ${subtitle}`;
   const dispatch = useDispatch();
   const handleAddToCart = () => {
@@ -66,7 +67,11 @@ const HeroBlock = ({
                 </p>
               </div>
               <div className={styles.select}>
-                <Select selected={selected} setSelected={setSelected} />
+                <Select
+                  sizeArray={sizeArray}
+                  selected={selected}
+                  setSelected={setSelected}
+                />
               </div>
               <div className={styles.button}>
                 <Button

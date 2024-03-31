@@ -16,6 +16,9 @@ import LoadingBox from "../../components/LoadingBox/LoadingBox";
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
 
 import agree from "../../img/Notifications/agree.svg";
+import { REVIEW_LIST } from "../../constanses/constanses";
+import { memo, useState } from "react";
+import Main from "../Main";
 
 import {
   DATA,
@@ -27,14 +30,11 @@ import {
   S,
   XL,
   XXL,
-} from "../../datas/Farsh_Drop/data_shirts";
-import { memo, useState } from "react";
-import { CONTENT } from "../../contents/Farsh_Drop/shirts";
+} from "../../datas/Slavs_Drop/data_zipsweatshirt_si";
 
-import { REVIEW_LIST } from "../../constanses/constanses";
-import Main from "../Main";
+import { CONTENT } from "../../contents/Slavs_Drop/zipsweatshirt_si";
 
-const Shirts = () => {
+const ZipSweatshirt_SI = () => {
   const [selected, setSelected] = useState(null); // size
   const [isColor, setIsColor] = useState(ONE); // color
   const [isLoading, setIsLoading] = useState(false); // loading
@@ -60,7 +60,6 @@ const Shirts = () => {
     contentReviewModal,
     contentReviewThankYou,
     contentModalSizeTable,
-    sizeArray,
   } = CONTENT;
 
   let size;
@@ -104,7 +103,6 @@ const Shirts = () => {
 
         <AnimationWrapper>
           <HeroBlock
-            sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}
@@ -206,4 +204,4 @@ const Shirts = () => {
   );
 };
 
-export default memo(Shirts);
+export default memo(ZipSweatshirt_SI);
