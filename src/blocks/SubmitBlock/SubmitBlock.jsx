@@ -69,7 +69,7 @@ const SubmitBlock = ({
         price: el.price, // цена продажи товара (заменить)
         amount: el.qty, // количество товара
         size_title: el.size, // размер товара (необязательно)
-        size_note: el.color, // примечание к размеру (необязательно)
+        // size_note: el.color, // примечание к размеру (необязательно)
       };
       products.push(product_not_exist_vendor_not_exist);
     });

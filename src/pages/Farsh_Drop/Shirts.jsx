@@ -66,19 +66,19 @@ const Shirts = () => {
   let size;
   switch (selected) {
     case "Розмір: S": {
-      size = S;
+      size = "С";
       break;
     }
     case "Розмір: M": {
-      size = M;
+      size = "М";
       break;
     }
     case "Розмір: L": {
-      size = L;
+      size = "Л";
       break;
     }
     case "Розмір: XL": {
-      size = XL;
+      size = "ХЛ";
       break;
     }
     case "Розмір: XXL": {
