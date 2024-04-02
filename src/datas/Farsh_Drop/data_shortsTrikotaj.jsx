@@ -1,6 +1,6 @@
-import img1 from "../../img/_Farsh_Drop/ShortsTrikotaj/img1.jpg";
-import img2 from "../../img/_Farsh_Drop/ShortsTrikotaj/img2.jpg";
-import img3 from "../../img/_Farsh_Drop/ShortsTrikotaj/img3.jpg";
+// import img1 from "../../img/_Farsh_Drop/ShortsTrikotaj/img1.jpg";
+// import img2 from "../../img/_Farsh_Drop/ShortsTrikotaj/img2.jpg";
+// import img3 from "../../img/_Farsh_Drop/ShortsTrikotaj/img3.jpg";
 
 import heroImg1 from "../../img/_Farsh_Drop/ShortsTrikotaj/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/ShortsTrikotaj/heroImg2.png";
@@ -62,7 +62,7 @@ export const DATA = [
     price: price,
     price_const: price,
     old_price: old_price,
-    img: img1,
+    img: heroImg1,
     hero_img: heroImg1,
     galery_img1: Img1_galery_img1,
     galery_img2: Img1_galery_img2,
@@ -81,7 +81,7 @@ export const DATA = [
     price: price,
     price_const: price,
     old_price: old_price,
-    img: img2,
+    img: heroImg2,
     hero_img: heroImg2,
     galery_img1: Img2_galery_img1,
     galery_img2: Img2_galery_img2,
@@ -100,7 +100,7 @@ export const DATA = [
     price: price,
     price_const: price,
     old_price: old_price,
-    img: img3,
+    img: heroImg3,
     hero_img: heroImg3,
     galery_img1: Img3_galery_img1,
     galery_img2: Img3_galery_img2,
@@ -110,4 +110,4 @@ export const DATA = [
   },
 ];
 
-export const DATA_FARSH_DROP_SHIRTS = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_FARSH_DROP_ShortsTrikotaj = DATA;  // Поменять на имя, для отображения на главной странице

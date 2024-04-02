@@ -135,4 +135,4 @@ export const DATA = [
   },
 ];
 
-export const DATA_SLAVS_DROP_HOODIE_SI = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_SLAVS_DROP_Longsliv_SI = DATA;  // Поменять на имя, для отображения на главной странице

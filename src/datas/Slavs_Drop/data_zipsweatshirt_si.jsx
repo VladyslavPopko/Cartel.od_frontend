@@ -216,4 +216,4 @@ export const DATA = [
   },
 ];
 
-export const DATA_SLAVS_DROP_ZIPSWEATSHIRT_SI = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_SLAVS_DROP_Zipsweatshirt_SI = DATA;  // Поменять на имя, для отображения на главной странице
