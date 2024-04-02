@@ -1,28 +1,28 @@
 
-import heroImg1 from "../../img/_Slavs_Drop/hoodie_SI/heroImg1.png";
-import heroImg2 from "../../img/_Slavs_Drop/hoodie_SI/heroImg2.png";
-import heroImg3 from "../../img/_Slavs_Drop/hoodie_SI/heroImg3.png";
-import heroImg4 from "../../img/_Slavs_Drop/hoodie_SI/heroImg4.png";
+import heroImg1 from "../../img/_Slavs_Drop/Shorts_SI/heroImg1.png";
+import heroImg2 from "../../img/_Slavs_Drop/Shorts_SI/heroImg2.png";
+import heroImg3 from "../../img/_Slavs_Drop/Shorts_SI/heroImg3.png";
+import heroImg4 from "../../img/_Slavs_Drop/Shorts_SI/heroImg4.png";
 
-import Img1_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img1.jpg";
-import Img1_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img2.jpg";
-import Img1_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img3.jpg";
-import Img1_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img1_galery_img4.jpg";
+import Img1_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img1.jpg";
+import Img1_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img2.jpg";
+import Img1_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img3.jpg";
+import Img1_galery_img4 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img4.jpg";
 
-import Img2_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img1.jpg";
-import Img2_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img2.jpg";
-import Img2_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img3.jpg";
-import Img2_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img2_galery_img4.jpg";
+import Img2_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img1.jpg";
+import Img2_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img2.jpg";
+import Img2_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img3.jpg";
+import Img2_galery_img4 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img4.jpg";
 
-import Img3_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img1.jpg";
-import Img3_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img2.jpg";
-import Img3_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img3.jpg";
-import Img3_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img3_galery_img4.jpg";
+import Img3_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img3_galery_img1.jpg";
+import Img3_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img3_galery_img2.jpg";
+import Img3_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img3_galery_img3.jpg";
+import Img3_galery_img4 from "../../img/_Slavs_Drop/Shorts_SI/img3_galery_img4.jpg";
 
-import Img4_galery_img1 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img1.jpg";
-import Img4_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img2.jpg";
-import Img4_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img3.jpg";
-import Img4_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img4.jpg";
+import Img4_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img4_galery_img1.jpg";
+import Img4_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img4_galery_img2.jpg";
+import Img4_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img4_galery_img3.jpg";
+import Img4_galery_img4 from "../../img/_Slavs_Drop/Shorts_SI/img4_galery_img4.jpg";
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";

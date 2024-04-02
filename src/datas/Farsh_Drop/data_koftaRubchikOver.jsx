@@ -1,25 +1,25 @@
-import img1 from "../../img/_Farsh_Drop/shirts/img1.jpg";
-import img2 from "../../img/_Farsh_Drop/shirts/img2.jpg";
-import img3 from "../../img/_Farsh_Drop/shirts/img3.jpg";
+import img1 from "../../img/_Farsh_Drop/KoftaRubchikOver/img1.jpg";
+import img2 from "../../img/_Farsh_Drop/KoftaRubchikOver/img2.jpg";
+import img3 from "../../img/_Farsh_Drop/KoftaRubchikOver/img3.jpg";
 
-import heroImg1 from "../../img/_Farsh_Drop/shirts/heroImg1.png";
-import heroImg2 from "../../img/_Farsh_Drop/shirts/heroImg2.png";
-import heroImg3 from "../../img/_Farsh_Drop/shirts/heroImg3.png";
+import heroImg1 from "../../img/_Farsh_Drop/KoftaRubchikOver/heroImg1.png";
+import heroImg2 from "../../img/_Farsh_Drop/KoftaRubchikOver/heroImg2.png";
+import heroImg3 from "../../img/_Farsh_Drop/KoftaRubchikOver/heroImg3.png";
 
-import Img1_galery_img1 from "../../img/_Farsh_Drop/shirts/img1_galery_img1.jpg";
-import Img1_galery_img2 from "../../img/_Farsh_Drop/shirts/img1_galery_img2.jpg";
-import Img1_galery_img3 from "../../img/_Farsh_Drop/shirts/img1_galery_img3.jpg";
-import Img1_galery_img4 from "../../img/_Farsh_Drop/shirts/img1_galery_img4.jpg";
+import Img1_galery_img1 from "../../img/_Farsh_Drop/KoftaRubchikOver/img1_galery_img1.jpg";
+import Img1_galery_img2 from "../../img/_Farsh_Drop/KoftaRubchikOver/img1_galery_img2.jpg";
+import Img1_galery_img3 from "../../img/_Farsh_Drop/KoftaRubchikOver/img1_galery_img3.jpg";
+import Img1_galery_img4 from "../../img/_Farsh_Drop/KoftaRubchikOver/img1_galery_img4.jpg";
 
-import Img2_galery_img1 from "../../img/_Farsh_Drop/shirts/img2_galery_img1.jpg";
-import Img2_galery_img2 from "../../img/_Farsh_Drop/shirts/img2_galery_img2.jpg";
-import Img2_galery_img3 from "../../img/_Farsh_Drop/shirts/img2_galery_img3.jpg";
-import Img2_galery_img4 from "../../img/_Farsh_Drop/shirts/img2_galery_img4.jpg";
+import Img2_galery_img1 from "../../img/_Farsh_Drop/KoftaRubchikOver/img2_galery_img1.jpg";
+import Img2_galery_img2 from "../../img/_Farsh_Drop/KoftaRubchikOver/img2_galery_img2.jpg";
+import Img2_galery_img3 from "../../img/_Farsh_Drop/KoftaRubchikOver/img2_galery_img3.jpg";
+import Img2_galery_img4 from "../../img/_Farsh_Drop/KoftaRubchikOver/img2_galery_img4.jpg";
 
-import Img3_galery_img1 from "../../img/_Farsh_Drop/shirts/img3_galery_img1.jpg";
-import Img3_galery_img2 from "../../img/_Farsh_Drop/shirts/img3_galery_img2.jpg";
-import Img3_galery_img3 from "../../img/_Farsh_Drop/shirts/img3_galery_img3.jpg";
-import Img3_galery_img4 from "../../img/_Farsh_Drop/shirts/img3_galery_img4.jpg";
+import Img3_galery_img1 from "../../img/_Farsh_Drop/KoftaRubchikOver/img3_galery_img1.jpg";
+import Img3_galery_img2 from "../../img/_Farsh_Drop/KoftaRubchikOver/img3_galery_img2.jpg";
+import Img3_galery_img3 from "../../img/_Farsh_Drop/KoftaRubchikOver/img3_galery_img3.jpg";
+import Img3_galery_img4 from "../../img/_Farsh_Drop/KoftaRubchikOver/img3_galery_img4.jpg";
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
