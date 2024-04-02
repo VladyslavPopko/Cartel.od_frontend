@@ -10,7 +10,7 @@
 }
 .menu {
   width: 200px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
@@ -69,10 +69,12 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+
   cursor: pointer;
   .text {
     font-weight: 400;
-
+    font-size: 18px;
+    transition: all var(--transition-ms);
     &.active {
       font-weight: 600;
     }
@@ -84,8 +86,10 @@
   gap: 2px;
   .text {
     font-weight: 400;
+    font-size: 16px;
     margin-left: 5px;
     cursor: pointer;
+    transition: all var(--transition-ms);
     &:hover {
       text-decoration: underline;
     }
@@ -97,9 +101,11 @@
 .product {
   .text {
     font-weight: 400;
+    font-size: 16px;
     margin-left: 10px;
     color: var(--subtext-color);
     cursor: pointer;
+    transition: all var(--transition-ms);
     &:hover {
       text-decoration: underline;
     }

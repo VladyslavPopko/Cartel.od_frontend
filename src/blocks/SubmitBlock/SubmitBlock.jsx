@@ -47,7 +47,7 @@ const SubmitBlock = ({
         let encodedValue = encodeURIComponent(data[property]);
         formBody.push(encodedKey + "=" + encodedValue);
       }
-      formBody.push("item=" + el.category);
+      formBody.push("item=" + el.page);
       formBody.push("google=" + googleSheet);
       formBody.push("list=" + googleList);
       formBody.push("price=" + el.price);

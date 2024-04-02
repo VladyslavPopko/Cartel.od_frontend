@@ -63,7 +63,7 @@ const ZipHoodie_SI = () => {
   } = CONTENT;
 
   let size;
-  switch (selected) {
+  switch (selected) { // То какие размеры заходят в CRM
     case "Розмір: S": {
       size = S;
       break;

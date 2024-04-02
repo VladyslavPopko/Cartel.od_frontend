@@ -43,14 +43,16 @@ import Img7_galery_img4 from "../../img/_Slavs_Drop/sweatshirt_SI/img7_galery_im
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Sweetshirt_SI";
+export const GOOGLE_LIST = "ZipSweetshirt_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
 
+// Как будут показываться размеры
 export const S = "S";
 export const M = "M";
 export const L = "L";
 export const XL = "XL";
 export const XXL = "XXL";
 
+//Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Чорний";
 export const TWO = "Темно-зелений";
 export const THREE = "Бірюзовий";
@@ -59,21 +61,32 @@ export const FIVE = "Коричневий";
 export const SIX = "Блакитний";
 export const SEVEN = "Білий";
 
-const category = "Стонік";
-const name = "Зіп Світшот Легендарного Бренду";
-const main_title = "Зіп Світшот SI";
-const VENDOR_NAME = "Slavs Drop";
-const price = 1499;
-const old_price = 2099;
-const page = "/premium/zipsweatshirt";
+const category = "Стонік"; // Категория (для фильтра на главной странице)
+const name = "Зіп Світшот Легендарного Бренду"; // Пишется в корзине товара
+const main_title = "Зіп Світшот SI"; // Пишется в фильтре на главной странице и в каталоге
+const VENDOR_NAME = "Slavs Drop"; // Поставщик
+const price = 1499; // цена по которой продаем
+const old_price = 2099; // цена скидки
+const page = "/premium/zipsweatshirt"; // на какой странице находится товар
 
+
+// Как товары называются в CRM
+const full_name1 = "Зіп світшот чорний SI";
+const full_name2 = "Зіп світшот темно-зелений SI";
+const full_name3 = "Зіп світшот бірюзовий SI";
+const full_name4 = "Зіп світшот світло-сірий SI";
+const full_name5 = "Зіп світшот коричневий SI";
+const full_name6 = "Зіп світшот блакитний SI";
+const full_name7 = "Зіп світшот білий SI";
+
+// менять разве что id
 export const DATA = [
   {
     category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот чорний SI",
+    full_name: full_name1,
     id: 1,
     color: ONE,
     price: price,
@@ -92,7 +105,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот темно-зелений SI",
+    full_name: full_name2,
     id: 2,
     color: TWO,
     price: price,
@@ -111,7 +124,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот бірюзовий SI",
+    full_name: full_name3,
     id: 3,
     color: THREE,
     price: price,
@@ -130,7 +143,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот світло-сірий SI",
+    full_name: full_name4,
     id: 4,
     color: FOUR,
     price: price,
@@ -149,7 +162,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот коричневий SI",
+    full_name: full_name5,
     id: 5,
     color: FIVE,
     price: price,
@@ -168,7 +181,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот блакитний SI",
+    full_name: full_name6,
     id: 6,
     color: SIX,
     price: price,
@@ -187,7 +200,7 @@ export const DATA = [
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
-    full_name: "Зіп світшот білий SI",
+    full_name: full_name7,
     id: 7,
     color: SEVEN,
     price: price,
