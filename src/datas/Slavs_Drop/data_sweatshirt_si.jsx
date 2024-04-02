@@ -102,13 +102,16 @@ export const TWELVE = "Ментол";
 
 const category = "sweatshirt_si";
 const name = "Світшот Легендарного Бренду";
+const main_title = "Світшот SI";
 const VENDOR_NAME = "Slavs Drop";
 const price = 1499;
 const old_price = 2099;
+const page = "/premium/sweatshirt_si";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот чорний SI",
@@ -123,9 +126,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот жовтий SI",
@@ -140,9 +145,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот лимонний SI",
@@ -157,9 +164,11 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: " Світшот блакитний SI",
@@ -174,9 +183,11 @@ export const DATA = [
     galery_img2: Img4_galery_img2,
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот олива SI",
@@ -191,9 +202,11 @@ export const DATA = [
     galery_img2: Img5_galery_img2,
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот білий SI",
@@ -208,9 +221,11 @@ export const DATA = [
     galery_img2: Img6_galery_img2,
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот рожевий SI",
@@ -225,9 +240,11 @@ export const DATA = [
     galery_img2: Img7_galery_img2,
     galery_img3: Img7_galery_img3,
     galery_img4: Img7_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот зелений SI",
@@ -242,9 +259,11 @@ export const DATA = [
     galery_img2: Img8_galery_img2,
     galery_img3: Img8_galery_img3,
     galery_img4: Img8_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот бежевий SI",
@@ -259,9 +278,11 @@ export const DATA = [
     galery_img2: Img9_galery_img2,
     galery_img3: Img9_galery_img3,
     galery_img4: Img9_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот джинс SI",
@@ -276,9 +297,11 @@ export const DATA = [
     galery_img2: Img10_galery_img2,
     galery_img3: Img10_galery_img3,
     galery_img4: Img10_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот синьо-фіолетовий SI",
@@ -293,9 +316,11 @@ export const DATA = [
     galery_img2: Img11_galery_img2,
     galery_img3: Img11_galery_img3,
     galery_img4: Img11_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Світшот ментол SI",
@@ -310,5 +335,8 @@ export const DATA = [
     galery_img2: Img12_galery_img2,
     galery_img3: Img12_galery_img3,
     galery_img4: Img12_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_SLAVS_DROP_SWEATSHIRT_SI = DATA;

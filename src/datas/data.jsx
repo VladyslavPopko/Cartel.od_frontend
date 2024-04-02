@@ -15,13 +15,13 @@ const ZipSweatshirt_SILazy = lazy(() =>
 export const MENU = [
   {
     path: "/",
-    title: "Premium одяг",
+    title: "Premium Бренди",
     element: <HomePageLazy />,
     category: [
       {
-        path: "/premium/",
+        path: "",
         title: "Стонік",
-        element: <Hoodie_SILazy />,
+        element: "",
         products: [
           {
             path: "/premium/hoodie_si",
@@ -38,7 +38,7 @@ export const MENU = [
             title: "Sweathshirt SI",
             element: <Sweatshirt_SILazy />,
           },
-          
+
           {
             path: "/premium/zipsweatshirt",
             title: "Zipsweatshirt SI",
@@ -47,37 +47,36 @@ export const MENU = [
         ],
       },
       {
-        path: "/premium/",
+        path: "",
         title: "CP Компани",
-        element: <Hoodie_SILazy />,
+        element: "",
         products: [
           {
             path: "/premium/jackect_cp",
             title: "Jacket CP",
             element: <Jacket_CPLazy />,
           },
-        ]
+        ],
       },
     ],
   },
   {
-    path: "/sorochki",
-    title: "Сорочки",
+    path: "",
+    title: "Чоловікам",
     element: "",
     category: [
       {
         path: "/sorochki/shirts",
-        title: "Весна",
+        title: "Сорочки",
         element: <ShirtsLazy />,
         products: [
-          {
-            path: "/sorochki/shirts",
-            title: "Shirts",
-            element: <ShirtsLazy />,
-          },
-        ]
+          // {
+          //   path: "",
+          //   title: "Сорочки",
+          //   element: ,
+          // },
+        ],
       },
-      
     ],
   },
 ];

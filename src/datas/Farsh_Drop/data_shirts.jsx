@@ -38,13 +38,16 @@ export const THREE = "Жовто-чорний";
 
 const category = "shirts";
 const name = "Весняна сорочка в клітинку";
+const main_title = "Сорочка";
 const VENDOR_NAME = "Farsh Drop";
 const price = 999;
 const old_price = 1599;
+const page = "/sorochki/shirts";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Тепла сорочка коричнева",
@@ -59,9 +62,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Тепла сорочка чорно біла",
@@ -76,9 +81,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Тепла сорочка жовто чорна",
@@ -93,5 +100,8 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_FARSH_DROP_SHIRTS = DATA;

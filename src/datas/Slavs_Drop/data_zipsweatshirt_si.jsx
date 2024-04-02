@@ -1,4 +1,3 @@
-
 import heroImg1 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg1.png";
 import heroImg2 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg2.png";
 import heroImg3 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg3.png";
@@ -6,7 +5,6 @@ import heroImg4 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg4.png";
 import heroImg5 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg5.png";
 import heroImg6 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg6.png";
 import heroImg7 from "../../img/_Slavs_Drop/sweatshirt_SI/heroImg7.png";
-
 
 import Img1_galery_img1 from "../../img/_Slavs_Drop/sweatshirt_SI/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Slavs_Drop/sweatshirt_SI/img1_galery_img2.jpg";
@@ -43,7 +41,6 @@ import Img7_galery_img2 from "../../img/_Slavs_Drop/sweatshirt_SI/img7_galery_im
 import Img7_galery_img3 from "../../img/_Slavs_Drop/sweatshirt_SI/img7_galery_img3.jpg";
 import Img7_galery_img4 from "../../img/_Slavs_Drop/sweatshirt_SI/img7_galery_img4.jpg";
 
-
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
 export const GOOGLE_LIST = "Sweetshirt_SI";
@@ -54,25 +51,26 @@ export const L = "L";
 export const XL = "XL";
 export const XXL = "XXL";
 
-
 export const ONE = "Чорний";
 export const TWO = "Темно-зелений";
 export const THREE = "Бірюзовий";
 export const FOUR = "Світло-сірий";
 export const FIVE = "Коричневий";
 export const SIX = "Блакитний";
-export const SEVEN = "Білий"
-
+export const SEVEN = "Білий";
 
 const category = "zipsweatshirt_si";
 const name = "Зіп Світшот Легендарного Бренду";
+const main_title = "Зіп Світшот SI";
 const VENDOR_NAME = "Slavs Drop";
 const price = 1499;
 const old_price = 2099;
+const page = "/premium/zipsweatshirt";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот чорний SI",
@@ -87,9 +85,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот темно-зелений SI",
@@ -104,9 +104,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот бірюзовий SI",
@@ -121,9 +123,11 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот світло-сірий SI",
@@ -138,9 +142,11 @@ export const DATA = [
     galery_img2: Img4_galery_img2,
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот коричневий SI",
@@ -155,9 +161,11 @@ export const DATA = [
     galery_img2: Img5_galery_img2,
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот блакитний SI",
@@ -172,9 +180,11 @@ export const DATA = [
     galery_img2: Img6_galery_img2,
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп світшот білий SI",
@@ -189,5 +199,8 @@ export const DATA = [
     galery_img2: Img7_galery_img2,
     galery_img3: Img7_galery_img3,
     galery_img4: Img7_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_SLAVS_DROP_ZIPSWEATSHIRT_SI = DATA;

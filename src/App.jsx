@@ -16,13 +16,18 @@ const App = () => {
         <Routes>
           {routes.map((element) => (
             <>
-              <Route key={element.path}  path={element.path} element={element.element} />
+              <Route
+                key={element.path}
+                path={element.path}
+                element={element.element}
+              />
               {element.category.map((el) => (
                 <>
-                <Route key={el.path} path={el.path} element={el.element} />
-                {el.products.map((e)=> (
-                  <Route key={e.path} path={e.path} element={e.element} />
-                ))}
+                  <Route key={el.path} path={el.path} element={el.element} />
+
+                  {el.products.map((e) => (
+                    <Route key={e.path} path={e.path} element={e.element} />
+                  ))}
                 </>
               ))}
             </>

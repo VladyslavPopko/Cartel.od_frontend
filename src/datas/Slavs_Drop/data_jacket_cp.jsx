@@ -55,13 +55,16 @@ export const SIX = "Чорна";
 
 const category = "jacket_cp";
 const name = "Куртка легендарного бренду";
+const main_title = "Куртка CP";
 const VENDOR_NAME = "Slavs Drop";
 const price = 2499;
 const old_price = 3499;
+const page = "/premium/jackect_cp";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка хакі soft-shell CP",
@@ -76,9 +79,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка пісочна soft-shell CP",
@@ -93,9 +98,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка блакитна soft-shell CP",
@@ -110,9 +117,11 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка темно-синій soft-shell CP",
@@ -127,9 +136,11 @@ export const DATA = [
     galery_img2: Img4_galery_img2,
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка бордо soft-shell CP",
@@ -144,9 +155,11 @@ export const DATA = [
     galery_img2: Img5_galery_img2,
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Куртка чорна soft-shell CP",
@@ -161,5 +174,8 @@ export const DATA = [
     galery_img2: Img6_galery_img2,
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_SLAVS_DROP_JACKET_CP = DATA;

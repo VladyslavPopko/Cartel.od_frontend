@@ -9,16 +9,16 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
   const [isCategory, setIsCategory] = useState("category");
   const [isSubCategory, setIsSubCategory] = useState(false);
 
-  const handleToCategory = () => {
-    setIsCategory("category");
-  };
-  const handleToSubCategory = () => {
-    setIsSubCategory(false);
-  };
+  // const handleToCategory = () => {
+  //   setIsCategory("category");
+  // };
+  // const handleToSubCategory = () => {
+  //   setIsSubCategory(false);
+  // };
   return (
     <div className="wrapper">
       <nav className={cn("section", isMenu && "appear")}>
-        <div
+        {/* <div
           onClick={handleToCategory}
           className={cn(
             "back_category",
@@ -32,47 +32,66 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
           className={cn("back_category", isSubCategory && "appear")}
         >
           Назад
-        </div>
+        </div> */}
         {menu.map((element) => (
           <div key={element.title}>
             <div
-              className={cn("category", isCategory === "category" && "appear")}
-              onClick={() => setIsCategory(element.title)}
+              // isCategory === "category" &&
+              className={cn(
+                "category",
+                "appear",
+                isCategory === element.title && "active"
+              )}
+              onClick={() => {
+                setIsCategory(element.title);
+                setIsSubCategory(false);
+              }}
             >
               {element.title}
             </div>
             <div>
               {element.category.map((el) => (
-                <div>
+                <div key={el.title}>
                   <div
                     className={cn(
                       "submenu",
                       isCategory === element.title &&
-                        isSubCategory === false &&
+                        // isSubCategory === false &&
                         "appear"
                     )}
                     key={el.title}
                   >
-                    <div
-                      className="subcategory"
-                      onClick={() => setIsSubCategory(el.title)}
-                    >
-                      {el.title}
-                    </div>
+                    {el.element ? (
+                      <NavLink className="products" to={el.path}>{el.title}</NavLink>
+                    ) : (
+                      <div
+                        className={cn(
+                          "subcategory",
+                          isSubCategory === el.title && "active"
+                        )}
+                        onClick={() => setIsSubCategory(el.title)}
+                      >
+                        {el.title}
+                      </div>
+                    )}
                   </div>
-                  {el.products.map((e) => (
-                    <div
-                      className={cn(
-                        "submenu",
-                        isSubCategory === el.title && "appear"
-                      )}
-                      key={e.title}
-                    >
-                      <NavLink to={e.path} className="subcategory">
-                        {e.title}
-                      </NavLink>
-                    </div>
-                  ))}
+                  {el.products ? (
+                    el.products.map((e) => (
+                      <div
+                        className={cn(
+                          "submenu",
+                          isSubCategory === el.title && "appear"
+                        )}
+                        key={e.title}
+                      >
+                        <NavLink to={e.path} className="products">
+                          {e.title}
+                        </NavLink>
+                      </div>
+                    ))
+                  ) : (
+                    <p> s</p>
+                  )}
                 </div>
               ))}
             </div>

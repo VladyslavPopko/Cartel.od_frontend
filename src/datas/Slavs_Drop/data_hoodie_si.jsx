@@ -41,13 +41,16 @@ export const FOUR = "Червоний";
 
 const category = "hoodie_si";
 const name = "Худі легендарного бренду";
+const main_title = "Худі SI";
 const VENDOR_NAME = "Slavs Drop";
 const price = 1749;
 const old_price = 2269;
+const page = "/premium/hoodie_si";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Худі чорний Black Ghost SI",
@@ -62,9 +65,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Худі фіолетовий SI",
@@ -79,9 +84,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Худі чорний SI",
@@ -96,9 +103,11 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Худі червоний SI",
@@ -113,5 +122,8 @@ export const DATA = [
     galery_img2: Img4_galery_img2,
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_SLAVS_DROP_HOODIE_SI = DATA;

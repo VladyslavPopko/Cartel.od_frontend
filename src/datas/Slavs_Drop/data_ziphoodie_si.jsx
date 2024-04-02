@@ -96,13 +96,16 @@ export const TWELVE = "Кремовий";
 
 const category = "ziphoodie_si";
 const name = "Зіп Худі легендарного бренду";
+const main_title = "Зіп Худі SI";
 const VENDOR_NAME = "Slavs Drop";
 const price = 1949;
 const old_price = 2720;
+const page = "/premium/ziphoodie_si";
 
 export const DATA = [
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі помаранчевий SI",
@@ -117,9 +120,11 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: " Зіп Худі білий SI",
@@ -134,9 +139,11 @@ export const DATA = [
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп худі світло-сірий SI",
@@ -151,9 +158,11 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі лимонний SI",
@@ -168,9 +177,11 @@ export const DATA = [
     galery_img2: Img4_galery_img2,
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі жовтий SI",
@@ -185,9 +196,11 @@ export const DATA = [
     galery_img2: Img5_galery_img2,
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі зелена SI",
@@ -202,9 +215,11 @@ export const DATA = [
     galery_img2: Img6_galery_img2,
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі рожевий SI",
@@ -219,9 +234,11 @@ export const DATA = [
     galery_img2: Img7_galery_img2,
     galery_img3: Img7_galery_img3,
     galery_img4: Img7_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: " Зіп Худі антрацит SI",
@@ -236,9 +253,11 @@ export const DATA = [
     galery_img2: Img8_galery_img2,
     galery_img3: Img8_galery_img3,
     galery_img4: Img8_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі ментол SI",
@@ -253,9 +272,11 @@ export const DATA = [
     galery_img2: Img9_galery_img2,
     galery_img3: Img9_galery_img3,
     galery_img4: Img9_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі джинс SI",
@@ -270,9 +291,11 @@ export const DATA = [
     galery_img2: Img10_galery_img2,
     galery_img3: Img10_galery_img3,
     galery_img4: Img10_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: " Зіп Худі чорний SI",
@@ -287,9 +310,11 @@ export const DATA = [
     galery_img2: Img11_galery_img2,
     galery_img3: Img11_galery_img3,
     galery_img4: Img11_galery_img4,
+    page: page,
   },
   {
     category: category,
+    main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
     full_name: "Зіп Худі кремовий SI",
@@ -304,5 +329,8 @@ export const DATA = [
     galery_img2: Img12_galery_img2,
     galery_img3: Img12_galery_img3,
     galery_img4: Img12_galery_img4,
+    page: page,
   },
 ];
+
+export const DATA_SLAVS_DROP_ZIPHOODIE_SI = DATA;

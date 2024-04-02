@@ -29,7 +29,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
             alt=""
           />
           
-          <p>Меню</p>
+          <p>Каталог</p>
         </div>
 
         <p className={styles.text}>{title}</p>
