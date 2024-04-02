@@ -6,6 +6,7 @@ import { memo } from "react";
 import imgham from "../../img/MenuBox/menu.svg";
 import close from "../../img/MenuBox/close.svg";
 import icon from "../../img/icon.jpg";
+import { NavLink } from "react-router-dom";
 
 const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
   const qty = useSelector((state) => state.cart.qty);
@@ -16,9 +17,12 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
   return (
     <div className={cn(styles.wrapper)}>
       <div className={styles.content}>
-        <div onClick={handleMenu} className={styles.menu_hamburger}>
-          {/* <img className={styles.logo} src={icon} alt="" /> */}
+        <div className={styles.menu_hamburger}>
+          <NavLink className={styles.logo} to="/">
+            <img className={styles.logo} src={icon} alt="" />
+          </NavLink>
           <img
+            onClick={handleMenu}
             className={cn(styles.hamburger, !isMenu && styles.active)}
             src={imgham}
             alt=""
@@ -28,8 +32,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
             src={close}
             alt=""
           />
-          
-          <p>Каталог</p>
+          <p onClick={handleMenu}>Каталог</p>
         </div>
 
         <p className={styles.text}>{title}</p>

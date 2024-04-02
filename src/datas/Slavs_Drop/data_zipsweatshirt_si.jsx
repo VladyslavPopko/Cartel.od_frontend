@@ -59,7 +59,7 @@ export const FIVE = "Коричневий";
 export const SIX = "Блакитний";
 export const SEVEN = "Білий";
 
-const category = "zipsweatshirt_si";
+const category = "Стонік";
 const name = "Зіп Світшот Легендарного Бренду";
 const main_title = "Зіп Світшот SI";
 const VENDOR_NAME = "Slavs Drop";

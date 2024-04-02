@@ -9,13 +9,16 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
   const { img, main_title, price, old_price, page } = element;
   const dispatch = useDispatch();
   const qty = useSelector((state) => state.cart.qty);
+  const [isValue,setIsValue] = useState(false);
 
   useEffect(() => {
-    if (qty) {
+    if (isValue) {
+      dispatch(addToCart(isValue));
+      setIsValue(false);
       setisVisibleNotificationAddtoCart(true);
       setTimeout(setisVisibleNotificationAddtoCart, 2000, false);
     }
-  }, [qty]);
+  }, [isValue]);
 
   return (
     <div className={styles.section}>
@@ -27,7 +30,7 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
           draggable="false"
           className={styles.addToCart}
           src={addToCartImg}
-          onClick={() => dispatch(addToCart(element))}
+          onClick={() => setIsValue(element)}
           alt=""
         />
       </div>

@@ -100,7 +100,7 @@ export const ELEVEN = "Синьо-фіолетовий";
 export const TWELVE = "Ментол";
 
 
-const category = "sweatshirt_si";
+const category = "Стонік";
 const name = "Світшот Легендарного Бренду";
 const main_title = "Світшот SI";
 const VENDOR_NAME = "Slavs Drop";

@@ -36,7 +36,7 @@ export const ONE = "Коричневий";
 export const TWO = "Чорно-білий";
 export const THREE = "Жовто-чорний";
 
-const category = "shirts";
+const category = "Чоловікам";
 const name = "Весняна сорочка в клітинку";
 const main_title = "Сорочка";
 const VENDOR_NAME = "Farsh Drop";

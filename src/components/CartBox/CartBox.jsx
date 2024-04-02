@@ -1,5 +1,6 @@
 import { memo } from "react";
 import styles from "./style.module.scss";
+import { NavLink } from "react-router-dom";
 
 const CartBox = (props) => {
   const {
@@ -12,12 +13,17 @@ const CartBox = (props) => {
     price,
     onClickInc,
     onClickDec,
+    page,
   } = props;
   return (
     <div className={styles.section}>
-      <img draggable="false" className={styles.img} src={img} alt="" />
+      <NavLink className={styles.img_wrapper} to={page}>
+        <img draggable="false" className={styles.img} src={img} alt="" />
+      </NavLink>
       <div className={styles.list}>
-        <p className={styles.title}>{title}</p>
+        <NavLink className={styles.title} to={page}>
+          <p className={styles.title}>{title}</p>
+        </NavLink>
         <p className={styles.text_color}>Колір:</p>
         <p className={styles.color}>{color}</p>
         <p className={styles.size}>Розмір : {size}</p>

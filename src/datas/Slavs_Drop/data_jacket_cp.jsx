@@ -53,7 +53,7 @@ export const FOUR = "Темно-синій";
 export const FIVE = "Бордо";
 export const SIX = "Чорна";
 
-const category = "jacket_cp";
+const category = "CP Компани";
 const name = "Куртка легендарного бренду";
 const main_title = "Куртка CP";
 const VENDOR_NAME = "Slavs Drop";

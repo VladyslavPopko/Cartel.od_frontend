@@ -5,6 +5,10 @@
   font-family: var(--font-family);
   .img {
     max-width: 250px;
+    width: 100%;
+  }
+  .img_wrapper {
+    max-width: 250px;
     width: 40%;
   }
   .list {
@@ -15,6 +19,11 @@
       line-height: 24.38px;
       text-align: left;
       margin-bottom: 10px;
+      text-decoration: none;
+      color: var(--secondary-color);
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .text_color {
       font-size: 16px;
@@ -94,11 +103,10 @@
   }
 }
 @media (max-width: 480px) {
-  .section{
+  .section {
     flex-direction: column;
-    .img{
+    .img_wrapper {
       width: 100%;
     }
   }
-  
 }

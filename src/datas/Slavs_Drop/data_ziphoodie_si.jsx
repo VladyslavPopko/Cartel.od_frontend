@@ -94,7 +94,7 @@ export const TEN = "Джинс";
 export const ELEVEN = "Чорний";
 export const TWELVE = "Кремовий";
 
-const category = "ziphoodie_si";
+const category = "Стонік";
 const name = "Зіп Худі легендарного бренду";
 const main_title = "Зіп Худі SI";
 const VENDOR_NAME = "Slavs Drop";

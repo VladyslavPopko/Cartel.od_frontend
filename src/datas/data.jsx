@@ -25,23 +25,23 @@ export const MENU = [
         products: [
           {
             path: "/premium/hoodie_si",
-            title: "Hoodie SI",
+            title: "Худі SI",
             element: <Hoodie_SILazy />,
           },
           {
             path: "/premium/ziphoodie_si",
-            title: "Ziphoodie SI",
+            title: "Зіп Худі SI",
             element: <ZipHoodie_SILazy />,
           },
           {
             path: "/premium/sweatshirt_si",
-            title: "Sweathshirt SI",
+            title: "Світшот SI",
             element: <Sweatshirt_SILazy />,
           },
 
           {
             path: "/premium/zipsweatshirt",
-            title: "Zipsweatshirt SI",
+            title: "Зіп Світшот SI",
             element: <ZipSweatshirt_SILazy />,
           },
         ],
@@ -53,7 +53,7 @@ export const MENU = [
         products: [
           {
             path: "/premium/jackect_cp",
-            title: "Jacket CP",
+            title: "Куртка CP",
             element: <Jacket_CPLazy />,
           },
         ],
@@ -67,7 +67,7 @@ export const MENU = [
     category: [
       {
         path: "/sorochki/shirts",
-        title: "Сорочки",
+        title: "Сорочка",
         element: <ShirtsLazy />,
         products: [
           // {

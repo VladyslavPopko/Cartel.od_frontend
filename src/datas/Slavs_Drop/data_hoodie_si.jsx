@@ -39,7 +39,7 @@ export const TWO = "Фіолетовий";
 export const THREE = "Чорний";
 export const FOUR = "Червоний";
 
-const category = "hoodie_si";
+const category = "Стонік";
 const name = "Худі легендарного бренду";
 const main_title = "Худі SI";
 const VENDOR_NAME = "Slavs Drop";
