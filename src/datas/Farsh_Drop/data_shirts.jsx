@@ -110,4 +110,4 @@ export const DATA = [
   },
 ];
 
-export const DATA_FARSH_DROP_SHIRTS = DATA;
+export const DATA_FARSH_DROP_SHIRTS = DATA; // Поменять на имя, для отображения на главной странице
