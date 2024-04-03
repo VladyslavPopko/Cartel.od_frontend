@@ -62,8 +62,8 @@ export const TWO = "Украина";
 export const THREE = "Чорний";
 export const FOUR = "Бежевий";
 export const FIVE = "Коричневий";
-export const SIX = "Серый";
-export const SEVEN = "Графит";
+export const SIX = "Сірий";
+export const SEVEN = "Графіт";
 
 const category = "Спортивні костюми"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара

@@ -39,8 +39,8 @@ export const XL = "XL";
 export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
-export const ONE = "Черная";
-export const TWO = "Графит";
+export const ONE = "Чорна";
+export const TWO = "Графіт";
 export const THREE = "Білий";
 export const FOUR = "Молоко";
 

@@ -58,12 +58,12 @@ export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Коричневий";
-export const TWO = "Чорно-білий";
-export const THREE = "Жовто-чорний";
-export const FOUR = "Коричневий";
-export const FIVE = "Чорно-білий";
-export const SIX = "Жовто-чорний";
-export const SEVEN = "Жовто-чорний";
+export const TWO = "Бежевий";
+export const THREE = "Сірий";
+export const FOUR = "Зелений";
+export const FIVE = "Графіт";
+export const SIX = "Чорний";
+export const SEVEN = "Блакитний";
 
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара

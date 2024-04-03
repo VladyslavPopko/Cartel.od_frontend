@@ -32,8 +32,8 @@ export const XL = "XL";
 export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
-export const ONE = "Коричневий";
-export const TWO = "Чорно-білий";
+export const ONE = "Хакі";
+export const TWO = "Чорні";
 
 const category = "Штани"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
