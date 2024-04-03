@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "999",
     old_price: "1 599",
-    title: "Весняна",
-    subtitle: "сорочка в клітинку",
+    title: "Футболка",
+    subtitle: "LONG",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {

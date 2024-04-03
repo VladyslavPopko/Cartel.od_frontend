@@ -32,7 +32,7 @@ export const CONTENT = {
   contentHero: {
     price: "1 749",
     old_price: "2 269",
-    title: "Худі",
+    title: "Штани",
     subtitle: "Легендарного бренду",
     footer_text: "втілення якості та стилю",
   },

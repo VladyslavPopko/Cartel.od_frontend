@@ -34,42 +34,50 @@ import { DATA_SLAVS_DROP_Longsliv_SI } from "../datas/Slavs_Drop/data_longsliv_s
 
 const HomePage = () => {
   const data = [];
-  data.push(DATA_SLAVS_DROP_HOODIE_SI);
-  data.push(DATA_SLAVS_DROP_JACKET_CP);
-  data.push(DATA_SLAVS_DROP_SWEATSHIRT_SI);
-  data.push(DATA_SLAVS_DROP_Sweatshirt_CP);
-  data.push(DATA_SLAVS_DROP_Trousers_CP);
-  data.push(DATA_SLAVS_DROP_Jeans_SI);
-  data.push(DATA_SLAVS_DROP_Shorts_SI);
-  data.push(DATA_SLAVS_DROP_Zipsweatshirt_SI);
-  data.push(DATA_SLAVS_DROP_Longsliv_SI);
+
   data.push(DATA_FARSH_DROP_SHIRTS);
+  data.push(DATA_FARSH_DROP_ShirtLyon);
+
   data.push(DATA_FARSH_DROP_CostumeOverBaza);
   data.push(DATA_FARSH_DROP_CostumeTech);
   data.push(DATA_FARSH_DROP_CostumeParashute);
   data.push(DATA_FARSH_DROP_ComplectOverTrousersTshirt);
-  data.push(DATA_FARSH_DROP_KoftaRubchikOver);
-  data.push(DATA_FARSH_DROP_TrousersZmeyka);
-  data.push(DATA_FARSH_DROP_TrousersKargo);
-  data.push(DATA_FARSH_DROP_TrousersCutSummer);
+
   data.push(DATA_FARSH_DROP_ComplectOverShortsTshirt);
   data.push(DATA_FARSH_DROP_ComplectLampasShortsTshirt);
   data.push(DATA_FARSH_DROP_ComplectSummerRubchik);
   data.push(DATA_FARSH_DROP_ComplectKant);
-  data.push(DATA_FARSH_DROP_ShortsKargoSummer);
+
   data.push(DATA_FARSH_DROP_TshirtOver);
   data.push(DATA_FARSH_DROP_TshirtSummerLong);
+
   data.push(DATA_FARSH_DROP_HoodieZmeykaOver);
+
+  data.push(DATA_FARSH_DROP_KoftaRubchikOver);
+
+  data.push(DATA_FARSH_DROP_TrousersZmeyka);
+  data.push(DATA_FARSH_DROP_TrousersKargo);
+  data.push(DATA_FARSH_DROP_TrousersCutSummer);
+
+  data.push(DATA_FARSH_DROP_ShortsKargoSummer);
   data.push(DATA_FARSH_DROP_ShortsTrikotaj);
   data.push(DATA_FARSH_DROP_ShortsSummerClassic);
   data.push(DATA_FARSH_DROP_ShortsLyon);
-  data.push(DATA_FARSH_DROP_ShirtLyon);
 
+  data.push(DATA_SLAVS_DROP_HOODIE_SI);
+  data.push(DATA_SLAVS_DROP_SWEATSHIRT_SI);
+  data.push(DATA_SLAVS_DROP_Jeans_SI);
+  data.push(DATA_SLAVS_DROP_Shorts_SI);
+  data.push(DATA_SLAVS_DROP_Zipsweatshirt_SI);
+  data.push(DATA_SLAVS_DROP_Longsliv_SI);
 
+  data.push(DATA_SLAVS_DROP_JACKET_CP);
+  data.push(DATA_SLAVS_DROP_Sweatshirt_CP);
+  data.push(DATA_SLAVS_DROP_Trousers_CP);
 
   return (
     <Main>
-      <HomepageBlock data={data}/>
+      <HomepageBlock data={data} />
     </Main>
   );
 };

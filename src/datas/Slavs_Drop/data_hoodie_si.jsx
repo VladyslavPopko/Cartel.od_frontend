@@ -42,11 +42,11 @@ export const THREE = "Чорний";
 export const FOUR = "Червоний";
 
 const category = "Стонік"; // Категория (для фильтра на главной странице)
-const name = "Худі легендарного бренду"; // Пишется в корзине товара
+const name = "Худі SI"; // Пишется в корзине товара
 const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 1749; // цена по которой продаем
-const old_price = 2269; // цена скидки
+const price = 2249; // цена по которой продаем
+const old_price = 2999; // цена скидки
 const page = "/premium/stonik/hoodie_si"; // на какой странице находится товар
 
 // Как товары называются в CRM

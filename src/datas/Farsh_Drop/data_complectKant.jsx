@@ -45,11 +45,11 @@ export const THREE = "Молоко";
 export const FOUR = "Чорний";
 
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
-const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
-const main_title = "Весняни сорочки"; // Пишется в фильтре на главной странице и в каталоге
+const name = "Комплект літній KANT"; // Пишется в корзине товара
+const main_title = "Комплект KANT"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
 const price = 999; // цена по которой продаем
-const old_price = 1599; // цена скидки
+const old_price = 1299; // цена скидки
 const page = "/men/summercomplects/complect_kant"; // на какой странице находится товар
 
 // Как товары называются в CRM

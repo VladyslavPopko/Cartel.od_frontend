@@ -62,11 +62,11 @@ export const SIX = "Блакитний";
 export const SEVEN = "Темно-зелений";
 
 const category = "Стонік"; // Категория (для фильтра на главной странице)
-const name = "Зіп Світшот Легендарного Бренду"; // Пишется в корзине товара
+const name = "Зіп Світшот SI"; // Пишется в корзине товара
 const main_title = "Зіп Світшот SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 1499; // цена по которой продаем
-const old_price = 2099; // цена скидки
+const price = 2399; // цена по которой продаем
+const old_price = 3099; // цена скидки
 const page = "/premium/stonik/zipsweatshirt"; // на какой странице находится товар
 
 

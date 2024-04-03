@@ -55,11 +55,11 @@ export const FIVE = "Бордо";
 export const SIX = "Чорна";
 
 const category = "CP Компани"; // Категория (для фильтра на главной странице)
-const name = "Куртка легендарного бренду"; // Пишется в корзине товара
+const name = "Куртка CP"; // Пишется в корзине товара
 const main_title = "Куртка CP"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 2499; // цена по которой продаем
-const old_price = 3499; // цена скидки
+const price = 2999; // цена по которой продаем
+const old_price = 3999; // цена скидки
 const page = "/premium/cp_company/jackect_cp"; // на какой странице находится товар
 
 // Как товары называются в CRM

@@ -97,11 +97,11 @@ export const ELEVEN = "Чорний";
 export const TWELVE = "Кремовий";
 
 const category = "Стонік"; // Категория (для фильтра на главной странице)
-const name = "Зіп Худі легендарного бренду"; // Пишется в корзине товара
+const name = "Зіп Худі SI"; // Пишется в корзине товара
 const main_title = "Зіп Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 1949; // цена по которой продаем
-const old_price = 2720; // цена скидки
+const price = 2499; // цена по которой продаем
+const old_price = 3199; // цена скидки
 const page = "/premium/stonik/ziphoodie_si"; // на какой странице находится товар
 
 // Как товары называются в CRM

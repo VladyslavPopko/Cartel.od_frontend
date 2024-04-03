@@ -29,11 +29,11 @@ export const ONE = "Хакі";
 export const TWO = "Чорні";
 
 const category = "CP Компани"; // Категория (для фильтра на главной странице)
-const name = "Худі легендарного бренду"; // Пишется в корзине товара
-const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
+const name = "Штани CP"; // Пишется в корзине товара
+const main_title = "Штани CP"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 1749; // цена по которой продаем
-const old_price = 2269; // цена скидки
+const price = 2699; // цена по которой продаем
+const old_price = 3299; // цена скидки
 const page = "/premium/cp_company/trousers_cp"; // на какой странице находится товар
 
 // Как товары называются в CRM

@@ -30,10 +30,10 @@ export const CONTENT = {
     { id: 4, value: "XL" },
   ],
   contentHero: {
-    price: "999",
-    old_price: "1 599",
-    title: "Весняна",
-    subtitle: "сорочка в клітинку",
+    price: "799",
+    old_price: "1 099",
+    title: "Комплект",
+    subtitle: "лампас",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {

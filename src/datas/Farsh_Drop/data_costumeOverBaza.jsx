@@ -38,11 +38,11 @@ export const TWO = "Мокко";
 export const THREE = "Графіт";
 
 const category = "Спортивні костюми"; // Категория (для фильтра на главной странице)
-const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
-const main_title = "Весняни сорочки"; // Пишется в фильтре на главной странице и в каталоге
+const name = "Костюм оверсайз BASE"; // Пишется в корзине товара
+const main_title = "Костюм оверсайз BASE"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 999; // цена по которой продаем
-const old_price = 1599; // цена скидки
+const price = 1149; // цена по которой продаем
+const old_price = 1799; // цена скидки
 const page = "/men/sportcomplects/costume_over_baza"; // на какой странице находится товар
 
 // Как товары называются в CRM

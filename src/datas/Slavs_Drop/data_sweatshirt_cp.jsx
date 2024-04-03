@@ -90,11 +90,11 @@ export const TEN = "Ментол";
 export const ELEVEN = "Хакі";
 
 const category = "CP Компани"; // Категория (для фильтра на главной странице)
-const name = "Худі легендарного бренду"; // Пишется в корзине товара
-const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
+const name = "Світшот CP"; // Пишется в корзине товара
+const main_title = "Світшот CP"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
-const price = 1749; // цена по которой продаем
-const old_price = 2269; // цена скидки
+const price = 2249; // цена по которой продаем
+const old_price = 2999; // цена скидки
 const page = "/premium/cp_company/sweatshirt_cp"; // на какой странице находится товар
 
 // Как товары называются в CRM
