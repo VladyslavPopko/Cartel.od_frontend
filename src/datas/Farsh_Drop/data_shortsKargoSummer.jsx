@@ -37,13 +37,13 @@ export const ONE = "Коричневий";
 export const TWO = "Чорно-білий";
 export const THREE = "Жовто-чорний";
 
-const category = "Сорочки"; // Категория (для фильтра на главной странице)
+const category = "Шорти"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
 const main_title = "Весняни сорочки"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
 const price = 999; // цена по которой продаем
 const old_price = 1599; // цена скидки
-const page = "/men/summercomplects/short_kargo_summer"; // на какой странице находится товар
+const page = "/men/shorts/short_kargo_summer"; // на какой странице находится товар
 
 // Как товары называются в CRM
 const full_name1 = "Шорти карго хакі";

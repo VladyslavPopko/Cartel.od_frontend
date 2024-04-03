@@ -153,6 +153,11 @@ export const MENU = [
             title: "ShortsLyon",
             element: <ShortsLyonLazy />,
           },
+          {
+            path: "/men/shorts/short_kargo_summer",
+            title: "ShortsKargoSummer",
+            element: <ShortsKargoSummerLazy />,
+          },
         ],
       },
       {
@@ -242,11 +247,6 @@ export const MENU = [
             path: "/men/summercomplects/complect_kant",
             title: "ComplectKant",
             element: <ComplectKantLazy />,
-          },
-          {
-            path: "/men/summercomplects/short_kargo_summer",
-            title: "ShortsKargoSummer",
-            element: <ShortsKargoSummerLazy />,
           },
         ],
       },

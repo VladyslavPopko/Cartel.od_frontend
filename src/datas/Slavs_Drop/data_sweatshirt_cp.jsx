@@ -89,7 +89,7 @@ export const NINE = "Бірюзовий";
 export const TEN = "Ментол";
 export const ELEVEN = "Хакі";
 
-const category = "Стонік"; // Категория (для фильтра на главной странице)
+const category = "CP Компани"; // Категория (для фильтра на главной странице)
 const name = "Худі легендарного бренду"; // Пишется в корзине товара
 const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик

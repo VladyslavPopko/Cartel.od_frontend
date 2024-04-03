@@ -28,7 +28,7 @@ export const XXL = "XXL";
 export const ONE = "Хакі";
 export const TWO = "Чорні";
 
-const category = "Стонік"; // Категория (для фильтра на главной странице)
+const category = "CP Компани"; // Категория (для фильтра на главной странице)
 const name = "Худі легендарного бренду"; // Пишется в корзине товара
 const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
