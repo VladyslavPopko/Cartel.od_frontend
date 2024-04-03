@@ -29,7 +29,7 @@ import Img4_galery_img4 from "../../img/_Farsh_Drop/ComplectKant/img4_galery_img
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Shirts"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
+export const GOOGLE_LIST = "ComplectKant"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
 
 // Как будут показываться размеры
 export const S = "S";

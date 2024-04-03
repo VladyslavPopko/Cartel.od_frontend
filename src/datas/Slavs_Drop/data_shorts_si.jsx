@@ -15,7 +15,7 @@ import Img2_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img2.j
 
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Hoodie_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
+export const GOOGLE_LIST = "Shorts_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
 
 // Как будут показываться размеры
 export const S = "S";
