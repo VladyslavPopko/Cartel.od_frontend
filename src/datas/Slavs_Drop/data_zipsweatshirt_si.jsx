@@ -67,7 +67,7 @@ const main_title = "Зіп Світшот SI"; // Пишется в фильтр
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 1499; // цена по которой продаем
 const old_price = 2099; // цена скидки
-const page = "/premium/zipsweatshirt"; // на какой странице находится товар
+const page = "/premium/stonik/zipsweatshirt"; // на какой странице находится товар
 
 
 // Как товары называются в CRM

@@ -50,38 +50,38 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/premium/hoodie_si",
+            path: "/premium/stonik/hoodie_si",
             title: "Худі SI",
             element: <Hoodie_SILazy />,
           },
           {
-            path: "/premium/ziphoodie_si",
+            path: "/premium/stonik/ziphoodie_si",
             title: "Зіп Худі SI",
             element: <ZipHoodie_SILazy />,
           },
           {
-            path: "/premium/sweatshirt_si",
+            path: "/premium/stonik/sweatshirt_si",
             title: "Світшот SI",
             element: <Sweatshirt_SILazy />,
           },
 
           {
-            path: "/premium/zipsweatshirt",
+            path: "/premium/stonik/zipsweatshirt",
             title: "Зіп Світшот SI",
             element: <ZipSweatshirt_SILazy />,
           },
           {
-            path: "/premium/jeans_si",
+            path: "/premium/stonik/jeans_si",
             title: "Jeans_SI",
             element: <Jeans_SILazy />,
           },
           {
-            path: "/premium/shorts_si",
+            path: "/premium/stonik/shorts_si",
             title: "Shorts_SI",
             element: <Shorts_SILazy />,
           },
           {
-            path: "/premium/longsliv_si",
+            path: "/premium/stonik/longsliv_si",
             title: "Longsliv_SI",
             element: <Longsliv_SILazy />,
           },
@@ -93,17 +93,17 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/premium/jackect_cp",
+            path: "/premium/cp_company/jackect_cp",
             title: "Куртка CP",
             element: <Jacket_CPLazy />,
           },
           {
-            path: "/premium/sweatshirt_cp",
+            path: "/premium/cp_company/sweatshirt_cp",
             title: "Sweatshirt_CP",
             element: <Sweatshirt_CPLazy />,
           },
           {
-            path: "/premium/trousers_cp",
+            path: "/premium/cp_company/trousers_cp",
             title: "Trousers_CP",
             element: <Trousers_CPLazy />,
           },
@@ -122,12 +122,12 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/sorochki/shirts",
+            path: "/men/sorochki/shirts",
             title: "Весняни сорочки",
             element: <ShirtsLazy />,
           },
           {
-            path: "/sorochki/shirt_lyon",
+            path: "/men/sorochki/shirt_lyon",
             title: "ShirtLyon",
             element: <ShirtLyonLazy />,
           },
@@ -139,17 +139,17 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/shorts/shorts_trikotaj",
+            path: "/men/shorts/shorts_trikotaj",
             title: "ShortsTrikotaj",
             element: <ShortsTrikotajLazy />,
           },
           {
-            path: "/shorts/shorts_summer_classic",
+            path: "/men/shorts/shorts_summer_classic",
             title: "ShortsSummerClassic",
             element: <ShortsSummerClassicLazy />,
           },
           {
-            path: "/shorts/shorts_lyon",
+            path: "/men/shorts/shorts_lyon",
             title: "ShortsLyon",
             element: <ShortsLyonLazy />,
           },
@@ -161,7 +161,7 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/hoodie/hoodie_zmeyka",
+            path: "/men/hoodie/hoodie_zmeyka",
             title: "HoodieZmeykaOver",
             element: <HoodieZmeykaOverLazy />,
           },
@@ -173,17 +173,17 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/trousers/trousers_zmeyka",
+            path: "/men/trousers/trousers_zmeyka",
             title: "TrousersZmeyka",
             element: <TrousersZmeykaLazy />,
           },
           {
-            path: "/trousers/trousers_kargo",
+            path: "/men/trousers/trousers_kargo",
             title: "TrousersKargo",
             element: <TrousersKargoLazy />,
           },
           {
-            path: "/trousers/trouser_cut_summer",
+            path: "/men/trousers/trouser_cut_summer",
             title: "TrousersCutSummer",
             element: <TrousersCutSummerLazy />,
           },
@@ -195,7 +195,7 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/longsliv/kofta_rubchik_over",
+            path: "/men/longsliv/kofta_rubchik_over",
             title: "KoftaRubchikOver",
             element: <KoftaRubchikOverLazy />,
           },
@@ -207,12 +207,12 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/tshirts/tshirt_over",
+            path: "/men/tshirts/tshirt_over",
             title: "TshirtOver",
             element: <TshirtOverLazy />,
           },
           {
-            path: "/tshirts/tshirt_summer_long",
+            path: "/men/tshirts/tshirt_summer_long",
             title: "TshirtSummerLong",
             element: <TshirtSummerLongLazy />,
           },
@@ -224,27 +224,27 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/summercomplects/complect_over_shorts_tshirt",
+            path: "/men/summercomplects/complect_over_shorts_tshirt",
             title: "ComplectOverShortsTshirt",
             element: <ComplectOverShortsTshirtLazy />,
           },
           {
-            path: "/summercomplects/complect_lampas_shorts_tshirt",
+            path: "/men/summercomplects/complect_lampas_shorts_tshirt",
             title: "ComplectLampasShortsTshirt",
             element: <ComplectLampasShortsTshirtLazy />,
           },
           {
-            path: "/summercomplects/complect_summer_rubchik",
+            path: "/men/summercomplects/complect_summer_rubchik",
             title: "ComplectSummerRubchik",
             element: <ComplectSummerRubchikLazy />,
           },
           {
-            path: "/summercomplects/complect_kant",
+            path: "/men/summercomplects/complect_kant",
             title: "ComplectKant",
             element: <ComplectKantLazy />,
           },
           {
-            path: "/summercomplects/short_kargo_summer",
+            path: "/men/summercomplects/short_kargo_summer",
             title: "ShortsKargoSummer",
             element: <ShortsKargoSummerLazy />,
           },
@@ -256,22 +256,22 @@ export const MENU = [
         element: "",
         products: [
           {
-            path: "/sportcomplects/costume_over_baza",
+            path: "/men/sportcomplects/costume_over_baza",
             title: "CostumeOverBaza",
             element: <CostumeOverBazaLazy />,
           },
           {
-            path: "/sportcomplects/costume_tech",
+            path: "/men/sportcomplects/costume_tech",
             title: "CostumeTech",
             element: <CostumeTechLazy />,
           },
           {
-            path: "/sportcomplects/costume_parashute",
+            path: "/men/sportcomplects/costume_parashute",
             title: "CostumeParashute",
             element: <CostumeParashuteLazy />,
           },
           {
-            path: "/sportcomplects/complect_over_trousers_tshirt",
+            path: "/men/sportcomplects/complect_over_trousers_tshirt",
             title: "ComplectOverTrousersTshirt",
             element: <ComplectOverTrousersTshirtLazy />,
           },

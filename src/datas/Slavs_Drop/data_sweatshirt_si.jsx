@@ -107,7 +107,7 @@ const main_title = "Світшот SI"; // Пишется в фильтре на
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 1499; // цена по которой продаем
 const old_price = 2099; // цена скидки
-const page = "/premium/sweatshirt_si"; // на какой странице находится товар
+const page = "/premium/stonik/sweatshirt_si"; // на какой странице находится товар
 
 // Как товары называются в CRM
 const full_name1 = "Світшот чорний SI";
