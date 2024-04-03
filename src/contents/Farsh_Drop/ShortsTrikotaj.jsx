@@ -1,5 +1,5 @@
-import aboutImg1 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg1.png";
-import aboutImg2 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg2.png";
+// import aboutImg1 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg1.png";
+// import aboutImg2 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg2.png";
 
 import description_item1_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg1.svg";
 import description_item2_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg2.svg";
@@ -37,10 +37,10 @@ export const CONTENT = {
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
-    title: "Замовляй комплекти",
-    second_title: "СОРОЧОК з додатковою знижкою",
-    subtitle_first_img: aboutImg1,
-    subtitle_second_img: aboutImg2,
+    // title: "Замовляй комплекти",
+    // second_title: "СОРОЧОК з додатковою знижкою",
+    // subtitle_first_img: aboutImg1,
+    // subtitle_second_img: aboutImg2,
     subtitle_first_text1: "пРИ ЗАМОЛВЕННІ ",
     subtitle_first_text2: "2 СОРОЧОК",
     subtitle_first_text3: " ЗНИЖКА:",

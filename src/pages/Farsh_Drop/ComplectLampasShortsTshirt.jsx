@@ -33,6 +33,7 @@ import { CONTENT } from "../../contents/Farsh_Drop/ComplectLampasShortsTshirt";
 
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
+import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 
 const ComplectLampasShortsTshirt = () => {
   const [selected, setSelected] = useState(null); // size
@@ -117,7 +118,7 @@ const ComplectLampasShortsTshirt = () => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
@@ -154,7 +155,7 @@ const ComplectLampasShortsTshirt = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"

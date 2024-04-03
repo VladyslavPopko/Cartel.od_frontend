@@ -33,6 +33,7 @@ import {
 } from "../../datas/Slavs_Drop/data_zipsweatshirt_si";
 
 import { CONTENT } from "../../contents/Slavs_Drop/Zipsweatshirt_SI";
+import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 
 const ZipSweatshirt_SI = () => {
   const [selected, setSelected] = useState(null); // size
@@ -117,7 +118,7 @@ const ZipSweatshirt_SI = () => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
@@ -154,7 +155,7 @@ const ZipSweatshirt_SI = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"

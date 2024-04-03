@@ -33,6 +33,7 @@ import { CONTENT } from "../../contents/Farsh_Drop/ShortsSummerClassic";
 
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
+import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 
 const ShortsSummerClassic = () => {
   const [selected, setSelected] = useState(null); // size
@@ -117,7 +118,7 @@ const ShortsSummerClassic = () => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
@@ -154,7 +155,7 @@ const ShortsSummerClassic = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"

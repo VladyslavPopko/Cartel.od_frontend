@@ -29,6 +29,7 @@ import {
   XL,
   XXL,
 } from "../../datas/Slavs_Drop/data_longsliv_si";
+import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 
 const Longsliv_SI = () => {
   const [selected, setSelected] = useState(null); // size
@@ -113,7 +114,7 @@ const Longsliv_SI = () => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
@@ -150,7 +151,7 @@ const Longsliv_SI = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"

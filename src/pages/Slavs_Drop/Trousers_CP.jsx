@@ -29,6 +29,7 @@ import {
   XL,
   XXL,
 } from "../../datas/Slavs_Drop/data_trousers_cp";
+import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 
 const Trousers_CP = () => {
   const [selected, setSelected] = useState(null); // size
@@ -113,7 +114,7 @@ const Trousers_CP = () => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
@@ -150,7 +151,7 @@ const Trousers_CP = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlock
+          <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"
