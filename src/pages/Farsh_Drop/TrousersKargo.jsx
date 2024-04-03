@@ -27,9 +27,9 @@ import {
   S,
   XL,
   XXL,
-} from "../../datas/Farsh_Drop/data_shirts";
+} from "../../datas/Farsh_Drop/data_trousersKargo";
 import { memo, useState } from "react";
-import { CONTENT } from "../../contents/Farsh_Drop/shirts";
+import { CONTENT } from "../../contents/Farsh_Drop/TrousersKargo";
 
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
@@ -136,14 +136,14 @@ const TrousersKargo = () => {
         <AnimationWrapper>
           <ReviewBlock content={contentReview} handleReview={handleReview} />
         </AnimationWrapper>
-        <AnimationWrapper>
+        {/* <AnimationWrapper>
           <GalleryBlock
             content={contentGallery}
             data={DATA}
             isColor={isColor}
             setIsColor={setIsColor}
           />
-        </AnimationWrapper>
+        </AnimationWrapper> */}
         <AnimationWrapper>
           <SizetableBlock
             content={contentSizeTable}

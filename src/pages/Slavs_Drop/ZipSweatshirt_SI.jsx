@@ -32,7 +32,7 @@ import {
   XXL,
 } from "../../datas/Slavs_Drop/data_zipsweatshirt_si";
 
-import { CONTENT } from "../../contents/Slavs_Drop/zipsweatshirt_si";
+import { CONTENT } from "../../contents/Slavs_Drop/Zipsweatshirt_SI";
 
 const ZipSweatshirt_SI = () => {
   const [selected, setSelected] = useState(null); // size

@@ -17,7 +17,7 @@ import { memo, useState } from "react";
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
 
-import { CONTENT } from "../../contents/Slavs_Drop/hoodie_si";
+import { CONTENT } from "../../contents/Slavs_Drop/Sweatshirt_CP";
 import {
   DATA,
   GOOGLE_LIST,
@@ -28,7 +28,7 @@ import {
   S,
   XL,
   XXL,
-} from "../../datas/Slavs_Drop/data_hoodie_si";
+} from "../../datas/Slavs_Drop/data_sweatshirt_cp";
 
 const Sweatshirt_CP = () => {
   const [selected, setSelected] = useState(null); // size

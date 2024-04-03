@@ -71,11 +71,6 @@ export const MENU = [
             element: <ZipSweatshirt_SILazy />,
           },
           {
-            path: "/premium/zipsweatshirt",
-            title: "Зіп Світшот SI",
-            element: <ZipSweatshirt_SILazy />,
-          },
-          {
             path: "/premium/jeans_si",
             title: "Jeans_SI",
             element: <Jeans_SILazy />,

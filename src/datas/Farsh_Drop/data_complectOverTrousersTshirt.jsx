@@ -5,6 +5,10 @@
 import heroImg1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg2.png";
 import heroImg3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg3.png";
+import heroImg4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg4.png";
+import heroImg5 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg5.png";
+import heroImg6 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg6.png";
+import heroImg7 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/heroImg7.png";
 
 import Img1_galery_img1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img1_galery_img2.jpg";
@@ -21,6 +25,26 @@ import Img3_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/i
 import Img3_galery_img3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img3_galery_img3.jpg";
 import Img3_galery_img4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img3_galery_img4.jpg";
 
+import Img4_galery_img1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img4_galery_img1.jpg";
+import Img4_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img4_galery_img2.jpg";
+import Img4_galery_img3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img4_galery_img3.jpg";
+import Img4_galery_img4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img4_galery_img4.jpg";
+
+import Img5_galery_img1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img5_galery_img1.jpg";
+import Img5_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img5_galery_img2.jpg";
+import Img5_galery_img3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img5_galery_img3.jpg";
+import Img5_galery_img4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img5_galery_img4.jpg";
+
+import Img6_galery_img1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img6_galery_img1.jpg";
+import Img6_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img6_galery_img2.jpg";
+import Img6_galery_img3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img6_galery_img3.jpg";
+import Img6_galery_img4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img6_galery_img4.jpg";
+
+import Img7_galery_img1 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img7_galery_img1.jpg";
+import Img7_galery_img2 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img7_galery_img2.jpg";
+import Img7_galery_img3 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img7_galery_img3.jpg";
+import Img7_galery_img4 from "../../img/_Farsh_Drop/ComplectOverTrousersTshirt/img7_galery_img4.jpg";
+
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
 export const GOOGLE_LIST = "Shirts"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
@@ -33,9 +57,13 @@ export const XL = "XL";
 export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
-export const ONE = "Коричневий";
-export const TWO = "Чорно-білий";
-export const THREE = "Жовто-чорний";
+export const ONE = "Зелений";
+export const TWO = "Украина";
+export const THREE = "Чорний";
+export const FOUR = "Бежевий";
+export const FIVE = "Коричневий";
+export const SIX = "Серый";
+export const SEVEN = "Графит";
 
 const category = "Сорочки"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
@@ -46,9 +74,13 @@ const old_price = 1599; // цена скидки
 const page = "/sorochki/shirts"; // на какой странице находится товар
 
 // Как товары называются в CRM
-const full_name1 = "Тепла сорочка коричнева";
-const full_name2 = "Тепла сорочка чорно біла";
-const full_name3 = "Тепла сорочка жовто чорна";
+const full_name1 = "Костюм лето штаны футболка бутылка Харьков";
+const full_name2 = "Костюм лето штаны футболка Украина Харьков";
+const full_name3 = "Костюм лето штаны футболка черный Харьков";
+const full_name4 = "Костюм лето штаны футболка бежевый Харьков";
+const full_name5 = "Костюм лето штаны футболка коричневый Харьков";
+const full_name6 = "Костюм лето штаны футболка серый Харьков";
+const full_name7 = "Костюм лето штаны футболка графит Харьков";
 
 export const DATA = [
   {
@@ -108,6 +140,82 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
   },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name4,
+    id: 4,
+    color: FOUR,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg4,
+    hero_img: heroImg4,
+    galery_img1: Img4_galery_img1,
+    galery_img2: Img4_galery_img2,
+    galery_img3: Img4_galery_img3,
+    galery_img4: Img4_galery_img4,
+    page: page,
+  },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name5,
+    id: 5,
+    color: FIVE,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg5,
+    hero_img: heroImg5,
+    galery_img1: Img5_galery_img1,
+    galery_img2: Img5_galery_img2,
+    galery_img3: Img5_galery_img3,
+    galery_img4: Img5_galery_img4,
+    page: page,
+  },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name6,
+    id: 6,
+    color: SIX,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg6,
+    hero_img: heroImg6,
+    galery_img1: Img6_galery_img1,
+    galery_img2: Img6_galery_img2,
+    galery_img3: Img6_galery_img3,
+    galery_img4: Img6_galery_img4,
+    page: page,
+  },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name7,
+    id: 7,
+    color: SEVEN,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg7,
+    hero_img: heroImg7,
+    galery_img1: Img7_galery_img1,
+    galery_img2: Img7_galery_img2,
+    galery_img3: Img7_galery_img3,
+    galery_img4: Img7_galery_img4,
+    page: page,
+  },
 ];
 
-export const DATA_FARSH_DROP_ComplectOverTrousersTshirt = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_FARSH_DROP_ComplectOverTrousersTshirt = DATA; // Поменять на имя, для отображения на главной странице

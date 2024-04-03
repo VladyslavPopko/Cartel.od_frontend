@@ -5,6 +5,8 @@
 import heroImg1 from "../../img/_Farsh_Drop/ComplectSummerRubchik/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/ComplectSummerRubchik/heroImg2.png";
 import heroImg3 from "../../img/_Farsh_Drop/ComplectSummerRubchik/heroImg3.png";
+import heroImg4 from "../../img/_Farsh_Drop/ComplectSummerRubchik/heroImg4.png";
+import heroImg5 from "../../img/_Farsh_Drop/ComplectSummerRubchik/heroImg5.png";
 
 import Img1_galery_img1 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img1_galery_img2.jpg";
@@ -21,6 +23,16 @@ import Img3_galery_img2 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img3_g
 import Img3_galery_img3 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img3_galery_img3.jpg";
 import Img3_galery_img4 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img3_galery_img4.jpg";
 
+import Img4_galery_img1 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img4_galery_img1.jpg";
+import Img4_galery_img2 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img4_galery_img2.jpg";
+import Img4_galery_img3 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img4_galery_img3.jpg";
+import Img4_galery_img4 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img4_galery_img4.jpg";
+
+import Img5_galery_img1 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img5_galery_img1.jpg";
+import Img5_galery_img2 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img5_galery_img2.jpg";
+import Img5_galery_img3 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img5_galery_img3.jpg";
+import Img5_galery_img4 from "../../img/_Farsh_Drop/ComplectSummerRubchik/img5_galery_img4.jpg";
+
 export const GOOGLE_SHEET =
   "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
 export const GOOGLE_LIST = "Shirts"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
@@ -36,6 +48,8 @@ export const XXL = "XXL";
 export const ONE = "Коричневий";
 export const TWO = "Чорно-білий";
 export const THREE = "Жовто-чорний";
+export const FOUR = "Жовто-чорний";
+export const FIVE = "Жовто-чорний";
 
 const category = "Сорочки"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
@@ -46,9 +60,11 @@ const old_price = 1599; // цена скидки
 const page = "/sorochki/shirts"; // на какой странице находится товар
 
 // Как товары называются в CRM
-const full_name1 = "Тепла сорочка коричнева";
-const full_name2 = "Тепла сорочка чорно біла";
-const full_name3 = "Тепла сорочка жовто чорна";
+const full_name1 = "Комплект Літо Рубчик Графіт";
+const full_name2 = "Комплект Літо Рубчик Мокко";
+const full_name3 = "Комплект Літо Рубчик Зелений";
+const full_name4 = "Комплект Літо Рубчик Беж";
+const full_name5 = "Комплект Літо Рубчик Чорний";
 
 export const DATA = [
   {
@@ -106,6 +122,44 @@ export const DATA = [
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
+    page: page,
+  },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name4,
+    id: 4,
+    color: FOUR,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg4,
+    hero_img: heroImg4,
+    galery_img1: Img4_galery_img1,
+    galery_img2: Img4_galery_img2,
+    galery_img3: Img4_galery_img3,
+    galery_img4: Img4_galery_img4,
+    page: page,
+  },
+  {
+    category: category,
+    main_title: main_title,
+    name: name,
+    vendor: VENDOR_NAME,
+    full_name: full_name5,
+    id: 5,
+    color: FIVE,
+    price: price,
+    price_const: price,
+    old_price: old_price,
+    img: heroImg5,
+    hero_img: heroImg5,
+    galery_img1: Img5_galery_img1,
+    galery_img2: Img5_galery_img2,
+    galery_img3: Img5_galery_img3,
+    galery_img4: Img5_galery_img4,
     page: page,
   },
 ];

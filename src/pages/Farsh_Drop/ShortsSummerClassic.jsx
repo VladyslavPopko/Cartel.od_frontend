@@ -27,9 +27,9 @@ import {
   S,
   XL,
   XXL,
-} from "../../datas/Farsh_Drop/data_shirts";
+} from "../../datas/Farsh_Drop/data_shortsSummerClassic";
 import { memo, useState } from "react";
-import { CONTENT } from "../../contents/Farsh_Drop/shirts";
+import { CONTENT } from "../../contents/Farsh_Drop/ShortsSummerClassic";
 
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";

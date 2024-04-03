@@ -46,9 +46,9 @@ const old_price = 1599; // цена скидки
 const page = "/sorochki/shirts"; // на какой странице находится товар
 
 // Как товары называются в CRM
-const full_name1 = "Тепла сорочка коричнева";
-const full_name2 = "Тепла сорочка чорно біла";
-const full_name3 = "Тепла сорочка жовто чорна";
+const full_name1 = "Штани укорочені бежеві";
+const full_name2 = "Штани укорочені чорні";
+const full_name3 = "Штани укорочені сірі";
 
 export const DATA = [
   {

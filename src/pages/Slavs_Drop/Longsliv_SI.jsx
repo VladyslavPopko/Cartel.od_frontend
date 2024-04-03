@@ -17,7 +17,7 @@ import { memo, useState } from "react";
 import { REVIEW_LIST } from "../../constanses/constanses";
 import Main from "../Main";
 
-import { CONTENT } from "../../contents/Slavs_Drop/hoodie_si";
+import { CONTENT } from "../../contents/Slavs_Drop/Longsliv_SI";
 import {
   DATA,
   GOOGLE_LIST,
@@ -28,7 +28,7 @@ import {
   S,
   XL,
   XXL,
-} from "../../datas/Slavs_Drop/data_hoodie_si";
+} from "../../datas/Slavs_Drop/data_longsliv_si";
 
 const Longsliv_SI = () => {
   const [selected, setSelected] = useState(null); // size
