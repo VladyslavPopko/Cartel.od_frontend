@@ -16,12 +16,13 @@ const cartSlice = createSlice({
         (item) =>
           item.id === payload.id &&
           item.category === payload.category &&
+          item.name === payload.name &&
           item.size === payload.size
       );
       if (item) {
         item.qty = item.qty + 1;
       } else {
-        const index = payload.id + payload.category + payload.size;
+        const index = payload.id + payload.category + payload.name + payload.size;
         state.items.push({ ...payload, qty: 1, index: index });
       }
       if (state.qty >= 1) {
@@ -46,7 +47,7 @@ const cartSlice = createSlice({
       //end facebook pixels event
     },
     deleteFromCart: (state, { payload }) => {
-      state.items = state.items.filter((item) => item.id !== payload.id);
+      state.items = state.items.filter((item) => item.index !== payload.index);
       state.finalPrice = state.finalPrice - payload.price * payload.qty;
       state.finalOldPrice =
         state.finalOldPrice - payload.old_price * payload.qty;
@@ -56,7 +57,7 @@ const cartSlice = createSlice({
       const item = state.items.find(
         (item) =>
           item.id === payload.id &&
-          item.category === payload.category &&
+          item.index === payload.index &&
           item.size === payload.size
       );
       if (item.qty <= 1) {
@@ -103,7 +104,7 @@ const cartSlice = createSlice({
       const item = state.items.find(
         (item) =>
           item.id === payload.id &&
-          item.category === payload.category &&
+          item.index === payload.index &&
           item.size === payload.size
       );
       if (state.qty >= 1) {
