@@ -103,14 +103,14 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
+    item1_name: "Роман",
     item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
+      "Дуже сподобався",
+    item2_name: "Олександр",
+    item2_text: "Классно виглядає. замовив ще худі",
+    item3_name: "Юля",
     item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+      "Замовила хлопцю, а ношу сама",
   },
   contentGallery: {
     title: "Галерея",

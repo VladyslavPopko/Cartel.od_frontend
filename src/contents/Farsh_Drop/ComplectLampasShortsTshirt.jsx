@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "799",
     old_price: "1 099",
-    title: "Комплект",
-    subtitle: "лампас",
+    title: "Комплект лампас",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,14 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
+    item1_name: "Аліна",
     item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
+      "Дуже сподобався комплект. Брала на подарунок хлопцю.",
+    item2_name: "Стас",
+    item2_text: "Відходив сезон, а він як новий, замовив інший колір",
+    item3_name: "Микола",
     item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+      "Якщо коротко - Те що треба",
   },
   contentGallery: {
     title: "Галерея",

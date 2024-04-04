@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "999",
     old_price: "1 299",
-    title: "Комплект",
-    subtitle: "KANT",
+    title: "Комплект KANT",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,14 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
+    item1_name: "Олег",
     item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
+      "Гарний, комфортний комплект,",
+    item2_name: "Влад",
+    item2_text: "Тканина дихає, не жарко",
+    item3_name: "Кирило",
     item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+      "Якісний матеріал.",
   },
   contentGallery: {
     title: "Галерея",

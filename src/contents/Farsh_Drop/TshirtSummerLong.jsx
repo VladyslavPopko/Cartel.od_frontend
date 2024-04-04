@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "499",
     old_price: "649",
-    title: "Футболка",
-    subtitle: "LONG",
+    title: "Футболка LONG",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,12 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item1_name: "Дмитро",
+    item1_text: "Дуже комфортний та гарно виглядає",
+    item2_name: "Олена",
+    item2_text: "Хлопець не знімає його",
+    item3_name: "Андрій",
+    item3_text: "Одне із моїх фаворитів",
   },
   contentGallery: {
     title: "Галерея",

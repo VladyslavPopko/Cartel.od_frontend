@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "549",
     old_price: "7 99",
-    title: "Шорти",
-    subtitle: "трикотажні",
+    title: "Шорти трикотажні",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,12 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
+    item1_name: "Володимир",
+    item1_text: "Гарні шорти на літо",
     item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item2_text: "Вже втретє замовляю тут Завжди задоволений",
+    item3_name: "Денис",
+    item3_text: "Кольори просто пушка",
   },
   contentGallery: {
     title: "Галерея",

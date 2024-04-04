@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "899",
     old_price: "1 299",
-    title: "Штани",
-    subtitle: "завужені",
+    title: "Штани завужені",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -104,13 +104,12 @@ export const CONTENT = {
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
     item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item1_text: "Класні класичні штани",
+    item2_name: "Ксенія",
+    item2_text:
+      "Замовила на подарунок ми з хлопцем задоволені. Якісна тканина!",
+    item3_name: "Володимир",
+    item3_text: "Швидко доствили Дуже стильно виглядає",
   },
   contentGallery: {
     title: "Галерея",

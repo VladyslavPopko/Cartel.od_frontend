@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "1 549",
     old_price: "2 099",
-    title: "Костюм",
-    subtitle: "парашют",
+    title: "Костюм парашют",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,12 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item1_name: "Дмитро",
+    item1_text: "Класний костюм",
+    item2_name: "Денис",
+    item2_text: "Чорний найкращий",
+    item3_name: "Андрій",
+    item3_text: "Дуже зручний",
   },
   contentGallery: {
     title: "Галерея",

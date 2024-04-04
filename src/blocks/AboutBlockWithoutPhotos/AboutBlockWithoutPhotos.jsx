@@ -34,7 +34,7 @@ const AboutBlockWithOutPhotos = ({
           <Box value={subtitle_second_value} />
         </div>
         <p className={styles.info}>
-          *акція діє на будь який товар та додається одразу до кошика
+          *акція діє на будь який товар каталога та додається одразу до кошика
         </p>
 
         <PriceBlock

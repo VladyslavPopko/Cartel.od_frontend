@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "849",
     old_price: "1 199",
-    title: "Штани",
-    subtitle: "укорочені",
+    title: "Штани укорочені",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -104,13 +104,11 @@ export const CONTENT = {
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
     item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item1_text: "Класні штани. Рекомендую",
+    item2_name: "Катерина",
+    item2_text: "Дуже гарна якість, не очікувала",
+    item3_name: "Максим",
+    item3_text: "Замовив 3 пари. Ціна бомба",
   },
   contentGallery: {
     title: "Галерея",

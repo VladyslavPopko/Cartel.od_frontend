@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "899",
     old_price: "1 399",
-    title: "Комплект",
-    subtitle: "рубчик",
+    title: "Комплект рубчик",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -103,14 +103,12 @@ export const CONTENT = {
     item1_img1: reviewItem1Img,
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
-    item1_name: "Іван",
-    item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
-    item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
-    item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+    item1_name: "Ярік",
+    item1_text: "Текстура- пушка, дуже якісна тканина",
+    item2_name: "Оля",
+    item2_text: "Замовила хлюпцю 3 комплекти.",
+    item3_name: "Влад",
+    item3_text: "Найулюбленіша річ у гардеробі",
   },
   contentGallery: {
     title: "Галерея",

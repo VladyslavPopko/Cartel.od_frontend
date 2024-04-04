@@ -6,7 +6,7 @@ import contentImg from "../img/ThankyouBlock/box.jpg";
 
 export const CONTENT = {
   contentHeader: {
-    title: "ВЕСНЯНИЙ РОЗПРОДАЖ -60% ВІД СТАРОЇ ЦІНИ",
+    title: "ВЕСНЯНИЙ РОЗПРОДАЖ до -60% ВІД СТАРОЇ ЦІНИ",
   },
   contentCart: {
     title: "Кошик",

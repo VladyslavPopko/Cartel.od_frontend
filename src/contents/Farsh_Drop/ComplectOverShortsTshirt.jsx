@@ -32,8 +32,8 @@ export const CONTENT = {
   contentHero: {
     price: "999",
     old_price: "1 299",
-    title: "Комплект",
-    subtitle: "оверсайз",
+    title: "Комплект оверсайз",
+    // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
   contentAbout: {
@@ -105,12 +105,12 @@ export const CONTENT = {
     item3_img1: reviewItem3Img,
     item1_name: "Іван",
     item1_text:
-      "Гарна якість, не линяє. замовив 3 сорочки. повністю задоволений",
+      "Дуже задоволений якістю. Замовляю не вперше",
     item2_name: "Дмитро",
-    item2_text: "Тепла та комфортна. На весню/осінь - ідеально",
-    item3_name: "Іван",
+    item2_text: "Гарна якість. Швидка доставка",
+    item3_name: "Олег",
     item3_text:
-      "Замовила на подарунок хлопцю. Дуже гарно виглядає, нам обом все сподобалось.",
+      "Комфортна тканина. низькі ціни.",
   },
   contentGallery: {
     title: "Галерея",
