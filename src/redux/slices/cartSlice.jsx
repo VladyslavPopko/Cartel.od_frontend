@@ -26,12 +26,12 @@ const cartSlice = createSlice({
       }
       if (state.qty >= 1) {
         state.items.forEach(
-          (el) => (el.price = Math.round(el.price_const * 0.85))
+          (el) => (el.price = Math.round(el.price_const * 0.9))
         );
       }
       if (state.qty >= 2) {
         state.items.forEach(
-          (el) => (el.price = Math.round(el.price_const * 0.8))
+          (el) => (el.price = Math.round(el.price_const * 0.85))
         );
       }
 
@@ -68,12 +68,12 @@ const cartSlice = createSlice({
         }
         if (state.qty > 2) {
           state.items.forEach(
-            (el) => (el.price = Math.round(el.price_const * 0.85))
+            (el) => (el.price = Math.round(el.price_const * 0.9))
           );
         }
         if (state.qty > 3) {
           state.items.forEach(
-            (el) => (el.price = Math.round(el.price_const * 0.8))
+            (el) => (el.price = Math.round(el.price_const * 0.85))
           );
         }
       } else {
@@ -82,12 +82,12 @@ const cartSlice = createSlice({
         }
         if (state.qty > 2) {
           state.items.forEach(
-            (el) => (el.price = Math.round(el.price_const * 0.85))
+            (el) => (el.price = Math.round(el.price_const * 0.9))
           );
         }
         if (state.qty > 3) {
           state.items.forEach(
-            (el) => (el.price = Math.round(el.price_const * 0.8))
+            (el) => (el.price = Math.round(el.price_const * 0.85))
           );
         }
         item.qty = item.qty - 1;
@@ -108,12 +108,12 @@ const cartSlice = createSlice({
       );
       if (state.qty >= 1) {
         state.items.forEach(
-          (el) => (el.price = Math.round(el.price_const * 0.85))
+          (el) => (el.price = Math.round(el.price_const * 0.9))
         );
       }
       if (state.qty >= 2) {
         state.items.forEach(
-          (el) => (el.price = Math.round(el.price_const * 0.8))
+          (el) => (el.price = Math.round(el.price_const * 0.85))
         );
       }
       item.qty = item.qty + 1;

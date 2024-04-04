@@ -31,6 +31,7 @@ import { DATA_SLAVS_DROP_Trousers_CP } from "../datas/Slavs_Drop/data_trousers_c
 import { DATA_SLAVS_DROP_Jeans_SI } from "../datas/Slavs_Drop/data_jeans_si";
 import { DATA_SLAVS_DROP_Shorts_SI } from "../datas/Slavs_Drop/data_shorts_si";
 import { DATA_SLAVS_DROP_Longsliv_SI } from "../datas/Slavs_Drop/data_longsliv_si";
+import { DATA_SLAVS_DROP_ZIPHOODIE_SI } from "../datas/Slavs_Drop/data_ziphoodie_si";
 
 const HomePage = () => {
   const data = [];
@@ -65,6 +66,7 @@ const HomePage = () => {
   data.push(DATA_FARSH_DROP_ShortsLyon);
 
   data.push(DATA_SLAVS_DROP_HOODIE_SI);
+  data.push(DATA_SLAVS_DROP_ZIPHOODIE_SI);
   data.push(DATA_SLAVS_DROP_SWEATSHIRT_SI);
   data.push(DATA_SLAVS_DROP_Jeans_SI);
   data.push(DATA_SLAVS_DROP_Shorts_SI);
