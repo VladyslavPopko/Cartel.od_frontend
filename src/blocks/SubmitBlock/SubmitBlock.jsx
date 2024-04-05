@@ -152,6 +152,7 @@ const SubmitBlock = ({
                   count={el.qty}
                   old_price={el.old_price}
                   price={el.price}
+                  page={el.page}
                   onClickInc={() => dispatch(incrementQty(el))}
                   onClickDec={() => dispatch(decrementQty(el))}
                 />
