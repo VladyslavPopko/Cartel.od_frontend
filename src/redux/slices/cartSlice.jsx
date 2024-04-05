@@ -58,6 +58,7 @@ const cartSlice = createSlice({
         (item) =>
           item.id === payload.id &&
           item.index === payload.index &&
+          item.name === payload.name &&
           item.size === payload.size
       );
       if (item.qty <= 1) {

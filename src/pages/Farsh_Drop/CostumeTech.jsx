@@ -67,19 +67,19 @@ const CostumeTech = () => {
   let size;
   switch (selected) { // То какие размеры заходят в CRM
     case "Розмір: S": {
-      size = "С";
+      size = "S";
       break;
     }
     case "Розмір: M": {
-      size = "М";
+      size = "M";
       break;
     }
     case "Розмір: L": {
-      size = "Л";
+      size = "L";
       break;
     }
     case "Розмір: XL": {
-      size = "ХЛ";
+      size = "XL";
       break;
     }
     case "Розмір: XXL": {

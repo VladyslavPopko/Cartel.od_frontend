@@ -38,7 +38,7 @@ const page = "/premium/cp_company/trousers_cp"; // на какой страни�
 
 // Как товары называются в CRM
 const full_name1 = "Штани хакі CP";
-const full_name2 = "Штани чорні CP";
+const full_name2 = "Штани  чорні CP";
 
 // менять разве что id
 export const DATA = [ 

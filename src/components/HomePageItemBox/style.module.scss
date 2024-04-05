@@ -28,7 +28,7 @@
   position: absolute;
   bottom: 35px;
   left: 15px;
-  
+
   cursor: pointer;
   transition: all var(--transition-ms);
   z-index: 2;
@@ -63,4 +63,9 @@
 }
 .select {
   color: var(--select-color);
+}
+@media (max-width: 540px) {
+  .section {
+    width: 100%;
+  }
 }

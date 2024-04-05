@@ -47,6 +47,15 @@
   gap: 35px 15px;
   justify-content: space-evenly;
 }
+@media (max-width: 540px) {
+  .list {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .homepage_item {
+    width: calc(50% - 15px);
+  }
+}
 .product_name {
   font-size: 27.42px;
   font-weight: 600;

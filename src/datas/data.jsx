@@ -22,6 +22,9 @@ const ShirtsLazy = lazy(() => import("../pages/Farsh_Drop/Shirts"));
 const CostumeOverBazaLazy = lazy(() =>
   import("../pages/Farsh_Drop/CostumeOverBaza")
 );
+const CostumeZamshLazy = lazy(() =>
+  import("../pages/Farsh_Drop/CostumeZamsh")
+);
 const CostumeTechLazy = lazy(() => import("../pages/Farsh_Drop/CostumeTech"));
 const CostumeParashuteLazy = lazy(() =>
   import("../pages/Farsh_Drop/CostumeParashute")
@@ -102,6 +105,11 @@ export const MENU = [
             path: "/men/sportcomplects/costume_over_baza",
             title: "Костюм оверсайз BASE",
             element: <CostumeOverBazaLazy />,
+          },
+          {
+            path: "/men/sportcomplects/costume_zamsh",
+            title: "Костюм Замш",
+            element: <CostumeZamshLazy />,
           },
           {
             path: "/men/sportcomplects/costume_tech",

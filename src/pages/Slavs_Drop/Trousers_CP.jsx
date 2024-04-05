@@ -62,24 +62,32 @@ const Trousers_CP = () => {
 
   let size;
   switch (selected) { // То какие размеры заходят в CRM
+    case "Розмір: XS": {
+      size = "30";
+      break;
+    }
     case "Розмір: S": {
-      size = S;
+      size = "31";
       break;
     }
     case "Розмір: M": {
-      size = M;
+      size = "32";
       break;
     }
     case "Розмір: L": {
-      size = L;
+      size = "33";
       break;
     }
     case "Розмір: XL": {
-      size = XL;
+      size = "34";
       break;
     }
-    case "Розмір: XXL": {
-      size = XXL;
+    case "Розмір: 2XL": {
+      size = "36";
+      break;
+    }
+    case "Розмір: 3XL": {
+      size = "38";
       break;
     }
     default: {

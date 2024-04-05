@@ -63,19 +63,19 @@ const Jeans_SI = () => {
   let size;
   switch (selected) { // То какие размеры заходят в CRM
     case "Розмір: S": {
-      size = S;
+      size = "30";
       break;
     }
     case "Розмір: M": {
-      size = M;
+      size = "32";
       break;
     }
     case "Розмір: L": {
-      size = L;
+      size = "34";
       break;
     }
     case "Розмір: XL": {
-      size = XL;
+      size = "36";
       break;
     }
     case "Розмір: XXL": {

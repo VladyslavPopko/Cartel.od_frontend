@@ -24,10 +24,13 @@ import table from "../../img/_Slavs_Drop/Trousers_CP/table.jpg";
 
 export const CONTENT = {
   sizeArray: [
-    { id: 1, value: "S" },
-    { id: 2, value: "M" },
-    { id: 3, value: "L" },
-    { id: 4, value: "XL" },
+    { id: 1, value: "XS" },
+    { id: 2, value: "S" },
+    { id: 3, value: "M" },
+    { id: 4, value: "L" },
+    { id: 5, value: "XL" },
+    { id: 6, value: "2XL" },
+    { id: 7, value: "3XL" },
   ],
   contentHero: {
     price: "2 699",

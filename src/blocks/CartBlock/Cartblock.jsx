@@ -70,7 +70,7 @@ const Cartblock = ({
                 <div className={styles.main_list}>
                   {cart.map((el) => (
                     <CartBox
-                      key={el.id}
+                      key={el.full_name}
                       img={el.img}
                       title={el.name}
                       color={el.color}

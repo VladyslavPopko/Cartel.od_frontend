@@ -9,8 +9,11 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
   const { img, main_title, price, old_price, page } = element;
   const dispatch = useDispatch();
   const qty = useSelector((state) => state.cart.qty);
-  const [isValue,setIsValue] = useState(false);
-
+  const [isValue, setIsValue] = useState(false);
+  const handleSubmit = () => {
+    element.size = "Уточнити";
+    setIsValue(element);
+  };
   useEffect(() => {
     if (isValue) {
       dispatch(addToCart(isValue));
@@ -27,10 +30,11 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
           <img draggable="false" className={styles.img} src={img} alt="" />
         </NavLink>
         <img
+          loading="lazy"
           draggable="false"
           className={styles.addToCart}
           src={addToCartImg}
-          onClick={() => setIsValue(element)}
+          onClick={handleSubmit}
           alt=""
         />
       </div>
