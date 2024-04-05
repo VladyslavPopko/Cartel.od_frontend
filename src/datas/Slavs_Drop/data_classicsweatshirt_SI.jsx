@@ -24,8 +24,8 @@ export const XL = "XL";
 export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
-export const ONE = "Чорний";
-export const TWO = "Синій";
+export const ONE = "Графіт";
+export const TWO = "Чорний";
 
 const category = "Стонік"; // Категория (для фильтра на главной странице)
 const name = "Класичний Світшот SI"; // Пишется в корзине товара
