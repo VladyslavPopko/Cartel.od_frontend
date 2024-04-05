@@ -144,7 +144,7 @@ const SubmitBlock = ({
               <h3 className={styles.footer_title}>Ваше замовлення:</h3>
               {cart.map((el) => (
                 <CartBox
-                  key={el.id}
+                  key={el.full_name}
                   img={el.img}
                   title={el.name}
                   color={el.color}
