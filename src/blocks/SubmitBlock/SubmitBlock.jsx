@@ -34,7 +34,6 @@ const SubmitBlock = ({
   const cart = useSelector((state) => state.cart.items);
   const finalPrice = useSelector((state) => state.cart.finalPrice);
   const qty = useSelector((state) => state.cart.qty);
-  const title = "Весняна сорочка в клітинку";
 
   const handleCloseSubmit = () => {
     setIsVisibleSubmit(false);
@@ -147,7 +146,7 @@ const SubmitBlock = ({
                 <CartBox
                   key={el.id}
                   img={el.img}
-                  title={title}
+                  title={el.name}
                   color={el.color}
                   size={el.size}
                   count={el.qty}
