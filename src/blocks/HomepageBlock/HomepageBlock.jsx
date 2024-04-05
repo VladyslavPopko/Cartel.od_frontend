@@ -44,6 +44,7 @@ import { DATA_SLAVS_DROP_ZIPHOODIE_SI } from "../../datas/Slavs_Drop/data_ziphoo
 import { DATA_FARSH_DROP_CostumeZamsh } from "../../datas/Farsh_Drop/data_costumeZamsh";
 import { DATA_SLAVS_DROP_ClassicSweatshirt_SI } from "../../datas/Slavs_Drop/data_classicsweatshirt_SI";
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
+import AnimationTranslateXUp from "../../wrappers/AnimationTranslateXUp";
 
 const HomepageBlock = () => {
   const data = [];
@@ -96,13 +97,17 @@ const HomepageBlock = () => {
     useState(false); // Notification Add to Cart
   const [isActive, setIsActive] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
+  const [isStatus, setIsStatus] = useState("All");
+  const [isPage, setIsPage] = useState(1);
+  const [isPageCategory, setIsPageCategory] = useState(1);
 
   const menu = MENU;
   const handleALL = () => {
+    setIsStatus("All");
     setIsActive(false);
     setIsCategory(false);
   };
-  console.log(data);
+
   return (
     <div className={styles.wrapper}>
       <NotificationBox
@@ -146,7 +151,6 @@ const HomepageBlock = () => {
                   )}
                   onClick={() => setIsCategory(element.title)}
                 >
-                  {" "}
                   {element.title} <img src={open} className={styles.open} />
                 </p>
               )}
@@ -162,7 +166,10 @@ const HomepageBlock = () => {
                   {!el.element ? (
                     <div className={styles.subcategory}>
                       <p
-                        onClick={() => setIsActive(el.title)}
+                        onClick={() => {
+                          setIsActive(el.title);
+                          setIsStatus("Category");
+                        }}
                         className={cn(
                           styles.text,
                           isActive === el.title && styles.active
@@ -173,7 +180,10 @@ const HomepageBlock = () => {
                       {el.products.map((e) => (
                         <div key={e.full_name} className={styles.product}>
                           <p
-                            onClick={() => setIsActive(e.title)}
+                            onClick={() => {
+                              setIsActive(e.title);
+                              setIsStatus("Product");
+                            }}
                             className={cn(
                               styles.text,
                               isActive === e.title && styles.active
@@ -187,7 +197,10 @@ const HomepageBlock = () => {
                   ) : (
                     <div key={el.path} className={styles.product}>
                       <p
-                        onClick={() => setIsActive(el.title)}
+                        onClick={() => {
+                          setIsActive(el.title);
+                          setIsStatus("Product");
+                        }}
                         className={cn(
                           styles.text,
                           isActive === el.title && styles.active
@@ -203,7 +216,128 @@ const HomepageBlock = () => {
           ))}
         </div>
 
-        <div className={styles.products}>
+        {/* <div className={cn(styles.products, styles.list)}>
+          {data.map(
+            (element, index) =>
+              index < (6*isPage) && (
+                <div key={index}>
+                  <AnimationWrapper>
+                    <HomePageItemBox
+                      element={element[0]}
+                      setisVisibleNotificationAddtoCart={
+                        setisVisibleNotificationAddtoCart
+                      }
+                    />
+                  </AnimationWrapper>
+                </div>
+              )
+          )}
+        </div> */}
+        {!isActive && isStatus === "All" && (
+          <div className={styles.products}>
+            {data.map((element, index) => (
+              <div key={index}>
+                <div>
+                  <AnimationWrapper>
+                    {index <= isPage && (
+                      <h2 className={styles.product_name}>
+                        {element[0].main_title}
+                      </h2>
+                    )}
+
+                    <div className={styles.list}>
+                      {element.map(
+                        (el, indexj) =>
+                          index <= isPage && (
+                            <div key={indexj} className={styles.homepage_item}>
+                              <HomePageItemBox
+                                element={el}
+                                setisVisibleNotificationAddtoCart={
+                                  setisVisibleNotificationAddtoCart
+                                }
+                              />
+                            </div>
+                          )
+                      )}
+                    </div>
+                  </AnimationWrapper>
+                </div>
+              </div>
+            ))}
+            <Button
+              onClick={() => {
+                setIsPage(isPage + 2);
+                setIsPageCategory(isPageCategory + 2);
+              }}
+              text="Показати ще"
+              className={styles.button_more}
+            />
+          </div>
+        )}
+
+        {isActive && isStatus === "Category" && (
+          <div className={styles.products}>
+            {data.map((element, index) => (
+              <div key={index}>
+                {isActive === element[0].category && (
+                  <div>
+                    <AnimationWrapper>
+                      <h2 className={styles.product_name}>
+                        {element[0].main_title}
+                      </h2>
+
+                      <div className={styles.list}>
+                        {element.map((el, indexj) => (
+                          <div key={indexj} className={styles.homepage_item}>
+                            <HomePageItemBox
+                              element={el}
+                              setisVisibleNotificationAddtoCart={
+                                setisVisibleNotificationAddtoCart
+                              }
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </AnimationWrapper>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {isActive && isStatus === "Product" && (
+          <div className={styles.products}>
+            {data.map((element, index) => (
+              <div key={index}>
+                {isActive === element[0].main_title && (
+                  <div>
+                    <AnimationWrapper>
+                      <h2 className={styles.product_name}>
+                        {element[0].main_title}
+                      </h2>
+
+                      <div className={styles.list}>
+                        {element.map((el, index) => (
+                          <div key={index} className={styles.homepage_item}>
+                            <HomePageItemBox
+                              element={el}
+                              setisVisibleNotificationAddtoCart={
+                                setisVisibleNotificationAddtoCart
+                              }
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </AnimationWrapper>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* <div className={styles.products}>
           {data.map((element, index) => (
             <div key={index}>
               {(isActive === element[0].main_title ||
@@ -214,7 +348,9 @@ const HomepageBlock = () => {
                     <h2 className={styles.product_name}>
                       {element[0].main_title}
                     </h2>
+                    
                     <div className={styles.list}>
+                   
                       {element.map((el, index) => (
                         <div key={index} className={styles.homepage_item}>
                           <HomePageItemBox
@@ -231,7 +367,7 @@ const HomepageBlock = () => {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <HomePageBanner />

@@ -1,15 +1,18 @@
 .wrapper {
   position: fixed;
   opacity: 0;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   z-index: 5;
   background-color: var(--select-color);
   color: var(--primary-color);
   font-family: var(--font-family);
   width: 100%;
-  transition: all var(--transition-ms);
+  transition: all 0.5s;
+  pointer-events: none;
   &.active {
+    pointer-events: all;
+    bottom: 0;
     opacity: 1;
   }
 }
@@ -83,7 +86,7 @@
     flex-direction: column;
     gap: 5px;
   }
-  .list_right{
-    gap:5px;
+  .list_right {
+    gap: 5px;
   }
 }

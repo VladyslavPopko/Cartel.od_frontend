@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 import closeBanner from "../../img/HomePage/closeBanner.svg";
 
 const HomePageBanner = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
+  const [isOnce, setIsOnce] = useState(true);
+  if (isOnce) {
+    setTimeout(() => {
+      setIsActive(true);
+      setIsOnce(false);
+    }, 1000);
+  }
+
   return (
     <div className={cn(styles.wrapper, isActive && styles.active)}>
       <div className={styles.section}>

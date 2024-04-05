@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { memo } from "react";
 
-
 const AnimationWrapper = ({ children }) => {
   return (
     <>

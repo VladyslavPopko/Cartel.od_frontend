@@ -145,3 +145,21 @@
     margin-left: 200px;
   }
 }
+.button_more{
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  border: 1px solid var(--secondary-color);
+  padding: 15px;
+  border-radius: var(--button-border-radius);
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  transition: all var(--transition-ms);
+  &:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
