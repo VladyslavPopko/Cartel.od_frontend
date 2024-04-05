@@ -69,14 +69,17 @@
   
 }
 @media (max-width: 540px) {
-  .title{
-    font-size: 18px;
+  .text_item{
+    gap: 15px;
   }
-  .subtitle{
+  .title{
     font-size: 16px;
   }
+  .subtitle{
+    font-size: 14px;
+  }
   .text{
-    font-size: 28px;
+    font-size: 22px;
   }
   .text_item + .text_item {
     margin-bottom: 20px;

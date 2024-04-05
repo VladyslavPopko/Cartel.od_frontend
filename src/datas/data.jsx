@@ -6,6 +6,9 @@ const ZipHoodie_SILazy = lazy(() => import("../pages/Slavs_Drop/ZipHoodie_SI"));
 const Sweatshirt_SILazy = lazy(() =>
   import("../pages/Slavs_Drop/SweatShirt_SI")
 );
+const ClassicSweatshirt_SILazy = lazy(() =>
+  import("../pages/Slavs_Drop/ClassicSweatshirt_SI")
+);
 const Jacket_CPLazy = lazy(() => import("../pages/Slavs_Drop/Jacket_CP"));
 const ZipSweatshirt_SILazy = lazy(() =>
   import("../pages/Slavs_Drop/ZipSweatshirt_SI")
@@ -22,9 +25,7 @@ const ShirtsLazy = lazy(() => import("../pages/Farsh_Drop/Shirts"));
 const CostumeOverBazaLazy = lazy(() =>
   import("../pages/Farsh_Drop/CostumeOverBaza")
 );
-const CostumeZamshLazy = lazy(() =>
-  import("../pages/Farsh_Drop/CostumeZamsh")
-);
+const CostumeZamshLazy = lazy(() => import("../pages/Farsh_Drop/CostumeZamsh"));
 const CostumeTechLazy = lazy(() => import("../pages/Farsh_Drop/CostumeTech"));
 const CostumeParashuteLazy = lazy(() =>
   import("../pages/Farsh_Drop/CostumeParashute")
@@ -274,6 +275,11 @@ export const MENU = [
             element: <Sweatshirt_SILazy />,
           },
 
+          {
+            path: "/premium/stonik/classic_sweatshirt_si",
+            title: "Класичний Світшот SI",
+            element: <ClassicSweatshirt_SILazy />,
+          },
           {
             path: "/premium/stonik/zipsweatshirt",
             title: "Зіп Світшот SI",

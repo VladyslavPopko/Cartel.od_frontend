@@ -11,3 +11,10 @@
     padding: 8px 9px;
     border-radius: var(--button-border-radius);
   }
+  @media (max-width: 540px) {
+    .box{
+      font-size: 16px;
+      
+    }
+    
+  }

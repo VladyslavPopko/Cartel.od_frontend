@@ -11,3 +11,9 @@
 .select {
   color: var(--select-color);
 }
+
+@media (max-width: 540px) {
+  .text {
+    font-size: 16px;
+  }
+}

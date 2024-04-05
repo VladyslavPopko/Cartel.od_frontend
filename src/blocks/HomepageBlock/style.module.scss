@@ -136,3 +136,12 @@
   height: 10px;
   cursor: pointer;
 }
+
+@media (min-width: 540px) and (min-height: 1100px) {
+  .menu {
+    position: fixed;
+  }
+  .products {
+    margin-left: 200px;
+  }
+}

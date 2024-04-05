@@ -3,12 +3,11 @@
   gap: 35px;
   align-items: center;
   font-family: var(--font-family);
+  width: calc(100% - 30px);
   .img {
-    max-width: 250px;
     width: 100%;
   }
   .img_wrapper {
-    max-width: 250px;
     width: 40%;
   }
   .list {
@@ -105,8 +104,14 @@
 @media (max-width: 480px) {
   .section {
     flex-direction: column;
+    align-items: stretch;
     .img_wrapper {
       width: 100%;
     }
+  }
+}
+@media (min-width: 1040px) {
+  .section + .section{
+    margin-top: 10px;
   }
 }

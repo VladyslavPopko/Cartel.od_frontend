@@ -42,6 +42,8 @@ import { DATA_SLAVS_DROP_Shorts_SI } from "../../datas/Slavs_Drop/data_shorts_si
 import { DATA_SLAVS_DROP_Longsliv_SI } from "../../datas/Slavs_Drop/data_longsliv_si";
 import { DATA_SLAVS_DROP_ZIPHOODIE_SI } from "../../datas/Slavs_Drop/data_ziphoodie_si";
 import { DATA_FARSH_DROP_CostumeZamsh } from "../../datas/Farsh_Drop/data_costumeZamsh";
+import { DATA_SLAVS_DROP_ClassicSweatshirt_SI } from "../../datas/Slavs_Drop/data_classicsweatshirt_SI";
+import AnimationWrapper from "../../wrappers/AnimationWrapper";
 
 const HomepageBlock = () => {
   const data = [];
@@ -80,6 +82,7 @@ const HomepageBlock = () => {
   data.push(DATA_SLAVS_DROP_HOODIE_SI);
   data.push(DATA_SLAVS_DROP_ZIPHOODIE_SI);
   data.push(DATA_SLAVS_DROP_SWEATSHIRT_SI);
+  data.push(DATA_SLAVS_DROP_ClassicSweatshirt_SI);
   data.push(DATA_SLAVS_DROP_Jeans_SI);
   data.push(DATA_SLAVS_DROP_Shorts_SI);
   data.push(DATA_SLAVS_DROP_Zipsweatshirt_SI);
@@ -200,28 +203,30 @@ const HomepageBlock = () => {
           ))}
         </div>
 
-        <div>
+        <div className={styles.products}>
           {data.map((element, index) => (
             <div key={index}>
               {(isActive === element[0].main_title ||
                 isActive === element[0].category ||
                 isActive === false) && (
                 <div>
-                  <h2 className={styles.product_name}>
-                    {element[0].main_title}
-                  </h2>
-                  <div className={styles.list}>
-                    {element.map((el, index) => (
-                      <div key={index} className={styles.homepage_item}>
-                        <HomePageItemBox
-                          element={el}
-                          setisVisibleNotificationAddtoCart={
-                            setisVisibleNotificationAddtoCart
-                          }
-                        />
-                      </div>
-                    ))}
-                  </div>
+                  <AnimationWrapper>
+                    <h2 className={styles.product_name}>
+                      {element[0].main_title}
+                    </h2>
+                    <div className={styles.list}>
+                      {element.map((el, index) => (
+                        <div key={index} className={styles.homepage_item}>
+                          <HomePageItemBox
+                            element={el}
+                            setisVisibleNotificationAddtoCart={
+                              setisVisibleNotificationAddtoCart
+                            }
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </AnimationWrapper>
                 </div>
               )}
             </div>

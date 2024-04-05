@@ -6,7 +6,7 @@ import { addToCart } from "../../redux/slices/cartSlice";
 import { memo, useEffect, useState } from "react";
 
 const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
-  const { img, main_title, price, old_price, page } = element;
+  const { img, main_title, price, old_price, page, color } = element;
   const dispatch = useDispatch();
   const qty = useSelector((state) => state.cart.qty);
   const [isValue, setIsValue] = useState(false);
@@ -39,7 +39,7 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
         />
       </div>
       <NavLink className={styles.title} to={page}>
-        {main_title}
+        {main_title} ({color})
       </NavLink>
       <p className={styles.old_price}>{old_price} ₴</p>
       <p className={styles.price}>

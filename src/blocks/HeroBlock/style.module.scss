@@ -49,6 +49,12 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+@media (max-width: 540px) {
+  .title{
+    font-size: 26px;
+  }
+  
+}
 .title:nth-child(1) {
   margin-bottom: 5px;
 }
