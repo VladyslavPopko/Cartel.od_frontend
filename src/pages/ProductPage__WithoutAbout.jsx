@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useEffect } from "react";
 
 import HeroBlock from "../blocks/HeroBlock/HeroBlock";
 import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
@@ -30,6 +30,10 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
   const [selected, setSelected] = useState(null); // size
   const [isColor, setIsColor] = useState(ONE); // color
   const [isLoading, setIsLoading] = useState(false); // loading
+
+  useEffect(() => {
+    setIsColor(ONE);
+  }, [ONE]);
 
   const [isVisibleReview, setIsVisibleReview] = useState(false); // Review Form Modal
   const [isVisibleReviewThankyou, setIsVisibleReviewThankyou] = useState(false); // Review Thankyou Modal

@@ -41,6 +41,7 @@ const price = 999; // цена по которой продаем
 const old_price = 1299; // цена скидки
 const page = "/men/summercomplects/complect_kant"; // на какой странице находится товар
 
+
 // Как товары называются в CRM
 const full_name1 = "Комплект лето кант хаки";
 const full_name2 = "Комплект лето кант графит";

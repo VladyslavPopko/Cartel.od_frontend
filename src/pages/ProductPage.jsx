@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 
 import HeroBlock from "../blocks/HeroBlock/HeroBlock";
 import AboutBlock from "../blocks/AboutBlock/AboutBlock";
@@ -36,6 +36,10 @@ const ProductPage = ({ data, info, content }) => {
   const [isVisibleSizetable, setIsVisibleSizetable] = useState(false); // Modal SizeTable
   const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
     useState(false); // Notification Add to Cart
+
+  useEffect(() => {
+    setIsColor(ONE);
+  }, [ONE]);
 
   const handleReview = () => {
     setIsVisibleReview(true);
