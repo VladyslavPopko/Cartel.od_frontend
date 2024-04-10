@@ -166,7 +166,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <HeroBlock
+        <HeroBlock
             sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
@@ -177,6 +177,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
+            setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
 

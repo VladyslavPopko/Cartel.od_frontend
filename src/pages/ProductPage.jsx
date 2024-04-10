@@ -114,6 +114,7 @@ const ProductPage = ({ data, info, content }) => {
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
+            setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
         <AnimationWrapper>
@@ -168,6 +169,7 @@ const ProductPage = ({ data, info, content }) => {
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
+            setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
 
