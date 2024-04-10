@@ -62,9 +62,10 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    article: 132,
   },
   {
-     category: category,
+    category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -82,6 +83,7 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    article: 133,
   },
 ];
 

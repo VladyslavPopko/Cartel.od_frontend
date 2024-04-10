@@ -193,9 +193,10 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    article: 134,
   },
   {
-     category: category,
+    category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -213,6 +214,7 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    article: 135,
   },
   {
     category: category,
@@ -233,6 +235,7 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
+    article: 135,
   },
   {
     category: category,
@@ -253,6 +256,7 @@ export const DATA = [
     galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
+    article: 136,
   },
   {
     category: category,
@@ -273,6 +277,7 @@ export const DATA = [
     galery_img4: Img5_galery_img4,
     page: page,
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
+    article: 137,
   },
   {
     category: category,
@@ -293,6 +298,7 @@ export const DATA = [
     galery_img4: Img6_galery_img4,
     page: page,
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
+    article: 138,
   },
   {
     category: category,
@@ -313,9 +319,10 @@ export const DATA = [
     galery_img4: Img7_galery_img4,
     page: page,
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3, Img7gallery4],
+    article: 139,
   },
   {
-     category: category,
+    category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -333,9 +340,10 @@ export const DATA = [
     galery_img4: Img8_galery_img4,
     page: page,
     gallery: [Img8gallery1, Img8gallery2, Img8gallery3, Img8gallery4],
+    article: 140,
   },
   {
-   category: category,
+    category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -353,6 +361,7 @@ export const DATA = [
     galery_img4: Img9_galery_img4,
     page: page,
     gallery: [Img9gallery1, Img9gallery2, Img9gallery3, Img9gallery4],
+    article: 141,
   },
   {
     category: category,
@@ -373,9 +382,10 @@ export const DATA = [
     galery_img4: Img10_galery_img4,
     page: page,
     gallery: [Img10gallery1, Img10gallery2, Img10gallery3, Img10gallery4],
+    article: 142,
   },
   {
-        category: category,
+    category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -393,6 +403,7 @@ export const DATA = [
     galery_img4: Img11_galery_img4,
     page: page,
     gallery: [Img11gallery1, Img11gallery2, Img11gallery3, Img11gallery4],
+    article: 143,
   },
   {
     category: category,
@@ -413,6 +424,7 @@ export const DATA = [
     galery_img4: Img12_galery_img4,
     page: page,
     gallery: [Img12gallery1, Img12gallery2, Img12gallery3, Img12gallery4],
+    article: 144,
   },
 ];
 

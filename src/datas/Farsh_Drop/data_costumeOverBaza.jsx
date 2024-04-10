@@ -79,6 +79,7 @@ export const DATA = [
 
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3],
+    article: 30,
   },
   {
     category: category,
@@ -99,6 +100,7 @@ export const DATA = [
     // galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3],
+    article: 31,
   },
   {
     category: category,
@@ -119,6 +121,7 @@ export const DATA = [
     // galery_img4: Img3_galery_img4,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3],
     page: page,
+    article: 32,
   },
 ];
 

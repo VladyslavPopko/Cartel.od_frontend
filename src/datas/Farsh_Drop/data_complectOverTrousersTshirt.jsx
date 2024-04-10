@@ -131,6 +131,7 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    article: 18,
   },
   {
      category: category,
@@ -151,6 +152,7 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    article: 19,
   },
   {
     category: category,
@@ -171,6 +173,7 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
+    article: 20,
   },
   {
     category: category,
@@ -191,6 +194,7 @@ export const DATA = [
     galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
+    article: 21,
   },
   {
     category: category,
@@ -211,6 +215,7 @@ export const DATA = [
     galery_img4: Img5_galery_img4,
     page: page,
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
+    article: 22,
   },
   {
     category: category,
@@ -231,6 +236,7 @@ export const DATA = [
     galery_img4: Img6_galery_img4,
     page: page,
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
+    article: 23,
   },
   {
     category: category,
@@ -251,6 +257,7 @@ export const DATA = [
     galery_img4: Img7_galery_img4,
     page: page,
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3, Img7gallery4],
+    article: 24,
   },
 ];
 
