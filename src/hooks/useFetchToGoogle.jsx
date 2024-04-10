@@ -1,7 +1,6 @@
-import { memo } from "react";
 import { GOOGLE_API } from "../constanses/constanses";
 
-const useFetchToGoogle = (formBody, setIsLoading) => {
+export const UseFetchToGoogle = (formBody, setIsLoading) => {
   const postData = async () => {
     const result = await fetch(GOOGLE_API, {
       method: "POST",
@@ -24,5 +23,3 @@ const useFetchToGoogle = (formBody, setIsLoading) => {
   };
   return postData();
 };
-
-export default useFetchToGoogle;

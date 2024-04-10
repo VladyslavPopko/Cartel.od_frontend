@@ -1,25 +1,23 @@
 import { memo } from "react";
 import styles from "./style.module.scss";
-import cn from "classnames";
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 
 const ReviewThankyouBlock = ({
   isVisibleReviewThankyou,
   setIsVisibleReviewThankyou,
-  content
+  content,
 }) => {
-  const {text} = content;
+  const { text } = content;
   const handleCloseThankyou = () => {
     setIsVisibleReviewThankyou(false);
   };
   return (
-    <div
-      className={cn(styles.wrapper, isVisibleReviewThankyou && styles.active)}
-      onClick={handleCloseThankyou}
+    <ModalWrapper
+      isVisible={isVisibleReviewThankyou}
+      handleClose={handleCloseThankyou}
     >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        {text}
-      </div>
-    </div>
+      <article className={styles.section}> {text}</article>
+    </ModalWrapper>
   );
 };
 

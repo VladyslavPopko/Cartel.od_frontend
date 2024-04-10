@@ -54,12 +54,12 @@ export const CONTENT = {
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
     radio_first: "1 шорти 549 ₴",
-    radio_second_1: "2 шорт",
+    radio_second_1: "2 шортів",
     radio_second_2: " 988",
     radio_second_3: " ₴ (економія ",
     radio_second_4: "110",
     radio_second_5: " ₴)",
-    radio_third_1: "3 шорт",
+    radio_third_1: "3 шортів",
     radio_third_2: " 1 401",
     radio_third_3: " ₴ (економія ",
     radio_third_4: "246",
@@ -155,3 +155,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_FARSH_DROP_ShortsTrikotaj = CONTENT; // Поменять на имя, используемое для файла data

@@ -57,12 +57,12 @@ export const CONTENT = {
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
     radio_first: "1 штани 2 699 ₴",
-    radio_second_1: "2 штани",
+    radio_second_1: "2 штанів",
     radio_second_2: " 4 858",
     radio_second_3: " ₴ (економія ",
     radio_second_4: "540",
     radio_second_5: " ₴)",
-    radio_third_1: "3 штани",
+    radio_third_1: "3 штанів",
     radio_third_2: " 6 882",
     radio_third_3: " ₴ (економія ",
     radio_third_4: "1215",
@@ -158,3 +158,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_SLAVS_DROP_Trousers_CP = CONTENT; // Поменять на имя, используемое для файла data

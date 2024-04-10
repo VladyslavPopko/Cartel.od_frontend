@@ -1,8 +1,5 @@
-
-
 import heroImg1 from "../../img/_Farsh_Drop/CostumeZamsh/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/CostumeZamsh/heroImg2.png";
-
 
 import Img1_galery_img1 from "../../img/_Farsh_Drop/CostumeZamsh/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/CostumeZamsh/img1_galery_img2.jpg";
@@ -13,17 +10,6 @@ import Img2_galery_img1 from "../../img/_Farsh_Drop/CostumeZamsh/img2_galery_img
 import Img2_galery_img2 from "../../img/_Farsh_Drop/CostumeZamsh/img2_galery_img2.jpg";
 import Img2_galery_img3 from "../../img/_Farsh_Drop/CostumeZamsh/img2_galery_img3.jpg";
 import Img2_galery_img4 from "../../img/_Farsh_Drop/CostumeZamsh/img2_galery_img4.jpg";
-
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "CostumeZamsh"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Чорний";
@@ -40,7 +26,6 @@ const page = "/men/sportcomplects/costume_zamsh"; // на какой стран�
 // Как товары называются в CRM
 const full_name1 = "Костюм Замш Преміум Чорний";
 const full_name2 = "Костюм Замш Преміум Графіт";
-
 
 export const DATA = [
   {
@@ -83,4 +68,16 @@ export const DATA = [
   },
 ];
 
-export const DATA_FARSH_DROP_CostumeZamsh = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_FARSH_DROP_CostumeZamsh = DATA; // Поменять на имя, для отображения на главной странице
+export const INFO_FARSH_DROP_CostumeZamsh = {
+  // Как будут показываться размеры
+  S: "С",
+  M: "М",
+  L: "Л",
+  XL: "ХЛ",
+  XXL: "ХХЛ",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "CostumeZamsh", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

@@ -1,4 +1,3 @@
-
 import heroImg1 from "../../img/_Slavs_Drop/Trousers_CP/heroImg1.png";
 import heroImg2 from "../../img/_Slavs_Drop/Trousers_CP/heroImg2.png";
 
@@ -11,18 +10,6 @@ import Img2_galery_img1 from "../../img/_Slavs_Drop/Trousers_CP/img2_galery_img1
 import Img2_galery_img2 from "../../img/_Slavs_Drop/Trousers_CP/img2_galery_img2.jpg";
 import Img2_galery_img3 from "../../img/_Slavs_Drop/Trousers_CP/img2_galery_img3.jpg";
 import Img2_galery_img4 from "../../img/_Slavs_Drop/Trousers_CP/img2_galery_img4.jpg";
-
-
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Trousers_CP"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Хакі";
@@ -41,7 +28,7 @@ const full_name1 = "Штани хакі CP";
 const full_name2 = "Штани  чорні CP";
 
 // менять разве что id
-export const DATA = [ 
+export const DATA = [
   {
     category: category,
     main_title: main_title,
@@ -80,7 +67,20 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
   },
-  
 ];
 
-export const DATA_SLAVS_DROP_Trousers_CP = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_SLAVS_DROP_Trousers_CP = DATA; // Поменять на имя, для отображения на главной странице
+export const INFO_SLAVS_DROP_Trousers_CP = {
+  // Как будут показываться размеры
+  XS: "30",
+  S: "31",
+  M: "32",
+  L: "33",
+  XL: "34",
+  XXL: "36",
+  XXXL: "38",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "Shirts", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

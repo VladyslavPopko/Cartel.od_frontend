@@ -17,13 +17,12 @@
     line-height: 26.82px;
     text-align: center;
   }
-  @media (max-width:480px) {
-    .title{
+  @media (max-width: 480px) {
+    .title {
       font-size: 22px;
     }
-    .text{
+    .text {
       font-size: 18px;
     }
-    
   }
 }

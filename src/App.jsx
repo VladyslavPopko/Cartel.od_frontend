@@ -5,6 +5,7 @@ import "reset-css";
 import "./style/main.scss";
 import LoadingBox from "./components/LoadingBox/LoadingBox";
 import { MENU } from "./datas/data";
+import HomePageBanner from "./components/HomePageBanner/HomePageBanner";
 
 const HomePageLazy = lazy(() => import("./pages/HomePage"));
 
@@ -12,6 +13,7 @@ const App = () => {
   const routes = MENU;
   return (
     <>
+      <HomePageBanner />
       <Suspense fallback={<LoadingBox type="bars" color="red" />}>
         <Routes>
           {routes.map((element) => (

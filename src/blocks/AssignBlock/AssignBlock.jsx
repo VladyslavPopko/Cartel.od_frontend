@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styles from "./style.module.scss";
-import cn from "classnames";
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 
 const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
   const { link, title } = content;
@@ -8,11 +8,8 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
     setIsVisibleAssign(false);
   };
   return (
-    <div
-      className={cn(styles.wrapper, isVisibleAssign && styles.active)}
-      onClick={handleClose}
-    >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
+    <ModalWrapper isVisible={isVisibleAssign} handleClose={handleClose}>
+      <article className={styles.section}>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.text}>
           <p> Загальні положення</p>
@@ -279,8 +276,8 @@ const AssignBlock = ({ isVisibleAssign, setIsVisibleAssign, content }) => {
             юридичним особам для реалізації товару.
           </p>
         </div>
-      </div>
-    </div>
+      </article>
+    </ModalWrapper>
   );
 };
 

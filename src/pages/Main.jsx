@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import { memo, useState } from "react";
 import Cart from "../modals/cart";
 import Submit from "../modals/submit";
 import Thankyou from "../modals/thankyou";

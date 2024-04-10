@@ -62,7 +62,9 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
                     key={el.title}
                   >
                     {el.element ? (
-                      <NavLink className="products" to={el.path}>{el.title}</NavLink>
+                      <NavLink className="products" to={el.path}>
+                        {el.title}
+                      </NavLink>
                     ) : (
                       <div
                         className={cn(

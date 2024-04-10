@@ -42,9 +42,9 @@ const cartSlice = createSlice({
       );
       state.finalOldPrice = state.finalOldPrice + payload.old_price;
       state.qty = state.qty + 1;
-      //start facebook pixels event
+      // start facebook pixels event
       // fbq("track", "AddToCart");
-      //end facebook pixels event
+      // end facebook pixels event
     },
     deleteFromCart: (state, { payload }) => {
       state.items = state.items.filter((item) => item.index !== payload.index);

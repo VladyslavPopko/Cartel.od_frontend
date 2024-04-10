@@ -155,3 +155,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_FARSH_DROP_HoodieZmeykaOver = CONTENT; // Поменять на имя, используемое для файла data

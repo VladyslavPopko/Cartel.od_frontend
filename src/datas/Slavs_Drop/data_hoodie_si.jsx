@@ -1,4 +1,3 @@
-
 import heroImg1 from "../../img/_Slavs_Drop/hoodie_SI/heroImg1.png";
 import heroImg2 from "../../img/_Slavs_Drop/hoodie_SI/heroImg2.png";
 import heroImg3 from "../../img/_Slavs_Drop/hoodie_SI/heroImg3.png";
@@ -24,17 +23,6 @@ import Img4_galery_img2 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img2.j
 import Img4_galery_img3 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img3.jpg";
 import Img4_galery_img4 from "../../img/_Slavs_Drop/hoodie_SI/img4_galery_img4.jpg";
 
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Hoodie_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
-
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Чорний_Black_Ghost";
 export const TWO = "Фіолетовий";
@@ -56,7 +44,7 @@ const full_name3 = "Худі чорний SI";
 const full_name4 = "Худі червоний SI";
 
 // менять разве что id
-export const DATA = [ 
+export const DATA = [
   {
     category: category,
     main_title: main_title,
@@ -135,4 +123,16 @@ export const DATA = [
   },
 ];
 
-export const DATA_SLAVS_DROP_HOODIE_SI = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_SLAVS_DROP_HOODIE_SI = DATA; // Поменять на имя, для отображения на главной странице
+export const INFO_SLAVS_DROP_HOODIE_SI = {
+  // Как будут показываться размеры
+  S: "S",
+  M: "M",
+  L: "L",
+  XL: "XL",
+  XXL: "XXL",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "Shirts", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

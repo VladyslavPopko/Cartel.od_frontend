@@ -1,4 +1,3 @@
-import cn from "classnames";
 import styles from "./style.module.scss";
 import ColorCircle from "../ColorCircle/ColorCircle";
 import { memo } from "react";

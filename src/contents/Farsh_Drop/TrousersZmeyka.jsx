@@ -54,12 +54,12 @@ export const CONTENT = {
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
     radio_first: "1 штани 999 ₴",
-    radio_second_1: "2 штани",
+    radio_second_1: "2 штанів",
     radio_second_2: " 1 798",
     radio_second_3: " ₴ (економія ",
     radio_second_4: "200",
     radio_second_5: " ₴)",
-    radio_third_1: "3 штани",
+    radio_third_1: "3 штанів",
     radio_third_2: " 2 547",
     radio_third_3: " ₴ (економія ",
     radio_third_4: "450",
@@ -156,3 +156,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_FARSH_DROP_TrousersZmeyka = CONTENT; // Поменять на имя, используемое для файла data

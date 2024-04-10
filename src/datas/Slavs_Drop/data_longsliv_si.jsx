@@ -11,17 +11,6 @@ import Img2_galery_img2 from "../../img/_Slavs_Drop/Longsliv_SI/img2_galery_img2
 import Img2_galery_img3 from "../../img/_Slavs_Drop/Longsliv_SI/img2_galery_img3.jpg";
 import Img2_galery_img4 from "../../img/_Slavs_Drop/Longsliv_SI/img2_galery_img4.jpg";
 
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Longsliv_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
-
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Синій";
 export const TWO = "Чорний";
@@ -81,3 +70,16 @@ export const DATA = [
 ];
 
 export const DATA_SLAVS_DROP_Longsliv_SI = DATA; // Поменять на имя, для отображения на главной странице
+
+export const INFO_SLAVS_DROP_Longsliv_SI = {
+  // Как будут показываться размеры
+  S: "S",
+  M: "M",
+  L: "L",
+  XL: "XL",
+  XXL: "XXL",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "Shirts", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

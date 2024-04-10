@@ -101,16 +101,14 @@
 
 .hamburger,
 .close {
-  
   display: none;
   // transition: opacity var(--transition-ms);
   width: 20px;
   height: 20px;
   &.active {
-
     display: block;
   }
 }
-.logo{
+.logo {
   height: 30px;
 }

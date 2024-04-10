@@ -16,19 +16,17 @@
     margin-bottom: 35px;
     text-transform: uppercase;
   }
-  @media (max-width:480px) {
-    &_content{
+  @media (max-width: 480px) {
+    &_content {
       padding: 35px 15px;
     }
-    &_title{
+    &_title {
       font-size: 22px;
     }
-    
   }
-  &_list{
+  &_list {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-
 }

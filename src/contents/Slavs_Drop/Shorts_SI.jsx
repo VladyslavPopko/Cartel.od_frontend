@@ -54,12 +54,12 @@ export const CONTENT = {
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
     radio_first: "1 шорти 1 799 ₴",
-    radio_second_1: "2 шорт",
+    radio_second_1: "2 шортів",
     radio_second_2: " 3 238",
     radio_second_3: " ₴ (економія ",
     radio_second_4: "360",
     radio_second_5: " ₴)",
-    radio_third_1: "3 шорт",
+    radio_third_1: "3 шортів",
     radio_third_2: " 4 587",
     radio_third_3: " ₴ (економія ",
     radio_third_4: "810",
@@ -155,3 +155,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_SLAVS_DROP_Shorts_SI = CONTENT; // Поменять на имя, используемое для файла data

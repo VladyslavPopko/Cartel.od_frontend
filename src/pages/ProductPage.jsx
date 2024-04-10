@@ -1,41 +1,32 @@
-import HeroBlock from "../../blocks/HeroBlock/HeroBlock";
-import AboutBlock from "../../blocks/AboutBlock/AboutBlock";
-import DescriptionBlock from "../../blocks/DescriptionBlock/DescriptionBlock";
-import AboutUsBlock from "../../blocks/AboutUsBlock/AboutUsBlock";
-import ReviewBlock from "../../blocks/ReviewBlock/ReviewBlock";
-import GalleryBlock from "../../blocks/GalleryBlock/GalleryBlock";
-import SizetableBlock from "../../blocks/SizetableBlock/SizetableBlock";
-import AdvantageBlock from "../../blocks/AdvantageBlock/AdvantageBlock";
+import React, { memo } from "react";
 
-import Review from "../../modals/review";
-import ReviewThankyou from "../../modals/reviewThankyou";
-import SizeTable from "../../modals/sizeTable";
+import HeroBlock from "../blocks/HeroBlock/HeroBlock";
+import AboutBlock from "../blocks/AboutBlock/AboutBlock";
+import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
+import AboutUsBlock from "../blocks/AboutUsBlock/AboutUsBlock";
+import ReviewBlock from "../blocks/ReviewBlock/ReviewBlock";
+import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
+import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
+import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
 
-import NotificationBox from "../../components/NotificationBox/NotificationBox";
-import LoadingBox from "../../components/LoadingBox/LoadingBox";
-import AnimationWrapper from "../../wrappers/AnimationWrapper";
+import Review from "../modals/review";
+import ReviewThankyou from "../modals/reviewThankyou";
+import SizeTable from "../modals/sizeTable";
 
-import agree from "../../img/Notifications/agree.svg";
+import NotificationBox from "../components/NotificationBox/NotificationBox";
+import LoadingBox from "../components/LoadingBox/LoadingBox";
+import AnimationWrapper from "../wrappers/AnimationWrapper";
 
-import {
-  DATA,
-  GOOGLE_LIST,
-  GOOGLE_SHEET,
-  L,
-  M,
-  ONE,
-  S,
-  XL,
-  XXL,
-} from "../../datas/Farsh_Drop/data_shortsSummerClassic";
-import { memo, useState } from "react";
-import { CONTENT } from "../../contents/Farsh_Drop/ShortsSummerClassic";
+import agree from "../img/Notifications/agree.svg";
 
-import { REVIEW_LIST } from "../../constanses/constanses";
-import Main from "../Main";
-import AboutBlockWithoutPhotos from "../../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
+import { useState } from "react";
 
-const ShortsSummerClassic = () => {
+import { REVIEW_LIST } from "../constanses/constanses";
+import Main from "./Main";
+
+const ProductPage = ({ data, info, content }) => {
+  const { GOOGLE_LIST, GOOGLE_SHEET, L, M, ONE, S, XL, XXL } = info;
+
   const [selected, setSelected] = useState(null); // size
   const [isColor, setIsColor] = useState(ONE); // color
   const [isLoading, setIsLoading] = useState(false); // loading
@@ -62,24 +53,26 @@ const ShortsSummerClassic = () => {
     contentReviewThankYou,
     contentModalSizeTable,
     sizeArray,
-  } = CONTENT;
+  } = content;
 
   let size;
-  switch (selected) { // То какие размеры заходят в CRM
+  switch (
+    selected // То какие размеры заходят в CRM
+  ) {
     case "Розмір: S": {
-      size = "С";
+      size = S;
       break;
     }
     case "Розмір: M": {
-      size = "М";
+      size = M;
       break;
     }
     case "Розмір: L": {
-      size = "Л";
+      size = L;
       break;
     }
     case "Розмір: XL": {
-      size = "ХЛ";
+      size = XL;
       break;
     }
     case "Розмір: XXL": {
@@ -111,20 +104,20 @@ const ShortsSummerClassic = () => {
             isColor={isColor}
             setIsColor={setIsColor}
             addNotification={setisVisibleNotificationAddtoCart}
-            data={DATA}
+            data={data}
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
           />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlockWithoutPhotos
+          <AboutBlock
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio1"
             radioId2="radio2"
             radioId3="radio3"
-            data={DATA}
+            data={data}
             selected={selected}
           />
         </AnimationWrapper>
@@ -140,7 +133,7 @@ const ShortsSummerClassic = () => {
         <AnimationWrapper>
           <GalleryBlock
             content={contentGallery}
-            data={DATA}
+            data={data}
             isColor={isColor}
             setIsColor={setIsColor}
           />
@@ -155,24 +148,25 @@ const ShortsSummerClassic = () => {
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <AboutBlockWithoutPhotos
+          <AboutBlock
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
             radioId1="radio4"
             radioId2="radio5"
             radioId3="radio6"
-            data={DATA}
+            data={data}
             selected={selected}
           />
         </AnimationWrapper>
         <AnimationWrapper>
           <HeroBlock
-            size={size}
+            sizeArray={sizeArray}
+            sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}
             setIsColor={setIsColor}
             addNotification={setisVisibleNotificationAddtoCart}
-            data={DATA}
+            data={data}
             selected={selected}
             setSelected={setSelected}
             content={contentHero}
@@ -207,4 +201,4 @@ const ShortsSummerClassic = () => {
   );
 };
 
-export default memo(ShortsSummerClassic);
+export default memo(ProductPage);

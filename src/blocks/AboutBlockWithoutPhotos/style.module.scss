@@ -54,37 +54,34 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-
 }
 @media (max-width: 1079px) {
-  .text{
+  .text {
     font-size: 40px;
   }
-  
 }
 @media (max-width: 800px) {
-  .text{
+  .text {
     width: 75%;
   }
-  
 }
 @media (max-width: 540px) {
-  .text_item{
+  .text_item {
     gap: 15px;
   }
-  .title{
+  .title {
     font-size: 16px;
   }
-  .subtitle{
+  .subtitle {
     font-size: 14px;
   }
-  .text{
+  .text {
     font-size: 22px;
   }
   .text_item + .text_item {
     margin-bottom: 20px;
   }
-  .info{
+  .info {
     font-size: 10px;
   }
 }

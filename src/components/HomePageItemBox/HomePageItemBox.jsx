@@ -1,14 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styles from "./style.module.scss";
 import addToCartImg from "../../img/HomePage/addToCart.svg";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/slices/cartSlice";
 import { memo, useEffect, useState } from "react";
 
 const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
   const { img, main_title, price, old_price, page, color } = element;
   const dispatch = useDispatch();
-  const qty = useSelector((state) => state.cart.qty);
   const [isValue, setIsValue] = useState(false);
   const handleSubmit = () => {
     element.size = "Уточнити";

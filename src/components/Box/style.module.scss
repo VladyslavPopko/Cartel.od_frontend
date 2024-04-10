@@ -1,20 +1,18 @@
 .box {
-    color: var(--primary-color);
-    font-size: 20px;
-    font-style: italic;
-    font-family: var(--font-family);
-    font-weight: 800;
-    line-height: 27.5px;
-    text-align: left;
-    background: linear-gradient(180deg, #f95c5c 0%, #d5351f 99.99%);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    padding: 8px 9px;
-    border-radius: var(--button-border-radius);
+  color: var(--primary-color);
+  font-size: 20px;
+  font-style: italic;
+  font-family: var(--font-family);
+  font-weight: 800;
+  line-height: 27.5px;
+  text-align: left;
+  background: linear-gradient(180deg, #f95c5c 0%, #d5351f 99.99%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 8px 9px;
+  border-radius: var(--button-border-radius);
+}
+@media (max-width: 540px) {
+  .box {
+    font-size: 16px;
   }
-  @media (max-width: 540px) {
-    .box{
-      font-size: 16px;
-      
-    }
-    
-  }
+}

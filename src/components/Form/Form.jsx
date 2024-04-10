@@ -1,4 +1,3 @@
-import { memo } from "react";
 import styles from "./style.module.scss";
 
 const Form = ({ register, errors }) => {

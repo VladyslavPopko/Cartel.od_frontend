@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./style.module.scss";
 import cn from "classnames";
 import closeBanner from "../../img/HomePage/closeBanner.svg";

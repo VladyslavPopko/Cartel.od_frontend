@@ -4,6 +4,7 @@ import cn from "classnames";
 
 const Select = ({ selected, setSelected, sizeArray }) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log(sizeArray);
   return (
     <div className={cn(styles.select)}>
       <div

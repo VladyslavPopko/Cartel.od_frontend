@@ -5,7 +5,6 @@
 import heroImg1 from "../../img/_Farsh_Drop/ShortsLyon/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/ShortsLyon/heroImg2.png";
 
-
 import Img1_galery_img1 from "../../img/_Farsh_Drop/ShortsLyon/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/ShortsLyon/img1_galery_img2.jpg";
 import Img1_galery_img3 from "../../img/_Farsh_Drop/ShortsLyon/img1_galery_img3.jpg";
@@ -15,17 +14,6 @@ import Img2_galery_img1 from "../../img/_Farsh_Drop/ShortsLyon/img2_galery_img1.
 import Img2_galery_img2 from "../../img/_Farsh_Drop/ShortsLyon/img2_galery_img2.jpg";
 import Img2_galery_img3 from "../../img/_Farsh_Drop/ShortsLyon/img2_galery_img3.jpg";
 import Img2_galery_img4 from "../../img/_Farsh_Drop/ShortsLyon/img2_galery_img4.jpg";
-
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "ShirtLyon"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Молоко";
@@ -84,4 +72,16 @@ export const DATA = [
   },
 ];
 
-export const DATA_FARSH_DROP_ShortsLyon = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_FARSH_DROP_ShortsLyon = DATA; // Поменять на имя, для отображения на главной странице
+export const INFO_FARSH_DROP_ShortsLyon = {
+  // Как будут показываться размеры
+  S: "С",
+  M: "М",
+  L: "Л",
+  XL: "ХЛ",
+  XXL: "ХХЛ",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "ShortsLyon", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

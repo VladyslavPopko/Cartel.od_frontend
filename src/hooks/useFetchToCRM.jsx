@@ -1,8 +1,6 @@
-import { memo } from "react";
 import { CRM, CRM_API } from "../constanses/constanses";
 
-
-const useFetchToCRM = (data, setIsLoading) => {
+export const UseFetchToCRM = (data, setIsLoading) => {
   const postData = () => {
     const url = CRM;
 
@@ -27,5 +25,3 @@ const useFetchToCRM = (data, setIsLoading) => {
   };
   return postData();
 };
-
-export default useFetchToCRM;

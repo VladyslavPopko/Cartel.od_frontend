@@ -155,3 +155,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_SLAVS_DROP_HOODIE_SI = CONTENT; // Поменять на имя, используемое для файла data

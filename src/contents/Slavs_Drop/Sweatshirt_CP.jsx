@@ -155,3 +155,5 @@ export const CONTENT = {
     img: table,
   },
 };
+
+export const CONTENT_SLAVS_DROP_Sweatshirt_CP = CONTENT; // Поменять на имя, используемое для файла data

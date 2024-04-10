@@ -22,7 +22,7 @@ const DescriptionBlock = ({ content }) => {
     item4_logotext,
     item4_title,
     item4_subtitle,
-    item4_text
+    item4_text,
   } = content;
   return (
     <div className={styles.section}>

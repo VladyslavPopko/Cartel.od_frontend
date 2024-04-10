@@ -21,7 +21,12 @@ const HeroBlock = ({
   sizeArray,
 }) => {
   const { price, old_price, title, subtitle, footer_text } = content;
-  document.title = `Cartel - ${title} ${subtitle}`;
+  if (subtitle) {
+    document.title = `Cartel - ${title} ${subtitle}`;
+  } else {
+    document.title = `Cartel - ${title}`;
+  }
+
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     const info = data.filter((el) => el.color === isColor);

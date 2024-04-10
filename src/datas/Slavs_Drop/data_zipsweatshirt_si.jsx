@@ -41,17 +41,6 @@ import Img7_galery_img2 from "../../img/_Slavs_Drop/Zipsweatshirt_SI/img7_galery
 import Img7_galery_img3 from "../../img/_Slavs_Drop/Zipsweatshirt_SI/img7_galery_img3.jpg";
 import Img7_galery_img4 from "../../img/_Slavs_Drop/Zipsweatshirt_SI/img7_galery_img4.jpg";
 
-export const GOOGLE_SHEET =
-  "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401";
-export const GOOGLE_LIST = "Zipsweatshirt_SI"; // Для отзывов (В гугл таблицу заходит в столбец "Название")
-
-// Как будут показываться размеры
-export const S = "S";
-export const M = "M";
-export const L = "L";
-export const XL = "XL";
-export const XXL = "XXL";
-
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Чорний";
 export const TWO = "Білий";
@@ -68,7 +57,6 @@ const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 2399; // цена по которой продаем
 const old_price = 3099; // цена скидки
 const page = "/premium/stonik/zipsweatshirt"; // на какой странице находится товар
-
 
 // Как товары называются в CRM
 const full_name1 = "Зіп світшот чорний SI";
@@ -216,4 +204,17 @@ export const DATA = [
   },
 ];
 
-export const DATA_SLAVS_DROP_Zipsweatshirt_SI = DATA;  // Поменять на имя, для отображения на главной странице
+export const DATA_SLAVS_DROP_Zipsweatshirt_SI = DATA; // Поменять на имя, для отображения на главной странице
+
+export const INFO_SLAVS_DROP_Zipsweatshirt_SI = {
+  // Как будут показываться размеры
+  S: "S",
+  M: "M",
+  L: "L",
+  XL: "XL",
+  XXL: "XXL",
+  GOOGLE_SHEET:
+    "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
+  GOOGLE_LIST: "Shirts", // Для отзывов (В гугл таблицу заходит в столбец "Название")
+  ONE: ONE,
+};

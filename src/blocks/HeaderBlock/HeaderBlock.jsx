@@ -28,6 +28,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
             alt=""
           />
           <img
+            onClick={handleMenu}
             className={cn(styles.close, isMenu && styles.active)}
             src={close}
             alt=""

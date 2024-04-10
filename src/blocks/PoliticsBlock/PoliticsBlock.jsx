@@ -1,22 +1,19 @@
 import { memo } from "react";
 import styles from "./style.module.scss";
-import cn from "classnames";
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 
 const PoliticsBlock = ({
   isVisiblePolitics,
   setIsVisiblePolitics,
   content,
 }) => {
-  const {title, link} = content;
+  const { title, link } = content;
   const handleClose = () => {
     setIsVisiblePolitics(false);
   };
   return (
-    <div
-      className={cn(styles.wrapper, isVisiblePolitics && styles.active)}
-      onClick={handleClose}
-    >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
+    <ModalWrapper isVisible={isVisiblePolitics} handleClose={handleClose}>
+      <article className={styles.section}>
         <h2 className={styles.title}>{title}</h2>
         <div className={styles.text}>
           <p>
@@ -128,8 +125,8 @@ const PoliticsBlock = ({
             Конфіденційності. Всі скарги будуть розглянуті належним чином.
           </p>
         </div>
-      </div>
-    </div>
+      </article>
+    </ModalWrapper>
   );
 };
 

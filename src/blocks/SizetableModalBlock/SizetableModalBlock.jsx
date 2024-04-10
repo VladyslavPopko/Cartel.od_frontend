@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styles from "./style.module.scss";
-import cn from "classnames";
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 
 const SizetableModalBlock = ({
   isVisibleSizetable,
@@ -13,17 +13,12 @@ const SizetableModalBlock = ({
   };
 
   return (
-    <div
-      className={cn(styles.wrapper, isVisibleSizetable && styles.active)}
-      onClick={handleClose}
-    >
-      <div className={styles.section_content}>
-        <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-          <h2 className={styles.title}>{title}</h2>
-          <img draggable="false" className={styles.img} src={img} alt="" />
-        </div>
-      </div>
-    </div>
+    <ModalWrapper isVisible={isVisibleSizetable} handleClose={handleClose}>
+      <article className={styles.section}>
+        <h2 className={styles.title}>{title}</h2>
+        <img draggable="false" className={styles.img} src={img} alt="" />
+      </article>
+    </ModalWrapper>
   );
 };
 

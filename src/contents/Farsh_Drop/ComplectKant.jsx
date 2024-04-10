@@ -104,13 +104,11 @@ export const CONTENT = {
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
     item1_name: "Олег",
-    item1_text:
-      "Гарний, комфортний комплект,",
+    item1_text: "Гарний, комфортний комплект,",
     item2_name: "Влад",
     item2_text: "Тканина дихає, не жарко",
     item3_name: "Кирило",
-    item3_text:
-      "Якісний матеріал.",
+    item3_text: "Якісний матеріал.",
   },
   contentGallery: {
     title: "Галерея",
@@ -157,3 +155,4 @@ export const CONTENT = {
     img: table,
   },
 };
+export const CONTENT_FARSH_DROP_ComplectKant = CONTENT; // Поменять на имя, используемое для файла data

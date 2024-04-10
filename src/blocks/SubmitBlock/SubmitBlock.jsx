@@ -10,13 +10,13 @@ import {
   incrementQty,
 } from "../../redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import cn from "classnames";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
-import useFetchToGoogle from "../../hooks/useFetchToGoogle";
-import useFetchToCRM from "../../hooks/useFetchToCRM";
-import { memo } from "react";
+
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
+import { UseFetchToCRM } from "../../hooks/useFetchToCRM";
+import { UseFetchToGoogle } from "../../hooks/UseFetchToGoogle";
 
 const SubmitBlock = ({
   isVisibleSubmit,
@@ -32,8 +32,6 @@ const SubmitBlock = ({
   const { title_name, content_title, content_text, img } = content;
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.items);
-  const finalPrice = useSelector((state) => state.cart.finalPrice);
-  const qty = useSelector((state) => state.cart.qty);
 
   const handleCloseSubmit = () => {
     setIsVisibleSubmit(false);
@@ -56,7 +54,7 @@ const SubmitBlock = ({
       formBody.push("vendor=" + el.vendor);
       formBody = formBody.join("&");
 
-      useFetchToGoogle(formBody, setIsLoading);
+      UseFetchToGoogle(formBody, setIsLoading);
     });
     const products = [];
 
@@ -86,7 +84,7 @@ const SubmitBlock = ({
       utm_campaign: "", // utm_campaign (необязательно)
     };
 
-    useFetchToCRM(data_prod, setIsLoading);
+    UseFetchToCRM(data_prod, setIsLoading);
     dispatch(deleteCart());
     reset();
     setIsLoading(true);
@@ -112,67 +110,62 @@ const SubmitBlock = ({
     mode: "onChange",
   });
   return (
-    <div
-      className={cn(styles.wrapper, isVisibleSubmit && styles.active)}
-      onClick={handleCloseSubmit}
-    >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
-        <header className={styles.header}>
-          <h2 className={styles.title}>{title_name}</h2>
-          <img
-            draggable="false"
-            className={styles.close}
-            src={close}
-            alt=""
-            onClick={handleCloseSubmit}
-          />
-        </header>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <main className={styles.main}>
-            <div className={styles.main_header}>
-              <div className="">
-                <h3 className={styles.main_title}>{content_title}</h3>
-                <h4 className={styles.main_text}>{content_text}</h4>
-              </div>
-              <img draggable="false" src={img} alt="" />
+    <ModalWrapper isVisible={isVisibleSubmit} handleClose={handleCloseSubmit}>
+      <header className={styles.header}>
+        <h2 className={styles.title}>{title_name}</h2>
+        <img
+          draggable="false"
+          className={styles.close}
+          src={close}
+          alt=""
+          onClick={handleCloseSubmit}
+        />
+      </header>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <main className={styles.main}>
+          <div className={styles.main_header}>
+            <div className="">
+              <h3 className={styles.main_title}>{content_title}</h3>
+              <h4 className={styles.main_text}>{content_text}</h4>
             </div>
+            <img draggable="false" src={img} alt="" />
+          </div>
 
-            <Form register={register} errors={errors} />
-          </main>
-          <footer className={styles.footer}>
-            <div className={styles.footer_left}>
-              <h3 className={styles.footer_title}>Ваше замовлення:</h3>
-              {cart.map((el) => (
-                <CartBox
-                  key={el.full_name}
-                  img={el.img}
-                  title={el.name}
-                  color={el.color}
-                  size={el.size}
-                  count={el.qty}
-                  old_price={el.old_price}
-                  price={el.price}
-                  page={el.page}
-                  onClickInc={() => dispatch(incrementQty(el))}
-                  onClickDec={() => dispatch(decrementQty(el))}
-                />
-              ))}
-            </div>
-            <div className={styles.footer_right}>
-              <input
-                className={styles.input}
-                type="text"
-                placeholder="Промокод на знижку"
+          <Form register={register} errors={errors} />
+        </main>
+        <footer className={styles.footer}>
+          <div className={styles.footer_left}>
+            <h3 className={styles.footer_title}>Ваше замовлення:</h3>
+            {cart.map((el) => (
+              <CartBox
+                key={el.full_name}
+                img={el.img}
+                title={el.name}
+                color={el.color}
+                size={el.size}
+                count={el.qty}
+                old_price={el.old_price}
+                price={el.price}
+                page={el.page}
+                onClickInc={() => dispatch(incrementQty(el))}
+                onClickDec={() => dispatch(decrementQty(el))}
               />
-              <SubmitBox
-                setIsVisibleAssign={setIsVisibleAssign}
-                setIsVisiblePolitics={setIsVisiblePolitics}
-              />
-            </div>
-          </footer>
-        </form>
-      </div>
-    </div>
+            ))}
+          </div>
+          <div className={styles.footer_right}>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="Промокод на знижку"
+            />
+            <SubmitBox
+              setIsVisibleAssign={setIsVisibleAssign}
+              setIsVisiblePolitics={setIsVisiblePolitics}
+            />
+          </div>
+        </footer>
+      </form>
+    </ModalWrapper>
   );
 };
 

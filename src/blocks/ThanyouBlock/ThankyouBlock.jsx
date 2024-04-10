@@ -1,24 +1,23 @@
 import styles from "./style.module.scss";
 import close from "../../img/ThankyouBlock/close.svg";
-import cn from "classnames";
 import { memo } from "react";
+import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 
 const ThankyouBlock = ({
   isVisibleThankyou,
   setIsVisibleThankyou,
   content,
 }) => {
-   
-  const {title, text, img, status} = content;
+  const { title, text, img, status } = content;
   const handleCloseThankYou = () => {
     setIsVisibleThankyou(false);
   };
   return (
-    <div
-      className={cn(styles.wrapper, isVisibleThankyou && styles.active)}
-      onClick={handleCloseThankYou}
+    <ModalWrapper
+      isVisible={isVisibleThankyou}
+      handleClose={handleCloseThankYou}
     >
-      <div className={styles.section} onClick={(e) => e.stopPropagation()}>
+      <article className={styles.section}>
         <header className={styles.header}>
           <img
             draggable="false"
@@ -34,8 +33,8 @@ const ThankyouBlock = ({
           <img draggable="false" className={styles.img} src={img} alt="" />
           <h3 className={styles.status}>{status}</h3>
         </main>
-      </div>
-    </div>
+      </article>
+    </ModalWrapper>
   );
 };
 

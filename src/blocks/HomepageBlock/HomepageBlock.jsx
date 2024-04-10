@@ -1,12 +1,10 @@
-import { NavLink } from "react-router-dom";
 import styles from "./style.module.scss";
-import { Suspense, memo, useEffect, useState } from "react";
+import { memo, useState } from "react";
 import Button from "../../components/Button/Button";
 import HomePageItemBox from "../../components/HomePageItemBox/HomePageItemBox";
 import NotificationBox from "../../components/NotificationBox/NotificationBox";
 import agree from "../../img/Notifications/agree.svg";
 import cn from "classnames";
-import HomePageBanner from "../../components/HomePageBanner/HomePageBanner";
 import { MENU } from "../../datas/data";
 import open from "../../img/HomePage/open.png";
 
@@ -44,7 +42,8 @@ import { DATA_SLAVS_DROP_ZIPHOODIE_SI } from "../../datas/Slavs_Drop/data_ziphoo
 import { DATA_FARSH_DROP_CostumeZamsh } from "../../datas/Farsh_Drop/data_costumeZamsh";
 import { DATA_SLAVS_DROP_ClassicSweatshirt_SI } from "../../datas/Slavs_Drop/data_classicsweatshirt_SI";
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
-import AnimationTranslateXUp from "../../wrappers/AnimationTranslateXUp";
+import { useDispatch, useSelector } from "react-redux";
+import { changePage } from "../../redux/slices/pageSlice";
 
 const HomepageBlock = () => {
   const data = [];
@@ -98,8 +97,9 @@ const HomepageBlock = () => {
   const [isActive, setIsActive] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
   const [isStatus, setIsStatus] = useState("All");
-  const [isPage, setIsPage] = useState(1);
-  const [isPageCategory, setIsPageCategory] = useState(1);
+
+  const isPage = useSelector((state) => state.pagination.page);
+  const dispatch = useDispatch();
 
   const menu = MENU;
   const handleALL = () => {
@@ -266,8 +266,7 @@ const HomepageBlock = () => {
             ))}
             <Button
               onClick={() => {
-                setIsPage(isPage + 2);
-                setIsPageCategory(isPageCategory + 2);
+                dispatch(changePage(isPage + 2));
               }}
               text="Показати ще"
               className={styles.button_more}
@@ -369,8 +368,6 @@ const HomepageBlock = () => {
           ))}
         </div> */}
       </div>
-
-      <HomePageBanner />
     </div>
   );
 };
