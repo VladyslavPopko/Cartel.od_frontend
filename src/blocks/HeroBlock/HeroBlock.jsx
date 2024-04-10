@@ -23,6 +23,9 @@ const HeroBlock = ({
   setIsVisibleGallery,
 }) => {
   const { price, old_price, title, subtitle, footer_text } = content;
+  const info = data.filter((el) => el.color === isColor);
+  let article = info[0].article;
+
   if (subtitle) {
     document.title = `Cartel - ${title} ${subtitle}`;
   } else {
@@ -49,7 +52,7 @@ const HeroBlock = ({
             <div className={styles.content_top_item}>
               <p className={styles.title}>{title}</p>
               <p className={styles.title}>{subtitle}</p>
-
+              <p className={styles.article}>Артикул: {article}</p>
               <p className={styles.text_color}>колір:</p>
               <div className={styles.color_list}>
                 {data.map((el) => (

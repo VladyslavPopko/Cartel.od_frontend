@@ -170,3 +170,14 @@
     height: 325px;
   }
 }
+.article{
+  margin-bottom: 10px;
+  text-align: right;
+  width: 80%;
+}
+@media (max-width: 970px) {
+  .article{
+    width: 100%;
+  }
+  
+}
