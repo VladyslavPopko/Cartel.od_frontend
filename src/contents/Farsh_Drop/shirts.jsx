@@ -22,6 +22,8 @@ import advantageItem6Img from "../../img/_Farsh_Drop/shirts/advantageImg6.svg";
 
 import table from "../../img/_Farsh_Drop/shirts/table.jpg";
 
+const price = 999; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -44,25 +46,25 @@ export const CONTENT = {
     subtitle_first_text1: "пРИ ЗАМОЛВЕННІ ",
     subtitle_first_text2: "2 СОРОЧОК",
     subtitle_first_text3: " ЗНИЖКА:",
-    subtitle_first_old_price: "1 998 ₴",
-    subtitle_first_price: "1 798 ₴",
+    subtitle_first_old_price: ` ${Math.round(price * 2)} ₴`,
+    subtitle_first_price: ` ${Math.round(price * 2 * 0.9)} ₴`,
     subtitle_first_value: "-10%",
     subtitle_second_text1: "пРИ ЗАМОЛВЕННІ ",
     subtitle_second_text2: "3 СОРОЧОК",
     subtitle_second_text3: " ЗНИЖКА:",
-    subtitle_second_old_price: "2 997 ₴",
-    subtitle_second_price: "2 547 ₴",
+    subtitle_second_old_price: ` ${Math.round(price * 3)} ₴`,
+    subtitle_second_price: ` ${Math.round(price * 3 * 0.85)} ₴`,
     subtitle_second_value: "-15%",
-    radio_first: "1 Сорочка 999 ₴",
+    radio_first: `1 Сорочка ${price} ₴`,
     radio_second_1: "2 сорочки",
-    radio_second_2: " 1 798",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "200",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 сорочки",
-    radio_third_2: " 2 547",
+    radio_third_1: "3 сорочки ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "450",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {

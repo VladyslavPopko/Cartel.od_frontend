@@ -22,6 +22,8 @@ import advantageItem6Img from "../../img/_Farsh_Drop/ComplectLampasShortsTshirt/
 
 import table from "../../img/_Farsh_Drop/ComplectLampasShortsTshirt/table.jpg";
 
+const price = 799; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -53,16 +55,16 @@ export const CONTENT = {
     // subtitle_second_old_price: "2 997 ₴",
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
-    radio_first: "1 комплект 799 ₴",
-    radio_second_1: "2 комплекта",
-    radio_second_2: " 1 438",
+    radio_first: `1 комплект ${price} ₴`,
+    radio_second_1: "2 комплекта ",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "160",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 комплекта",
-    radio_third_2: " 2 037",
+    radio_third_1: "3 комплекта ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "360",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {
@@ -104,13 +106,11 @@ export const CONTENT = {
     item2_img1: reviewItem2Img,
     item3_img1: reviewItem3Img,
     item1_name: "Аліна",
-    item1_text:
-      "Дуже сподобався комплект. Брала на подарунок хлопцю.",
+    item1_text: "Дуже сподобався комплект. Брала на подарунок хлопцю.",
     item2_name: "Стас",
     item2_text: "Відходив сезон, а він як новий, замовив інший колір",
     item3_name: "Микола",
-    item3_text:
-      "Якщо коротко - Те що треба",
+    item3_text: "Якщо коротко - Те що треба",
   },
   contentGallery: {
     title: "Галерея",

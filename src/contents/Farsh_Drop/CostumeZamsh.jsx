@@ -21,6 +21,8 @@ import advantageItem6Img from "../../img/_Farsh_Drop/CostumeZamsh/advantageImg6.
 
 import table from "../../img/_Farsh_Drop/CostumeZamsh/table.jpg";
 
+const price = 1499; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -52,16 +54,16 @@ export const CONTENT = {
     // subtitle_second_old_price: "2 997 ₴",
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
-    radio_first: "1 костюм 1 499 ₴",
+    radio_first: `1 костюм ${price} ₴`,
     radio_second_1: "2 костюма",
-    radio_second_2: " 2 698",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "300",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 костюма",
-    radio_third_2: " 3 822",
+    radio_third_1: "3 костюма ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "675",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {

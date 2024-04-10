@@ -22,6 +22,8 @@ import advantageItem6Img from "../../img/_Slavs_Drop/Sweatshirt_CP/advantageImg6
 
 import table from "../../img/_Slavs_Drop/Sweatshirt_CP/table.jpg";
 
+const price = 2249; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -53,16 +55,16 @@ export const CONTENT = {
     // subtitle_second_old_price: "2 997 ₴",
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
-    radio_first: "1 світшот 2 249 ₴",
+    radio_first: `1 світшот ${price} ₴`,
     radio_second_1: "2 світшота",
-    radio_second_2: " 4 048",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "450",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 світшота",
-    radio_third_2: " 5 736",
+    radio_third_1: "3 світшота ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "1 011",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {

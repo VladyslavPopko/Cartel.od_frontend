@@ -22,6 +22,8 @@ import advantageItem6Img from "../../img/_Slavs_Drop/Longsliv_SI/advantageImg6.s
 
 import table from "../../img/_Slavs_Drop/Longsliv_SI/table.jpg";
 
+const price = 1949; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -53,16 +55,16 @@ export const CONTENT = {
     // subtitle_second_old_price: "2 997 ₴",
     // subtitle_second_price: "2 399 ₴",
     subtitle_second_value: "-15%",
-    radio_first: "1 лонгслів 1 949 ₴",
+    radio_first: `1 лонгслів ${price} ₴`,
     radio_second_1: "2 лонгсліва",
-    radio_second_2: " 3 508",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "390",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 лонгсліва",
-    radio_third_2: " 4 971",
+    radio_third_1: "3 лонгсліва ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "876",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {

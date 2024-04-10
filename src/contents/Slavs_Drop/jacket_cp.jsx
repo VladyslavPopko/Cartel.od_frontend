@@ -22,6 +22,8 @@ import advantageItem6Img from "../../img/_Slavs_Drop/jacket_CP/advantageImg6.svg
 
 import table from "../../img/_Slavs_Drop/jacket_CP/table.jpg";
 
+const price = 2999; // необходимо для формулы высчета скидки за несколько товаров
+
 export const CONTENT = {
   sizeArray: [
     { id: 1, value: "S" },
@@ -44,25 +46,25 @@ export const CONTENT = {
     subtitle_first_text1: "пРИ ЗАМОЛВЕННІ ",
     subtitle_first_text2: "2 КУРТКИ",
     subtitle_first_text3: " ЗНИЖКА:",
-    subtitle_first_old_price: "5 998 ₴",
-    subtitle_first_price: "5 398 ₴",
+    subtitle_first_old_price: ` ${Math.round(price * 2)} ₴`,
+    subtitle_first_price: ` ${Math.round(price * 2 * 0.9)} ₴`,
     subtitle_first_value: "-10%",
     subtitle_second_text1: "пРИ ЗАМОЛВЕННІ ",
     subtitle_second_text2: "3 КУРТКИ",
     subtitle_second_text3: " ЗНИЖКА:",
-    subtitle_second_old_price: "8 997 ₴",
-    subtitle_second_price: "7 647 ₴",
+    subtitle_second_old_price: ` ${Math.round(price * 3)} ₴`,
+    subtitle_second_price: ` ${Math.round(price * 3 * 0.85)} ₴`,
     subtitle_second_value: "-15%",
-    radio_first: "1 куртка 2 999 ₴",
+    radio_first: `1 куртка ${price} ₴`,
     radio_second_1: "2 куртки",
-    radio_second_2: " 5 398",
+    radio_second_2: Math.round(price * 2 * 0.9),
     radio_second_3: " ₴ (економія ",
-    radio_second_4: "600",
+    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
     radio_second_5: " ₴)",
-    radio_third_1: "3 куртки",
-    radio_third_2: " 7 647",
+    radio_third_1: "3 куртки ",
+    radio_third_2: Math.round(price * 3 * 0.85),
     radio_third_3: " ₴ (економія ",
-    radio_third_4: "1 350",
+    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
     radio_third_5: " ₴)",
   },
   contentDesciption: {
