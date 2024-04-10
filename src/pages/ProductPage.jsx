@@ -196,13 +196,15 @@ const ProductPage = ({ data, info, content }) => {
           isVisibleSizetable={isVisibleSizetable}
           setIsVisibleSizetable={setIsVisibleSizetable}
         />
-        <GalleryPage
-          setIsVisibleGallery={setIsVisibleGallery}
-          isVisibleGallery={isVisibleGallery}
-          data={data}
-          isColor={isColor}
-          setIsColor={setIsColor}
-        />
+        {isVisibleGallery && (
+          <GalleryPage
+            setIsVisibleGallery={setIsVisibleGallery}
+            isVisibleGallery={isVisibleGallery}
+            data={data}
+            isColor={isColor}
+            setIsColor={setIsColor}
+          />
+        )}
       </Main>
     </>
   );

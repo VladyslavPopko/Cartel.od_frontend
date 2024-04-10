@@ -29,10 +29,9 @@ const GalleryModalBlock = ({
           (el) =>
             isColor === el.color && (
               <div className={styles.list} key={el.id}>
-                <GalleryBox img={el.galery_img1} />
-                <GalleryBox img={el.galery_img2} />
-                <GalleryBox img={el.galery_img3} />
-                <GalleryBox img={el.galery_img4} />
+                {el.gallery.map((e) => (
+                  <GalleryBox key={e} img={e} />
+                ))}
               </div>
             )
         )}

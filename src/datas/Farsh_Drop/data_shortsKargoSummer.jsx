@@ -6,6 +6,8 @@ import heroImg1 from "../../img/_Farsh_Drop/ShortsKargoSummer/heroImg1.png";
 import heroImg2 from "../../img/_Farsh_Drop/ShortsKargoSummer/heroImg2.png";
 import heroImg3 from "../../img/_Farsh_Drop/ShortsKargoSummer/heroImg3.png";
 
+//Сжатые
+
 import Img1_galery_img1 from "../../img/_Farsh_Drop/ShortsKargoSummer/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/ShortsKargoSummer/img1_galery_img2.jpg";
 import Img1_galery_img3 from "../../img/_Farsh_Drop/ShortsKargoSummer/img1_galery_img3.jpg";
@@ -20,6 +22,23 @@ import Img3_galery_img1 from "../../img/_Farsh_Drop/ShortsKargoSummer/img3_galer
 import Img3_galery_img2 from "../../img/_Farsh_Drop/ShortsKargoSummer/img3_galery_img2.jpg";
 import Img3_galery_img3 from "../../img/_Farsh_Drop/ShortsKargoSummer/img3_galery_img3.jpg";
 import Img3_galery_img4 from "../../img/_Farsh_Drop/ShortsKargoSummer/img3_galery_img4.jpg";
+
+//Без сжатия
+
+import Img1gallery1 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img1_gallery_img1.jpg";
+import Img1gallery2 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img1_gallery_img3.jpg";
+import Img1gallery4 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img1_gallery_img4.jpg";
+
+import Img2gallery1 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img2_gallery_img1.jpg";
+import Img2gallery2 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img2_gallery_img2.jpg";
+import Img2gallery3 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img2_gallery_img3.jpg";
+import Img2gallery4 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img2_gallery_img4.jpg";
+
+import Img3gallery1 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img3_gallery_img1.jpg";
+import Img3gallery2 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img3_gallery_img2.jpg";
+import Img3gallery3 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img3_gallery_img3.jpg";
+import Img3gallery4 from "../../img/_Farsh_Drop/ShortsKargoSummer/original/img3_gallery_img4.jpg";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Хакі";
@@ -58,9 +77,10 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
   },
   {
-    category: category,
+     category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -77,6 +97,7 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
   },
   {
     category: category,
@@ -96,6 +117,7 @@ export const DATA = [
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
     page: page,
+    gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
   },
 ];
 

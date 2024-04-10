@@ -5,6 +5,8 @@ import heroImg4 from "../../img/_Slavs_Drop/jacket_CP/heroImg4.png";
 import heroImg5 from "../../img/_Slavs_Drop/jacket_CP/heroImg5.png";
 import heroImg6 from "../../img/_Slavs_Drop/jacket_CP/heroImg6.png";
 
+//Сжатые
+
 import Img1_galery_img1 from "../../img/_Slavs_Drop/jacket_CP/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Slavs_Drop/jacket_CP/img1_galery_img2.jpg";
 import Img1_galery_img3 from "../../img/_Slavs_Drop/jacket_CP/img1_galery_img3.jpg";
@@ -34,6 +36,38 @@ import Img6_galery_img1 from "../../img/_Slavs_Drop/jacket_CP/img6_galery_img1.j
 import Img6_galery_img2 from "../../img/_Slavs_Drop/jacket_CP/img6_galery_img2.jpg";
 import Img6_galery_img3 from "../../img/_Slavs_Drop/jacket_CP/img6_galery_img3.jpg";
 import Img6_galery_img4 from "../../img/_Slavs_Drop/jacket_CP/img6_galery_img4.jpg";
+
+//Без сжатия
+
+import Img1gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img1_gallery_img1.jpg";
+import Img1gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img1_gallery_img3.jpg";
+import Img1gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img1_gallery_img4.jpg";
+
+import Img2gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img2_gallery_img1.jpg";
+import Img2gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img2_gallery_img2.jpg";
+import Img2gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img2_gallery_img3.jpg";
+import Img2gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img2_gallery_img4.jpg";
+
+import Img3gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img3_gallery_img1.jpg";
+import Img3gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img3_gallery_img2.jpg";
+import Img3gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img3_gallery_img3.jpg";
+import Img3gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img3_gallery_img4.jpg";
+
+import Img4gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img4_gallery_img1.jpg";
+import Img4gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img4_gallery_img2.jpg";
+import Img4gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img4_gallery_img3.jpg";
+import Img4gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img4_gallery_img4.jpg";
+
+import Img5gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img5_gallery_img1.jpg";
+import Img5gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img5_gallery_img2.jpg";
+import Img5gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img5_gallery_img3.jpg";
+import Img5gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img5_gallery_img4.jpg";
+
+import Img6gallery1 from "../../img/_Slavs_Drop/jacket_CP/original/img6_gallery_img1.jpg";
+import Img6gallery2 from "../../img/_Slavs_Drop/jacket_CP/original/img6_gallery_img2.jpg";
+import Img6gallery3 from "../../img/_Slavs_Drop/jacket_CP/original/img6_gallery_img3.jpg";
+import Img6gallery4 from "../../img/_Slavs_Drop/jacket_CP/original/img6_gallery_img4.jpg";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Хакі";
@@ -79,9 +113,10 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
   },
   {
-    category: category,
+     category: category,
     main_title: main_title,
     name: name,
     vendor: VENDOR_NAME,
@@ -98,6 +133,7 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
   },
   {
     category: category,
@@ -117,6 +153,7 @@ export const DATA = [
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
     page: page,
+    gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
   },
   {
     category: category,
@@ -136,6 +173,7 @@ export const DATA = [
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
     page: page,
+    gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
   },
   {
     category: category,
@@ -155,6 +193,7 @@ export const DATA = [
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
     page: page,
+    gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
   },
   {
     category: category,
@@ -174,6 +213,7 @@ export const DATA = [
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
     page: page,
+    gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
   },
 ];
 

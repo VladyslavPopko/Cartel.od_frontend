@@ -1,6 +1,8 @@
 import heroImg1 from "../../img/_Slavs_Drop/Shorts_SI/heroImg1.png";
 import heroImg2 from "../../img/_Slavs_Drop/Shorts_SI/heroImg2.png";
 
+//Сжатые
+
 import Img1_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img2.jpg";
 import Img1_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img1_galery_img3.jpg";
@@ -10,6 +12,19 @@ import Img2_galery_img1 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img1.j
 import Img2_galery_img2 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img2.jpg";
 // import Img2_galery_img3 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img3.jpg";
 // import Img2_galery_img4 from "../../img/_Slavs_Drop/Shorts_SI/img2_galery_img4.jpg";
+
+//Без сжатия
+
+import Img1gallery1 from "../../img/_Slavs_Drop/Shorts_SI/original/img1_gallery_img1.jpg";
+import Img1gallery2 from "../../img/_Slavs_Drop/Shorts_SI/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Slavs_Drop/Shorts_SI/original/img1_gallery_img3.jpg";
+import Img1gallery4 from "../../img/_Slavs_Drop/Shorts_SI/original/img1_gallery_img4.jpg";
+
+import Img2gallery1 from "../../img/_Slavs_Drop/Shorts_SI/original/img2_gallery_img1.jpg";
+import Img2gallery2 from "../../img/_Slavs_Drop/Shorts_SI/original/img2_gallery_img2.jpg";
+// import Img2gallery3 from "../../img/_Slavs_Drop/Shorts_SI/original/img2_gallery_img3.jpg";
+// import Img2gallery4 from "../../img/_Slavs_Drop/Shorts_SI/original/img2_gallery_img4.jpg";
+
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Чорні";
@@ -47,6 +62,7 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
   },
   {
     category: category,
@@ -66,6 +82,7 @@ export const DATA = [
     // galery_img3: Img2_galery_img3,
     // galery_img4: Img2_galery_img4,
     page: page,
+    gallery: [Img2gallery1, Img2gallery2],
   },
 ];
 

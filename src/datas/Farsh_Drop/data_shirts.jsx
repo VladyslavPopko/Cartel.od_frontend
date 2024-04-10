@@ -2,9 +2,11 @@ import img1 from "../../img/_Farsh_Drop/shirts/img1.jpg";
 import img2 from "../../img/_Farsh_Drop/shirts/img2.jpg";
 import img3 from "../../img/_Farsh_Drop/shirts/img3.jpg";
 
-import heroImg1 from "../../img/_Farsh_Drop/shirts/heroImg1.png";
-import heroImg2 from "../../img/_Farsh_Drop/shirts/heroImg2.png";
-import heroImg3 from "../../img/_Farsh_Drop/shirts/heroImg3.png";
+// import heroImg1 from "../../img/_Farsh_Drop/shirts/heroImg1.png";
+// import heroImg2 from "../../img/_Farsh_Drop/shirts/heroImg2.png";
+// import heroImg3 from "../../img/_Farsh_Drop/shirts/heroImg3.png";
+
+//Сжатые
 
 import Img1_galery_img1 from "../../img/_Farsh_Drop/shirts/img1_galery_img1.jpg";
 import Img1_galery_img2 from "../../img/_Farsh_Drop/shirts/img1_galery_img2.jpg";
@@ -20,6 +22,23 @@ import Img3_galery_img1 from "../../img/_Farsh_Drop/shirts/img3_galery_img1.jpg"
 import Img3_galery_img2 from "../../img/_Farsh_Drop/shirts/img3_galery_img2.jpg";
 import Img3_galery_img3 from "../../img/_Farsh_Drop/shirts/img3_galery_img3.jpg";
 import Img3_galery_img4 from "../../img/_Farsh_Drop/shirts/img3_galery_img4.jpg";
+
+//Без сжатия
+
+import Img1gallery1 from "../../img/_Farsh_Drop/shirts/original/img1_gallery_img1.jpg";
+import Img1gallery2 from "../../img/_Farsh_Drop/shirts/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Farsh_Drop/shirts/original/img1_gallery_img3.jpg";
+import Img1gallery4 from "../../img/_Farsh_Drop/shirts/original/img1_gallery_img4.jpg";
+
+import Img2gallery1 from "../../img/_Farsh_Drop/shirts/original/img2_gallery_img1.jpg";
+import Img2gallery2 from "../../img/_Farsh_Drop/shirts/original/img2_gallery_img2.jpg";
+import Img2gallery3 from "../../img/_Farsh_Drop/shirts/original/img2_gallery_img3.jpg";
+import Img2gallery4 from "../../img/_Farsh_Drop/shirts/original/img2_gallery_img4.jpg";
+
+import Img3gallery1 from "../../img/_Farsh_Drop/shirts/original/img3_gallery_img1.jpg";
+import Img3gallery2 from "../../img/_Farsh_Drop/shirts/original/img3_gallery_img2.jpg";
+import Img3gallery3 from "../../img/_Farsh_Drop/shirts/original/img3_gallery_img3.jpg";
+import Img3gallery4 from "../../img/_Farsh_Drop/shirts/original/img3_gallery_img4.jpg";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 export const ONE = "Коричнева";
@@ -52,12 +71,13 @@ export const DATA = [
     price_const: price,
     old_price: old_price,
     img: img1,
-    hero_img: heroImg1,
+    hero_img: img1,
     galery_img1: Img1_galery_img1,
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
   },
   {
     category: category,
@@ -71,12 +91,13 @@ export const DATA = [
     price_const: price,
     old_price: old_price,
     img: img2,
-    hero_img: heroImg2,
+    hero_img: img2,
     galery_img1: Img2_galery_img1,
     galery_img2: Img2_galery_img2,
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
   },
   {
     category: category,
@@ -90,12 +111,13 @@ export const DATA = [
     price_const: price,
     old_price: old_price,
     img: img3,
-    hero_img: heroImg3,
+    hero_img: img3,
     galery_img1: Img3_galery_img1,
     galery_img2: Img3_galery_img2,
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
     page: page,
+    gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
   },
 ];
 

@@ -5,7 +5,7 @@ const GalleryBox = (props) => {
   const { img } = props;
   return (
     <div className={styles.section}>
-      <img draggable="false" className={styles.img} src={img} />
+      <img loading="lazy" draggable="false" className={styles.img} src={img} />
     </div>
   );
 };

@@ -166,7 +166,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
           />
         </AnimationWrapper>
         <AnimationWrapper>
-        <HeroBlock
+          <HeroBlock
             sizeArray={sizeArray}
             sizeValue={size}
             setIsVisibleSizetable={setIsVisibleSizetable}
@@ -204,13 +204,15 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
           isVisibleSizetable={isVisibleSizetable}
           setIsVisibleSizetable={setIsVisibleSizetable}
         />
-        <GalleryPage
-          setIsVisibleGallery={setIsVisibleGallery}
-          isVisibleGallery={isVisibleGallery}
-          data={data}
-          isColor={isColor}
-          setIsColor={setIsColor}
-        />
+        {isVisibleGallery && (
+          <GalleryPage
+            setIsVisibleGallery={setIsVisibleGallery}
+            isVisibleGallery={isVisibleGallery}
+            data={data}
+            isColor={isColor}
+            setIsColor={setIsColor}
+          />
+        )}
       </Main>
     </>
   );
