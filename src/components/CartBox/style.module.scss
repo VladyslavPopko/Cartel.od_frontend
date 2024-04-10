@@ -1,14 +1,14 @@
 .section {
   display: flex;
   gap: 35px;
-  align-items: center;
+  align-items: start;
   font-family: var(--font-family);
   width: 100%;
   .img {
     width: 100%;
   }
   .img_wrapper {
-    width: 40%;
+    width: 20%;
   }
   .list {
     flex: 1 1 auto;

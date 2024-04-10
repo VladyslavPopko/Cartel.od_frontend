@@ -1,6 +1,6 @@
 import { GOOGLE_API } from "../constanses/constanses";
 
-export const UseFetchToGoogle = (formBody, setIsLoading) => {
+const UseFetchToGoogle = (formBody, setIsLoading) => {
   const postData = async () => {
     const result = await fetch(GOOGLE_API, {
       method: "POST",
@@ -23,3 +23,5 @@ export const UseFetchToGoogle = (formBody, setIsLoading) => {
   };
   return postData();
 };
+
+export default UseFetchToGoogle;

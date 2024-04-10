@@ -23,6 +23,7 @@ import { useState } from "react";
 
 import { REVIEW_LIST } from "../constanses/constanses";
 import Main from "./Main";
+import GalleryPage from "../modals/gallery";
 
 const ProductPage = ({ data, info, content }) => {
   const { GOOGLE_LIST, GOOGLE_SHEET, L, M, ONE, S, XL, XXL } = info;
@@ -36,6 +37,7 @@ const ProductPage = ({ data, info, content }) => {
   const [isVisibleSizetable, setIsVisibleSizetable] = useState(false); // Modal SizeTable
   const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
     useState(false); // Notification Add to Cart
+  const [isVisibleGallery, setIsVisibleGallery] = useState(false); // Gallery Modal
 
   useEffect(() => {
     setIsColor(ONE);
@@ -135,14 +137,6 @@ const ProductPage = ({ data, info, content }) => {
           <ReviewBlock content={contentReview} handleReview={handleReview} />
         </AnimationWrapper>
         <AnimationWrapper>
-          <GalleryBlock
-            content={contentGallery}
-            data={data}
-            isColor={isColor}
-            setIsColor={setIsColor}
-          />
-        </AnimationWrapper>
-        <AnimationWrapper>
           <SizetableBlock
             content={contentSizeTable}
             setIsVisibleSizetable={setIsVisibleSizetable}
@@ -199,6 +193,13 @@ const ProductPage = ({ data, info, content }) => {
           content={contentModalSizeTable}
           isVisibleSizetable={isVisibleSizetable}
           setIsVisibleSizetable={setIsVisibleSizetable}
+        />
+        <GalleryPage
+          setIsVisibleGallery={setIsVisibleGallery}
+          isVisibleGallery={isVisibleGallery}
+          data={data}
+          isColor={isColor}
+          setIsColor={setIsColor}
         />
       </Main>
     </>

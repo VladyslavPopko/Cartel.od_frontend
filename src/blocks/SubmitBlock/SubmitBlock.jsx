@@ -15,8 +15,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { formValidationSchema } from "../../validationSchemas/formValidationsSchema";
 
 import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
-import { UseFetchToCRM } from "../../hooks/useFetchToCRM";
-import { UseFetchToGoogle } from "../../hooks/UseFetchToGoogle";
+import UseFetchToCRM from "../../hooks/UseFetchToCRM";
+import UseFetchToGoogle from "../../hooks/UseFetchToGoogle";
 
 const SubmitBlock = ({
   isVisibleSubmit,

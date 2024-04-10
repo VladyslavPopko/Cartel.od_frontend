@@ -1,12 +1,11 @@
 .section {
   overflow: hidden;
   border-radius: var(--section-border-radius);
+  text-align: center;
 }
 .img {
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: var(--section-border-radius);
   transition: all var(--transition-ms);
-  &:hover {
-    transform: scale(1.2);
-  }
+
 }

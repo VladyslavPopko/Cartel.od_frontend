@@ -7,6 +7,7 @@ import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
 import cn from "classnames";
 import { memo } from "react";
+import SliderHomeBox from "../../components/SliderHomeBox/SliderHomeBox";
 
 const HeroBlock = ({
   setIsVisibleSizetable,
@@ -19,6 +20,7 @@ const HeroBlock = ({
   setIsColor,
   sizeValue,
   sizeArray,
+  setIsVisibleGallery,
 }) => {
   const { price, old_price, title, subtitle, footer_text } = content;
   if (subtitle) {
@@ -88,18 +90,13 @@ const HeroBlock = ({
             </div>
 
             <div className={styles.content_top_item}>
-              {data.map(
-                (el) =>
-                  isColor === el.color && (
-                    <img
-                      draggable="false"
-                      src={el.hero_img}
-                      key={el.id}
-                      alt=""
-                      className={styles.img}
-                    />
-                  )
-              )}
+              <div className={styles.slider}>
+                <SliderHomeBox
+                  setIsVisibleGallery={setIsVisibleGallery}
+                  data={data}
+                  isColor={isColor}
+                />
+              </div>
             </div>
           </div>
           <p className={styles.content_bottom}>{footer_text}</p>

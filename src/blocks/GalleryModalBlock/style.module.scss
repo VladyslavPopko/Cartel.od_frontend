@@ -1,0 +1,21 @@
+.section {
+  padding: 15px 0;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+}
+.header {
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  filter: drop-shadow(0 0 4px var(--primary-color));
+}
+

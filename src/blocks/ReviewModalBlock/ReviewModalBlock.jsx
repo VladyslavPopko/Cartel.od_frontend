@@ -7,7 +7,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { reviewValidationSchema } from "../../validationSchemas/reviewValidationsSchema";
 import { memo } from "react";
 import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
-import { UseFetchToGoogle } from "../../hooks/UseFetchToGoogle";
+import UseFetchToGoogle from "../../hooks/UseFetchToGoogle";
 
 const ReviewModalBlock = ({
   isVisibleReview,
