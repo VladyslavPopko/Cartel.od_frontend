@@ -2,50 +2,19 @@
   max-width: var(--content-max-width);
   margin: 0 auto;
   font-family: var(--font-family);
-  padding: 35px 15px;
+  padding: 0 15px 35px;
 }
 .section {
   display: flex;
   gap: 15px;
 }
-.menu {
-  width: 200px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  &_mainitem {
-    width: 200px;
-    cursor: pointer;
-    transition: all var(--transition-ms);
-    &:hover {
-      text-decoration: underline;
-    }
-    &.active {
-      font-weight: 600;
-    }
-  }
-  &_item {
-    width: 200px;
-    cursor: pointer;
-    transition: all var(--transition-ms);
-    margin-left: 5px;
-    &:hover {
-      text-decoration: underline;
-    }
-    &.active {
-      font-weight: 600;
-    }
-  }
-}
+
 .list {
   display: flex;
   flex-wrap: wrap;
   gap: 35px 15px;
   justify-content: space-evenly;
+  align-items: end;
 }
 @media (max-width: 540px) {
   .list {
@@ -68,45 +37,8 @@
     flex-direction: column;
     align-items: center;
   }
-  .menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 
-.category {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  cursor: pointer;
-  .text {
-    font-weight: 400;
-    font-size: 18px;
-    transition: all var(--transition-ms);
-    &.active {
-      font-weight: 600;
-    }
-  }
-}
-.subcategory {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  .text {
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 5px;
-    cursor: pointer;
-    transition: all var(--transition-ms);
-    &:hover {
-      text-decoration: underline;
-    }
-    &.active {
-      font-weight: 600;
-    }
-  }
-}
 .product {
   .text {
     font-weight: 400;
@@ -124,27 +56,6 @@
   }
 }
 
-.subcategory_wrapper {
-  display: none;
-  &.active {
-    display: block;
-  }
-}
-
-.open {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-}
-
-@media (min-width: 540px) and (min-height: 1100px) {
-  .menu {
-    position: fixed;
-  }
-  .products {
-    margin-left: 200px;
-  }
-}
 .button_more {
   margin-top: 15px;
   cursor: pointer;
