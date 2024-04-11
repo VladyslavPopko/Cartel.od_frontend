@@ -107,14 +107,15 @@
   height: 0px;
   opacity: 0;
   pointer-events: none;
-  transition: all var(--transition-ms);
-  text-align: center;
+  transition: height var(--transition-ms);
+
   &.active {
-    padding: 10px 0;
+    transition: height var(--transition-ms), opacity 1s;
     height: 250px;
-    overflow: auto;
     pointer-events: all;
     opacity: 1;
+    margin: 15px;
+    overflow: auto;
   }
 }
 
