@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 import filterImg from "../../img/HomePage/filter.png";
 import sortImg from "../../img/HomePage/sort.png";
-import { useState } from "react";
+import { memo, useState } from "react";
 import cn from "classnames";
 
 const FilterHomePage = ({
@@ -132,4 +132,4 @@ const FilterHomePage = ({
   );
 };
 
-export default FilterHomePage;
+export default memo(FilterHomePage) ;

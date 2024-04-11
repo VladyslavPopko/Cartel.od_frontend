@@ -108,6 +108,8 @@
   opacity: 0;
   pointer-events: none;
   transition: height var(--transition-ms);
+  display: flex;
+  justify-content: center;
 
   &.active {
     transition: height var(--transition-ms), opacity 1s;
@@ -126,6 +128,7 @@
   transition: all var(--transition-ms);
   margin-left: 10px;
   margin-top: 5px;
+
   &.active {
     font-weight: 600;
   }
