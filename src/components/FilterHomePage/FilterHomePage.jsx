@@ -76,14 +76,6 @@ const FilterHomePage = ({
             Сортировка
           </h2>
         </div>
-        {isValueSort && (
-          <p
-            onClick={() => setIsValueSort(null)}
-            className={styles.filter_reset}
-          >
-            СбросСортировки
-          </p>
-        )}
       </div>
       <div className={cn(styles.main_filter, isActiveFilter && styles.active)}>
         <div className={styles.main_filter_content}>

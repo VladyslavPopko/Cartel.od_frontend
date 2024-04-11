@@ -25,13 +25,7 @@ const HomepageBlock = () => {
 
   const menu = MENU;
   let data = homeData;
-  isValueFilter
-    ? (data = homeData.filter(
-        (category) => category.category === isValueFilter
-      ))
-    : (data = homeData);
 
-  console.log(data);
   isValueSort && (
     isValueSort === "По возрастанию цены" &&
     data.sort(function (a, b) {
@@ -41,7 +35,15 @@ const HomepageBlock = () => {
     data.sort(function (a, b) {
       return b.price - a.price;
     })
-  )
+  ) 
+
+  isValueFilter
+    ? (data = homeData.filter(
+        (category) => category.category === isValueFilter
+      ))
+    : (data = homeData);
+
+
 
 
   return (
