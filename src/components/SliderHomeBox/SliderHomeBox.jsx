@@ -19,7 +19,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
               key={el.index}
               transitionDuration="600"
             >
-              {el.hero_img && (
+              {el?.hero_img && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -30,7 +30,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img1 && (
+              {el?.galery_img1 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -41,7 +41,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img2 && (
+              {el?.galery_img2 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -52,7 +52,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img3 && (
+              {el?.galery_img3 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -63,7 +63,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img4 && (
+              {el?.galery_img4 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -81,7 +81,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
               key={el.index}
               transitionDuration="600"
             >
-              {el.hero_img && (
+              {el?.hero_img && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -92,7 +92,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img1 && (
+              {el?.galery_img1 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -103,7 +103,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img2 && (
+              {el?.galery_img2 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}
@@ -114,7 +114,7 @@ const SliderHomeBox = ({ isColor, data, setIsVisibleGallery }) => {
                   />
                 </div>
               )}
-              {el.galery_img3 && (
+              {el?.galery_img3 && (
                 <div className={cn("each-slide-effect", styles.img_wrapper)}>
                   <img
                     onClick={handleOpenGalley}

@@ -51,6 +51,11 @@ const page = "/men/trousers/trousers_kargo"; // на какой странице
 const full_name1 = "Карго Хаки";
 const full_name2 = "Карго Черные";
 
+//Артикулы
+const article1 = 75;
+const article2 = 76;
+
+
 export const DATA = [
   {
     category: category,
@@ -71,7 +76,8 @@ export const DATA = [
     // galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1],
-    article: 75,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -92,7 +98,8 @@ export const DATA = [
     // galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1],
-    article: 76,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
 ];
 

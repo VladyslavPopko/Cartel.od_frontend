@@ -17,7 +17,8 @@ const cartSlice = createSlice({
           item.id === payload.id &&
           item.category === payload.category &&
           item.name === payload.name &&
-          item.size === payload.size
+          item.size === payload.size && 
+          item.article === payload.article
       );
       if (item) {
         item.qty = item.qty + 1;
@@ -59,7 +60,8 @@ const cartSlice = createSlice({
           item.id === payload.id &&
           item.index === payload.index &&
           item.name === payload.name &&
-          item.size === payload.size
+          item.size === payload.size && 
+          item.article === payload.article
       );
       if (item.qty <= 1) {
         state.items = state.items.filter(
@@ -106,7 +108,8 @@ const cartSlice = createSlice({
         (item) =>
           item.id === payload.id &&
           item.index === payload.index &&
-          item.size === payload.size
+          item.size === payload.size && 
+          item.article === payload.article
       );
       if (state.qty >= 1) {
         state.items.forEach(

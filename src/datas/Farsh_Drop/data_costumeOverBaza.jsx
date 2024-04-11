@@ -58,6 +58,13 @@ const full_name1 = "Костюм Овер база чорний";
 const full_name2 = "Костюм Овер база мокко";
 const full_name3 = "Костюм Овер база графіт";
 
+//Артикулы
+const article1 = 30;
+const article2 = 31;
+const article3 = 32;
+
+
+
 export const DATA = [
   {
     category: category,
@@ -79,7 +86,8 @@ export const DATA = [
 
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3],
-    article: 30,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -100,7 +108,8 @@ export const DATA = [
     // galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3],
-    article: 31,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -121,7 +130,8 @@ export const DATA = [
     // galery_img4: Img3_galery_img4,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3],
     page: page,
-    article: 32,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
 ];
 

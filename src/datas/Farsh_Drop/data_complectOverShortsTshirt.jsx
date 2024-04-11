@@ -110,6 +110,17 @@ const full_name5 = "Костюм лето оверсайз графит";
 const full_name6 = "Костюм лето оверсайз черный";
 const full_name7 = "Костюм лето оверсайз голубой";
 
+//Артикулы
+const article1 = 11;
+const article2 = 12;
+const article3 = 13;
+const article4 = 14;
+const article5 = 15;
+const article6 = 16;
+const article7 = 17;
+
+
+
 export const DATA = [
   {
     category: category,
@@ -130,7 +141,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 11,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
      category: category,
@@ -151,7 +163,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 12,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -172,7 +185,8 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
-    article: 13,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
   {
     category: category,
@@ -193,7 +207,8 @@ export const DATA = [
     galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
-    article: 14,
+    article: article4,
+    search: `${name} ${main_title} ${article4}`,
   },
   {
     category: category,
@@ -214,7 +229,8 @@ export const DATA = [
     galery_img4: Img5_galery_img4,
     page: page,
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
-    article: 15,
+    article: article5,
+    search: `${name} ${main_title} ${article5}`,
   },
   {
     category: category,
@@ -235,7 +251,8 @@ export const DATA = [
     galery_img4: Img6_galery_img4,
     page: page,
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
-    article: 16,
+    article: article6,
+    search: `${name} ${main_title} ${article6}`,
   },
   {
     category: category,
@@ -256,7 +273,8 @@ export const DATA = [
     galery_img4: Img7_galery_img4,
     page: page,
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3, Img7gallery4],
-    article: 17,
+    article: article7,
+    search: `${name} ${main_title} ${article7}`,
   },
 ];
 

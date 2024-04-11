@@ -166,14 +166,15 @@ import {
 } from "./Slavs_Drop/data_trousers_cp";
 import { CONTENT_SLAVS_DROP_Trousers_CP } from "../contents/Slavs_Drop/Trousers_CP";
 import ProductPage__WithoutAbout from "../pages/ProductPage__WithoutAbout";
+import { DATA_HOMEPAGE } from "../datas/data_homePage";
+import HomePage from "../pages/HomePage";
 
-const HomePageLazy = lazy(() => import("../pages/HomePage"));
 
 export const MENU = [
   {
     path: "/",
     title: "Чоловікам",
-    element: <HomePageLazy />,
+    element: <HomePage data={DATA_HOMEPAGE} />,
     category: [
       {
         path: "",
@@ -184,7 +185,7 @@ export const MENU = [
             path: "/men/sorochki/shirts",
             title: "Весняна сорочка",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_FARSH_DROP_SHIRTS}
                 info={INFO_FARSH_DROP_SHIRTS}
                 content={CONTENT_FARSH_DROP_SHIRTS}
@@ -490,7 +491,7 @@ export const MENU = [
             path: "/premium/stonik/hoodie_si",
             title: "Худі SI",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_SLAVS_DROP_HOODIE_SI}
                 info={INFO_SLAVS_DROP_HOODIE_SI}
                 content={CONTENT_SLAVS_DROP_HOODIE_SI}
@@ -501,7 +502,7 @@ export const MENU = [
             path: "/premium/stonik/ziphoodie_si",
             title: "Зіп Худі SI",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_SLAVS_DROP_ZIPHOODIE_SI}
                 info={INFO_SLAVS_DROP_ZIPHOODIE_SI}
                 content={CONTENT_SLAVS_DROP_ZIPHOODIE_SI}
@@ -512,7 +513,7 @@ export const MENU = [
             path: "/premium/stonik/sweatshirt_si",
             title: "Світшот SI",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_SLAVS_DROP_SWEATSHIRT_SI}
                 info={INFO_SLAVS_DROP_SWEATSHIRT_SI}
                 content={CONTENT_SLAVS_DROP_SWEATSHIRT_SI}
@@ -535,7 +536,7 @@ export const MENU = [
             path: "/premium/stonik/zipsweatshirt",
             title: "Зіп Світшот SI",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_SLAVS_DROP_Zipsweatshirt_SI}
                 info={INFO_SLAVS_DROP_Zipsweatshirt_SI}
                 content={CONTENT_SLAVS_DROP_Zipsweatshirt_SI}
@@ -586,7 +587,7 @@ export const MENU = [
             path: "/premium/cp_company/jackect_cp",
             title: "Куртка CP",
             element: (
-              <ProductPage
+              <ProductPage__WithoutAbout
                 data={DATA_SLAVS_DROP_JACKET_CP}
                 info={INFO_SLAVS_DROP_JACKET_CP}
                 content={CONTENT_SLAVS_DROP_JACKET_CP}

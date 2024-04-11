@@ -85,6 +85,7 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
                           isSubCategory === el.title && "appear"
                         )}
                         key={e.title}
+                        onClick={() => setIsMenu(false)}
                       >
                         <NavLink to={e.path} className="products">
                           {e.title}

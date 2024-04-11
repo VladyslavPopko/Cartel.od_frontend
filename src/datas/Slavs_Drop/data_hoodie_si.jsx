@@ -67,6 +67,12 @@ const full_name2 = "Худі фіолетовий SI";
 const full_name3 = "Худі чорний SI";
 const full_name4 = "Худі червоний SI";
 
+//Артикулы
+const article1 = 93;
+const article2 = 94;
+const article3 = 95;
+const article4 = 96;
+
 // менять разве что id
 export const DATA = [
   {
@@ -88,7 +94,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 93,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
      category: category,
@@ -109,7 +116,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 94,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -130,7 +138,8 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
-    article: 95,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
   {
     category: category,
@@ -151,7 +160,8 @@ export const DATA = [
     galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
-    article: 96,
+    article: article4,
+    search: `${name} ${main_title} ${article4}`,
   },
 ];
 

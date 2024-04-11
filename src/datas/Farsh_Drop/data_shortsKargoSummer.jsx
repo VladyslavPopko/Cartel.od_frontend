@@ -58,6 +58,13 @@ const full_name1 = "Шорти карго хакі";
 const full_name2 = "Шорти карго молоко";
 const full_name3 = "Шорти карго чорні";
 
+//Артикулы
+const article1 = 55;
+const article2 = 56;
+const article3 = 57;
+
+
+
 export const DATA = [
   {
     category: category,
@@ -78,7 +85,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 55,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
      category: category,
@@ -99,7 +107,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 56,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -120,7 +129,8 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
-    article: 57,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
 ];
 

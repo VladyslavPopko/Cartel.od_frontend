@@ -172,6 +172,20 @@ const full_name10 = "Зіп Худі джинс SI";
 const full_name11 = " Зіп Худі чорний SI";
 const full_name12 = "Зіп Худі кремовий SI";
 
+//Артикулы
+const article1 = 134;
+const article2 = 135;
+const article3 = 136;
+const article4 = 137;
+const article5 = 138;
+const article6 = 139;
+const article7 = 140;
+const article8 = 141;
+const article9 = 142;
+const article10 = 143;
+const article11 = 144;
+const article12 = 145;
+
 // менять разве что id
 export const DATA = [
   {
@@ -193,7 +207,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 134,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -214,7 +229,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 135,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -235,7 +251,8 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
-    article: 135,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
   {
     category: category,
@@ -256,7 +273,8 @@ export const DATA = [
     galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
-    article: 136,
+    article: article4,
+    search: `${name} ${main_title} ${article4}`,
   },
   {
     category: category,
@@ -277,7 +295,8 @@ export const DATA = [
     galery_img4: Img5_galery_img4,
     page: page,
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
-    article: 137,
+    article: article5,
+    search: `${name} ${main_title} ${article5}`,
   },
   {
     category: category,
@@ -298,7 +317,8 @@ export const DATA = [
     galery_img4: Img6_galery_img4,
     page: page,
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
-    article: 138,
+    article: article6,
+    search: `${name} ${main_title} ${article6}`,
   },
   {
     category: category,
@@ -319,7 +339,8 @@ export const DATA = [
     galery_img4: Img7_galery_img4,
     page: page,
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3, Img7gallery4],
-    article: 139,
+    article: article7,
+    search: `${name} ${main_title} ${article7}`,
   },
   {
     category: category,
@@ -340,7 +361,8 @@ export const DATA = [
     galery_img4: Img8_galery_img4,
     page: page,
     gallery: [Img8gallery1, Img8gallery2, Img8gallery3, Img8gallery4],
-    article: 140,
+    article: article8,
+    search: `${name} ${main_title} ${article8}`,
   },
   {
     category: category,
@@ -361,7 +383,8 @@ export const DATA = [
     galery_img4: Img9_galery_img4,
     page: page,
     gallery: [Img9gallery1, Img9gallery2, Img9gallery3, Img9gallery4],
-    article: 141,
+    article: article9,
+    search: `${name} ${main_title} ${article9}`,
   },
   {
     category: category,
@@ -382,7 +405,8 @@ export const DATA = [
     galery_img4: Img10_galery_img4,
     page: page,
     gallery: [Img10gallery1, Img10gallery2, Img10gallery3, Img10gallery4],
-    article: 142,
+    article: article10,
+    search: `${name} ${main_title} ${article10}`,
   },
   {
     category: category,
@@ -403,7 +427,8 @@ export const DATA = [
     galery_img4: Img11_galery_img4,
     page: page,
     gallery: [Img11gallery1, Img11gallery2, Img11gallery3, Img11gallery4],
-    article: 143,
+   article: article11,
+    search: `${name} ${main_title} ${article11}`,
   },
   {
     category: category,
@@ -424,7 +449,8 @@ export const DATA = [
     galery_img4: Img12_galery_img4,
     page: page,
     gallery: [Img12gallery1, Img12gallery2, Img12gallery3, Img12gallery4],
-    article: 144,
+    article: article12,
+    search: `${name} ${main_title} ${article12}`,
   },
 ];
 

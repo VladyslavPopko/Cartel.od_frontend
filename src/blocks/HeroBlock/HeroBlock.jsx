@@ -24,7 +24,7 @@ const HeroBlock = ({
 }) => {
   const { price, old_price, title, subtitle, footer_text } = content;
   const info = data.filter((el) => el.color === isColor);
-  let article = info[0].article;
+  let article = info[0]?.article;
 
   if (subtitle) {
     document.title = `Cartel - ${title} ${subtitle}`;

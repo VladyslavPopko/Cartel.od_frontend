@@ -58,6 +58,12 @@ const full_name1 = "Футболка оверсайз чорна";
 const full_name2 = "Футболка оверсайз біла";
 const full_name3 = "Футболка оверсайз графіт";
 
+//Артикулы
+const article1 = 84;
+const article2 = 85;
+const article3 = 86;
+
+
 export const DATA = [
   {
     category: category,
@@ -78,7 +84,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 84,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
      category: category,
@@ -99,7 +106,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 85,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -120,7 +128,8 @@ export const DATA = [
     galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
-    article: 86,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
 ];
 

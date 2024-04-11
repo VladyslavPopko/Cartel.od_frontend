@@ -9,6 +9,7 @@ import { CONTENT } from "../contents/main";
 import LoadingBox from "../components/LoadingBox/LoadingBox";
 import { GOOGLE_LIST, GOOGLE_SHEET } from "../constanses/constanses";
 import MenuBox from "../components/MenuBox/MenuBox";
+import Search from "../modals/search";
 
 const Main = ({ children }) => {
   const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
@@ -16,6 +17,7 @@ const Main = ({ children }) => {
   const [isVisibleThankyou, setIsVisibleThankyou] = useState(false); // Thankyou Modal
   const [isVisibleAssign, setIsVisibleAssign] = useState(false); // Assign Modal
   const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
+  // const [isVisibleSearch, setIsVisibleSearch] = useState(false); // Search Modal
 
   const [isLoading, setIsLoading] = useState(false); // loading
   const [isMenu, setIsMenu] = useState(false); // menu Open
@@ -80,6 +82,10 @@ const Main = ({ children }) => {
         isVisiblePolitics={isVisiblePolitics}
         setIsVisiblePolitics={setIsVisiblePolitics}
       />
+      {/* <Search
+        isVisibleSearch={isVisibleSearch}
+        setIsVisibleSearch={setIsVisibleSearch}
+      /> */}
     </div>
   );
 };

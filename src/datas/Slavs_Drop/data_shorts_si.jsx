@@ -42,6 +42,10 @@ const page = "premium/stonik/shorts_si"; // на какой странице н�
 const full_name1 = "Шорти чорні SI";
 const full_name2 = "Шорти сині CP";
 
+//Артикулы
+const article1 = 107;
+const article2 = 108;
+
 // менять разве что id
 export const DATA = [
   {
@@ -63,7 +67,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 107,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -84,7 +89,8 @@ export const DATA = [
     // galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2],
-    article: 108,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
 ];
 

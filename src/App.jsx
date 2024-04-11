@@ -6,6 +6,8 @@ import "./style/main.scss";
 import LoadingBox from "./components/LoadingBox/LoadingBox";
 import { MENU } from "./datas/data";
 import HomePageBanner from "./components/HomePageBanner/HomePageBanner";
+import HomePage from "./pages/HomePage";
+import { DATA_HOMEPAGE } from "./datas/data_homePage";
 
 const HomePageLazy = lazy(() => import("./pages/HomePage"));
 
@@ -34,7 +36,7 @@ const App = () => {
               ))}
             </>
           ))}
-          <Route path="*" element={<HomePageLazy />} />
+          <Route path="*" element={<HomePage data={DATA_HOMEPAGE} />} />
         </Routes>
       </Suspense>
     </>

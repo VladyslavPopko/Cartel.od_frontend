@@ -41,6 +41,10 @@ const page = "/premium/cp_company/trousers_cp"; // на какой страни�
 const full_name1 = "Штани хакі CP";
 const full_name2 = "Штани  чорні CP";
 
+//Артикулы
+const article1 = 132;
+const article2 = 133;
+
 // менять разве что id
 export const DATA = [
   {
@@ -62,7 +66,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 132,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -83,7 +88,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 133,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
 ];
 

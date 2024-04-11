@@ -111,6 +111,16 @@ const full_name5 = "Лето шорты брючные бежевые";
 const full_name6 = "Лето шорты брючные черные";
 const full_name7 = "Лето шорты брючные клетка";
 
+//Артикулы
+const article1 = 60;
+const article2 = 61;
+const article3 = 62;
+const article4 = 63;
+const article5 = 64;
+const article6 = 65;
+const article7 = 66;
+
+
 export const DATA = [
   {
     category: category,
@@ -131,7 +141,8 @@ export const DATA = [
     // galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3],
-    article: 60,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
     category: category,
@@ -152,7 +163,8 @@ export const DATA = [
     // galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3],
-    article: 61,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
   {
     category: category,
@@ -173,7 +185,8 @@ export const DATA = [
     // galery_img4: Img3_galery_img4,
     page: page,
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3],
-    article: 62,
+    article: article3,
+    search: `${name} ${main_title} ${article3}`,
   },
   {
     category: category,
@@ -194,7 +207,8 @@ export const DATA = [
     // galery_img4: Img4_galery_img4,
     page: page,
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3],
-    article: 63,
+    article: article4,
+    search: `${name} ${main_title} ${article4}`,
   },
   {
     category: category,
@@ -215,7 +229,8 @@ export const DATA = [
     // galery_img4: Img5_galery_img4,
     page: page,
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3],
-    article: 64,
+    article: article5,
+    search: `${name} ${main_title} ${article5}`,
   },
   {
     category: category,
@@ -236,7 +251,8 @@ export const DATA = [
     // galery_img4: Img6_galery_img4,
     page: page,
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3],
-    article: 65,
+    article: article6,
+    search: `${name} ${main_title} ${article6}`,
   },
   {
     category: category,
@@ -257,7 +273,8 @@ export const DATA = [
     // galery_img4: Img7_galery_img4,
     page: page,
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3],
-    article: 66,
+    article: article7,
+    search: `${name} ${main_title} ${article7}`,
   },
 ];
 

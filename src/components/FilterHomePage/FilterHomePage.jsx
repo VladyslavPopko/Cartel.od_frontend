@@ -1,8 +1,9 @@
 import styles from "./style.module.scss";
-import filterImg from "../../img/HomePage/filter.png";
-import sortImg from "../../img/HomePage/sort.png";
+import filterImg from "../../img/HomePage/filter.svg";
+import sortImg from "../../img/HomePage/sort.svg";
 import { memo, useState } from "react";
 import cn from "classnames";
+import open from "../../img/HomePage/open.png";
 
 const FilterHomePage = ({
   menu,
@@ -11,15 +12,9 @@ const FilterHomePage = ({
   isValueSort,
   setIsValueSort,
 }) => {
-  const [isActive, setIsActive] = useState(false); //Нажата ли по названию
   const [isActiveFilter, setIsActiveFilter] = useState(false); // Нажата ли фильтр
   const [isActiveSort, setIsActiveSort] = useState(false); // Нажата ли сортировка
 
-  const handleActiveMenu = () => {
-    setIsActive(!isActive);
-    setIsActiveSort(false);
-    setIsActiveFilter(false);
-  };
   const handleFilter = () => {
     setIsActiveFilter(!isActiveFilter);
     setIsActiveSort(false);
@@ -32,104 +27,148 @@ const FilterHomePage = ({
 
   return (
     <div className={styles.section}>
-      {isValueFilter ? (
-        <h2
-          onClick={handleActiveMenu}
-          className={cn(styles.filter_title, isActive && styles.active)}
-        >
-          {isValueFilter} {isValueSort && <span>({isValueSort})</span>}
-        </h2>
-      ) : (
-        <h2
-          onClick={handleActiveMenu}
-          className={cn(styles.filter_title, isActive && styles.active)}
-        >
-          Всі товари {isValueSort && <span>({isValueSort})</span>}
-        </h2>
-      )}
-      <div className={cn(styles.title_section, isActive && styles.active)}>
-        <div className={styles.title_list} onClick={handleFilter}>
-          <img
-            className={cn(styles.title_img, isActiveFilter && styles.active)}
-            src={filterImg}
-            alt=""
-          />
-          <h2 className={cn(styles.title, isActiveFilter && styles.active)}>
-            Фильтр
-          </h2>
-        </div>
-        {isValueFilter && (
-          <p
-            onClick={() => setIsValueFilter(null)}
-            className={styles.filter_reset}
-          >
-            СбросФильтр
-          </p>
-        )}
-        <div className={styles.title_list} onClick={handleSort}>
-          <img
-            className={cn(styles.title_img, isActiveSort && styles.active)}
-            src={sortImg}
-            alt=""
-          />
-          <h2 className={cn(styles.title, isActiveSort && styles.active)}>
-            Сортировка
-          </h2>
-        </div>
-      </div>
-      <div className={cn(styles.main_filter, isActiveFilter && styles.active)}>
-        <div className={styles.main_filter_content}>
-          {menu.map((title, titleIndex) => (
-            <div className={styles.collumn_menu} key={titleIndex}>
-              <p
+      <div className={styles.section_content}>
+        <div className={styles.header_section}>
+          {isValueFilter ? (
+            <h2
+              onClick={handleFilter}
+              className={cn(
+                styles.filter_title,
+                isActiveFilter && styles.active
+              )}
+            >
+              {isValueFilter}
+              <img className={styles.open_img} src={open} alt="" />
+            </h2>
+          ) : (
+            <h2
+              onClick={handleFilter}
+              className={cn(
+                styles.filter_title,
+                isActiveFilter && styles.active
+              )}
+            >
+              Всі товари
+              <img className={styles.open_img} src={open} alt="" />
+            </h2>
+          )}
+
+          <div className={cn(styles.title_section)}>
+            <div className={styles.title_list} onClick={handleFilter}>
+              <h2 className={cn(styles.title, isActiveFilter && styles.active)}>
+                ФІЛЬТР
+              </h2>
+              <img
                 className={cn(
-                  styles.menu_title,
-                  isValueFilter === title.title && styles.active
+                  styles.title_img,
+                  isActiveFilter && styles.active
                 )}
-              >
-                {title.title}
-              </p>
-              {title.category.map((category, categoryIndex) => (
-                <div key={categoryIndex}>
-                  <p
-                    onClick={() => setIsValueFilter(category.title)}
-                    className={cn(
-                      styles.category_title,
-                      isValueFilter === category.title && styles.active
-                    )}
-                  >
-                    {category.title}
-                  </p>
-                </div>
-              ))}
+                src={filterImg}
+                alt=""
+              />
             </div>
-          ))}
+            {isValueFilter && (
+              <p
+                onClick={() => setIsValueFilter(null)}
+                className={styles.filter_reset}
+              >
+                СбросФильтр
+              </p>
+            )}
+            <div className={styles.title_list} onClick={handleSort}>
+              <h2 className={cn(styles.title, isActiveSort && styles.active)}>
+                сортування
+              </h2>
+              <img
+                className={cn(styles.title_img, isActiveSort && styles.active)}
+                src={sortImg}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={cn(styles.main_sort, isActiveSort && styles.active)}>
-        <div className={styles.main_sort_content}>
-          <p
-            className={cn(
-              styles.main_sort_text,
-              isValueSort === "По убыванию цены" && styles.active
-            )}
-            onClick={() => setIsValueSort("По убыванию цены")}
-          >
-            По убыванию цены
-          </p>
-          <p
-            className={cn(
-              styles.main_sort_text,
-              isValueSort === "По возрастанию цены" && styles.active
-            )}
-            onClick={() => setIsValueSort("По возрастанию цены")}
-          >
-            По возрастанию цены
-          </p>
+
+        <div
+          className={cn(styles.main_filter, isActiveFilter && styles.active)}
+        >
+          <div className={styles.main_filter_content}>
+            {menu.map((title, titleIndex) => (
+              <div className={styles.collumn_menu} key={titleIndex}>
+                <p
+                  className={cn(
+                    styles.menu_title,
+                    isValueFilter === title.title && styles.active
+                  )}
+                >
+                  {title.title}
+                </p>
+                {title.category.map((category, categoryIndex) => (
+                  <div key={categoryIndex}>
+                    <p
+                      onClick={() => (
+                        setIsValueFilter(category.title),
+                        setIsActiveFilter(false),
+                        setIsActiveSort(false)
+                      )}
+                      className={cn(
+                        styles.category_title,
+                        isValueFilter === category.title && styles.active
+                      )}
+                    >
+                      {category.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className={cn(styles.main_sort, isActiveSort && styles.active)}>
+          <div className={styles.main_sort_content}>
+            <p
+              className={cn(
+                styles.main_sort_text,
+                isValueSort === "За новизною" && styles.active
+              )}
+              onClick={() => (
+                setIsValueSort("За новизною"),
+                setIsActiveFilter(false),
+                setIsActiveSort(false)
+              )}
+            >
+              За новизною
+            </p>
+            <p
+              className={cn(
+                styles.main_sort_text,
+                isValueSort === "За спаданням ціни" && styles.active
+              )}
+              onClick={() => (
+                setIsValueSort("За спаданням ціни"),
+                setIsActiveFilter(false),
+                setIsActiveSort(false)
+              )}
+            >
+              За спаданням ціни
+            </p>
+            <p
+              className={cn(
+                styles.main_sort_text,
+                isValueSort === "За зростанням ціни" && styles.active
+              )}
+              onClick={() => (
+                setIsValueSort("За зростанням ціни"),
+                setIsActiveFilter(false),
+                setIsActiveSort(false)
+              )}
+            >
+              За зростанням ціни
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default memo(FilterHomePage) ;
+export default memo(FilterHomePage);

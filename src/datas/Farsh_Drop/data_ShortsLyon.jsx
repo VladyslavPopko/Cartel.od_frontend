@@ -45,6 +45,12 @@ const page = "/men/shorts/shorts_lyon"; // на какой странице на
 const full_name1 = "Шорты молоко лён";
 const full_name2 = "Шорты чёрные лён";
 
+//Артикулы
+const article1 = 58;
+const article2 = 59;
+
+
+
 export const DATA = [
   {
     category: category,
@@ -65,7 +71,8 @@ export const DATA = [
     galery_img4: Img1_galery_img4,
     page: page,
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
-    article: 58,
+    article: article1,
+    search: `${name} ${main_title} ${article1}`,
   },
   {
      category: category,
@@ -86,7 +93,8 @@ export const DATA = [
     galery_img4: Img2_galery_img4,
     page: page,
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
-    article: 59,
+    article: article2,
+    search: `${name} ${main_title} ${article2}`,
   },
 ];
 
