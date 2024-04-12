@@ -13,7 +13,7 @@ export let CATALOG = [
     path: "/women",
     title: "Жінкам",
     element: <HomePage data={DATA_MEN} menu={MENU_MEN} />,
-    category: [],
+    division: [MENU_WOMEN],
   },
 ];
 

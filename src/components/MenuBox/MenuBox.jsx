@@ -16,7 +16,6 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
   // const handleToSubCategory = () => {
   //   setIsSubCategory(false);
   // };
-
   return (
     <div className="wrapper">
       <nav className={cn("section", isMenu && "appear")}>
@@ -71,6 +70,7 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
                             className={cn(
                               "submenu",
                               isCategory === element.title &&
+                                isDivision === category.title &&
                                 // isSubCategory === false &&
                                 "appear"
                             )}
@@ -97,7 +97,10 @@ const MenuBox = ({ isMenu, setIsMenu }) => {
                               <div
                                 className={cn(
                                   "submenu",
-                                  isSubCategory === el.title && "appear"
+                                  isSubCategory === el.title &&
+                                    isCategory === element.title &&
+                                    isDivision === category.title &&
+                                    "appear"
                                 )}
                                 key={e.title}
                                 onClick={() => setIsMenu(false)}

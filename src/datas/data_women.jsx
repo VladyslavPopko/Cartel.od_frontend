@@ -50,12 +50,6 @@ export const MENU_WOMEN = [
   },
   {
     path: "",
-    title: "Спідниці",
-    element: "",
-    category: [],
-  },
-  {
-    path: "",
     title: "Майки й футболки",
     element: "",
     category: [],
@@ -128,4 +122,3 @@ export const MENU_WOMEN = [
   },
 ];
 
-console.log(MENU_WOMEN);
