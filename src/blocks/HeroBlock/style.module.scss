@@ -1,6 +1,6 @@
 .wrapper {
   transition: all var(--transition-ms);
-  background-color: var(--hero-background);
+  background-color: var(--secondary-color);
   padding: 104px 15px 63px;
   overflow: hidden;
 }
@@ -111,14 +111,14 @@
   padding: 15px;
   border-radius: var(--button-border-radius);
   text-transform: uppercase;
-  background-color: var(--hero-background);
+  background-color: var(--secondary-color);
   color: var(--hero-color);
   font-family: var(--font-family);
   transition: all var(--transition-ms);
 
   &:hover {
     background-color: var(--hero-color);
-    color: var(--hero-background);
+    color: var(--secondary-color);
   }
 }
 .content_top_item:nth-child(1) {

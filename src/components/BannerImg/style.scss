@@ -19,21 +19,21 @@
 }
 .warning {
   background-color: var(--banner-warning);
-  color: var(--secondary-color);
+  color: var(--banner-warning-color);
 }
 .danger {
   background-color: var(--banner-danger);
-  color: var(--primary-color);
+  color: var(--banner-danger-color);
 }
 .primary {
   background-color: var(--banner-primary);
-  color: var(--primary-color);
+  color: var(--banner-primary-color);
 }
 .secondary {
   background-color: var(--banner-secondary);
-  color: var(--primary-color);
+  color: var(--banner-secondary-color);
 }
 .success {
   background-color: var(--banner-success);
-  color: var(--primary-color);
+  color: var(--banner-success-color);
 }

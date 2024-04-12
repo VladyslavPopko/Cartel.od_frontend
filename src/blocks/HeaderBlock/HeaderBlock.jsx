@@ -18,10 +18,11 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
     <div className={cn(styles.wrapper)}>
       <div className={styles.content}>
         <div className={styles.menu_hamburger}>
-          <NavLink className={styles.logo} to="/">
+          <NavLink className={styles.logo_section} to="/">
             <img className={styles.logo} src={icon} alt="" />
+            <p className={styles.logo_text}>Каталог</p>
           </NavLink>
-          <img
+          {/* <img
             onClick={handleMenu}
             className={cn(styles.hamburger, !isMenu && styles.active)}
             src={imgham}
@@ -33,7 +34,7 @@ const HeaderBlock = ({ content, setIsVivsibleCart, handleMenu, isMenu }) => {
             src={close}
             alt=""
           />
-          <p onClick={handleMenu}>Каталог</p>
+          <p onClick={handleMenu}>Каталог</p> */}
         </div>
 
         <p className={styles.text}>{title}</p>

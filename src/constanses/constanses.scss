@@ -1,25 +1,13 @@
 :root {
-  // header
-  --header-background: rgba(224, 0, 0, 1);
-  --header-color: rgba(255, 255, 255, 1);
-  --header-selected: rgba(0, 0, 0, 1);
-
-  // hero
-  --hero-background: rgba(0, 0, 0, 1);
-  --hero-color: rgba(255, 255, 255, 1);
-  --hero-select-color: rgba(255, 0, 0, 1);
-
   //
   --primary-color: rgba(255, 255, 255, 1);
   --secondary-color: rgba(0, 0, 0, 1);
   --select-color: rgba(255, 0, 0, 1);
-  --subtext-color:  rgba(102, 112, 133, 1);
+  --subtext-color: rgba(102, 112, 133, 1);
   --modal-background: rgba(217, 217, 217, 1);
   --modal-submit-background: rgba(163, 251, 172, 0.5);
   --button-submit: rgba(31, 154, 29, 1);
   --link-color: rgba(0, 68, 201, 1);
-
-
 
   //border-radius
   --button-border-radius: 15px;
@@ -46,10 +34,9 @@
   --banner-secondary: gray;
   --banner-success: green;
 
-
-
+  --banner-warning-color: black;
+  --banner-danger-color: white;
+  --banner-primary-color: white;
+  --banner-secondary-color: white;
+  --banner-success-color: white;
 }
-
-
-
-

@@ -40,7 +40,7 @@ const Main = ({ children }) => {
 
   return (
     <div>
-      <MenuBox isMenu={isMenu} setIsMenu={setIsMenu} />
+      {/* <MenuBox isMenu={isMenu} setIsMenu={setIsMenu} /> */}
       {isLoading && <LoadingBox type="bars" color="red" />}
       <HeaderBlock
         isMenu={isMenu}
