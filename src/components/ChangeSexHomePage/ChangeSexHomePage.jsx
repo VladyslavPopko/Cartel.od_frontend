@@ -4,21 +4,44 @@ import { NavLink } from "react-router-dom";
 import cn from "classnames";
 import "./style.scss";
 
-const ChangeSexHomePage = ({ setisSearch, isSearch }) => {
+const ChangeSexHomePage = ({
+  setisSearch,
+  isSearch,
+  setIsValueFilter,
+  setIsValueSort,
+  setIsActiveFilter,
+  setIsActiveSort,
+}) => {
   const [value, setValue] = useState();
 
   const SubmitSearchName = (e) => {
     e.preventDefault();
     setisSearch(value);
   };
+
+  const handleResetAllFilters = () => {
+    setisSearch(false);
+    setIsValueFilter(false);
+    setIsValueSort(false);
+    setIsActiveFilter(false);
+    setIsActiveSort(false);
+  };
   return (
     <div className={styles.section}>
       <div className={styles.section_content}>
         <div className={styles.list}>
-          <NavLink className={cn(styles.title)} to="/">
+          <NavLink
+            className={cn(styles.title)}
+            to="/"
+            onClick={handleResetAllFilters}
+          >
             Чоловікам
           </NavLink>
-          <NavLink className={cn(styles.title)} to="/women">
+          <NavLink
+            className={cn(styles.title)}
+            to="/women"
+            onClick={handleResetAllFilters}
+          >
             жінкам
           </NavLink>
         </div>

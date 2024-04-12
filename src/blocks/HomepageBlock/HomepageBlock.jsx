@@ -20,6 +20,9 @@ const HomepageBlock = ({ database, menu }) => {
   const [isValueSort, setIsValueSort] = useState(null); // sort value
   const [isSearch, setisSearch] = useState(null); // search value
 
+  const [isActiveFilter, setIsActiveFilter] = useState(false); // Нажата ли фильтр
+  const [isActiveSort, setIsActiveSort] = useState(false); // Нажата ли сортировка
+
   const isPage = useSelector((state) => state.pagination.page);
   const dispatch = useDispatch();
 
@@ -52,8 +55,19 @@ const HomepageBlock = ({ database, menu }) => {
 
   return (
     <>
-      <ChangeSexHomePage isSearch={isSearch} setisSearch={setisSearch} />
+      <ChangeSexHomePage
+        isSearch={isSearch}
+        setisSearch={setisSearch}
+        setIsValueFilter={setIsValueFilter}
+        setIsValueSort={setIsValueSort}
+        setIsActiveFilter={setIsActiveFilter}
+        setIsActiveSort={setIsActiveSort}
+      />
       <FilterHomePage
+        isActiveFilter={isActiveFilter}
+        setIsActiveFilter={setIsActiveFilter}
+        isActiveSort={isActiveSort}
+        setIsActiveSort={setIsActiveSort}
         menu={menu}
         isValueFilter={isValueFilter}
         setIsValueFilter={setIsValueFilter}
@@ -99,7 +113,7 @@ const HomepageBlock = ({ database, menu }) => {
               />
             )}
             {data.length === 0 && (
-              <p>Ничего не найдено. Попробуй найти другой товар.</p>
+              <p>Нічого не знайдено. Спробуй знайти інший товар.</p>
             )}
           </div>
         </div>

@@ -11,9 +11,10 @@ const FilterHomePage = ({
   setIsValueFilter,
   isValueSort,
   setIsValueSort,
+  isActiveFilter, setIsActiveFilter,
+  isActiveSort, setIsActiveSort
 }) => {
-  const [isActiveFilter, setIsActiveFilter] = useState(false); // Нажата ли фильтр
-  const [isActiveSort, setIsActiveSort] = useState(false); // Нажата ли сортировка
+
 
   const handleFilter = () => {
     setIsActiveFilter(!isActiveFilter);
