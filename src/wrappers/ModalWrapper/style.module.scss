@@ -27,7 +27,7 @@
   overflow: hidden;
   box-shadow: 0px 0px 10px var(--secondary-color);
   margin: 0 auto;
-  max-height: calc(100vh - 30px);
+  max-height: calc(100dvh - 30px);
   background-color: var(--primary-color);
   overflow: auto;
   -ms-overflow-style: none; /* IE and Edge */

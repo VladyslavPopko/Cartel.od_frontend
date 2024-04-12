@@ -7,6 +7,15 @@
   box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
   font-family: var(--font-family);
   font-weight: 600;
+  font-size: 16px;
+}
+@media (max-width: 540px) {
+  .banner_section_img {
+    font-size: 10px;
+    padding: 2px 5px;
+    top: 8%;
+    left: 8%;
+  }
 }
 .warning {
   background-color: var(--banner-warning);
