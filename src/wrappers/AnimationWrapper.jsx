@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { memo } from "react";
 
-const AnimationWrapper = ({ children }) => {
+const AnimationWrapper = ({ children, className }) => {
   return (
     <>
       <motion.div
+        className={className}
         initial={{
           opacity: 0,
           translateY: 100,

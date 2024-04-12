@@ -29,13 +29,13 @@ import Img2gallery4 from "../../img/_Slavs_Drop/Longsliv_SI/original/img2_galler
 export const ONE = "Синій";
 export const TWO = "Чорний";
 
-const category = "Стонік"; // Категория (для фильтра на главной странице)
+const category = "Лонгсліви"; // Категория (для фильтра на главной странице)
 const name = "Лонгслів SI"; // Пишется в корзине товара
 const main_title = "Лонгслів SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 1949; // цена по которой продаем
 const old_price = 2399; // цена скидки
-const page = "/premium/stonik/longsliv_si"; // на какой странице находится товар
+const page = "/men/longsliv/longsliv_si"; // на какой странице находится товар
 
 // Как товары называются в CRM
 const full_name1 = "Лонгслів синій SI";
@@ -65,6 +65,8 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
     article: article1,
     search: `${name} ${main_title} ${article1}`,
@@ -87,6 +89,8 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
     article: article2,
     search: `${name} ${main_title} ${article2}`,

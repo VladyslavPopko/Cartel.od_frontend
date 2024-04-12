@@ -29,13 +29,13 @@ import Img2gallery4 from "../../img/_Slavs_Drop/Trousers_CP/original/img2_galler
 export const ONE = "Хакі";
 export const TWO = "Чорні";
 
-const category = "CP Компани"; // Категория (для фильтра на главной странице)
+const category = "Штани"; // Категория (для фильтра на главной странице)
 const name = "Штани CP"; // Пишется в корзине товара
 const main_title = "Штани CP"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 2699; // цена по которой продаем
 const old_price = 3299; // цена скидки
-const page = "/premium/cp_company/trousers_cp"; // на какой странице находится товар
+const page = "/men/trousers/trousers_cp"; // на какой странице находится товар
 
 // Как товары называются в CRM
 const full_name1 = "Штани хакі CP";
@@ -65,6 +65,8 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
     article: article1,
     search: `${name} ${main_title} ${article1}`,
@@ -87,6 +89,8 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
     article: article2,
     search: `${name} ${main_title} ${article2}`,

@@ -5,7 +5,6 @@ import HomePageItemBox from "../../components/HomePageItemBox/HomePageItemBox";
 import NotificationBox from "../../components/NotificationBox/NotificationBox";
 import agree from "../../img/Notifications/agree.svg";
 import cn from "classnames";
-import { MENU } from "../../datas/data";
 
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,7 +13,7 @@ import { changePage } from "../../redux/slices/pageSlice";
 import FilterHomePage from "../../components/FilterHomePage/FilterHomePage";
 import ChangeSexHomePage from "../../components/ChangeSexHomePage/ChangeSexHomePage";
 
-const HomepageBlock = ({ database }) => {
+const HomepageBlock = ({ database, menu }) => {
   const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
     useState(false); // Notification Add to Cart
   const [isValueFilter, setIsValueFilter] = useState(null); // filter value
@@ -24,7 +23,6 @@ const HomepageBlock = ({ database }) => {
   const isPage = useSelector((state) => state.pagination.page);
   const dispatch = useDispatch();
 
-  const menu = MENU;
   let data = database;
 
   isValueSort &&
@@ -75,16 +73,19 @@ const HomepageBlock = ({ database }) => {
               {data.map(
                 (element, index) =>
                   isPage >= index && (
-                    <div className={styles.homepage_item} key={index}>
-                      <AnimationWrapper>
+                    <AnimationWrapper
+                      key={index}
+                      className={styles.homepage_item_wrapper}
+                    >
+                      <div className={styles.homepage_item}>
                         <HomePageItemBox
                           element={element}
                           setisVisibleNotificationAddtoCart={
                             setisVisibleNotificationAddtoCart
                           }
                         />
-                      </AnimationWrapper>
-                    </div>
+                      </div>
+                    </AnimationWrapper>
                   )
               )}
             </div>

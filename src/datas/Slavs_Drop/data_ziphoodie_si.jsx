@@ -149,13 +149,13 @@ export const TEN = "Джинс";
 export const ELEVEN = "Чорний";
 export const TWELVE = "Кремовий";
 
-const category = "Стонік"; // Категория (для фильтра на главной странице)
+const category = "Зіп-Худі"; // Категория (для фильтра на главной странице)
 const name = "Зіп Худі SI"; // Пишется в корзине товара
 const main_title = "Зіп Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 2499; // цена по которой продаем
 const old_price = 3199; // цена скидки
-const page = "/premium/stonik/ziphoodie_si"; // на какой странице находится товар
+const page = "/men/ziphoodie/ziphoodie_si"; // на какой странице находится товар
 
 // Как товары называются в CRM
 
@@ -206,6 +206,8 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
     article: article1,
     search: `${name} ${main_title} ${article1}`,
@@ -228,6 +230,8 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
     article: article2,
     search: `${name} ${main_title} ${article2}`,
@@ -250,6 +254,8 @@ export const DATA = [
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
     article: article3,
     search: `${name} ${main_title} ${article3}`,
@@ -272,6 +278,8 @@ export const DATA = [
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
     article: article4,
     search: `${name} ${main_title} ${article4}`,
@@ -294,6 +302,8 @@ export const DATA = [
     galery_img3: Img5_galery_img3,
     galery_img4: Img5_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
     article: article5,
     search: `${name} ${main_title} ${article5}`,
@@ -316,6 +326,8 @@ export const DATA = [
     galery_img3: Img6_galery_img3,
     galery_img4: Img6_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3, Img6gallery4],
     article: article6,
     search: `${name} ${main_title} ${article6}`,
@@ -338,6 +350,8 @@ export const DATA = [
     galery_img3: Img7_galery_img3,
     galery_img4: Img7_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3, Img7gallery4],
     article: article7,
     search: `${name} ${main_title} ${article7}`,
@@ -360,6 +374,8 @@ export const DATA = [
     galery_img3: Img8_galery_img3,
     galery_img4: Img8_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img8gallery1, Img8gallery2, Img8gallery3, Img8gallery4],
     article: article8,
     search: `${name} ${main_title} ${article8}`,
@@ -382,6 +398,8 @@ export const DATA = [
     galery_img3: Img9_galery_img3,
     galery_img4: Img9_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img9gallery1, Img9gallery2, Img9gallery3, Img9gallery4],
     article: article9,
     search: `${name} ${main_title} ${article9}`,
@@ -404,6 +422,8 @@ export const DATA = [
     galery_img3: Img10_galery_img3,
     galery_img4: Img10_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img10gallery1, Img10gallery2, Img10gallery3, Img10gallery4],
     article: article10,
     search: `${name} ${main_title} ${article10}`,
@@ -426,6 +446,8 @@ export const DATA = [
     galery_img3: Img11_galery_img3,
     galery_img4: Img11_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img11gallery1, Img11gallery2, Img11gallery3, Img11gallery4],
    article: article11,
     search: `${name} ${main_title} ${article11}`,
@@ -448,6 +470,8 @@ export const DATA = [
     galery_img3: Img12_galery_img3,
     galery_img4: Img12_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img12gallery1, Img12gallery2, Img12gallery3, Img12gallery4],
     article: article12,
     search: `${name} ${main_title} ${article12}`,

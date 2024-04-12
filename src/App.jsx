@@ -4,15 +4,15 @@ import { Suspense, lazy } from "react";
 import "reset-css";
 import "./style/main.scss";
 import LoadingBox from "./components/LoadingBox/LoadingBox";
-import { MENU } from "./datas/data";
+import {  ROUTES } from "./datas/data";
 import HomePageBanner from "./components/HomePageBanner/HomePageBanner";
 import HomePage from "./pages/HomePage";
-import { DATA_HOMEPAGE } from "./datas/data_homePage";
+import { DATA_MEN, MENU_MEN } from "./datas/data_men";
 
 const HomePageLazy = lazy(() => import("./pages/HomePage"));
 
 const App = () => {
-  const routes = MENU;
+  const routes = ROUTES;
   return (
     <>
       <HomePageBanner />
@@ -36,7 +36,10 @@ const App = () => {
               ))}
             </>
           ))}
-          <Route path="*" element={<HomePage data={DATA_HOMEPAGE} />} />
+          <Route
+            path="*"
+            element={<HomePage data={DATA_MEN} menu={MENU_MEN} />}
+          />
         </Routes>
       </Suspense>
     </>

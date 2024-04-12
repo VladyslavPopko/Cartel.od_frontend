@@ -6,7 +6,7 @@ import "./style.scss";
 
 const ChangeSexHomePage = ({ setisSearch, isSearch }) => {
   const [value, setValue] = useState();
- 
+
   const SubmitSearchName = (e) => {
     e.preventDefault();
     setisSearch(value);
@@ -15,22 +15,17 @@ const ChangeSexHomePage = ({ setisSearch, isSearch }) => {
     <div className={styles.section}>
       <div className={styles.section_content}>
         <div className={styles.list}>
-          <NavLink
-            className={cn(styles.title)}
-            to="/"
-          >
+          <NavLink className={cn(styles.title)} to="/">
             Чоловікам
           </NavLink>
-          <NavLink
-            className={cn(styles.title)}
-            to="/women"
-          >
+          <NavLink className={cn(styles.title)} to="/women">
             жінкам
           </NavLink>
         </div>
         <form onSubmit={SubmitSearchName}>
           <div className={styles.input_section}>
             <input
+              inputMode="search"
               className={styles.input}
               type="text"
               placeholder="Пошук"

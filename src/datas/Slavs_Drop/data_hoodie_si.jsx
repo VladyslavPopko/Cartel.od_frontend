@@ -48,18 +48,18 @@ import Img4gallery3 from "../../img/_Slavs_Drop/hoodie_SI/original/img4_gallery_
 import Img4gallery4 from "../../img/_Slavs_Drop/hoodie_SI/original/img4_gallery_img4.jpg";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
-export const ONE = "Чорний_Black_Ghost";
+export const ONE = "Чорний_G";
 export const TWO = "Фіолетовий";
 export const THREE = "Чорний";
 export const FOUR = "Червоний";
 
-const category = "Стонік"; // Категория (для фильтра на главной странице)
+const category = "Худі"; // Категория (для фильтра на главной странице)
 const name = "Худі SI"; // Пишется в корзине товара
 const main_title = "Худі SI"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Slavs Drop"; // Поставщик
 const price = 2249; // цена по которой продаем
 const old_price = 2999; // цена скидки
-const page = "/premium/stonik/hoodie_si"; // на какой странице находится товар
+const page = "/men/hoodie/hoodie_si"; // на какой странице находится товар
 
 // Как товары называются в CRM
 const full_name1 = "Худі чорний Black Ghost SI";
@@ -93,6 +93,8 @@ export const DATA = [
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
     article: article1,
     search: `${name} ${main_title} ${article1}`,
@@ -115,6 +117,8 @@ export const DATA = [
     galery_img3: Img2_galery_img3,
     galery_img4: Img2_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
     article: article2,
     search: `${name} ${main_title} ${article2}`,
@@ -137,6 +141,8 @@ export const DATA = [
     galery_img3: Img3_galery_img3,
     galery_img4: Img3_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
     article: article3,
     search: `${name} ${main_title} ${article3}`,
@@ -159,6 +165,8 @@ export const DATA = [
     galery_img3: Img4_galery_img3,
     galery_img4: Img4_galery_img4,
     page: page,
+    banner: "",
+    bannerText: "",
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
     article: article4,
     search: `${name} ${main_title} ${article4}`,

@@ -1,7 +1,7 @@
 import React, { memo, useEffect, useState } from "react";
 import ModalWrapper from "../../wrappers/ModalWrapper/ModalWrapper";
 import styles from "./style.module.scss";
-import { DATA_HOMEPAGE } from "../../datas/data_homePage";
+import { DATA_MEN } from "../../datas/data_men";
 import HomePageItemBox from "../../components/HomePageItemBox/HomePageItemBox";
 import NotificationBox from "../../components/NotificationBox/NotificationBox";
 import agree from "../../img/Notifications/agree.svg";
@@ -18,7 +18,7 @@ const SearchModalBlock = ({ isVisibleSearch, setIsVisibleSearch }) => {
   const SubmitSearchName = (e) => {
     e.preventDefault();
       setResult(
-        DATA_HOMEPAGE.filter((element) =>
+        DATA_MEN.filter((element) =>
           element.search?.toLowerCase().includes(value.toLowerCase())
         )
       );
