@@ -100,6 +100,11 @@ const FilterHomePage = ({
                     styles.menu_title,
                     isValueFilter === title.title && styles.active
                   )}
+                  onClick={() => (
+                    setIsValueFilter(title.title),
+                    setIsActiveFilter(false),
+                    setIsActiveSort(false)
+                  )}
                 >
                   {title.title}
                 </p>

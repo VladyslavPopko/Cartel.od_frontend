@@ -29,6 +29,7 @@ import Img2gallery4 from "../../img/_Farsh_Drop/CostumeZamsh/original/img2_galle
 export const ONE = "Чорний";
 export const TWO = "Графіт";
 
+const division = "Спортивний одяг";
 const category = "Спортивні костюми"; // Категория (для фильтра на главной странице)
 const name = "Костюм Замш"; // Пишется в корзине товара
 const main_title = "Костюм Замш"; // Пишется в фильтре на главной странице и в каталоге
@@ -69,6 +70,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -93,6 +95,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },

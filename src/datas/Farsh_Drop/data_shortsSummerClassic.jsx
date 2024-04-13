@@ -94,6 +94,7 @@ export const FIVE = "Бежеві";
 export const SIX = "Чорні";
 export const SEVEN = "Клітина";
 
+const division = "Штани та шорти";
 const category = "Шорти"; // Категория (для фильтра на главной странице)
 const name = "Шорти класичні"; // Пишется в корзине товара
 const main_title = "Шорти класичні"; // Пишется в фильтре на главной странице и в каталоге
@@ -143,6 +144,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -167,6 +169,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },
@@ -191,6 +194,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3],
+    division: division,
     article: article3,
     search: `${name} ${main_title} ${article3}`,
   },
@@ -215,6 +219,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3],
+    division: division,
     article: article4,
     search: `${name} ${main_title} ${article4}`,
   },
@@ -239,6 +244,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3],
+    division: division,
     article: article5,
     search: `${name} ${main_title} ${article5}`,
   },
@@ -263,6 +269,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img6gallery1, Img6gallery2, Img6gallery3],
+    division: division,
     article: article6,
     search: `${name} ${main_title} ${article6}`,
   },
@@ -287,6 +294,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img7gallery1, Img7gallery2, Img7gallery3],
+    division: division,
     article: article7,
     search: `${name} ${main_title} ${article7}`,
   },

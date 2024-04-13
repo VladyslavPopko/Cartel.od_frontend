@@ -79,11 +79,18 @@
 }
 
 .menu_title {
+  cursor: pointer;
   font-size: 16px;
   color: var(--secondary-color);
   text-transform: uppercase;
   transition: all var(--transition-ms);
   font-weight: 600;
+  &:hover{
+    text-decoration: underline;
+  }
+  &.active{
+    font-weight: 800;
+  }
 }
 .category_title {
   font-size: 16px;

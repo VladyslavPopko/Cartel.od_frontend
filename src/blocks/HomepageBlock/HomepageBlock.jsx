@@ -44,7 +44,9 @@ const HomepageBlock = ({ database, menu }) => {
 
   isValueFilter
     ? (data = database.filter(
-        (category) => category.category === isValueFilter
+        (category) =>
+          category.category === isValueFilter ||
+          category.division === isValueFilter
       ))
     : (data = database);
 

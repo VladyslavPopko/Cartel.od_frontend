@@ -57,6 +57,7 @@ export const TWO = "Графіт";
 export const THREE = "Молоко";
 export const FOUR = "Чорний";
 
+const division = "Комлекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = "Комплект літній KANT"; // Пишется в корзине товара
 const main_title = "Комплект KANT"; // Пишется в фильтре на главной странице и в каталоге
@@ -101,6 +102,7 @@ export const DATA = [
     page: page,
     banner: "",
     bannerText: "",
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
     
@@ -126,6 +128,7 @@ export const DATA = [
     page: page,
     banner: "",
     bannerText: "",
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },
@@ -150,6 +153,7 @@ export const DATA = [
     page: page,
     banner: "",
     bannerText: "",
+    division: division,
     article: article3,
     search: `${name} ${main_title} ${article3}`,
   },
@@ -174,6 +178,7 @@ export const DATA = [
     page: page,
     banner: "",
     bannerText: "",
+    division: division,
     article: article4,
     search: `${name} ${main_title} ${article4}`,
   },

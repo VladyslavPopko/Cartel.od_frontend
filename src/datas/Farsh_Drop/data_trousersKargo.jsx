@@ -39,6 +39,7 @@ import Img2gallery1 from "../../img/_Farsh_Drop/TrousersKargo/original/img2_gall
 export const ONE = "Хакі";
 export const TWO = "Чорні";
 
+const division = "Штани та шорти";
 const category = "Штани"; // Категория (для фильтра на главной странице)
 const name = "Штани карго"; // Пишется в корзине товара
 const main_title = "Штани карго"; // Пишется в фильтре на главной странице и в каталоге
@@ -78,6 +79,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -102,6 +104,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },

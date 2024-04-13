@@ -30,6 +30,7 @@ import Img2gallery2 from "../../img/_Slavs_Drop/Shorts_SI/original/img2_gallery_
 export const ONE = "Чорні";
 export const TWO = "Сині";
 
+const division = "Штани та шорти";
 const category = "Шорти"; // Категория (для фильтра на главной странице)
 const name = "Шорти SI"; // Пишется в корзине товара
 const main_title = "Шорти SI"; // Пишется в фильтре на главной странице и в каталоге
@@ -69,6 +70,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -93,6 +95,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1, Img2gallery2],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },

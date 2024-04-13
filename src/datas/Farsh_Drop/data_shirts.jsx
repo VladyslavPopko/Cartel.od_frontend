@@ -45,6 +45,7 @@ export const ONE = "Коричнева";
 export const TWO = "Чорно-біла";
 export const THREE = "Жовто-чорна";
 
+const division = "Сорочки та теніски";
 const category = "Сорочки"; // Категория (для фильтра на главной странице)
 const name = "Весняна сорочка в клітинку"; // Пишется в корзине товара
 const main_title = "Весняна сорочка"; // Пишется в фильтре на главной странице и в каталоге
@@ -86,6 +87,7 @@ export const DATA = [
     banner: "success",
     bannerText: "GOOD",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -110,6 +112,7 @@ export const DATA = [
     banner: "warning",
     bannerText: "TOP",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },
@@ -134,6 +137,7 @@ export const DATA = [
     banner: "danger",
     bannerText: "AKCIYA",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
+    division: division,
     article: article3,
     search: `${name} ${main_title} ${article3}`,  
   },

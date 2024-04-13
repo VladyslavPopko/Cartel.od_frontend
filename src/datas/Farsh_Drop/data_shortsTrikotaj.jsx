@@ -70,6 +70,7 @@ export const THREE = "Чорні";
 export const FOUR = "Графіт";
 export const FIVE = "Зелені";
 
+const division = "Штани та шорти";
 const category = "Шорти"; // Категория (для фильтра на главной странице)
 const name = "Шорти трикотажні"; // Пишется в корзине товара
 const main_title = "Шорти трикотажні"; // Пишется в фильтре на главной странице и в каталоге
@@ -115,6 +116,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -139,6 +141,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },
@@ -163,6 +166,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
+    division: division,
     article: article3,
     search: `${name} ${main_title} ${article3}`,
   },
@@ -187,6 +191,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img4gallery1, Img4gallery2, Img4gallery3, Img4gallery4],
+    division: division,
     article: article4,
     search: `${name} ${main_title} ${article4}`,
   },
@@ -211,6 +216,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img5gallery1, Img5gallery2, Img5gallery3, Img5gallery4],
+    division: division,
     article: article5,
     search: `${name} ${main_title} ${article5}`,
   },

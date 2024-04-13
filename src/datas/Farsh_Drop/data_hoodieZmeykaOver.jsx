@@ -45,6 +45,7 @@ export const ONE = "Графіт";
 export const TWO = "Зелений";
 export const THREE = "Чорний";
 
+const division = "Кофти та Светри";
 const category = "Худі"; // Категория (для фильтра на главной странице)
 const name = "Худі на блискавці оверсайз"; // Пишется в корзине товара
 const main_title = "Худі на блискавці оверсайз"; // Пишется в фильтре на главной странице и в каталоге
@@ -87,6 +88,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
+    division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
   },
@@ -111,6 +113,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img2gallery1, Img2gallery2, Img2gallery3, Img2gallery4],
+    division: division,
     article: article2,
     search: `${name} ${main_title} ${article2}`,
   },
@@ -135,6 +138,7 @@ export const DATA = [
     banner: "",
     bannerText: "",
     gallery: [Img3gallery1, Img3gallery2, Img3gallery3, Img3gallery4],
+    division: division,
     article: article3,
     search: `${name} ${main_title} ${article3}`,
   },
