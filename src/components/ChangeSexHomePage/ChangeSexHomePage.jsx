@@ -44,8 +44,15 @@ const ChangeSexHomePage = ({
           >
             жінкам
           </NavLink>
+          <NavLink
+            className={cn(styles.title)}
+            to="/military"
+            onClick={handleResetAllFilters}
+          >
+            military
+          </NavLink>
         </div>
-        <form onSubmit={SubmitSearchName}>
+        <form className={styles.input_section} onSubmit={SubmitSearchName}>
           <div className={styles.input_section}>
             <input
               inputMode="search"

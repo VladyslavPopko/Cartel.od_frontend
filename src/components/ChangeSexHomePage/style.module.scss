@@ -5,7 +5,6 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   z-index: 11;
-  height: 55px;
 }
 @media (min-width: 840px) and (min-height: 600px) {
   .section{
@@ -48,6 +47,9 @@
   .list {
     width: calc(100% - 150px);
   }
+  .title {
+    font-size: 14px;
+  }
 }
 .input_section::after {
   position: absolute;
@@ -71,7 +73,7 @@
 .submit {
   display: none;
 }
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .title {
     font-size: 12px;
   }
@@ -80,5 +82,23 @@
   }
   .list {
     width: calc(100% - 100px);
+    gap: 8px;
+   
   }
+  .list{
+    width: auto;
+  }
+  .section_content{
+    flex-wrap: wrap;
+  }
+  
+}
+@media (max-width: 350px) {
+  .list{
+    width: 100%;
+  }
+  .input_section{
+    width: 100%;
+  };
+  
 }

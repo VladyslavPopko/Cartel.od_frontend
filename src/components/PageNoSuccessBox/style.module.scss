@@ -1,0 +1,31 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+.title{
+    font-size: 40px;
+}
+.text{
+    font-size: 36px;
+}
+.img{
+    width: 250px;
+}
+@media (max-width: 540px) {
+    .img{
+        width: 150px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    
+}

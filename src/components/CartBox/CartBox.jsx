@@ -24,8 +24,13 @@ const CartBox = (props) => {
         <NavLink className={styles.title} to={page}>
           <p className={styles.title}>{title}</p>
         </NavLink>
-        <p className={styles.text_color}>Колір:</p>
-        <p className={styles.color}>{color}</p>
+        {color && (
+          <>
+            <p className={styles.text_color}>Колір:</p>
+            <p className={styles.color}>{color}</p>
+          </>
+        )}
+
         <p className={styles.size}>Розмір : {size}</p>
         <p className={styles.price_old}>{old_price} ₴</p>
         <div className={styles.list_item}>

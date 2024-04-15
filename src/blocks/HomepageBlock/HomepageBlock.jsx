@@ -12,8 +12,10 @@ import { changePage } from "../../redux/slices/pageSlice";
 
 import FilterHomePage from "../../components/FilterHomePage/FilterHomePage";
 import ChangeSexHomePage from "../../components/ChangeSexHomePage/ChangeSexHomePage";
+import SearchNoSuccessBox from "../../components/SearchNoSuccessBox/SearchNoSuccessBox";
+import PageNoSuccessBox from "../../components/PageNoSuccessBox/PageNoSuccessBox";
 
-const HomepageBlock = ({ database, menu }) => {
+const HomepageBlock = ({ database, menu, data_recomended }) => {
   const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
     useState(false); // Notification Add to Cart
   const [isValueFilter, setIsValueFilter] = useState(null); // filter value
@@ -114,11 +116,24 @@ const HomepageBlock = ({ database, menu }) => {
                 className={styles.button_more}
               />
             )}
-            {data.length === 0 && (
-              <p>Нічого не знайдено. Спробуй знайти інший товар.</p>
-            )}
           </div>
         </div>
+        {data.length === 0 && isSearch && (
+          <div className={styles.search_nosuccess}>
+            <SearchNoSuccessBox
+              data_recomended={data_recomended}
+              isSearch={isSearch}
+              setisVisibleNotificationAddtoCart={
+                setisVisibleNotificationAddtoCart
+              }
+            />
+          </div>
+        )}
+        {data.length === 0 && !isSearch && (
+          <div className={styles.search_nosuccess}>
+            <PageNoSuccessBox />
+          </div>
+        )}
       </div>
     </>
   );

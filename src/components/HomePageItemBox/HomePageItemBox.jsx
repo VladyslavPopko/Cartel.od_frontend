@@ -44,7 +44,7 @@ const HomePageItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
           )}
         </div>
         <NavLink className={styles.title} to={page}>
-          {main_title} ({color})
+          {main_title} {color && <span>{ color }</span>}
         </NavLink>
       </div>
       <div className="">
