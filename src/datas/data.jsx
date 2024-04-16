@@ -25,7 +25,7 @@ export let CATALOG = [
     element: (
       <HomePage
         data={DATA_MEN}
-        menu={MENU_MEN}
+        menu={MENU_WOMEN}
         data_recomended={DATA_RECOMENDED_WOMEN}
       />
     ),

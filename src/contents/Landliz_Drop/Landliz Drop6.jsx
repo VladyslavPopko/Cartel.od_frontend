@@ -3,21 +3,21 @@ import description_item2_logo from "../../img/_Landliz_Drop/Landliz_Drop6/descri
 import description_item3_logo from "../../img/_Landliz_Drop/Landliz_Drop6/descriptionImg3.svg";
 import description_item4_logo from "../../img/_Landliz_Drop/Landliz_Drop6/descriptionImg4.svg";
 
-import aboutusItem1Img from "../../img/_Landliz_Drop/Landliz_Drop6/aboutUsImg1.svg";
-import aboutusItem2Img from "../../img/_Landliz_Drop/Landliz_Drop6/aboutUsImg2.svg";
+//import aboutusItem1Img from "../../img/_Landliz_Drop/Landliz_Drop6/aboutUsImg1.svg";
+//import aboutusItem2Img from "../../img/_Landliz_Drop/Landliz_Drop6/aboutUsImg2.svg";
 
 import reviewItem1Img from "../../img/_Landliz_Drop/Landliz_Drop6/reviewImg1.png";
 import reviewItem2Img from "../../img/_Landliz_Drop/Landliz_Drop6/reviewImg2.png";
 import reviewItem3Img from "../../img/_Landliz_Drop/Landliz_Drop6/reviewImg3.png";
 
-import advantageItem1Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg1.svg";
-import advantageItem2Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg2.svg";
-import advantageItem3Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg3.svg";
-import advantageItem4Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg4.svg";
-import advantageItem5Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg5.svg";
-import advantageItem6Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg6.svg";
+// import advantageItem1Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg1.svg";
+// import advantageItem2Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg2.svg";
+// import advantageItem3Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg3.svg";
+// import advantageItem4Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg4.svg";
+// import advantageItem5Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg5.svg";
+// import advantageItem6Img from "../../img/_Landliz_Drop/Landliz_Drop6/advantageImg6.svg";
 
-import table from "../../img/_Landliz_Drop/Landliz_Drop6/table.jpg";
+//import table from "../../img/_Landliz_Drop/Landliz_Drop6/table.jpg";
 
 const price = 999; // необходимо для формулы высчета скидки за несколько товаров
 
@@ -90,12 +90,12 @@ export const CONTENT = {
       "Наші вироби виготовлені з тканин, які дбайливо обрані для їх м'якості та приємної текстури. Це дозволяє вам відчувати себе комфортно та зручно в будь-якій ситуації.",
   },
   contentAboutUs: {
-    item1_img1: aboutusItem1Img,
+    //item1_img1: aboutusItem1Img,
     item1_title: "1000",
     item1_text: "Замовлень",
     item2_title: "300",
     item2_text: "Відгуків",
-    item2_img1: aboutusItem2Img,
+   // item2_img1: aboutusItem2Img,
   },
   contentReview: {
     title: "Відгуки:",
@@ -114,16 +114,16 @@ export const CONTENT = {
   },
   contentSizeTable: {
     title: "Таблиця розмірів",
-    img: table,
+    //img: table,
   },
   contentAdvantage: {
     title: "Наші переваги:",
-    item1_img1: advantageItem1Img,
-    item2_img1: advantageItem2Img,
-    item3_img1: advantageItem3Img,
-    item4_img1: advantageItem4Img,
-    item5_img1: advantageItem5Img,
-    item6_img1: advantageItem6Img,
+   // item1_img1: advantageItem1Img,
+    //item2_img1: advantageItem2Img,
+    //item3_img1: advantageItem3Img,
+    //item4_img1: advantageItem4Img,
+    //item5_img1: advantageItem5Img,
+    //item6_img1: advantageItem6Img,
     item1_title: "Зручність",
     item1_text:
       "Весь одяг створюється з використанням високоякісних матеріалів, що робить його надзвичайно м'яким та еластичним.",
@@ -151,7 +151,7 @@ export const CONTENT = {
   },
   contentModalSizeTable: {
     title: "Таблиця розмірів",
-    img: table,
+    //img: table,
   },
 };
 export const CONTENT_LANDLIZ_DROP_6 = CONTENT; // Поменять на имя, используемое для файла data
