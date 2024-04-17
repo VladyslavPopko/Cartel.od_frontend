@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import { CONTENT_LANDLIZ_DROP_1 } from "../contents/Landliz_Drop/Landliz Drop1";
 import { CONTENT_LANDLIZ_DROP_10 } from "../contents/Landliz_Drop/Landliz Drop10";
 import { CONTENT_LANDLIZ_DROP_11 } from "../contents/Landliz_Drop/Landliz Drop11";
@@ -75,7 +76,7 @@ import { CONTENT_LANDLIZ_DROP_76 } from "../contents/Landliz_Drop/Landliz Drop76
 import { CONTENT_LANDLIZ_DROP_77 } from "../contents/Landliz_Drop/Landliz Drop77";
 import { CONTENT_LANDLIZ_DROP_8 } from "../contents/Landliz_Drop/Landliz Drop8";
 import { CONTENT_LANDLIZ_DROP_9 } from "../contents/Landliz_Drop/Landliz Drop9";
-import ProductPage__WithoutAbout from "../pages/ProductPage__WithoutAbout";
+
 import { DATA_LANDLIZ_DROP } from "./Landliz_Drop/_data_landliz_drop";
 import {
   DATA_LANDLIZ_DROP_1,
@@ -386,6 +387,10 @@ import {
   INFO_LANDLIZ_DROP_9,
 } from "./Landliz_Drop/data_Landliz Drop9";
 
+const ProductPage__WithoutAboutLazy = lazy(() =>
+  import("../pages/ProductPage__WithoutAbout")
+);
+
 const data = [];
 
 data.push(DATA_LANDLIZ_DROP);
@@ -407,7 +412,7 @@ export const MENU_MILITARY = [
             path: "/military/upper/jackets/1",
             title: 'Куртка бомбер мультикам ріпстоп "Кайман"',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_28}
                 info={INFO_LANDLIZ_DROP_28}
                 content={CONTENT_LANDLIZ_DROP_28}
@@ -418,7 +423,7 @@ export const MENU_MILITARY = [
             path: "/military/upper/jackets/2",
             title: "Куртка тактична мультикам 5.11",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_29}
                 info={INFO_LANDLIZ_DROP_29}
                 content={CONTENT_LANDLIZ_DROP_29}
@@ -430,7 +435,7 @@ export const MENU_MILITARY = [
             path: "/military/upper/jackets/3",
             title: 'Куртка бомбер піксель ріпстоп "Кайман"',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_31}
                 info={INFO_LANDLIZ_DROP_31}
                 content={CONTENT_LANDLIZ_DROP_31}
@@ -448,7 +453,7 @@ export const MENU_MILITARY = [
             path: "/military/upper/parks/1",
             title: "Парка тактична мультикам весняна ріпстоп",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_30}
                 info={INFO_LANDLIZ_DROP_30}
                 content={CONTENT_LANDLIZ_DROP_30}
@@ -473,7 +478,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/1",
             title: 'Кросівки тактичні "Пегас" койот демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_60}
                 info={INFO_LANDLIZ_DROP_60}
                 content={CONTENT_LANDLIZ_DROP_60}
@@ -484,7 +489,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/2",
             title: 'Кросівки тактичні "Energy" чорні демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_61}
                 info={INFO_LANDLIZ_DROP_61}
                 content={CONTENT_LANDLIZ_DROP_61}
@@ -495,7 +500,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/3",
             title: 'Кросівки тактичні "Energy" койот демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_62}
                 info={INFO_LANDLIZ_DROP_62}
                 content={CONTENT_LANDLIZ_DROP_62}
@@ -506,7 +511,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/4",
             title: 'Кросівки тактичні "Energy" хакі демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_63}
                 info={INFO_LANDLIZ_DROP_63}
                 content={CONTENT_LANDLIZ_DROP_63}
@@ -517,7 +522,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/5",
             title: 'Кросівки тактичні "Energy" піксель демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_64}
                 info={INFO_LANDLIZ_DROP_64}
                 content={CONTENT_LANDLIZ_DROP_64}
@@ -528,7 +533,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/6",
             title: "Кросівки тактичні «Шершень» чорні демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_66}
                 info={INFO_LANDLIZ_DROP_66}
                 content={CONTENT_LANDLIZ_DROP_66}
@@ -539,7 +544,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/7",
             title: 'Кросівки тактичні "Crazy" хакі демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_69}
                 info={INFO_LANDLIZ_DROP_69}
                 content={CONTENT_LANDLIZ_DROP_69}
@@ -550,7 +555,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/8",
             title: 'Кросівки тактичні "Crazy" чорні демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_70}
                 info={INFO_LANDLIZ_DROP_70}
                 content={CONTENT_LANDLIZ_DROP_70}
@@ -561,7 +566,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/sneakers/9",
             title: 'Кросівки тактичні "Crazy" койот демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_77}
                 info={INFO_LANDLIZ_DROP_77}
                 content={CONTENT_LANDLIZ_DROP_77}
@@ -579,7 +584,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/choboti/1",
             title: "Чоботи гумові високі хакі демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_65}
                 info={INFO_LANDLIZ_DROP_65}
                 content={CONTENT_LANDLIZ_DROP_65}
@@ -597,7 +602,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/berts/1",
             title: 'Берці літні "Бізон" чорні',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_67}
                 info={INFO_LANDLIZ_DROP_67}
                 content={CONTENT_LANDLIZ_DROP_67}
@@ -608,7 +613,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/berts/2",
             title: 'Берці літні "Бізон" койот',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_68}
                 info={INFO_LANDLIZ_DROP_68}
                 content={CONTENT_LANDLIZ_DROP_68}
@@ -619,7 +624,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/berts/3",
             title: "Берці тактичні койот-піксель демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_74}
                 info={INFO_LANDLIZ_DROP_74}
                 content={CONTENT_LANDLIZ_DROP_74}
@@ -630,7 +635,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/berts/4",
             title: "Берці тактичні койот демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_75}
                 info={INFO_LANDLIZ_DROP_75}
                 content={CONTENT_LANDLIZ_DROP_75}
@@ -641,7 +646,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/berts/5",
             title: "Берці тактичні койот-мультикам демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_76}
                 info={INFO_LANDLIZ_DROP_76}
                 content={CONTENT_LANDLIZ_DROP_76}
@@ -659,7 +664,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/boots/1",
             title: 'Черевики тактичні "Brooklyn" койот демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_71}
                 info={INFO_LANDLIZ_DROP_71}
                 content={CONTENT_LANDLIZ_DROP_71}
@@ -670,7 +675,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/boots/2",
             title: 'Черевики тактичні "Brooklyn" хакі демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_72}
                 info={INFO_LANDLIZ_DROP_72}
                 content={CONTENT_LANDLIZ_DROP_72}
@@ -681,7 +686,7 @@ export const MENU_MILITARY = [
             path: "/military/footwear/boots/3",
             title: 'Черевики тактичні "Brooklyn" чорні демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_73}
                 info={INFO_LANDLIZ_DROP_73}
                 content={CONTENT_LANDLIZ_DROP_73}
@@ -706,7 +711,7 @@ export const MENU_MILITARY = [
             path: "/military/rain_boots/rain_boots/1",
             title: "Дощовик-пончо мультикам v2",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_57}
                 info={INFO_LANDLIZ_DROP_57}
                 content={CONTENT_LANDLIZ_DROP_57}
@@ -717,7 +722,7 @@ export const MENU_MILITARY = [
             path: "/military/rain_boots/rain_boots/2",
             title: "Дощовик-пончо піксель v2",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_58}
                 info={INFO_LANDLIZ_DROP_58}
                 content={CONTENT_LANDLIZ_DROP_58}
@@ -728,7 +733,7 @@ export const MENU_MILITARY = [
             path: "/military/rain_boots/rain_boots/3",
             title: "Костюм дощовик маскувальний мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_59}
                 info={INFO_LANDLIZ_DROP_59}
                 content={CONTENT_LANDLIZ_DROP_59}
@@ -753,7 +758,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/1",
             title: 'Комплект куртка + штани тактичні ріпстоп "Хижак"',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_47}
                 info={INFO_LANDLIZ_DROP_47}
                 content={CONTENT_LANDLIZ_DROP_47}
@@ -764,7 +769,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/2",
             title: "Костюм тактичний мультикам Soft Shell демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_48}
                 info={INFO_LANDLIZ_DROP_48}
                 content={CONTENT_LANDLIZ_DROP_48}
@@ -776,7 +781,7 @@ export const MENU_MILITARY = [
             title:
               "Костюм тактичний убакс + штани мультикам з місцями під наколінники та налокітники",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_49}
                 info={INFO_LANDLIZ_DROP_49}
                 content={CONTENT_LANDLIZ_DROP_49}
@@ -788,7 +793,7 @@ export const MENU_MILITARY = [
             title:
               "Костюм тактичний убакс + штани мультикам з місцями під наколінники",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_50}
                 info={INFO_LANDLIZ_DROP_50}
                 content={CONTENT_LANDLIZ_DROP_50}
@@ -799,7 +804,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/5",
             title: "Форма тактична світлий піксель демісезон",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_51}
                 info={INFO_LANDLIZ_DROP_51}
                 content={CONTENT_LANDLIZ_DROP_51}
@@ -810,7 +815,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/6",
             title: "Костюм тактичний з капюшоном мультикам демісезон 5.11",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_52}
                 info={INFO_LANDLIZ_DROP_52}
                 content={CONTENT_LANDLIZ_DROP_52}
@@ -821,7 +826,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/7",
             title: "Костюм тактичний піксель ріпстоп з капюшоном весняний",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_53}
                 info={INFO_LANDLIZ_DROP_53}
                 content={CONTENT_LANDLIZ_DROP_53}
@@ -832,7 +837,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/8",
             title: 'Костюм тактичний горка "Хижак" демісезон',
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_54}
                 info={INFO_LANDLIZ_DROP_54}
                 content={CONTENT_LANDLIZ_DROP_54}
@@ -843,7 +848,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/9",
             title: "Комплект убакс + джогери мультикам ріпстоп",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_55}
                 info={INFO_LANDLIZ_DROP_55}
                 content={CONTENT_LANDLIZ_DROP_55}
@@ -854,7 +859,7 @@ export const MENU_MILITARY = [
             path: "/military/complects/complects/10",
             title: "Комплект тактичний флісова кофта + штани ріпстоп",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_56}
                 info={INFO_LANDLIZ_DROP_56}
                 content={CONTENT_LANDLIZ_DROP_56}
@@ -879,7 +884,7 @@ export const MENU_MILITARY = [
             path: "/military/entertainment_systems/plates/1",
             title: "Платоноски ALPC",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_40}
                 info={INFO_LANDLIZ_DROP_40}
                 content={CONTENT_LANDLIZ_DROP_40}
@@ -891,7 +896,7 @@ export const MENU_MILITARY = [
             title:
               "Тактична плитоноска з двома точками швидкого скидання мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_41}
                 info={INFO_LANDLIZ_DROP_41}
                 content={CONTENT_LANDLIZ_DROP_41}
@@ -902,7 +907,7 @@ export const MENU_MILITARY = [
             path: "/military/entertainment_systems/plates/3",
             title: "Ремінно-плечова система колір мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_42}
                 info={INFO_LANDLIZ_DROP_42}
                 content={CONTENT_LANDLIZ_DROP_42}
@@ -914,7 +919,7 @@ export const MENU_MILITARY = [
             title:
               "Тактична плитоноска з 4 точками швидкого скидання мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_43}
                 info={INFO_LANDLIZ_DROP_43}
                 content={CONTENT_LANDLIZ_DROP_43}
@@ -925,7 +930,7 @@ export const MENU_MILITARY = [
             path: "/military/entertainment_systems/plates/5",
             title: "Ремінно-плечова система (РПС) в зборі колір мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_44}
                 info={INFO_LANDLIZ_DROP_44}
                 content={CONTENT_LANDLIZ_DROP_44}
@@ -936,7 +941,7 @@ export const MENU_MILITARY = [
             path: "/military/entertainment_systems/plates/6",
             title: "Тактична плитоноска з 4 точками швидкого скидання піксель",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_45}
                 info={INFO_LANDLIZ_DROP_45}
                 content={CONTENT_LANDLIZ_DROP_45}
@@ -947,7 +952,7 @@ export const MENU_MILITARY = [
             path: "/military/entertainment_systems/plates/7",
             title: "Плитоноска MOLLE MM-14 з підсумками для магазинів піксель",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_46}
                 info={INFO_LANDLIZ_DROP_46}
                 content={CONTENT_LANDLIZ_DROP_46}
@@ -972,7 +977,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/1",
             title: "Рюкзак тактичний олива 30л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_32}
                 info={INFO_LANDLIZ_DROP_32}
                 content={CONTENT_LANDLIZ_DROP_32}
@@ -983,7 +988,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/2",
             title: "Рюкзак тактичний олива 36л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_33}
                 info={INFO_LANDLIZ_DROP_33}
                 content={CONTENT_LANDLIZ_DROP_33}
@@ -994,7 +999,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/3",
             title: "Рюкзак тактичний олива 44л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_34}
                 info={INFO_LANDLIZ_DROP_34}
                 content={CONTENT_LANDLIZ_DROP_34}
@@ -1005,7 +1010,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/4",
             title: "Рюкзак тактичний піксель 35л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_37}
                 info={INFO_LANDLIZ_DROP_37}
                 content={CONTENT_LANDLIZ_DROP_37}
@@ -1016,7 +1021,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/5",
             title: "Рюкзак тактичний піксель 45л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_38}
                 info={INFO_LANDLIZ_DROP_38}
                 content={CONTENT_LANDLIZ_DROP_38}
@@ -1027,7 +1032,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/backpacs/6",
             title: "Рюкзак тактичний піксель 65л",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_39}
                 info={INFO_LANDLIZ_DROP_39}
                 content={CONTENT_LANDLIZ_DROP_39}
@@ -1045,7 +1050,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/bags/1",
             title: "Тактична сумка нагрудна хакі",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_35}
                 info={INFO_LANDLIZ_DROP_35}
                 content={CONTENT_LANDLIZ_DROP_35}
@@ -1056,7 +1061,7 @@ export const MENU_MILITARY = [
             path: "/military/backpacks/bags/2",
             title: "Тактична поясна сумка хакі",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_36}
                 info={INFO_LANDLIZ_DROP_36}
                 content={CONTENT_LANDLIZ_DROP_36}
@@ -1081,7 +1086,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/1",
             title: "Флісова кофта хакі вафелька",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_16}
                 info={INFO_LANDLIZ_DROP_16}
                 content={CONTENT_LANDLIZ_DROP_16}
@@ -1092,7 +1097,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/2",
             title: "Флісова кофта хакі з капюшоном v2",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_17}
                 info={INFO_LANDLIZ_DROP_17}
                 content={CONTENT_LANDLIZ_DROP_17}
@@ -1103,7 +1108,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/3",
             title: "Флісова кофта мультикам з капюшоном",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_18}
                 info={INFO_LANDLIZ_DROP_18}
                 content={CONTENT_LANDLIZ_DROP_18}
@@ -1114,7 +1119,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/4",
             title: "Флісова кофта піксель з капюшоном",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_19}
                 info={INFO_LANDLIZ_DROP_19}
                 content={CONTENT_LANDLIZ_DROP_19}
@@ -1125,7 +1130,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/5",
             title: "Флісова кофта піксель з капюшоном",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_20}
                 info={INFO_LANDLIZ_DROP_20}
                 content={CONTENT_LANDLIZ_DROP_20}
@@ -1136,7 +1141,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/6",
             title: "Флісова кофта піксель з капюшоном",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_21}
                 info={INFO_LANDLIZ_DROP_21}
                 content={CONTENT_LANDLIZ_DROP_21}
@@ -1147,7 +1152,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/7",
             title: "Флісова кофта олива з плащівкою",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_22}
                 info={INFO_LANDLIZ_DROP_22}
                 content={CONTENT_LANDLIZ_DROP_22}
@@ -1158,7 +1163,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/8",
             title: "Флісова кофта мультикам з капюшоном ESDY Tiger",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_23}
                 info={INFO_LANDLIZ_DROP_23}
                 content={CONTENT_LANDLIZ_DROP_23}
@@ -1169,7 +1174,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/9",
             title: "Флісова кофта з капюшоном ESDY мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_26}
                 info={INFO_LANDLIZ_DROP_26}
                 content={CONTENT_LANDLIZ_DROP_26}
@@ -1180,7 +1185,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/ordinary/10",
             title: "Флісова кофта з капюшоном Call Dragon мультикам",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_27}
                 info={INFO_LANDLIZ_DROP_27}
                 content={CONTENT_LANDLIZ_DROP_27}
@@ -1198,7 +1203,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/tactical/1",
             title: "Тактична флісова стрейчева кофта хакі",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_24}
                 info={INFO_LANDLIZ_DROP_24}
                 content={CONTENT_LANDLIZ_DROP_24}
@@ -1209,7 +1214,7 @@ export const MENU_MILITARY = [
             path: "/military/flisovi_kofti/tactical/2",
             title: "Тактична флісова кофта мультикам Han-Wild",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_25}
                 info={INFO_LANDLIZ_DROP_25}
                 content={CONTENT_LANDLIZ_DROP_25}
@@ -1234,7 +1239,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/1",
             title: "Футболка койот тактична",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_1}
                 info={INFO_LANDLIZ_DROP_1}
                 content={CONTENT_LANDLIZ_DROP_1}
@@ -1245,7 +1250,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/2",
             title: "Футболка мультикам тактична",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_3}
                 info={INFO_LANDLIZ_DROP_3}
                 content={CONTENT_LANDLIZ_DROP_3}
@@ -1256,7 +1261,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/3",
             title: "Футболка мультикам вологовідвідна",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_4}
                 info={INFO_LANDLIZ_DROP_4}
                 content={CONTENT_LANDLIZ_DROP_4}
@@ -1267,7 +1272,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/4",
             title: "Футболка тактична хакі сітка",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_5}
                 info={INFO_LANDLIZ_DROP_5}
                 content={CONTENT_LANDLIZ_DROP_5}
@@ -1278,7 +1283,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/5",
             title: "Футболка тактична мультикам кулмакс",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_8}
                 info={INFO_LANDLIZ_DROP_8}
                 content={CONTENT_LANDLIZ_DROP_8}
@@ -1289,7 +1294,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/6",
             title: "Футболка мультикам тактична v2",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_12}
                 info={INFO_LANDLIZ_DROP_12}
                 content={CONTENT_LANDLIZ_DROP_12}
@@ -1300,7 +1305,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/7",
             title: "Футболка тактична хакі з піксельними рукавами",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_13}
                 info={INFO_LANDLIZ_DROP_13}
                 content={CONTENT_LANDLIZ_DROP_13}
@@ -1311,7 +1316,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/8",
             title: "Футболка тактична хакі з піксельними рукавами",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_14}
                 info={INFO_LANDLIZ_DROP_14}
                 content={CONTENT_LANDLIZ_DROP_14}
@@ -1322,7 +1327,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/tshirts/9",
             title: "Футболка тактична мультикам Coolmax",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_15}
                 info={INFO_LANDLIZ_DROP_15}
                 content={CONTENT_LANDLIZ_DROP_15}
@@ -1340,7 +1345,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/polo/1",
             title: "Поло тактичне хакі v3",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_2}
                 info={INFO_LANDLIZ_DROP_2}
                 content={CONTENT_LANDLIZ_DROP_2}
@@ -1351,7 +1356,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/polo/2",
             title: "Поло тактичне хакі кулмакс",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_6}
                 info={INFO_LANDLIZ_DROP_6}
                 content={CONTENT_LANDLIZ_DROP_6}
@@ -1362,7 +1367,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/polo/3",
             title: "Поло тактичне мультикам кулмакс",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_7}
                 info={INFO_LANDLIZ_DROP_7}
                 content={CONTENT_LANDLIZ_DROP_7}
@@ -1373,7 +1378,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/polo/4",
             title: "Поло тактичне піксель кулмакс",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_10}
                 info={INFO_LANDLIZ_DROP_10}
                 content={CONTENT_LANDLIZ_DROP_10}
@@ -1384,7 +1389,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/polo/5",
             title: "Поло тактичне мультикам кулмакс",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_11}
                 info={INFO_LANDLIZ_DROP_11}
                 content={CONTENT_LANDLIZ_DROP_11}
@@ -1402,7 +1407,7 @@ export const MENU_MILITARY = [
             path: "/military/tshirts/sleeveless/1",
             title: "Безрукавка піксель",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_LANDLIZ_DROP_9}
                 info={INFO_LANDLIZ_DROP_9}
                 content={CONTENT_LANDLIZ_DROP_9}

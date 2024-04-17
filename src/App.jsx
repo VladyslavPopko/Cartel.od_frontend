@@ -38,7 +38,7 @@ const App = () => {
           ))}
           <Route
             path="*"
-            element={<HomePage data={DATA_MEN} menu={MENU_MEN} />}
+            element={<HomePageLazy data={DATA_MEN} menu={MENU_MEN} />}
           />
         </Routes>
       </Suspense>

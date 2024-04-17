@@ -167,8 +167,10 @@ import {
   INFO_SLAVS_DROP_Trousers_CP,
 } from "./Slavs_Drop/data_trousers_cp";
 import { CONTENT_SLAVS_DROP_Trousers_CP } from "../contents/Slavs_Drop/Trousers_CP";
-import ProductPage__WithoutAbout from "../pages/ProductPage__WithoutAbout";
-import HomePage from "../pages/HomePage";
+
+const ProductPage__WithoutAboutLazy = lazy(() =>
+  import("../pages/ProductPage__WithoutAbout")
+);
 
 const data = [];
 
@@ -192,7 +194,7 @@ export const MENU_MEN = [
             path: "/men/hoodie/hoodie_zmeyka",
             title: "Худі на блискавці оверсайз",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_HoodieZmeykaOver}
                 info={INFO_FARSH_DROP_HoodieZmeykaOver}
                 content={CONTENT_FARSH_DROP_HoodieZmeykaOver}
@@ -203,7 +205,7 @@ export const MENU_MEN = [
             path: "/men/hoodie/hoodie_si",
             title: "Худі SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_HOODIE_SI}
                 info={INFO_SLAVS_DROP_HOODIE_SI}
                 content={CONTENT_SLAVS_DROP_HOODIE_SI}
@@ -221,7 +223,7 @@ export const MENU_MEN = [
             path: "/men/ziphoodie/ziphoodie_si",
             title: "Зіп Худі SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_ZIPHOODIE_SI}
                 info={INFO_SLAVS_DROP_ZIPHOODIE_SI}
                 content={CONTENT_SLAVS_DROP_ZIPHOODIE_SI}
@@ -239,7 +241,7 @@ export const MENU_MEN = [
             path: "/men/sweatshirt/sweatshirt_cp",
             title: "Світшот CP",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Sweatshirt_CP}
                 info={INFO_SLAVS_DROP_Sweatshirt_CP}
                 content={CONTENT_SLAVS_DROP_Sweatshirt_CP}
@@ -250,7 +252,7 @@ export const MENU_MEN = [
             path: "/men/sweatshirt/sweatshirt_si",
             title: "Світшот SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_SWEATSHIRT_SI}
                 info={INFO_SLAVS_DROP_SWEATSHIRT_SI}
                 content={CONTENT_SLAVS_DROP_SWEATSHIRT_SI}
@@ -262,7 +264,7 @@ export const MENU_MEN = [
             path: "/men/sweatshirt/classic_sweatshirt_si",
             title: "Класичний Світшот SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_ClassicSweatshirt_SI}
                 info={INFO_SLAVS_DROP_ClassicSweatshirt_SI}
                 content={CONTENT_SLAVS_DROP_ClassicSweatshirt_SI}
@@ -280,7 +282,7 @@ export const MENU_MEN = [
             path: "/men/zipsweatshirt/zipsweatshirt",
             title: "Зіп Світшот SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Zipsweatshirt_SI}
                 info={INFO_SLAVS_DROP_Zipsweatshirt_SI}
                 content={CONTENT_SLAVS_DROP_Zipsweatshirt_SI}
@@ -298,7 +300,7 @@ export const MENU_MEN = [
             path: "/men/longsliv/kofta_rubchik_over",
             title: "Кофта рубчик оверсайз",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_KoftaRubchikOver}
                 info={INFO_FARSH_DROP_KoftaRubchikOver}
                 content={CONTENT_FARSH_DROP_KoftaRubchikOver}
@@ -309,7 +311,7 @@ export const MENU_MEN = [
             path: "/men/longsliv/longsliv_si",
             title: "Лонгслів SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Longsliv_SI}
                 info={INFO_SLAVS_DROP_Longsliv_SI}
                 content={CONTENT_SLAVS_DROP_Longsliv_SI}
@@ -334,7 +336,7 @@ export const MENU_MEN = [
             path: "/men/sorochki/shirts",
             title: "Весняна сорочка",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_SHIRTS}
                 info={INFO_FARSH_DROP_SHIRTS}
                 content={CONTENT_FARSH_DROP_SHIRTS}
@@ -345,7 +347,7 @@ export const MENU_MEN = [
             path: "/men/sorochki/shirt_lyon",
             title: "Сорочка льняна",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ShirtLyon}
                 info={INFO_FARSH_DROP_ShirtLyon}
                 content={CONTENT_FARSH_DROP_ShirtLyon}
@@ -370,7 +372,7 @@ export const MENU_MEN = [
             path: "/men/tshirts/tshirt_over",
             title: "Футболка оверсайз BASE",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_TshirtOver}
                 info={INFO_FARSH_DROP_TshirtOver}
                 content={CONTENT_FARSH_DROP_TshirtOver}
@@ -381,7 +383,7 @@ export const MENU_MEN = [
             path: "/men/tshirts/tshirt_summer_long",
             title: "Футболка LONG",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_TshirtSummerLong}
                 info={INFO_FARSH_DROP_TshirtSummerLong}
                 content={CONTENT_FARSH_DROP_TshirtSummerLong}
@@ -406,7 +408,7 @@ export const MENU_MEN = [
             path: "/men/sportcomplects/costume_over_baza",
             title: "Костюм оверсайз BASE",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_CostumeOverBaza}
                 info={INFO_FARSH_DROP_CostumeOverBaza}
                 content={CONTENT_FARSH_DROP_CostumeOverBaza}
@@ -417,7 +419,7 @@ export const MENU_MEN = [
             path: "/men/sportcomplects/costume_zamsh",
             title: "Костюм Замш",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_CostumeZamsh}
                 info={INFO_FARSH_DROP_CostumeZamsh}
                 content={CONTENT_FARSH_DROP_CostumeZamsh}
@@ -428,7 +430,7 @@ export const MENU_MEN = [
             path: "/men/sportcomplects/costume_tech",
             title: "Костюм TECH",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_CostumeTech}
                 info={INFO_FARSH_DROP_CostumeTech}
                 content={CONTENT_FARSH_DROP_CostumeTech}
@@ -439,7 +441,7 @@ export const MENU_MEN = [
             path: "/men/sportcomplects/costume_parashute",
             title: "Костюм парашют",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_CostumeParashute}
                 info={INFO_FARSH_DROP_CostumeParashute}
                 content={CONTENT_FARSH_DROP_CostumeParashute}
@@ -450,7 +452,7 @@ export const MENU_MEN = [
             path: "/men/sportcomplects/complect_over_trousers_tshirt",
             title: "Комплект штани + футболка",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ComplectOverTrousersTshirt}
                 info={INFO_FARSH_DROP_ComplectOverTrousersTshirt}
                 content={CONTENT_FARSH_DROP_ComplectOverTrousersTshirt}
@@ -475,7 +477,7 @@ export const MENU_MEN = [
             path: "/men/trousers/trousers_zmeyka",
             title: "Штани завужені",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_TrousersZmeyka}
                 info={INFO_FARSH_DROP_TrousersZmeyka}
                 content={CONTENT_FARSH_DROP_TrousersZmeyka}
@@ -486,7 +488,7 @@ export const MENU_MEN = [
             path: "/men/trousers/trousers_kargo",
             title: "Штани карго",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_TrousersKargo}
                 info={INFO_FARSH_DROP_TrousersKargo}
                 content={CONTENT_FARSH_DROP_TrousersKargo}
@@ -497,7 +499,7 @@ export const MENU_MEN = [
             path: "/men/trousers/trouser_cut_summer",
             title: "Штани укорочені",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_TrousersCutSummer}
                 info={INFO_FARSH_DROP_TrousersCutSummer}
                 content={CONTENT_FARSH_DROP_TrousersCutSummer}
@@ -508,7 +510,7 @@ export const MENU_MEN = [
             path: "/men/trousers/trousers_cp",
             title: "Штани CP",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Trousers_CP}
                 info={INFO_SLAVS_DROP_Trousers_CP}
                 content={CONTENT_SLAVS_DROP_Trousers_CP}
@@ -526,7 +528,7 @@ export const MENU_MEN = [
             path: "/men/jeans/jeans_si",
             title: "Джинси SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Jeans_SI}
                 info={INFO_SLAVS_DROP_Jeans_SI}
                 content={CONTENT_SLAVS_DROP_Jeans_SI}
@@ -544,7 +546,7 @@ export const MENU_MEN = [
             path: "/men/shorts/shorts_trikotaj",
             title: "Шорти трикотажні",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ShortsTrikotaj}
                 info={INFO_FARSH_DROP_ShortsTrikotaj}
                 content={CONTENT_FARSH_DROP_ShortsTrikotaj}
@@ -555,7 +557,7 @@ export const MENU_MEN = [
             path: "/men/shorts/shorts_summer_classic",
             title: "Шорти класичні",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ShortsSummerClassic}
                 info={INFO_FARSH_DROP_ShortsSummerClassic}
                 content={CONTENT_FARSH_DROP_ShortsSummerClassic}
@@ -566,7 +568,7 @@ export const MENU_MEN = [
             path: "/men/shorts/shorts_lyon",
             title: "Шорти льняні",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ShortsLyon}
                 info={INFO_FARSH_DROP_ShortsLyon}
                 content={CONTENT_FARSH_DROP_ShortsLyon}
@@ -577,7 +579,7 @@ export const MENU_MEN = [
             path: "/men/shorts/short_kargo_summer",
             title: "Шорти карго",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ShortsKargoSummer}
                 info={INFO_FARSH_DROP_ShortsKargoSummer}
                 content={CONTENT_FARSH_DROP_ShortsKargoSummer}
@@ -588,7 +590,7 @@ export const MENU_MEN = [
             path: "/men/shorts/shorts_si",
             title: "Шорти SI",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_Shorts_SI}
                 info={INFO_SLAVS_DROP_Shorts_SI}
                 content={CONTENT_SLAVS_DROP_Shorts_SI}
@@ -614,7 +616,7 @@ export const MENU_MEN = [
             path: "/men/summercomplects/complect_over_shorts_tshirt",
             title: "Комплект оверсайз",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ComplectOverShortsTshirt}
                 info={INFO_FARSH_DROP_ComplectOverShortsTshirt}
                 content={CONTENT_FARSH_DROP_ComplectOverShortsTshirt}
@@ -625,7 +627,7 @@ export const MENU_MEN = [
             path: "/men/summercomplects/complect_lampas_shorts_tshirt",
             title: "Комплект лампас",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ComplectLampasShortsTshirt}
                 info={INFO_FARSH_DROP_ComplectLampasShortsTshirt}
                 content={CONTENT_FARSH_DROP_ComplectLampasShortsTshirt}
@@ -636,7 +638,7 @@ export const MENU_MEN = [
             path: "/men/summercomplects/complect_summer_rubchik",
             title: "Комплект рубчик",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ComplectSummerRubchik}
                 info={INFO_FARSH_DROP_ComplectSummerRubchik}
                 content={CONTENT_FARSH_DROP_ComplectSummerRubchik}
@@ -645,9 +647,9 @@ export const MENU_MEN = [
           },
           {
             path: "/men/summercomplects/complect_kant",
-            title: 'Комплект KANT',
+            title: "Комплект KANT",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_FARSH_DROP_ComplectKant}
                 info={INFO__FARSH_DROP_ComplectKant}
                 content={CONTENT_FARSH_DROP_ComplectKant}
@@ -673,7 +675,7 @@ export const MENU_MEN = [
             path: "/men/jacket/jackect_cp",
             title: "Куртка CP",
             element: (
-              <ProductPage__WithoutAbout
+              <ProductPage__WithoutAboutLazy
                 data={DATA_SLAVS_DROP_JACKET_CP}
                 info={INFO_SLAVS_DROP_JACKET_CP}
                 content={CONTENT_SLAVS_DROP_JACKET_CP}

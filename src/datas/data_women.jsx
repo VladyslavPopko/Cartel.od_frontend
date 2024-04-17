@@ -1,6 +1,11 @@
+import { lazy } from "react";
+
 const data = [];
 
 export const DATA_WOMEN = data.flat(Infinity);
+const ProductPage__WithoutAboutLazy = lazy(() =>
+  import("../pages/ProductPage__WithoutAbout")
+);
 
 export const MENU_WOMEN = [
   {
@@ -121,4 +126,3 @@ export const MENU_WOMEN = [
     category: [],
   },
 ];
-

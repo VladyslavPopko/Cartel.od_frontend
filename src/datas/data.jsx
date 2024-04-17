@@ -1,4 +1,3 @@
-import HomePage from "../pages/HomePage";
 import { DATA_RECOMENDED_MEN } from "./data_recomended_men";
 import { DATA_MEN, MENU_MEN } from "./data_men";
 import { DATA_WOMEN, MENU_WOMEN } from "./data_women";
@@ -8,8 +7,12 @@ import { DATA_RECOMENDED_MILITARY } from "./data_recomended_military";
 import { DATA_FARSH_DROP } from "./Farsh_Drop/_data_Farsh_Drop";
 import { DATA_LANDLIZ_DROP } from "./Landliz_Drop/_data_landliz_drop";
 import { DATA_SLAVS_DROP } from "./Slavs_Drop/_data_Slavs_Drop";
-import SearchPage from "../pages/SearchPage";
-import ProNasPage from "../pages/ProNasPage";
+import { lazy } from "react";
+
+
+const HomePageLazy = lazy(() => import("../pages/HomePage"));
+const SearchPageLazy = lazy(() => import("../pages/SearchPage"));
+const ProNasPageLazy = lazy(() => import("../pages/ProNasPage"));
 
 export let DATA_SEARCH = [];
 DATA_SEARCH.push(DATA_FARSH_DROP);
@@ -22,7 +25,7 @@ export let CATALOG = [
     path: "/",
     title: "Чоловікам",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_MEN}
         menu={MENU_MEN}
         data_recomended={DATA_RECOMENDED_MEN}
@@ -34,7 +37,7 @@ export let CATALOG = [
     path: "/women",
     title: "Жінкам",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_MEN}
         menu={MENU_WOMEN}
         data_recomended={DATA_RECOMENDED_WOMEN}
@@ -46,7 +49,7 @@ export let CATALOG = [
     path: "/military",
     title: "Military",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_MILITARY}
         menu={MENU_MILITARY}
         data_recomended={DATA_RECOMENDED_MILITARY}
@@ -58,14 +61,14 @@ export let CATALOG = [
     path: "/search",
     title: "Search",
     element: (
-      <SearchPage data={DATA_SEARCH} data_recomended={DATA_RECOMENDED_MEN} />
+      <SearchPageLazy data={DATA_SEARCH} data_recomended={DATA_RECOMENDED_MEN} />
     ),
     division: [],
   },
   {
     path: "/about_us",
     title: "Про нас",
-    element: <ProNasPage />,
+    element: <ProNasPageLazy />,
     division: [],
   },
 ];
@@ -75,7 +78,7 @@ export let ROUTES = [
     path: "/",
     title: "Чоловікам",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_MEN}
         menu={MENU_MEN}
         data_recomended={DATA_RECOMENDED_MEN}
@@ -87,7 +90,7 @@ export let ROUTES = [
     path: "/women",
     title: "Жінкам",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_WOMEN}
         menu={MENU_WOMEN}
         data_recomended={DATA_RECOMENDED_WOMEN}
@@ -99,7 +102,7 @@ export let ROUTES = [
     path: "/military",
     title: "Military",
     element: (
-      <HomePage
+      <HomePageLazy
         data={DATA_MILITARY}
         menu={MENU_MILITARY}
         data_recomended={DATA_RECOMENDED_MILITARY}
@@ -111,14 +114,14 @@ export let ROUTES = [
     path: "/search",
     title: "Search",
     element: (
-      <SearchPage data={DATA_SEARCH} data_recomended={DATA_RECOMENDED_MEN} />
+      <SearchPageLazy data={DATA_SEARCH} data_recomended={DATA_RECOMENDED_MEN} />
     ),
     category: [],
   },
   {
     path: "/about_us",
     title: "Про нас",
-    element: <ProNasPage />,
+    element: <ProNasPageLazy />,
     category: [],
   },
 ];
