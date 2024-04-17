@@ -1,22 +1,19 @@
-
-
 import heroImg1 from "../../img/_Landliz_Drop/Landliz_Drop7/img1.jpg";
 
 // Сжатые
 //Сжатые
 
 import Img1_galery_img1 from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img1.jpg";
-//import Img1_galery_img2 from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img2.jpg";
-//import Img1_galery_img3 from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img3.jpg";
+import Img1_galery_img2 from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img2.jpg";
+import Img1_galery_img3 from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img3.jpg";
 // from "../../img/_Landliz_Drop/Landliz_Drop7/img1_gallery_img4.jpg";
-
 
 // Без сжатия
 import Img1gallery1 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img1.jpg";
-//import Img1gallery2 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img2.jpg";
-//import Img1gallery3 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img3.jpg";
-//import Img1gallery4 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img4.jpg";
-
+import Img1gallery2 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img3.jpg";
+import Img1gallery4 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img4.jpg";
+import Img1gallery5 from "../../img/_Landliz_Drop/Landliz_Drop7/original/img1_gallery_img5.jpg";
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
 // export const ONE = "Хакі";
@@ -36,11 +33,8 @@ const page = "/military/tshirts/polo/3"; // на какой странице н�
 // Как товары называются в CRM
 const full_name1 = "Поло тактичне мультикам кулмакс";
 
-
 //Артикулы
 const article1 = 159;
-
-
 
 export const DATA = [
   {
@@ -57,20 +51,24 @@ export const DATA = [
     img: heroImg1,
     hero_img: heroImg1,
     galery_img1: Img1_galery_img1,
-    //galery_img2: Img1_galery_img2,
-   // galery_img3: Img1_galery_img3,
+    galery_img2: Img1_galery_img2,
+    galery_img3: Img1_galery_img3,
     //galery_img4: Img1_galery_img4,
-    gallery: [Img1gallery1, ],
-//Img1gallery2, Img1gallery3, Img1gallery4
+    gallery: [
+      Img1gallery1,
+      Img1gallery2,
+      Img1gallery3,
+      Img1gallery4,
+      Img1gallery5,
+    ],
+    //Img1gallery2, Img1gallery3, Img1gallery4
     page: page,
     banner: "",
     bannerText: "",
     division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
-    
   },
- 
 ];
 
 export const DATA_LANDLIZ_DROP_7 = DATA; // Поменять на имя, для отображения на главной странице
@@ -84,5 +82,5 @@ export const INFO_LANDLIZ_DROP_7 = {
   GOOGLE_SHEET:
     "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
   GOOGLE_LIST: "Landliz_Drop7", // Для отзывов (В гугл таблицу заходит в столбец "Название")
-//   ONE: ONE,
+  //   ONE: ONE,
 };

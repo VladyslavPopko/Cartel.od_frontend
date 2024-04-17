@@ -6,7 +6,6 @@ import {
   DATA_FARSH_DROP_SHIRTS,
   INFO_FARSH_DROP_SHIRTS,
 } from "./Farsh_Drop/data_shirts";
-import ProductPage from "../pages/ProductPage";
 import { CONTENT_FARSH_DROP_SHIRTS } from "../contents/Farsh_Drop/shirts";
 import {
   DATA_FARSH_DROP_ShirtLyon,
@@ -603,7 +602,7 @@ export const MENU_MEN = [
 
   {
     path: "",
-    title: "Комлекти",
+    title: "Комплекти",
     element: "",
     category: [
       {
@@ -646,7 +645,7 @@ export const MENU_MEN = [
           },
           {
             path: "/men/summercomplects/complect_kant",
-            title: "Комплект KANT",
+            title: 'Комплект KANT',
             element: (
               <ProductPage__WithoutAbout
                 data={DATA_FARSH_DROP_ComplectKant}

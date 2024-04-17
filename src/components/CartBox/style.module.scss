@@ -4,8 +4,10 @@
   align-items: start;
   font-family: var(--font-family);
   width: 100%;
+
   .img {
     width: 100%;
+    border-radius: var(--section-border-radius);
   }
   .img_wrapper {
     width: 20%;

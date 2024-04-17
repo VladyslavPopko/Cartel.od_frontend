@@ -26,13 +26,13 @@ const price = 2699; // необходимо для формулы высчета
 
 export const CONTENT = {
   sizeArray: [
-    { id: 1, value: "XS" },
-    { id: 2, value: "S" },
-    { id: 3, value: "M" },
-    { id: 4, value: "L" },
-    { id: 5, value: "XL" },
-    { id: 6, value: "2XL" },
-    { id: 7, value: "3XL" },
+    { id: 1, value: "30", active: true },
+    { id: 2, value: "31", active: true },
+    { id: 3, value: "32", active: true },
+    { id: 4, value: "33", active: true },
+    { id: 5, value: "34", active: true },
+    { id: 5, value: "36", active: true },
+    { id: 5, value: "38", active: true },
   ],
   contentHero: {
     price: "2 699",

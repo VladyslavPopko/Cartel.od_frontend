@@ -6,16 +6,16 @@ import heroImg1 from "../../img/_Landliz_Drop/Landliz_Drop1/img1.jpg";
 //Сжатые
 
 import Img1_galery_img1 from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img1.jpg";
-//import Img1_galery_img2 from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img2.jpg";
-// //import Img1_galery_img3 from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img3.jpg";
+import Img1_galery_img2 from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img2.jpg";
+// import Img1_galery_img3 from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img3.jpg";
 // from "../../img/_Landliz_Drop/Landliz_Drop1/img1_gallery_img4.jpg";
 
 
 // Без сжатия
 import Img1gallery1 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img1.jpg";
-//import Img1gallery2 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img2.jpg";
-//import Img1gallery3 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img3.jpg";
-// //import Img1gallery4 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img4.jpg";
+import Img1gallery2 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img2.jpg";
+import Img1gallery3 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img3.jpg";
+// import Img1gallery4 from "../../img/_Landliz_Drop/Landliz_Drop1/original/img1_gallery_img4.jpg";
 
 
 //Какие цвета (классы для выбора цвета и в карточке товара)
@@ -57,11 +57,11 @@ export const DATA = [
     img: heroImg1,
     hero_img: heroImg1,
     galery_img1: Img1_galery_img1,
-    //galery_img2: Img1_galery_img2,
+    galery_img2: Img1_galery_img2,
    // galery_img3: Img1_galery_img3,
-    //galery_img4: Img1_galery_img4,
-    gallery: [Img1gallery1, ],
-//Img1gallery2, Img1gallery3, Img1gallery4
+    ////galery_img4: Img1_galery_img4,
+    gallery: [Img1gallery1,Img1gallery2, Img1gallery3, ],
+// Img1gallery4
     page: page,
     banner: "",
     bannerText: "",
@@ -76,11 +76,11 @@ export const DATA = [
 export const DATA_LANDLIZ_DROP_1 = DATA; // Поменять на имя, для отображения на главной странице
 export const INFO_LANDLIZ_DROP_1 = {
   // Как будут показываться размеры
-  S: "С",
-  M: "М",
-  L: "Л",
-  XL: "ХЛ",
-  XXL: "ХХЛ",
+  // S: "46",
+  // M: "48",
+  // L: "50",
+  // XL: "52",
+  // XXL: "54",
   GOOGLE_SHEET:
     "https://docs.google.com/spreadsheets/d/1k6vP3hBiJpiy1wFQyvtL5LSyQsvd1qfhiUKJvh4S_YI/edit#gid=578840401",
   GOOGLE_LIST: "Landliz_Drop1", // Для отзывов (В гугл таблицу заходит в столбец "Название")

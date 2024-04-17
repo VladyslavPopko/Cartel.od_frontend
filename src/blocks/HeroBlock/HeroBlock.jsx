@@ -8,6 +8,7 @@ import { addToCart } from "../../redux/slices/cartSlice";
 import cn from "classnames";
 import { memo } from "react";
 import SliderHomeBox from "../../components/SliderHomeBox/SliderHomeBox";
+import SizeSelectorBox from "../../components/SizeSelectorBox/SizeSelectorBox";
 
 const HeroBlock = ({
   setIsVisibleSizetable,
@@ -35,7 +36,10 @@ const HeroBlock = ({
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     const info = data.filter((el) => el.color === isColor);
-    info[0].size = sizeValue;
+    !selected && SizeVisible === true
+      ? (info[0].size = "Уточнити")
+      : (info[0].size = sizeValue);
+
     info.map((e) => dispatch(addToCart(e)));
     addNotification(true);
     setTimeout(addNotification, 2000, false);
@@ -43,6 +47,11 @@ const HeroBlock = ({
   const handleSizetable = () => {
     setIsVisibleSizetable(true);
   };
+  let ColorVisible, SizeVisible;
+  data.map((el) => {
+    el.color ? (ColorVisible = true) : (ColorVisible = false);
+  });
+  sizeArray[0]?.value ? (SizeVisible = true) : (SizeVisible = false);
 
   return (
     <div>
@@ -53,36 +62,51 @@ const HeroBlock = ({
               <p className={styles.title}>{title}</p>
               <p className={styles.title}>{subtitle}</p>
               <p className={styles.article}>Артикул: {article}</p>
-              <p className={styles.text_color}>колір:</p>
-              <div className={styles.color_list}>
-                {data.map((el) => (
-                  <ColorCircle
-                    color={el.color}
-                    key={el.id}
-                    setIsColor={setIsColor}
-                    isColor={isColor}
-                  />
-                ))}
-              </div>
+              {ColorVisible && (
+                <>
+                  <p className={styles.text_color}>колір:</p>
+                  <div className={styles.color_list}>
+                    {data.map((el) => (
+                      <ColorCircle
+                        color={el.color}
+                        key={el.id}
+                        setIsColor={setIsColor}
+                        isColor={isColor}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+
               <p className={styles.price_text}>Стара ціна:</p>
               <p className={styles.price_old}>{old_price} грн</p>
               <p className={styles.price}>
                 <span className={styles.price_select}>{price}</span> грн.
               </p>
 
-              <div className={styles.size}>
-                <p className={styles.size_text}>Розмір:</p>
-                <p className={styles.size_table} onClick={handleSizetable}>
-                  таблиця розмірів
-                </p>
-              </div>
-              <div className={styles.select}>
-                <Select
+              {SizeVisible && (
+                <>
+                  <div className={styles.size}>
+                    <p className={styles.size_text}>Розмір:</p>
+                    <p className={styles.size_table} onClick={handleSizetable}>
+                      таблиця розмірів
+                    </p>
+                  </div>
+                  <div className={styles.select}>
+                    <SizeSelectorBox
+                      sizeArray={sizeArray}
+                      selected={selected}
+                      setSelected={setSelected}
+                    />
+                    {/* <Select
                   sizeArray={sizeArray}
                   selected={selected}
                   setSelected={setSelected}
-                />
-              </div>
+                /> */}
+                  </div>
+                </>
+              )}
+
               <div className={styles.button}>
                 <Button
                   onClick={handleAddToCart}

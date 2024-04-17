@@ -61,43 +61,45 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
     sizeArray,
   } = content;
 
-  let size;
-  switch (
-    selected // То какие размеры заходят в CRM
-  ) {
-    case "Розмір: XS": {
-      size = XS;
-      break;
-    }
-    case "Розмір: S": {
-      size = S;
-      break;
-    }
-    case "Розмір: M": {
-      size = M;
-      break;
-    }
-    case "Розмір: L": {
-      size = L;
-      break;
-    }
-    case "Розмір: XL": {
-      size = XL;
-      break;
-    }
-    case "Розмір: XXL": {
-      size = XXL;
-      break;
-    }
-    case "Розмір: XXXL": {
-      size = XXXL;
-      break;
-    }
-    default: {
-      size = "Уточнити";
-      break;
-    }
-  }
+  // let size;
+
+
+  // switch (
+  //   selected // То какие размеры заходят в CRM
+  // ) {
+  //   case "Розмір: XS": {
+  //     size = XS;
+  //     break;
+  //   }
+  //   case "Розмір: S": {
+  //     size = S;
+  //     break;
+  //   }
+  //   case "Розмір: M": {
+  //     size = M;
+  //     break;
+  //   }
+  //   case "Розмір: L": {
+  //     size = L;
+  //     break;
+  //   }
+  //   case "Розмір: XL": {
+  //     size = XL;
+  //     break;
+  //   }
+  //   case "Розмір: XXL": {
+  //     size = XXL;
+  //     break;
+  //   }
+  //   case "Розмір: XXXL": {
+  //     size = XXXL;
+  //     break;
+  //   }
+  //   default: {
+  //     size = "Уточнити";
+  //     break;
+  //   }
+  // }
 
   return (
     <>
@@ -113,7 +115,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
         <AnimationWrapper>
           <HeroBlock
             sizeArray={sizeArray}
-            sizeValue={size}
+            sizeValue={selected}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}
             setIsColor={setIsColor}
@@ -125,7 +127,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
-        <AnimationWrapper>
+        {/* <AnimationWrapper>
           <AboutBlockWithoutPhotos
             content={contentAbout}
             addNotification={setisVisibleNotificationAddtoCart}
@@ -135,23 +137,23 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             data={data}
             selected={selected}
           />
-        </AnimationWrapper>
+        </AnimationWrapper> */}
         <AnimationWrapper>
           <DescriptionBlock content={contentDesciption} />
         </AnimationWrapper>
-        <AnimationWrapper>
+        {/* <AnimationWrapper>
           <AboutUsBlock content={contentAboutUs} />
-        </AnimationWrapper>
-        <AnimationWrapper>
+        </AnimationWrapper> */}
+        {/* <AnimationWrapper>
           <ReviewBlock content={contentReview} handleReview={handleReview} />
-        </AnimationWrapper>
+        </AnimationWrapper> */}
         <AnimationWrapper>
           <SizetableBlock
             content={contentSizeTable}
             setIsVisibleSizetable={setIsVisibleSizetable}
           />
         </AnimationWrapper>
-        <AnimationWrapper>
+        {/* <AnimationWrapper>
           <AdvantageBlock content={contentAdvantage} />
         </AnimationWrapper>
         <AnimationWrapper>
@@ -164,11 +166,11 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             data={data}
             selected={selected}
           />
-        </AnimationWrapper>
+        </AnimationWrapper> */}
         <AnimationWrapper>
           <HeroBlock
             sizeArray={sizeArray}
-            sizeValue={size}
+            sizeValue={selected}
             setIsVisibleSizetable={setIsVisibleSizetable}
             isColor={isColor}
             setIsColor={setIsColor}
@@ -183,7 +185,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
 
         {/* modals  */}
 
-        <Review
+        {/* <Review
           content={contentReviewModal}
           itemName={GOOGLE_LIST}
           googleSheet={GOOGLE_SHEET}
@@ -197,7 +199,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
           content={contentReviewThankYou}
           isVisibleReviewThankyou={isVisibleReviewThankyou}
           setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
-        />
+        /> */}
 
         <SizeTable
           content={contentModalSizeTable}

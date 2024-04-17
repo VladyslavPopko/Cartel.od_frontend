@@ -93,7 +93,7 @@ export const FIVE = "Графіт";
 export const SIX = "Чорний";
 export const SEVEN = "Блакитний";
 
-const division = "Комлекти";
+const division = "Комплекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = "Комплект літній оверсайз"; // Пишется в корзине товара
 const main_title = "Комплект оверсайз"; // Пишется в фильтре на главной странице и в каталоге

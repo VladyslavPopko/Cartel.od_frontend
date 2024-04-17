@@ -57,7 +57,7 @@ export const TWO = "Графіт";
 export const THREE = "Молоко";
 export const FOUR = "Чорний";
 
-const division = "Комлекти";
+const division = "Комплекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = 'Комплект літній KANT'; // Пишется в корзине товара
 const main_title = 'Комплект KANT'; // Пишется в фильтре на главной странице и в каталоге

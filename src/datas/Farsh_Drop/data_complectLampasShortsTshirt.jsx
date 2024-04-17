@@ -82,7 +82,7 @@ export const FOUR = "Мята";
 export const FIVE = "Зелений";
 export const SIX = "Чорний";
 
-const division = "Комлекти";
+const division = "Комплекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = "Комплект літній лампас"; // Пишется в корзине товара
 const main_title = "Комплект лампас"; // Пишется в фильтре на главной странице и в каталоге

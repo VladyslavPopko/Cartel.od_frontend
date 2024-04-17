@@ -26,15 +26,15 @@ const price = 999; // необходимо для формулы высчета 
 
 export const CONTENT = {
   sizeArray: [
-    { id: 1, value: "S" },
-    { id: 2, value: "M" },
-    { id: 3, value: "L" },
-    { id: 4, value: "XL" },
+   { id: 1, value: "С", active: true },
+    { id: 2, value: "М", active: true },
+    { id: 3, value: "Л", active: true },
+    { id: 4, value: "ХЛ", active: true },
   ],
   contentHero: {
     price: "999",
     old_price: "1 299",
-    title: "Комплект KANT",
+    title: 'Комплект KANT',
     // subtitle: "",
     footer_text: "втілення якості та стилю",
   },

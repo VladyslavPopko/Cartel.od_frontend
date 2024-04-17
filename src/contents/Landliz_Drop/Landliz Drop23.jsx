@@ -17,21 +17,23 @@ import reviewItem3Img from "../../img/_Landliz_Drop/Landliz_Drop23/reviewImg3.pn
 // import advantageItem5Img from "../../img/_Landliz_Drop/Landliz_Drop23/advantageImg5.svg";
 // import advantageItem6Img from "../../img/_Landliz_Drop/Landliz_Drop23/advantageImg6.svg";
 
-//import table from "../../img/_Landliz_Drop/Landliz_Drop23/table.jpg";
+import table from "../../img/_Landliz_Drop/Landliz_Drop23/table.jpg";
 
 const price = 999; // необходимо для формулы высчета скидки за несколько товаров
 
 export const CONTENT = {
   sizeArray: [
-    { id: 1, value: "S" },
-    { id: 2, value: "M" },
-    { id: 3, value: "L" },
-    { id: 4, value: "XL" },
+    { id: 1, value: "M", active: true },
+    { id: 2, value: "L", active: true },
+    { id: 3, value: "XL", active: true },
+    { id: 4, value: "XXL", active: true },
+    { id: 5, value: "XXXL", active: true },
+    // { id: 6, value: "56", active: true },
   ],
   contentHero: {
     price: "999",
     old_price: "1 299",
-    title: "Комплект KANT",
+    title: "Флісова кофта мультикам з капюшоном ESDY Tiger",
     // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
@@ -95,7 +97,7 @@ export const CONTENT = {
     item1_text: "Замовлень",
     item2_title: "300",
     item2_text: "Відгуків",
-   // item2_img1: aboutusItem2Img,
+    // item2_img1: aboutusItem2Img,
   },
   contentReview: {
     title: "Відгуки:",
@@ -114,11 +116,11 @@ export const CONTENT = {
   },
   contentSizeTable: {
     title: "Таблиця розмірів",
-    //img: table,
+    img: table,
   },
   contentAdvantage: {
     title: "Наші переваги:",
-   // item1_img1: advantageItem1Img,
+    // item1_img1: advantageItem1Img,
     //item2_img1: advantageItem2Img,
     //item3_img1: advantageItem3Img,
     //item4_img1: advantageItem4Img,
@@ -151,7 +153,7 @@ export const CONTENT = {
   },
   contentModalSizeTable: {
     title: "Таблиця розмірів",
-    //img: table,
+    img: table,
   },
 };
 export const CONTENT_LANDLIZ_DROP_23 = CONTENT; // Поменять на имя, используемое для файла data

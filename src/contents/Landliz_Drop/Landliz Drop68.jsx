@@ -23,15 +23,22 @@ const price = 999; // необходимо для формулы высчета 
 
 export const CONTENT = {
   sizeArray: [
-    { id: 1, value: "S" },
-    { id: 2, value: "M" },
-    { id: 3, value: "L" },
-    { id: 4, value: "XL" },
+    { id: 1, value: "36", active: true },
+    { id: 2, value: "37", active: true },
+    { id: 3, value: "38", active: true },
+    { id: 4, value: "39", active: true },
+    { id: 5, value: "40", active: true },
+    { id: 6, value: "41", active: true },
+    { id: 7, value: "42", active: true },
+    { id: 8, value: "43", active: true },
+    { id: 9, value: "44", active: true },
+    { id: 10, value: "45", active: true },
+    { id: 11, value: "46", active: true },
   ],
   contentHero: {
     price: "999",
     old_price: "1 299",
-    title: "Комплект KANT",
+    title: 'Берці літні "Бізон" койот',
     // subtitle: "",
     footer_text: "втілення якості та стилю",
   },
@@ -95,7 +102,7 @@ export const CONTENT = {
     item1_text: "Замовлень",
     item2_title: "300",
     item2_text: "Відгуків",
-   // item2_img1: aboutusItem2Img,
+    // item2_img1: aboutusItem2Img,
   },
   contentReview: {
     title: "Відгуки:",
@@ -118,7 +125,7 @@ export const CONTENT = {
   },
   contentAdvantage: {
     title: "Наші переваги:",
-   // item1_img1: advantageItem1Img,
+    // item1_img1: advantageItem1Img,
     //item2_img1: advantageItem2Img,
     //item3_img1: advantageItem3Img,
     //item4_img1: advantageItem4Img,

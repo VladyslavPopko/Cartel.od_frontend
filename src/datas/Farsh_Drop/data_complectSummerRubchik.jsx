@@ -69,7 +69,7 @@ export const THREE = "Зелений";
 export const FOUR = "Бежевий";
 export const FIVE = "Чорний";
 
-const division = "Комлекти";
+const division = "Комплекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
 const name = "Комплект літній рубчик"; // Пишется в корзине товара
 const main_title = "Комплект рубчик"; // Пишется в фильтре на главной странице и в каталоге

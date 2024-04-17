@@ -31,7 +31,7 @@ const CartBox = (props) => {
           </>
         )}
 
-        <p className={styles.size}>Розмір : {size}</p>
+        {size && <p className={styles.size}>Розмір : {size}</p>}
         <p className={styles.price_old}>{old_price} ₴</p>
         <div className={styles.list_item}>
           <div className={styles.list_item_left}>

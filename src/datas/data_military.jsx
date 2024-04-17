@@ -23,6 +23,14 @@ import { CONTENT_LANDLIZ_DROP_29 } from "../contents/Landliz_Drop/Landliz Drop29
 import { CONTENT_LANDLIZ_DROP_3 } from "../contents/Landliz_Drop/Landliz Drop3";
 import { CONTENT_LANDLIZ_DROP_30 } from "../contents/Landliz_Drop/Landliz Drop30";
 import { CONTENT_LANDLIZ_DROP_31 } from "../contents/Landliz_Drop/Landliz Drop31";
+import { CONTENT_LANDLIZ_DROP_32 } from "../contents/Landliz_Drop/Landliz Drop32";
+import { CONTENT_LANDLIZ_DROP_33 } from "../contents/Landliz_Drop/Landliz Drop33";
+import { CONTENT_LANDLIZ_DROP_34 } from "../contents/Landliz_Drop/Landliz Drop34";
+import { CONTENT_LANDLIZ_DROP_35 } from "../contents/Landliz_Drop/Landliz Drop35";
+import { CONTENT_LANDLIZ_DROP_36 } from "../contents/Landliz_Drop/Landliz Drop36";
+import { CONTENT_LANDLIZ_DROP_37 } from "../contents/Landliz_Drop/Landliz Drop37";
+import { CONTENT_LANDLIZ_DROP_38 } from "../contents/Landliz_Drop/Landliz Drop38";
+import { CONTENT_LANDLIZ_DROP_39 } from "../contents/Landliz_Drop/Landliz Drop39";
 import { CONTENT_LANDLIZ_DROP_4 } from "../contents/Landliz_Drop/Landliz Drop4";
 import { CONTENT_LANDLIZ_DROP_40 } from "../contents/Landliz_Drop/Landliz Drop40";
 import { CONTENT_LANDLIZ_DROP_41 } from "../contents/Landliz_Drop/Landliz Drop41";
@@ -169,6 +177,38 @@ import {
   DATA_LANDLIZ_DROP_31,
   INFO_LANDLIZ_DROP_31,
 } from "./Landliz_Drop/data_Landliz Drop31";
+import {
+  DATA_LANDLIZ_DROP_32,
+  INFO_LANDLIZ_DROP_32,
+} from "./Landliz_Drop/data_Landliz Drop32";
+import {
+  DATA_LANDLIZ_DROP_33,
+  INFO_LANDLIZ_DROP_33,
+} from "./Landliz_Drop/data_Landliz Drop33";
+import {
+  DATA_LANDLIZ_DROP_34,
+  INFO_LANDLIZ_DROP_34,
+} from "./Landliz_Drop/data_Landliz Drop34";
+import {
+  DATA_LANDLIZ_DROP_35,
+  INFO_LANDLIZ_DROP_35,
+} from "./Landliz_Drop/data_Landliz Drop35";
+import {
+  DATA_LANDLIZ_DROP_36,
+  INFO_LANDLIZ_DROP_36,
+} from "./Landliz_Drop/data_Landliz Drop36";
+import {
+  DATA_LANDLIZ_DROP_37,
+  INFO_LANDLIZ_DROP_37,
+} from "./Landliz_Drop/data_Landliz Drop37";
+import {
+  DATA_LANDLIZ_DROP_38,
+  INFO_LANDLIZ_DROP_38,
+} from "./Landliz_Drop/data_Landliz Drop38";
+import {
+  DATA_LANDLIZ_DROP_39,
+  INFO_LANDLIZ_DROP_39,
+} from "./Landliz_Drop/data_Landliz Drop39";
 import {
   DATA_LANDLIZ_DROP_4,
   INFO_LANDLIZ_DROP_4,
@@ -333,7 +373,10 @@ import {
   DATA_LANDLIZ_DROP_76,
   INFO_LANDLIZ_DROP_76,
 } from "./Landliz_Drop/data_Landliz Drop76";
-import { DATA_LANDLIZ_DROP_77, INFO_LANDLIZ_DROP_77 } from "./Landliz_Drop/data_Landliz Drop77";
+import {
+  DATA_LANDLIZ_DROP_77,
+  INFO_LANDLIZ_DROP_77,
+} from "./Landliz_Drop/data_Landliz Drop77";
 import {
   DATA_LANDLIZ_DROP_8,
   INFO_LANDLIZ_DROP_8,
@@ -698,7 +741,7 @@ export const MENU_MILITARY = [
   },
   {
     path: "",
-    title: "Комлекти",
+    title: "Комплекти",
     element: "",
     category: [
       {
@@ -924,13 +967,103 @@ export const MENU_MILITARY = [
         path: "",
         title: "Рюкзаки",
         element: "",
-        products: [],
+        products: [
+          {
+            path: "/military/backpacks/backpacs/1",
+            title: "Рюкзак тактичний олива 30л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_32}
+                info={INFO_LANDLIZ_DROP_32}
+                content={CONTENT_LANDLIZ_DROP_32}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/backpacs/2",
+            title: "Рюкзак тактичний олива 36л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_33}
+                info={INFO_LANDLIZ_DROP_33}
+                content={CONTENT_LANDLIZ_DROP_33}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/backpacs/3",
+            title: "Рюкзак тактичний олива 44л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_34}
+                info={INFO_LANDLIZ_DROP_34}
+                content={CONTENT_LANDLIZ_DROP_34}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/backpacs/4",
+            title: "Рюкзак тактичний піксель 35л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_37}
+                info={INFO_LANDLIZ_DROP_37}
+                content={CONTENT_LANDLIZ_DROP_37}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/backpacs/5",
+            title: "Рюкзак тактичний піксель 45л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_38}
+                info={INFO_LANDLIZ_DROP_38}
+                content={CONTENT_LANDLIZ_DROP_38}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/backpacs/6",
+            title: "Рюкзак тактичний піксель 65л",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_39}
+                info={INFO_LANDLIZ_DROP_39}
+                content={CONTENT_LANDLIZ_DROP_39}
+              />
+            ),
+          },
+        ],
       },
       {
         path: "",
         title: "Сумки",
         element: "",
-        products: [],
+        products: [
+          {
+            path: "/military/backpacks/bags/1",
+            title: "Тактична сумка нагрудна хакі",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_35}
+                info={INFO_LANDLIZ_DROP_35}
+                content={CONTENT_LANDLIZ_DROP_35}
+              />
+            ),
+          },
+          {
+            path: "/military/backpacks/bags/2",
+            title: "Тактична поясна сумка хакі",
+            element: (
+              <ProductPage__WithoutAbout
+                data={DATA_LANDLIZ_DROP_36}
+                info={INFO_LANDLIZ_DROP_36}
+                content={CONTENT_LANDLIZ_DROP_36}
+              />
+            ),
+          },
+        ],
       },
     ],
   },
