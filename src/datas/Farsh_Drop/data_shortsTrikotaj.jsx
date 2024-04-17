@@ -75,8 +75,8 @@ const category = "Шорти"; // Категория (для фильтра на
 const name = "Шорти трикотажні"; // Пишется в корзине товара
 const main_title = "Шорти трикотажні"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 549; // цена по которой продаем
-const old_price = 799; // цена скидки
+const price = 349; // цена по которой продаем
+const old_price = Math.round(price / 0.6); // цена скидки
 const page = "/men/shorts/shorts_trikotaj"; // на какой странице находится товар
 
 // Как товары называются в CRM

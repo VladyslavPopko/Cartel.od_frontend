@@ -15,6 +15,33 @@ const CartBox = (props) => {
     onClickDec,
     page,
   } = props;
+  let arrayPrice = String(price).split("");
+  let countPrice = 0;
+
+  for (let i = arrayPrice.length - 1; i > 0; i--) {
+    if (countPrice === 2) {
+      arrayPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countPrice = 0; // Сбрасываем счетчик
+    } else {
+      countPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayPrice = arrayPrice.join(""); // Объединяем массив обратно в строку и выводим
+
+  let arrayOldPrice = String(old_price).split("");
+  let countOldPrice = 0;
+
+  for (let i = arrayOldPrice.length - 1; i > 0; i--) {
+    if (countOldPrice === 2) {
+      arrayOldPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countOldPrice = 0; // Сбрасываем счетчик
+    } else {
+      countOldPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayOldPrice = arrayOldPrice.join(""); // Объединяем массив обратно в строку и выводим
   return (
     <div className={styles.section}>
       <NavLink className={styles.img_wrapper} to={page}>
@@ -32,7 +59,7 @@ const CartBox = (props) => {
         )}
 
         {size && <p className={styles.size}>Розмір : {size}</p>}
-        <p className={styles.price_old}>{old_price} ₴</p>
+        <p className={styles.price_old}>{arrayOldPrice} ₴</p>
         <div className={styles.list_item}>
           <div className={styles.list_item_left}>
             <span onClick={onClickDec} className={styles.decrement}>
@@ -44,7 +71,7 @@ const CartBox = (props) => {
             </span>
           </div>
           <div className={styles.list_item_right}>
-            <p className={styles.price}>{price} ₴</p>
+            <p className={styles.price}>{arrayPrice} ₴</p>
           </div>
         </div>
       </div>

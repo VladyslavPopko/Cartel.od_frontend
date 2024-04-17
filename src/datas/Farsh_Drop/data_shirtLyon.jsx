@@ -51,8 +51,8 @@ const category = "Сорочки"; // Категория (для фильтра 
 const name = "Сорочка льняна"; // Пишется в корзине товара
 const main_title = "Сорочка льняна"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 849; // цена по которой продаем
-const old_price = 1299; // цена скидки
+const price = 749; // цена по которой продаем
+const old_price = Math.round(price / 0.6); // цена скидки
 const page = "/men/sorochki/shirt_lyon"; // на какой странице находится товар
 
 // Как товары называются в CRM

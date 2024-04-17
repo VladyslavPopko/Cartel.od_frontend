@@ -50,8 +50,8 @@ const category = "Штани"; // Категория (для фильтра на
 const name = "Штани укорочені"; // Пишется в корзине товара
 const main_title = "Штани укорочені"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 849; // цена по которой продаем
-const old_price = 1199; // цена скидки
+const price = 599; // цена по которой продаем
+const old_price = Math.round(price / 0.6); // цена скидки
 const page = "/men/trousers/trouser_cut_summer"; // на какой странице находится товар
 
 // Как товары называются в CRM

@@ -1,33 +1,37 @@
 import { memo, useState } from "react";
 import styles from "./style.module.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
 import cn from "classnames";
 import "./style.scss";
+import { useDispatch } from "react-redux";
+import { changeSearch } from "../../redux/slices/searchSlice";
 
 const ChangeSexHomePage = ({
-  setisSearch,
-  isSearch,
   setIsValueFilter,
   setIsValueSort,
   setIsActiveFilter,
   setIsActiveSort,
 }) => {
   const [value, setValue] = useState();
+  const [navigate, setNavigate] = useState(false);
+  const dispatch = useDispatch();
 
   const SubmitSearchName = (e) => {
     e.preventDefault();
-    setisSearch(value);
+    dispatch(changeSearch(value));
+    setNavigate(true);
   };
 
   const handleResetAllFilters = () => {
-    setisSearch(false);
     setIsValueFilter(false);
     setIsValueSort(false);
     setIsActiveFilter(false);
     setIsActiveSort(false);
   };
+
   return (
     <div className={styles.section}>
+      {navigate && <Navigate to="/search" />}
       <div className={styles.section_content}>
         <div className={styles.list}>
           <NavLink

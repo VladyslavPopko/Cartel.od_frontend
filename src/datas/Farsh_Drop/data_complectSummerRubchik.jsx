@@ -74,8 +74,8 @@ const category = "Літні комплекти"; // Категория (для 
 const name = "Комплект літній рубчик"; // Пишется в корзине товара
 const main_title = "Комплект рубчик"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 899; // цена по которой продаем
-const old_price = 1399; // цена скидки
+const price = 649; // цена по которой продаем
+const old_price = Math.round(price / 0.6); // цена скидки
 const page = "/men/summercomplects/complect_summer_rubchik"; // на какой странице находится товар
 
 // Как товары называются в CRM

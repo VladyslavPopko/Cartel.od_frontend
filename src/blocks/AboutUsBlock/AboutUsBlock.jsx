@@ -1,16 +1,16 @@
 import { memo } from "react";
 import AboutUsBox from "../../components/AboutUsBox/AboutUsBox";
 import styles from "./style.module.scss";
+import aboutusItem1Img from "../../img/ProNas/aboutUsImg1.svg";
+import aboutusItem2Img from "../../img/ProNas/aboutUsImg2.svg";
 
-const AboutUsBlock = ({ content }) => {
-  const {
-    item1_img1,
-    item2_img1,
-    item1_title,
-    item1_text,
-    item2_title,
-    item2_text,
-  } = content;
+const AboutUsBlock = () => {
+  const item1_img1 = aboutusItem1Img;
+  const item1_title = "1000";
+  const item1_text = "Замовлень";
+  const item2_title = "300";
+  const item2_text = "Відгуків";
+  const item2_img1 = aboutusItem2Img;
   return (
     <div className={styles.section}>
       <AboutUsBox img={item1_img1} title={item1_title} text={item1_text} />

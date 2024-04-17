@@ -59,26 +59,24 @@ export const FOUR = "Чорний";
 
 const division = "Комплекти";
 const category = "Літні комплекти"; // Категория (для фильтра на главной странице)
-const name = 'Комплект літній KANT'; // Пишется в корзине товара
-const main_title = 'Комплект KANT'; // Пишется в фильтре на главной странице и в каталоге
+const name = "Комплект літній KANT"; // Пишется в корзине товара
+const main_title = "Комплект KANT"; // Пишется в фильтре на главной странице и в каталоге
 const VENDOR_NAME = "Farsh Drop"; // Поставщик
-const price = 999; // цена по которой продаем
-const old_price = 1299; // цена скидки
+const price = 749; // цена по которой продаем
+const old_price = Math.round(price / 0.6); // цена скидки
 const page = "/men/summercomplects/complect_kant"; // на какой странице находится товар
 
 // Как товары называются в CRM
-const full_name1 = 'Комплект лето кант хаки';
+const full_name1 = "Комплект лето кант хаки";
 const full_name2 = "Комплект лето кант графит";
 const full_name3 = "Комплект лето кант молоко";
 const full_name4 = "Комплект лето кант черный";
-
 
 //Артикулы
 const article1 = 1;
 const article2 = 2;
 const article3 = 3;
 const article4 = 4;
-
 
 export const DATA = [
   {
@@ -95,18 +93,17 @@ export const DATA = [
     img: heroImg1,
     hero_img: heroImg1,
     galery_img1: Img1_galery_img1,
-    //galery_img2: Img1_galery_img2,
-   // galery_img3: Img1_galery_img3,
-    //galery_img4: Img1_galery_img4,
-    gallery: [Img1gallery1, ],
-//Img1gallery2, Img1gallery3, Img1gallery4
+    galery_img2: Img1_galery_img2,
+    galery_img3: Img1_galery_img3,
+    galery_img4: Img1_galery_img4,
+    gallery: [Img1gallery1,Img1gallery2, Img1gallery3, Img1gallery4],
+    //
     page: page,
     banner: "",
     bannerText: "",
     division: division,
     article: article1,
     search: `${name} ${main_title} ${article1}`,
-    
   },
   {
     category: category,

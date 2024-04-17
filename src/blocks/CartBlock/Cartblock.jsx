@@ -29,6 +29,33 @@ const Cartblock = ({
     // fbq("track", "InitiateCheckout");
     // end facebook event pixel
   };
+  let arrayPrice = String(finalPrice).split("");
+  let countPrice = 0;
+
+  for (let i = arrayPrice.length - 1; i > 0; i--) {
+    if (countPrice === 2) {
+      arrayPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countPrice = 0; // Сбрасываем счетчик
+    } else {
+      countPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayPrice = arrayPrice.join(""); // Объединяем массив обратно в строку и выводим
+
+  let arrayOldPrice = String(oldPrice).split("");
+  let countOldPrice = 0;
+
+  for (let i = arrayOldPrice.length - 1; i > 0; i--) {
+    if (countOldPrice === 2) {
+      arrayOldPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countOldPrice = 0; // Сбрасываем счетчик
+    } else {
+      countOldPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayOldPrice = arrayOldPrice.join(""); // Объединяем массив обратно в строку и выводим
 
   return (
     <ModalWrapper isVisible={isVisibleCart} handleClose={handleCloseCart}>
@@ -87,8 +114,8 @@ const Cartblock = ({
               />
               <div className={styles.main_buttons_right}>
                 <div className="">
-                  <p className={styles.old_price}>{oldPrice} ₴</p>
-                  <p className={styles.price}>{finalPrice} ₴</p>
+                  <p className={styles.old_price}>{arrayOldPrice} ₴</p>
+                  <p className={styles.price}>{arrayPrice} ₴</p>
                 </div>
 
                 <Button

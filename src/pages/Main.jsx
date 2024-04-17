@@ -10,6 +10,10 @@ import LoadingBox from "../components/LoadingBox/LoadingBox";
 import { GOOGLE_LIST, GOOGLE_SHEET } from "../constanses/constanses";
 import MenuBox from "../components/MenuBox/MenuBox";
 import Search from "../modals/search";
+import { useDispatch } from "react-redux";
+import { refreshCart } from "../redux/slices/cartSlice";
+import FooterBlock from "../blocks/FooterBlock/FooterBlock";
+import styles from "../style/styleformain.module.scss";
 
 const Main = ({ children }) => {
   const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
@@ -42,13 +46,25 @@ const Main = ({ children }) => {
     <div>
       {/* <MenuBox isMenu={isMenu} setIsMenu={setIsMenu} /> */}
       {isLoading && <LoadingBox type="bars" color="red" />}
-      <HeaderBlock
-        isMenu={isMenu}
-        handleMenu={handleMenu}
-        content={contentHeader}
-        setIsVivsibleCart={setIsVivsibleCart}
-      />
-      <div onClick={handleCloseMenu}>{children}</div>
+      <div className={styles.section}>
+        <div>
+          <HeaderBlock
+            isMenu={isMenu}
+            handleMenu={handleMenu}
+            content={contentHeader}
+            setIsVivsibleCart={setIsVivsibleCart}
+          />
+          <div onClick={handleCloseMenu}>{children}</div>
+        </div>
+        <div>
+          <FooterBlock
+            isVisibleAssign={isVisibleAssign}
+            isVisiblePolitics={isVisiblePolitics}
+            setIsVisibleAssign={setIsVisibleAssign}
+            setIsVisiblePolitics={setIsVisiblePolitics}
+          />
+        </div>
+      </div>
 
       <Cart
         content={contentCart}

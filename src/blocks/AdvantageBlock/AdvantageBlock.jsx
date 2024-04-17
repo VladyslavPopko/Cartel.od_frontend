@@ -1,29 +1,40 @@
 import styles from "./style.module.scss";
 import AdvantageBox from "../../components/AdvantageBox/AdvantageBox";
 import { memo } from "react";
+import advantageItem1Img from "../../img/ProNas/advantageImg1.svg";
+import advantageItem2Img from "../../img/ProNas/advantageImg2.svg";
+import advantageItem3Img from "../../img/ProNas/advantageImg3.svg";
+import advantageItem4Img from "../../img/ProNas/advantageImg4.svg";
+import advantageItem5Img from "../../img/ProNas/advantageImg5.svg";
+import advantageItem6Img from "../../img/ProNas/advantageImg6.svg";
 
-const AdvantageBlock = ({ content }) => {
-  const {
-    title,
-    item1_img1,
-    item2_img1,
-    item3_img1,
-    item4_img1,
-    item5_img1,
-    item6_img1,
-    item1_title,
-    item1_text,
-    item2_title,
-    item2_text,
-    item3_title,
-    item3_text,
-    item4_title,
-    item4_text,
-    item5_title,
-    item5_text,
-    item6_title,
-    item6_text,
-  } = content;
+const AdvantageBlock = () => {
+  const title = "Наші  переваги ";
+  const item1_img1 = advantageItem1Img;
+  const item2_img1 = advantageItem2Img;
+  const item3_img1 = advantageItem3Img;
+  const item4_img1 = advantageItem4Img;
+  const item5_img1 = advantageItem5Img;
+  const item6_img1 = advantageItem6Img;
+  const item1_title = "Зручність";
+  const item1_text =
+    "Весь одяг створюється з використанням високоякісних матеріалів; що робить його надзвичайно м'яким та еластичним.";
+  const item2_title = "Якість";
+  const item2_text =
+    "Під час виготовлення одягу використовуються тільки найвищої якості матеріали і тканини. Виробництво проходить строгий контроль.";
+  const item3_title = "Практичність";
+  const item3_text =
+    "Тканина витримує багаторазові прання; зберігаючи свою початкову якість; насичений колір і не втрачає свою барвистість.";
+  const item4_title = "Швидка доставка";
+  const item4_text =
+    "Строк доставки не перевищує 1-2 днів з моменту замовлення.";
+  const item5_title = "Захист покупців";
+  const item5_text =
+    "Ви маєте право повернути придбаний товар протягом 14 днів з дати покупки.";
+  const item6_title = "Ніяких передплат";
+  const item6_text =
+    "Оплата за замовлення проводиться після отримання та перевірки товару.";
+
   return (
     <div className={styles.section}>
       <h2 className={styles.title}>{title}</h2>

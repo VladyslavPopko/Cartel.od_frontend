@@ -63,7 +63,6 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
 
   // let size;
 
-
   // switch (
   //   selected // То какие размеры заходят в CRM
   // ) {
@@ -100,7 +99,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
   //     break;
   //   }
   // }
-
+  window.scrollTo(pageYOffset, 0);
   return (
     <>
       <Main>
@@ -141,9 +140,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
         <AnimationWrapper>
           <DescriptionBlock content={contentDesciption} />
         </AnimationWrapper>
-        {/* <AnimationWrapper>
-          <AboutUsBlock content={contentAboutUs} />
-        </AnimationWrapper> */}
+       
         {/* <AnimationWrapper>
           <ReviewBlock content={contentReview} handleReview={handleReview} />
         </AnimationWrapper> */}

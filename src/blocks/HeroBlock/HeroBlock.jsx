@@ -23,7 +23,7 @@ const HeroBlock = ({
   sizeArray,
   setIsVisibleGallery,
 }) => {
-  const { price, old_price, title, subtitle, footer_text } = content;
+  const { title, subtitle, footer_text } = content;
   const info = data.filter((el) => el.color === isColor);
   let article = info[0]?.article;
 
@@ -52,6 +52,35 @@ const HeroBlock = ({
     el.color ? (ColorVisible = true) : (ColorVisible = false);
   });
   sizeArray[0]?.value ? (SizeVisible = true) : (SizeVisible = false);
+  let price = data[0].price;
+  let old_price = data[0].old_price;
+  let arrayPrice = String(price).split("");
+  let countPrice = 0;
+
+  for (let i = arrayPrice.length - 1; i > 0; i--) {
+    if (countPrice === 2) {
+      arrayPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countPrice = 0; // Сбрасываем счетчик
+    } else {
+      countPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayPrice = arrayPrice.join(""); // Объединяем массив обратно в строку и выводим
+
+  let arrayOldPrice = String(old_price).split("");
+  let countOldPrice = 0;
+
+  for (let i = arrayOldPrice.length - 1; i > 0; i--) {
+    if (countOldPrice === 2) {
+      arrayOldPrice.splice(i, 0, " "); // Вставляем пробел после каждых трех символов
+      countOldPrice = 0; // Сбрасываем счетчик
+    } else {
+      countOldPrice++; // Увеличиваем счетчик
+    }
+  }
+
+  arrayOldPrice = arrayOldPrice.join(""); // Объединяем массив обратно в строку и выводим
 
   return (
     <div>
@@ -79,9 +108,9 @@ const HeroBlock = ({
               )}
 
               <p className={styles.price_text}>Стара ціна:</p>
-              <p className={styles.price_old}>{old_price} грн</p>
+              <p className={styles.price_old}>{arrayOldPrice} грн</p>
               <p className={styles.price}>
-                <span className={styles.price_select}>{price}</span> грн.
+                <span className={styles.price_select}>{arrayPrice}</span> грн.
               </p>
 
               {SizeVisible && (
