@@ -27,9 +27,10 @@ const HomePageBanner = () => {
           <p className={styles.text}>На всі товари</p>
         </div>
         <div className={styles.list_right}>
-          <p className={styles.title}>Додаткова знижка!</p>
-          <p className={styles.text}>-10% від 2 речей у замовленні</p>
-          <p className={styles.text}>-15% від 3 речей у замовленні</p>
+          <p className={styles.title}>Встигни замовити!</p>
+          <p className={styles.text}>
+            Весняний розпродаж в <br /> самому розпалі!!!
+          </p>
         </div>
       </div>
     </div>

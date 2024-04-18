@@ -96,7 +96,7 @@ export const DATA = [
     galery_img2: Img1_galery_img2,
     galery_img3: Img1_galery_img3,
     galery_img4: Img1_galery_img4,
-    gallery: [Img1gallery1,Img1gallery2, Img1gallery3, Img1gallery4],
+    gallery: [Img1gallery1, Img1gallery2, Img1gallery3, Img1gallery4],
     //
     page: page,
     banner: "",

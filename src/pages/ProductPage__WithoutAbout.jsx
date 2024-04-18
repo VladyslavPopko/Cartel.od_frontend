@@ -1,28 +1,14 @@
 import { memo, useEffect } from "react";
-
 import HeroBlock from "../blocks/HeroBlock/HeroBlock";
 import DescriptionBlock from "../blocks/DescriptionBlock/DescriptionBlock";
-import AboutUsBlock from "../blocks/AboutUsBlock/AboutUsBlock";
-import ReviewBlock from "../blocks/ReviewBlock/ReviewBlock";
-import GalleryBlock from "../blocks/GalleryBlock/GalleryBlock";
 import SizetableBlock from "../blocks/SizetableBlock/SizetableBlock";
-import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
-
-import Review from "../modals/review";
-import ReviewThankyou from "../modals/reviewThankyou";
 import SizeTable from "../modals/sizeTable";
-
 import NotificationBox from "../components/NotificationBox/NotificationBox";
 import LoadingBox from "../components/LoadingBox/LoadingBox";
 import AnimationWrapper from "../wrappers/AnimationWrapper";
-
 import agree from "../img/Notifications/agree.svg";
-
 import { useState } from "react";
-
-import { REVIEW_LIST } from "../constanses/constanses";
 import Main from "./Main";
-import AboutBlockWithoutPhotos from "../blocks/AboutBlockWithoutPhotos/AboutBlockWithoutPhotos";
 import GalleryPage from "../modals/gallery";
 
 const ProductPage_WithoutAbout = ({ data, info, content }) => {
@@ -30,7 +16,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
 
   const [selected, setSelected] = useState(null); // size
   const [isColor, setIsColor] = useState(ONE); // color
-  const [isLoading, setIsLoading] = useState(false); // loading
+  const [isLoading, setIsLoading] = useState(true); // loading
 
   useEffect(() => {
     setIsColor(ONE);
@@ -48,58 +34,16 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
   };
   const {
     contentHero,
-    contentAbout,
     contentDesciption,
-    contentAboutUs,
-    contentReview,
-    contentGallery,
     contentSizeTable,
-    contentAdvantage,
-    contentReviewModal,
-    contentReviewThankYou,
     contentModalSizeTable,
     sizeArray,
   } = content;
+  if (isLoading) {
+    window.scrollTo(pageYOffset, 0);
+    setIsLoading(false);
+  }
 
-  // let size;
-
-  // switch (
-  //   selected // То какие размеры заходят в CRM
-  // ) {
-  //   case "Розмір: XS": {
-  //     size = XS;
-  //     break;
-  //   }
-  //   case "Розмір: S": {
-  //     size = S;
-  //     break;
-  //   }
-  //   case "Розмір: M": {
-  //     size = M;
-  //     break;
-  //   }
-  //   case "Розмір: L": {
-  //     size = L;
-  //     break;
-  //   }
-  //   case "Розмір: XL": {
-  //     size = XL;
-  //     break;
-  //   }
-  //   case "Розмір: XXL": {
-  //     size = XXL;
-  //     break;
-  //   }
-  //   case "Розмір: XXXL": {
-  //     size = XXXL;
-  //     break;
-  //   }
-  //   default: {
-  //     size = "Уточнити";
-  //     break;
-  //   }
-  // }
-  window.scrollTo(pageYOffset, 0);
   return (
     <>
       <Main>
@@ -126,44 +70,18 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
-        {/* <AnimationWrapper>
-          <AboutBlockWithoutPhotos
-            content={contentAbout}
-            addNotification={setisVisibleNotificationAddtoCart}
-            radioId1="radio1"
-            radioId2="radio2"
-            radioId3="radio3"
-            data={data}
-            selected={selected}
-          />
-        </AnimationWrapper> */}
+
         <AnimationWrapper>
           <DescriptionBlock content={contentDesciption} />
         </AnimationWrapper>
-       
-        {/* <AnimationWrapper>
-          <ReviewBlock content={contentReview} handleReview={handleReview} />
-        </AnimationWrapper> */}
+
         <AnimationWrapper>
           <SizetableBlock
             content={contentSizeTable}
             setIsVisibleSizetable={setIsVisibleSizetable}
           />
         </AnimationWrapper>
-        {/* <AnimationWrapper>
-          <AdvantageBlock content={contentAdvantage} />
-        </AnimationWrapper>
-        <AnimationWrapper>
-          <AboutBlockWithoutPhotos
-            content={contentAbout}
-            addNotification={setisVisibleNotificationAddtoCart}
-            radioId1="radio4"
-            radioId2="radio5"
-            radioId3="radio6"
-            data={data}
-            selected={selected}
-          />
-        </AnimationWrapper> */}
+
         <AnimationWrapper>
           <HeroBlock
             sizeArray={sizeArray}

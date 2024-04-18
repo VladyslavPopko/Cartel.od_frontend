@@ -8,10 +8,6 @@ import HeaderBlock from "../blocks/HeaderBlock/HeaderBlock";
 import { CONTENT } from "../contents/main";
 import LoadingBox from "../components/LoadingBox/LoadingBox";
 import { GOOGLE_LIST, GOOGLE_SHEET } from "../constanses/constanses";
-import MenuBox from "../components/MenuBox/MenuBox";
-import Search from "../modals/search";
-import { useDispatch } from "react-redux";
-import { refreshCart } from "../redux/slices/cartSlice";
 import FooterBlock from "../blocks/FooterBlock/FooterBlock";
 import styles from "../style/styleformain.module.scss";
 
@@ -21,7 +17,6 @@ const Main = ({ children }) => {
   const [isVisibleThankyou, setIsVisibleThankyou] = useState(false); // Thankyou Modal
   const [isVisibleAssign, setIsVisibleAssign] = useState(false); // Assign Modal
   const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
-  // const [isVisibleSearch, setIsVisibleSearch] = useState(false); // Search Modal
 
   const [isLoading, setIsLoading] = useState(false); // loading
   const [isMenu, setIsMenu] = useState(false); // menu Open
@@ -44,7 +39,6 @@ const Main = ({ children }) => {
 
   return (
     <div>
-      {/* <MenuBox isMenu={isMenu} setIsMenu={setIsMenu} /> */}
       {isLoading && <LoadingBox type="bars" color="red" />}
       <div className={styles.section}>
         <div>
@@ -98,10 +92,6 @@ const Main = ({ children }) => {
         isVisiblePolitics={isVisiblePolitics}
         setIsVisiblePolitics={setIsVisiblePolitics}
       />
-      {/* <Search
-        isVisibleSearch={isVisibleSearch}
-        setIsVisibleSearch={setIsVisibleSearch}
-      /> */}
     </div>
   );
 };

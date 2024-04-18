@@ -19,11 +19,13 @@ const GalleryModalBlock = ({
       <article className={styles.section}>
         <div className={styles.header}>
           <h2 className={styles.title}>Галерея</h2>
-          <GaleryListChoose
-            data={data}
-            isColor={isColor}
-            setIsColor={setIsColor}
-          />
+          {data[0].color && (
+            <GaleryListChoose
+              data={data}
+              isColor={isColor}
+              setIsColor={setIsColor}
+            />
+          )}
         </div>
         {data.map(
           (el) =>

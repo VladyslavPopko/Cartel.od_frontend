@@ -1,72 +1,18 @@
-// import aboutImg1 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg1.png";
-// import aboutImg2 from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutImg2.png";
-
 import description_item1_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg1.svg";
 import description_item2_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg2.svg";
 import description_item3_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg3.svg";
 import description_item4_logo from "../../img/_Farsh_Drop/ShortsTrikotaj/descriptionImg4.svg";
 
-import aboutusItem1Img from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutUsImg1.svg";
-import aboutusItem2Img from "../../img/_Farsh_Drop/ShortsTrikotaj/aboutUsImg2.svg";
-
-import reviewItem1Img from "../../img/_Farsh_Drop/ShortsTrikotaj/reviewImg1.png";
-import reviewItem2Img from "../../img/_Farsh_Drop/ShortsTrikotaj/reviewImg2.png";
-import reviewItem3Img from "../../img/_Farsh_Drop/ShortsTrikotaj/reviewImg3.png";
-
-import advantageItem1Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg1.svg";
-import advantageItem2Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg2.svg";
-import advantageItem3Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg3.svg";
-import advantageItem4Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg4.svg";
-import advantageItem5Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg5.svg";
-import advantageItem6Img from "../../img/_Farsh_Drop/ShortsTrikotaj/advantageImg6.svg";
-
 import table from "../../img/_Farsh_Drop/ShortsTrikotaj/table.jpg";
-
-const price = 549; // необходимо для формулы высчета скидки за несколько товаров
 
 export const CONTENT = {
   sizeArray: [
-   { id: 1, value: "S", active: true },
+    { id: 1, value: "S", active: true },
     { id: 2, value: "M", active: true },
     { id: 3, value: "L", active: true },
     { id: 4, value: "XL", active: true },
   ],
-  contentHero: {
-    price: "549",
-    old_price: "7 99",
-    title: "Шорти трикотажні",
-    // subtitle: "",
-    footer_text: "втілення якості та стилю",
-  },
-  contentAbout: {
-    // title: "Замовляй комплекти",
-    // second_title: "СОРОЧОК з додатковою знижкою",
-    // subtitle_first_img: aboutImg1,
-    // subtitle_second_img: aboutImg2,
-    // subtitle_first_text1: "пРИ ЗАМОЛВЕННІ ",
-    // subtitle_first_text2: "2 СОРОЧОК",
-    // subtitle_first_text3: " ЗНИЖКА:",
-    // subtitle_first_old_price: "1 998 ₴",
-    // subtitle_first_price: "1 699 ₴",
-    subtitle_first_value: "-10%",
-    // subtitle_second_text1: "пРИ ЗАМОЛВЕННІ ",
-    // subtitle_second_text2: "3 СОРОЧОК",
-    // subtitle_second_text3: " ЗНИЖКА:",
-    // subtitle_second_old_price: "2 997 ₴",
-    // subtitle_second_price: "2 399 ₴",
-    subtitle_second_value: "-15%",
-    radio_first: `1 шорти ${price} ₴`,
-    radio_second_1: "2 шортів",
-    radio_second_2: Math.round(price * 2 * 0.9),
-    radio_second_3: " ₴ (економія ",
-    radio_second_4: Math.round(price * 2) - Math.round(price * 2 * 0.9),
-    radio_second_5: " ₴)",
-    radio_third_1: "3 шортів ",
-    radio_third_2: Math.round(price * 3 * 0.85),
-    radio_third_3: " ₴ (економія ",
-    radio_third_4: Math.round(price * 3) - Math.round(price * 3 * 0.85),
-    radio_third_5: " ₴)",
-  },
+
   contentDesciption: {
     title: "Опис товару",
     item1_logo: description_item1_logo,
@@ -92,58 +38,13 @@ export const CONTENT = {
     item4_text:
       "Наші вироби виготовлені з тканин, які дбайливо обрані для їх м'якості та приємної текстури. Це дозволяє вам відчувати себе комфортно та зручно в будь-якій ситуації.",
   },
-  contentAboutUs: {
-    item1_img1: aboutusItem1Img,
-    item1_title: "1000",
-    item1_text: "Замовлень",
-    item2_title: "300",
-    item2_text: "Відгуків",
-    item2_img1: aboutusItem2Img,
-  },
-  contentReview: {
-    title: "Відгуки:",
-    item1_img1: reviewItem1Img,
-    item2_img1: reviewItem2Img,
-    item3_img1: reviewItem3Img,
-    item1_name: "Володимир",
-    item1_text: "Гарні шорти на літо",
-    item2_name: "Дмитро",
-    item2_text: "Вже втретє замовляю тут Завжди задоволений",
-    item3_name: "Денис",
-    item3_text: "Кольори просто пушка",
-  },
+
   contentGallery: {
     title: "Галерея",
   },
   contentSizeTable: {
     title: "Таблиця розмірів",
     img: table,
-  },
-  contentAdvantage: {
-    title: "Наші переваги:",
-    item1_img1: advantageItem1Img,
-    item2_img1: advantageItem2Img,
-    item3_img1: advantageItem3Img,
-    item4_img1: advantageItem4Img,
-    item5_img1: advantageItem5Img,
-    item6_img1: advantageItem6Img,
-    item1_title: "Зручність",
-    item1_text:
-      "Весь одяг створюється з використанням високоякісних матеріалів, що робить його надзвичайно м'яким та еластичним.",
-    item2_title: "Якість",
-    item2_text:
-      "Під час виготовлення одягу використовуються тільки найвищої якості матеріали і тканини. Виробництво проходить строгий контроль.",
-    item3_title: "Практичність",
-    item3_text:
-      "Тканина витримує багаторазові прання, зберігаючи свою початкову якість, насичений колір і не втрачає свою барвистість.",
-    item4_title: "Швидка доставка",
-    item4_text: "Строк доставки не перевищує 1-2 днів з моменту замовлення.",
-    item5_title: "Захист покупців",
-    item5_text:
-      "Ви маєте право повернути придбаний товар протягом 14 днів з дати покупки.",
-    item6_title: "Ніяких передплат",
-    item6_text:
-      "Оплата за замовлення проводиться після отримання та перевірки товару.",
   },
 
   contentReviewModal: {

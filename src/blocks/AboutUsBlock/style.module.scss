@@ -1,7 +1,7 @@
 .section {
   font-family: var(--font-family);
   color: var(--secondary-color);
-  padding: 125px 15px;
+  padding: 35px 15px;
   display: flex;
   justify-content: center;
   gap: 75px;
@@ -9,7 +9,7 @@
 }
 @media (max-width: 480px) {
   .section {
-    padding: 35px 15px;
+    padding: 0px 15px;
     gap: 15px;
   }
 }

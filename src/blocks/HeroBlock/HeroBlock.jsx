@@ -2,7 +2,6 @@ import styles from "./style.module.scss";
 
 import { useDispatch } from "react-redux";
 import ColorCircle from "../../components/ColorCircle/ColorCircle";
-import Select from "../../components/Select/Select";
 import Button from "../../components/Button/Button";
 import { addToCart } from "../../redux/slices/cartSlice";
 import cn from "classnames";
@@ -13,7 +12,6 @@ import SizeSelectorBox from "../../components/SizeSelectorBox/SizeSelectorBox";
 const HeroBlock = ({
   setIsVisibleSizetable,
   data,
-  content,
   selected,
   setSelected,
   addNotification,
@@ -23,15 +21,11 @@ const HeroBlock = ({
   sizeArray,
   setIsVisibleGallery,
 }) => {
-  const { title, subtitle, footer_text } = content;
+  const title = data[0].name;
   const info = data.filter((el) => el.color === isColor);
   let article = info[0]?.article;
 
-  if (subtitle) {
-    document.title = `Cartel - ${title} ${subtitle}`;
-  } else {
-    document.title = `Cartel - ${title}`;
-  }
+  document.title = `Cartel - ${title}`;
 
   const dispatch = useDispatch();
   const handleAddToCart = () => {
@@ -89,7 +83,6 @@ const HeroBlock = ({
           <div className={styles.content_top}>
             <div className={styles.content_top_item}>
               <p className={styles.title}>{title}</p>
-              <p className={styles.title}>{subtitle}</p>
               <p className={styles.article}>Артикул: {article}</p>
               {ColorVisible && (
                 <>
@@ -127,11 +120,6 @@ const HeroBlock = ({
                       selected={selected}
                       setSelected={setSelected}
                     />
-                    {/* <Select
-                  sizeArray={sizeArray}
-                  selected={selected}
-                  setSelected={setSelected}
-                /> */}
                   </div>
                 </>
               )}
@@ -155,7 +143,7 @@ const HeroBlock = ({
               </div>
             </div>
           </div>
-          <p className={styles.content_bottom}>{footer_text}</p>
+          <p className={styles.content_bottom}>втілення якості та стилю</p>
         </div>
       </div>
     </div>

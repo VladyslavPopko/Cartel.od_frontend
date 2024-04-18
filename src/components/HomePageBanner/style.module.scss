@@ -43,6 +43,7 @@
 .list_right {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
   .title {
     font-size: 40px;

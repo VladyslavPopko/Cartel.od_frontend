@@ -4,7 +4,6 @@ import Button from "../../components/Button/Button";
 import HomePageItemBox from "../../components/HomePageItemBox/HomePageItemBox";
 import NotificationBox from "../../components/NotificationBox/NotificationBox";
 import agree from "../../img/Notifications/agree.svg";
-import cn from "classnames";
 
 import AnimationWrapper from "../../wrappers/AnimationWrapper";
 import { useDispatch, useSelector } from "react-redux";
