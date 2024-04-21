@@ -10,6 +10,13 @@ import agree from "../img/Notifications/agree.svg";
 import { useState } from "react";
 import Main from "./Main";
 import GalleryPage from "../modals/gallery";
+import ReviewModalBlock from "../blocks/ReviewModalBlock/ReviewModalBlock";
+import ReviewThankyouBlock from "../blocks/ReviewThankyouBlock/ReviewThankyouBlock";
+import ProductPageInfoBlock from "../blocks/ProductPageInfoBlock/ProductPageInfoBlock";
+import ProductPageSilimarBlock from "../blocks/ProductPageSilimarBlock/ProductPageSilimarBlock";
+import ProductPageInfoBox from "../components/ProductPageInfoBox.jsx/ProductPageInfoBox";
+import ProducPageReviewBlock from "../blocks/ProducPageReviewBlock/ProducPageReviewBlock";
+import ProductPageRecommendedCategory from "../blocks/ProductPageRecommendedCategory/ProductPageRecommendedCategory";
 
 const ProductPage_WithoutAbout = ({ data, info, content }) => {
   const { GOOGLE_LIST, GOOGLE_SHEET, XS, L, M, ONE, S, XL, XXL, XXXL } = info;
@@ -38,6 +45,9 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
     contentSizeTable,
     contentModalSizeTable,
     sizeArray,
+    contentReviewModal,
+    contentReviewThankYou,
+    REVIEW_LIST,
   } = content;
   if (isLoading) {
     window.scrollTo(pageYOffset, 0);
@@ -70,7 +80,17 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             setIsVisibleGallery={setIsVisibleGallery}
           />
         </AnimationWrapper>
-
+        <AnimationWrapper>
+          <ProductPageInfoBlock />
+        </AnimationWrapper>
+        <AnimationWrapper>
+          <ProductPageSilimarBlock
+            setisVisibleNotificationAddtoCart={
+              setisVisibleNotificationAddtoCart
+            }
+            title="СХОЖІ ТОВАРИ"
+          />
+        </AnimationWrapper>
         <AnimationWrapper>
           <DescriptionBlock content={contentDesciption} />
         </AnimationWrapper>
@@ -81,7 +101,20 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
             setIsVisibleSizetable={setIsVisibleSizetable}
           />
         </AnimationWrapper>
-
+        <AnimationWrapper>
+          <ProducPageReviewBlock handleReview={handleReview} />
+        </AnimationWrapper>
+        <AnimationWrapper>
+          <ProductPageSilimarBlock
+            setisVisibleNotificationAddtoCart={
+              setisVisibleNotificationAddtoCart
+            }
+            title="Рекомендовані товари"
+          />
+        </AnimationWrapper>
+        <AnimationWrapper>
+          <ProductPageRecommendedCategory />
+        </AnimationWrapper>
         <AnimationWrapper>
           <HeroBlock
             sizeArray={sizeArray}
@@ -100,7 +133,7 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
 
         {/* modals  */}
 
-        {/* <Review
+        <ReviewModalBlock
           content={contentReviewModal}
           itemName={GOOGLE_LIST}
           googleSheet={GOOGLE_SHEET}
@@ -110,11 +143,11 @@ const ProductPage_WithoutAbout = ({ data, info, content }) => {
           setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
           setIsLoading={setIsLoading}
         />
-        <ReviewThankyou
+        <ReviewThankyouBlock
           content={contentReviewThankYou}
           isVisibleReviewThankyou={isVisibleReviewThankyou}
           setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
-        /> */}
+        />
 
         <SizeTable
           content={contentModalSizeTable}

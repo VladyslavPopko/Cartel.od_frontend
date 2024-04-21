@@ -8,14 +8,20 @@ const SizetableBlock = ({ setIsVisibleSizetable, content }) => {
   };
   return (
     <div className={styles.section}>
-      <h2 className={styles.title}>{title}</h2>
-      <img
-        draggable="false"
-        onClick={handleSizetable}
-        className={styles.img}
-        src={img}
-        alt=""
-      />
+      <hr className={styles.hr} />
+      <div className="">
+        <h2 className={styles.title}>{title}</h2>
+        <img
+          draggable="false"
+          onClick={handleSizetable}
+          className={styles.img}
+          src={img}
+          alt=""
+        />
+        <p className={styles.text}><span className={styles.selected}>ВАЖЛИВО!!!</span> Якщо виникли труднощі з вибором розміру, узгодьте це з менеджером</p>
+      </div>
+
+      <hr className={styles.hr} />
     </div>
   );
 };

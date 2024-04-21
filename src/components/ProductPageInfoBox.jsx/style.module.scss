@@ -1,0 +1,15 @@
+.section {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img {
+  width: 25px;
+}
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
