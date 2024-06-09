@@ -11,9 +11,57 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 
 	return (
 		<>
-			{productData?.sliderImg3 ? (
+			{productData?.heroImg && (
 				<Slide className={styles.section} transitionDuration='600'>
-					<div className={cn('each-slide-effect', styles.img_wrapper)}>
+					{productData?.heroImg && (
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.heroImg}
+								alt=''
+							/>
+						</div>
+					)}
+
+					{productData?.heroImg && (
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg1}
+								alt=''
+							/>
+						</div>
+					)}
+
+					{productData?.heroImg && (
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg2}
+								alt=''
+							/>
+						</div>
+					)}
+
+					{productData?.sliderImg3 && (
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg3}
+								alt=''
+							/>
+						</div>
+					)}
+
+					{/* <div className={cn('each-slide-effect', styles.img_wrapper)}>
 						<img
 							onClick={handleOpenGalley}
 							draggable='false'
@@ -127,9 +175,8 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								src={productData.heroImg}
 								alt=''
 							/>
-						</div>
-					</Slide>
-				)
+						</div> */}
+				</Slide>
 			)}
 		</>
 	)
