@@ -11,8 +11,8 @@ import AnimationWrapper from '../../../wrappers/AnimationWrapper'
 
 import { useParams } from 'react-router-dom'
 import CatalogItemBox from '../../../components/Catalog/CatalogItemBox/CatalogItemBox'
+import CatalogNoValue from '../../../components/Catalog/CatalogNoValue/CatalogNoValue'
 import FilterCatalog from '../../../components/Catalog/FilterCatalog/FilterCatalog'
-import LoadingBox from '../../../components/LoadingBox/LoadingBox'
 import SearchNoSuccessBox from '../../../components/Search/SearchNoSuccessBox/SearchNoSuccessBox'
 import { DB_API } from '../../../constanses/constanses'
 
@@ -152,10 +152,10 @@ const CatalogBlock = () => {
 						/>
 					</div>
 				)}
+
 				{allProducts.length === 0 && !isSearch && (
 					<div className={styles.search_nosuccess}>
-						{/* <PageNoSuccessBox /> */}
-						<LoadingBox />
+						<CatalogNoValue />
 					</div>
 				)}
 			</div>

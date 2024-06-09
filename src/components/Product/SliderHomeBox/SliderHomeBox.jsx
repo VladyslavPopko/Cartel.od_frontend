@@ -3,16 +3,23 @@ import { memo } from 'react'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import styles from './style.module.scss'
+import './style.scss'
 
 const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 	const handleOpenGalley = () => {
 		setIsVisibleGallery(true)
 	}
 
+	const indicators = index => <div className='slider_product_indicator'></div>
 	return (
 		<>
 			{productData?.heroImg && (
-				<Slide className={styles.section} transitionDuration='600'>
+				<Slide
+					className={styles.section}
+					transitionDuration='600'
+					indicators={indicators}
+					arrows={false}
+				>
 					{productData?.heroImg && (
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img

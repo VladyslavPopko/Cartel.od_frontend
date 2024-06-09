@@ -14,3 +14,15 @@
 	display: flex;
 	justify-content: center;
 }
+.slider_phone {
+	display: none;
+}
+
+@media (max-width: 540px) {
+	.slider_desktop {
+		display: none;
+	}
+	.slider_phone {
+		display: block;
+	}
+}
