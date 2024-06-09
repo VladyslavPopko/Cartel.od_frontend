@@ -1,22 +1,18 @@
-import React from "react";
-import GalleryModalBlock from "../blocks/GalleryModalBlock/GalleryModalBlock";
+import React from 'react'
+import GalleryModalBlock from '../blocks/Modals/GalleryModalBlock/GalleryModalBlock'
 
 const GalleryPage = ({
-  isVisibleGallery,
-  setIsVisibleGallery,
-  data,
-  isColor,
-  setIsColor,
+	isVisibleGallery,
+	setIsVisibleGallery,
+	productData,
 }) => {
-  return (
-    <GalleryModalBlock
-      setIsVisibleGallery={setIsVisibleGallery}
-      isVisibleGallery={isVisibleGallery}
-      data={data}
-      isColor={isColor}
-      setIsColor={setIsColor}
-    />
-  );
-};
+	return (
+		<GalleryModalBlock
+			productData={productData}
+			setIsVisibleGallery={setIsVisibleGallery}
+			isVisibleGallery={isVisibleGallery}
+		/>
+	)
+}
 
-export default GalleryPage;
+export default GalleryPage

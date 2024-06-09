@@ -1,17 +1,13 @@
-import { memo } from "react";
-import Main from "./Main";
-import HomepageBlock from "../blocks/HomepageBlock/HomepageBlock";
+import React from 'react'
+import HomePageBlock from '../blocks/HomePage/HomePageBlock/HomePageBlock'
+import Main from './Main'
 
-const HomePage = ({ data, menu, data_recomended }) => {
-  return (
-    <Main>
-      <HomepageBlock
-        database={data}
-        menu={menu}
-        data_recomended={data_recomended}
-      />
-    </Main>
-  );
-};
+const HomePage = () => {
+	return (
+		<Main>
+			<HomePageBlock />
+		</Main>
+	)
+}
 
-export default memo(HomePage);
+export default HomePage

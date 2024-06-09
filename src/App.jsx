@@ -1,49 +1,45 @@
-import { Route, Routes } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import "reset-css";
-import "./style/main.scss";
-import LoadingBox from "./components/LoadingBox/LoadingBox";
-import {  ROUTES } from "./datas/data";
-import HomePageBanner from "./components/HomePageBanner/HomePageBanner";
-import HomePage from "./pages/HomePage";
-import { DATA_MEN, MENU_MEN } from "./datas/data_men";
+import 'reset-css'
+import LoadingBox from './components/LoadingBox/LoadingBox'
+import CatalogBanner from './components/Main/CatalogBanner/CatalogBanner'
 
-const HomePageLazy = lazy(() => import("./pages/HomePage"));
+import AssignPage from './pages/AssignPage'
+import HomePage from './pages/HomePage'
+import PoliticsPage from './pages/PoliticsPage'
+import ProNasPage from './pages/ProNasPage'
+import ProductPage from './pages/ProductPage'
+import SearchPage from './pages/SearchPage'
+import './style/main.scss'
+
+const CatalogLazy = lazy(() => import('./pages/Catalog'))
 
 const App = () => {
-  const routes = ROUTES;
-  return (
-    <>
-      <HomePageBanner />
-      <Suspense fallback={<LoadingBox type="bars" color="red" />}>
-        <Routes>
-          {routes.map((element) => (
-            <>
-              <Route
-                key={element.path}
-                path={element.path}
-                element={element.element}
-              />
-              {element.category.map((el) => (
-                <>
-                  <Route key={el.path} path={el.path} element={el.element} />
+	return (
+		<>
+			<CatalogBanner />
+			<Suspense fallback={<LoadingBox type='bars' color='red' />}>
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/search' element={<SearchPage />} />
+					<Route path='/about_us' element={<ProNasPage />} />
+					<Route path='/politics' element={<PoliticsPage />} />
+					<Route path='/assign' element={<AssignPage />} />
+					<Route path='/search' element={<SearchPage />} />
+					<Route path='/search/:searchName' element={<SearchPage />} />
+					<Route
+						path='/:who/:division/:category/:article'
+						element={<ProductPage />}
+					/>
+					<Route path='/:who' element={<CatalogLazy />} />
+					<Route path='/:who/:division' element={<CatalogLazy />} />
+					<Route path='/:who/:division/:category' element={<CatalogLazy />} />
+					<Route path='*' element={<HomePage />} />
+				</Routes>
+			</Suspense>
+		</>
+	)
+}
 
-                  {el.products.map((e) => (
-                    <Route key={e.path} path={e.path} element={e.element} />
-                  ))}
-                </>
-              ))}
-            </>
-          ))}
-          <Route
-            path="*"
-            element={<HomePageLazy data={DATA_MEN} menu={MENU_MEN} />}
-          />
-        </Routes>
-      </Suspense>
-    </>
-  );
-};
-
-export default App;
+export default App

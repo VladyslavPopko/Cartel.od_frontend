@@ -1,99 +1,71 @@
-import { memo, useState } from "react";
-import Cart from "../modals/cart";
-import Submit from "../modals/submit";
-import Thankyou from "../modals/thankyou";
-import Assign from "../modals/assign";
-import Politics from "../modals/politics";
-import HeaderBlock from "../blocks/HeaderBlock/HeaderBlock";
-import { CONTENT } from "../contents/main";
-import LoadingBox from "../components/LoadingBox/LoadingBox";
-import { GOOGLE_LIST, GOOGLE_SHEET } from "../constanses/constanses";
-import FooterBlock from "../blocks/FooterBlock/FooterBlock";
-import styles from "../style/styleformain.module.scss";
+import { memo, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import FooterBlock from '../blocks/Main/FooterBlock/FooterBlock'
+import LoadingBox from '../components/LoadingBox/LoadingBox'
+import HomePageHeader from '../components/Main/HomePageHeader/HomePageHeader'
+import { DB_API } from '../constanses/constanses'
+import useFetch from '../hooks/UseFetch'
+import Cart from '../modals/cart'
+import Submit from '../modals/submit'
+import Thankyou from '../modals/thankyou'
+import {
+	changeCategories,
+	changeDivisions,
+	changeWhos,
+} from '../redux/slices/dbSlice'
+import styles from '../style/styleformain.module.scss'
 
 const Main = ({ children }) => {
-  const [isVisibleCart, setIsVivsibleCart] = useState(false); // Cart Modal
-  const [isVisibleSubmit, setIsVisibleSubmit] = useState(false); // Submit Modal
-  const [isVisibleThankyou, setIsVisibleThankyou] = useState(false); // Thankyou Modal
-  const [isVisibleAssign, setIsVisibleAssign] = useState(false); // Assign Modal
-  const [isVisiblePolitics, setIsVisiblePolitics] = useState(false); // Politics Modal
+	const dispatch = useDispatch()
+	const [dataWhos] = useFetch(`${DB_API}/allwhos`)
+	const [dataDivisions] = useFetch(`${DB_API}/alldivision`)
+	const [dataCategories] = useFetch(`${DB_API}/allcategory`)
 
-  const [isLoading, setIsLoading] = useState(false); // loading
-  const [isMenu, setIsMenu] = useState(false); // menu Open
+	dispatch(changeWhos(dataWhos))
+	dispatch(changeDivisions(dataDivisions))
+	dispatch(changeCategories(dataCategories))
 
-  const handleMenu = () => {
-    setIsMenu(!isMenu);
-  };
-  const handleCloseMenu = () => {
-    setIsMenu(false);
-  };
+	const [isVisibleCart, setIsVivsibleCart] = useState(false) // Cart Modal
+	const [isVisibleSubmit, setIsVisibleSubmit] = useState(false) // Submit Modal
+	const [isVisibleThankyou, setIsVisibleThankyou] = useState(false) // Thankyou Modal
 
-  const {
-    contentHeader,
-    contentCart,
-    contentSubmit,
-    contentThankYou,
-    contentAssign,
-    contentPolitics,
-  } = CONTENT;
+	const [isLoading, setIsLoading] = useState(false) // loading
+	const [isMenu, setIsMenu] = useState(false) // menu Open
 
-  return (
-    <div>
-      {isLoading && <LoadingBox type="bars" color="red" />}
-      <div className={styles.section}>
-        <div>
-          <HeaderBlock
-            isMenu={isMenu}
-            handleMenu={handleMenu}
-            content={contentHeader}
-            setIsVivsibleCart={setIsVivsibleCart}
-          />
-          <div onClick={handleCloseMenu}>{children}</div>
-        </div>
-        <div>
-          <FooterBlock
-            isVisibleAssign={isVisibleAssign}
-            isVisiblePolitics={isVisiblePolitics}
-            setIsVisibleAssign={setIsVisibleAssign}
-            setIsVisiblePolitics={setIsVisiblePolitics}
-          />
-        </div>
-      </div>
+	const handleCloseMenu = () => {
+		setIsMenu(false)
+	}
 
-      <Cart
-        content={contentCart}
-        isVisibleCart={isVisibleCart}
-        setIsVivsibleCart={setIsVivsibleCart}
-        setIsVisibleSubmit={setIsVisibleSubmit}
-      />
-      <Submit
-        content={contentSubmit}
-        googleSheet={GOOGLE_SHEET}
-        googleList={GOOGLE_LIST}
-        setIsLoading={setIsLoading}
-        isVisibleSubmit={isVisibleSubmit}
-        setIsVisibleSubmit={setIsVisibleSubmit}
-        setIsVisibleThankyou={setIsVisibleThankyou}
-        setIsVisibleAssign={setIsVisibleAssign}
-        setIsVisiblePolitics={setIsVisiblePolitics}
-      />
-      <Thankyou
-        content={contentThankYou}
-        isVisibleThankyou={isVisibleThankyou}
-        setIsVisibleThankyou={setIsVisibleThankyou}
-      />
-      <Assign
-        content={contentAssign}
-        isVisibleAssign={isVisibleAssign}
-        setIsVisibleAssign={setIsVisibleAssign}
-      />
-      <Politics
-        content={contentPolitics}
-        isVisiblePolitics={isVisiblePolitics}
-        setIsVisiblePolitics={setIsVisiblePolitics}
-      />
-    </div>
-  );
-};
+	return (
+		<div>
+			{isLoading && <LoadingBox type='bars' color='red' />}
+			<div className={styles.section}>
+				<div>
+					<HomePageHeader setIsVivsibleCart={setIsVivsibleCart} />
+					<div onClick={handleCloseMenu}>{children}</div>
+				</div>
+				<div>
+					<FooterBlock />
+				</div>
+			</div>
 
-export default memo(Main);
+			<Cart
+				isVisibleCart={isVisibleCart}
+				setIsVivsibleCart={setIsVivsibleCart}
+				setIsVisibleSubmit={setIsVisibleSubmit}
+			/>
+			<Submit
+				setIsLoading={setIsLoading}
+				isVisibleSubmit={isVisibleSubmit}
+				setIsVisibleSubmit={setIsVisibleSubmit}
+				setIsVisibleThankyou={setIsVisibleThankyou}
+			/>
+			<Thankyou
+				isVisibleThankyou={isVisibleThankyou}
+				setIsVisibleThankyou={setIsVisibleThankyou}
+			/>
+		</div>
+	)
+}
+
+export default memo(Main)

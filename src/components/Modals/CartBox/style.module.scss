@@ -1,0 +1,148 @@
+.section {
+	display: flex;
+	gap: 35px;
+	align-items: start;
+	font-family: var(--font-family);
+	width: 100%;
+
+	.img {
+		width: 100%;
+		border-radius: var(--section-border-radius);
+	}
+	.img_wrapper {
+		width: 20%;
+	}
+	.list {
+		flex: 1 1 auto;
+		.title {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24.38px;
+			text-align: left;
+			margin-bottom: 10px;
+			text-decoration: none;
+			color: var(--secondary-color);
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.text_color {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 19.5px;
+			text-align: left;
+			margin-bottom: 5px;
+		}
+		.color {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24.38px;
+			text-align: left;
+			margin-bottom: 50px;
+		}
+		@media (max-width: 760px) {
+			.color {
+				margin-bottom: 5px;
+			}
+		}
+		.size {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 19.5px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.price {
+			font-size: 32px;
+			font-weight: 400;
+			line-height: 43.88px;
+			color: var(--select-color);
+			&_old {
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 24.38px;
+				text-align: left;
+				text-decoration: line-through;
+				text-align: right;
+			}
+		}
+		&_item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&_left {
+				display: flex;
+				gap: 5px;
+				align-items: center;
+			}
+		}
+		.input {
+			padding: 0px 27px 0px 27px;
+			border-radius: var(--button-border-radius);
+			border: 1px solid var(--secondary-color);
+			font-family: var(--font-family);
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 29.26px;
+		}
+		.increment,
+		.decrement {
+			font-size: 36px;
+			font-weight: 400;
+			cursor: pointer;
+		}
+		@media (max-width: 550px) {
+			.price,
+			.increment,
+			.decrement {
+				font-size: 24px;
+			}
+			.input {
+				padding: 0 10px;
+			}
+		}
+	}
+}
+@media (max-width: 540px) {
+	.section {
+		.img_wrapper {
+			width: 40%;
+			text-align: center;
+		}
+		.img {
+			border-radius: var(--section-border-radius);
+		}
+	}
+}
+@media (min-width: 1040px) {
+	.section + .section {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 540px) {
+	.section {
+		gap: 15px;
+		.list {
+			width: 60%;
+			.title {
+				font-size: 16px;
+				line-height: 100%;
+			}
+			.text_color,
+			.color,
+			.size,
+			.price_old {
+				font-size: 14px;
+				line-height: 100%;
+			}
+			.price {
+				font-size: 16px;
+				line-height: 100%;
+			}
+			.input {
+				font-size: 14px;
+				line-height: 100%;
+			}
+		}
+	}
+}

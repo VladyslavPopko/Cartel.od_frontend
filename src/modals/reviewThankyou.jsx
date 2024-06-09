@@ -1,20 +1,18 @@
-import React, { memo } from "react";
-import ReviewThankyouBlock from "../blocks/ReviewThankyouBlock/ReviewThankyouBlock";
+import React, { memo } from 'react'
+import ReviewThankyouBlock from '../blocks/Modals/ReviewThankyouBlock/ReviewThankyouBlock'
 
 const ReviewThankyou = ({
-  isVisibleReviewThankyou,
-  setIsVisibleReviewThankyou,
-  content,
+	isVisibleReviewThankyou,
+	setIsVisibleReviewThankyou,
 }) => {
-  return (
-    <div>
-      <ReviewThankyouBlock
-        content={content}
-        isVisibleReviewThankyou={isVisibleReviewThankyou}
-        setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
-      />
-    </div>
-  );
-};
+	return (
+		<div>
+			<ReviewThankyouBlock
+				isVisibleReviewThankyou={isVisibleReviewThankyou}
+				setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+			/>
+		</div>
+	)
+}
 
-export default memo(ReviewThankyou);
+export default memo(ReviewThankyou)

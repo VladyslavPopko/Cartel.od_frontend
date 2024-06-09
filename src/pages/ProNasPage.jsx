@@ -1,26 +1,25 @@
-import React from "react";
-import Main from "./Main";
-import AnimationWrapper from "../wrappers/AnimationWrapper";
-import AboutUsBlock from "../blocks/AboutUsBlock/AboutUsBlock";
-import AdvantageBlock from "../blocks/AdvantageBlock/AdvantageBlock";
-import ProNasInfoBlock from "../blocks/ProNasInfoBlock/ProNasInfoBlock";
-import ChangeSexHomePage_withoutSearch from "../components/ChangeSexHomePage_WithoutSearch/ChangeSexHomePage_withoutSearch";
+import React from 'react'
+import AboutUsBlock from '../blocks/ProNasPage/AboutUsBlock/AboutUsBlock'
+import AdvantageBlock from '../blocks/ProNasPage/AdvantageBlock/AdvantageBlock'
+import ProNasInfoBlock from '../blocks/ProNasPage/ProNasInfoBlock/ProNasInfoBlock'
+import AnimationWrapper from '../wrappers/AnimationWrapper'
+import Main from './Main'
 
 const ProNasPage = () => {
-  return (
-    <Main>
-      <ChangeSexHomePage_withoutSearch />
-      <AnimationWrapper>
-        <ProNasInfoBlock />
-      </AnimationWrapper>
-      <AnimationWrapper>
-        <AboutUsBlock />
-      </AnimationWrapper>
-      <AnimationWrapper>
-        <AdvantageBlock />
-      </AnimationWrapper>
-    </Main>
-  );
-};
+	document.title = `Cartel - Про нас`
+	return (
+		<Main>
+			<AnimationWrapper>
+				<ProNasInfoBlock />
+			</AnimationWrapper>
+			<AnimationWrapper>
+				<AboutUsBlock />
+			</AnimationWrapper>
+			<AnimationWrapper>
+				<AdvantageBlock />
+			</AnimationWrapper>
+		</Main>
+	)
+}
 
-export default ProNasPage;
+export default ProNasPage

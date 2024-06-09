@@ -1,13 +1,13 @@
-import { memo } from "react";
-import Main from "./Main";
-import SearchpageBlock from "../blocks/SearchpageBlock/SearchpageBlock";
+import { memo } from 'react'
+import SearchpageBlock from '../blocks/Search/SearchpageBlock/SearchpageBlock'
+import Main_WithoutSearch from './Main_WithoutSearch'
 
-const SearchPage = ({ data, data_recomended }) => {
-  return (
-    <Main>
-      <SearchpageBlock data_recomended={data_recomended} database={data} />
-    </Main>
-  );
-};
+const SearchPage = () => {
+	return (
+		<Main_WithoutSearch>
+			<SearchpageBlock />
+		</Main_WithoutSearch>
+	)
+}
 
-export default memo(SearchPage);
+export default memo(SearchPage)

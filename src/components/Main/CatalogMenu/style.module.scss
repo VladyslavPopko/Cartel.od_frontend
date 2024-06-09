@@ -1,0 +1,26 @@
+.section {
+	display: flex;
+	align-items: center;
+	font-family: var(--font-family);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24.38px;
+	text-align: left;
+	gap: 5px;
+	cursor: pointer;
+	transition: all var(--transition-ms);
+}
+.active {
+	filter: invert(1) drop-shadow(0 0 5px var(--secondary-color));
+}
+
+@media (max-width: 650px) {
+	.section {
+		font-size: 14px;
+	}
+}
+@media (max-width: 480px) {
+	.text {
+		display: none;
+	}
+}

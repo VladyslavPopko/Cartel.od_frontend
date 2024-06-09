@@ -1,42 +1,42 @@
 :root {
-  //
-  --primary-color: rgba(255, 255, 255, 1);
-  --secondary-color: rgba(0, 0, 0, 1);
-  --select-color: rgba(255, 0, 0, 1);
-  --subtext-color: rgba(102, 112, 133, 1);
-  --modal-background: rgba(217, 217, 217, 1);
-  --modal-submit-background: rgba(163, 251, 172, 0.5);
-  --button-submit: rgba(31, 154, 29, 1);
-  --link-color: rgba(0, 68, 201, 1);
+	//
+	--primary-color: rgba(255, 255, 255, 1);
+	--secondary-color: rgba(0, 0, 0, 1);
+	--select-color: rgba(255, 0, 0, 1);
+	--subtext-color: rgba(102, 112, 133, 1);
+	--modal-background: rgba(217, 217, 217, 1);
+	--modal-submit-background: rgba(163, 251, 172, 0.5);
+	--button-submit: rgba(31, 154, 29, 1);
+	--link-color: rgba(0, 68, 201, 1);
 
-  //border-radius
-  --button-border-radius: 15px;
-  --section-border-radius: 32px;
+	//border-radius
+	--button-border-radius: 15px;
+	--section-border-radius: 32px;
 
-  // font
-  --font-family: "Montserrat", sans-serif;
+	// font
+	--font-family: 'Montserrat', sans-serif;
 
-  //max-width
-  --content-max-width: 1080px;
+	//max-width
+	--content-max-width: 1080px;
 
-  //transition
-  --transition-ms: 300ms;
+	//transition
+	--transition-ms: 300ms;
 
-  //colors
+	//colors
 
-  --border-hover: 0px 0px 10px #ffffff;
-  --border-activer: 0px 0px 20px #ffffff;
+	--border-hover: 0px 0px 10px #ffffff;
+	--border-activer: 0px 0px 20px #ffffff;
 
-  //banner color
-  --banner-warning: rgba(243, 173, 60, 1);
-  --banner-danger: rgba(139, 0, 0, 1);
-  --banner-primary: rgba(3, 3, 138, 1);
-  --banner-secondary: rgba(101, 0, 109, 1);
-  --banner-success: rgba(26, 98, 0, 1);
+	//banner color
+	--banner-warning: rgba(243, 173, 60, 1);
+	--banner-danger: rgba(139, 0, 0, 1);
+	--banner-primary: rgba(3, 3, 138, 1);
+	--banner-secondary: rgba(101, 0, 109, 1);
+	--banner-success: rgba(26, 98, 0, 1);
 
-  --banner-warning-color: white;
-  --banner-danger-color: white;
-  --banner-primary-color: white;
-  --banner-secondary-color: white;
-  --banner-success-color: white;
+	--banner-warning-color: white;
+	--banner-danger-color: white;
+	--banner-primary-color: white;
+	--banner-secondary-color: white;
+	--banner-success-color: white;
 }

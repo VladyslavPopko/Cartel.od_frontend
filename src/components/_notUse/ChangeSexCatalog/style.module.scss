@@ -1,0 +1,100 @@
+.section {
+	font-family: var(--font-family);
+	width: 100%;
+	background-color: var(--primary-color);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	z-index: 11;
+}
+@media (min-width: 840px) and (min-height: 600px) {
+	.section {
+		position: sticky;
+		top: 55px;
+	}
+}
+.section_content {
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.list {
+	display: flex;
+	justify-content: center;
+	gap: 10%;
+	width: calc(100% - 200px);
+}
+.title {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--secondary-color);
+	cursor: pointer;
+}
+.input_section {
+	width: 200px;
+	position: relative;
+}
+@media (max-width: 540px) {
+	.input_section {
+		width: 150px;
+	}
+	.list {
+		width: calc(100% - 150px);
+	}
+	.title {
+		font-size: 14px;
+	}
+}
+.input_section::after {
+	position: absolute;
+	content: url('../../img/Catalog/circlum.svg');
+	top: 6px;
+	left: 5px;
+}
+.input {
+	width: 100%;
+	border: 0.25px solid rgba(0, 0, 0, 1);
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 12.19px;
+	text-align: left;
+	font-family: var(--font-family);
+	padding: 7px 7px 7px 17px;
+	border-radius: var(--button-border-radius);
+	outline: none;
+	background-color: rgba(240, 240, 240, 1);
+}
+.submit {
+	display: none;
+}
+@media (max-width: 460px) {
+	.title {
+		font-size: 12px;
+	}
+	.input_section {
+		width: 100px;
+	}
+	.list {
+		width: calc(100% - 100px);
+		gap: 8px;
+	}
+	.list {
+		width: auto;
+	}
+	.section_content {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 350px) {
+	.list {
+		width: 100%;
+	}
+	.input_section {
+		width: 100%;
+	}
+}

@@ -1,0 +1,126 @@
+.wrapper {
+	background-color: rgba(230, 228, 230, 1);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	position: sticky;
+	top: 0;
+	z-index: 14;
+	height: 70px;
+}
+.section {
+	max-width: var(--content-max-width);
+	margin: 0 auto;
+	padding: 15px;
+	font-family: var(--font-family);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.title_section {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.title {
+	font-size: 36px;
+	font-weight: 800;
+	line-height: 39.6px;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.text {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: left;
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+.input {
+	font-family: var(--font-family);
+	width: 200px;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 12.19px;
+	text-align: left;
+	padding: 10px 10px 10px 20px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+}
+.input_section {
+	position: relative;
+}
+.img_search {
+	position: absolute;
+	top: 7px;
+	left: 5px;
+}
+
+.img {
+	width: 36px;
+	height: 36px;
+
+	&_text {
+		border-radius: var(--button-border-radius);
+		color: var(--secondary-color);
+		font-size: 16px;
+		font-weight: 600;
+		width: 20px;
+		/* padding: 0px; */
+		background-color: var(--primary-color);
+		box-shadow: 0 0 2px var(--secondary-color);
+		transform: translate(25px, 19px);
+		text-align: center;
+		position: absolute;
+		top: -15px;
+		left: 0px;
+	}
+}
+.cart {
+	transition: filter var(--transition-ms);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: relative;
+	&:hover {
+		filter: invert(100%) drop-shadow(0 0 3px var(--secondary-color));
+	}
+}
+.cart_section {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+@media (max-width: 650px) {
+	.title {
+		font-size: 24px;
+	}
+	.text {
+		font-size: 14px;
+	}
+	.input {
+		width: 100px;
+	}
+}
+@media (max-width: 480px) {
+	.title {
+		font-size: 18px;
+	}
+	.img {
+		width: 24px;
+		height: 24px;
+		&_text {
+			top: -20px;
+			left: -10px;
+			font-size: 12px;
+		}
+	}
+	.text {
+		font-size: 12px;
+	}
+}

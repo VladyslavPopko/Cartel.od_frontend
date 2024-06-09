@@ -1,30 +1,22 @@
-import { memo } from "react";
-import ReviewModalBlock from "../blocks/ReviewModalBlock/ReviewModalBlock";
+import { memo } from 'react'
+import ReviewModalBlock from '../blocks/Modals/ReviewModalBlock/ReviewModalBlock'
 
 const Review = ({
-  isVisibleReview,
-  setIsVisibleReview,
-  setIsVisibleReviewThankyou,
-  setIsLoading,
-  itemName,
-  googleSheet,
-  googleList,
-  content,
+	isVisibleReview,
+	setIsVisibleReview,
+	setIsVisibleReviewThankyou,
+	setIsLoading,
 }) => {
-  return (
-    <div>
-      <ReviewModalBlock
-        content={content}
-        itemName={itemName}
-        googleSheet={googleSheet}
-        googleList={googleList}
-        setIsLoading={setIsLoading}
-        isVisibleReview={isVisibleReview}
-        setIsVisibleReview={setIsVisibleReview}
-        setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
-      />
-    </div>
-  );
-};
+	return (
+		<div>
+			<ReviewModalBlock
+				setIsLoading={setIsLoading}
+				isVisibleReview={isVisibleReview}
+				setIsVisibleReview={setIsVisibleReview}
+				setIsVisibleReviewThankyou={setIsVisibleReviewThankyou}
+			/>
+		</div>
+	)
+}
 
-export default memo(Review);
+export default memo(Review)

@@ -1,0 +1,11 @@
+.section {
+	margin: 0 auto;
+	max-width: var(--content-max-width);
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: var(--font-family);
+	flex-wrap: wrap;
+	gap: 5px;
+}

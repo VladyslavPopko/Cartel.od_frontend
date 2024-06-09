@@ -1,16 +1,15 @@
-import React, { memo } from "react";
-import ThankyouBlock from "../blocks/ThanyouBlock/ThankyouBlock";
+import React, { memo } from 'react'
+import ThankyouBlock from '../blocks/Modals/ThanyouBlock/ThankyouBlock'
 
-const Thankyou = ({ isVisibleThankyou, setIsVisibleThankyou, content }) => {
-  return (
-    <div>
-      <ThankyouBlock
-        content={content}
-        isVisibleThankyou={isVisibleThankyou}
-        setIsVisibleThankyou={setIsVisibleThankyou}
-      />
-    </div>
-  );
-};
+const Thankyou = ({ isVisibleThankyou, setIsVisibleThankyou }) => {
+	return (
+		<div>
+			<ThankyouBlock
+				isVisibleThankyou={isVisibleThankyou}
+				setIsVisibleThankyou={setIsVisibleThankyou}
+			/>
+		</div>
+	)
+}
 
-export default memo(Thankyou);
+export default memo(Thankyou)
