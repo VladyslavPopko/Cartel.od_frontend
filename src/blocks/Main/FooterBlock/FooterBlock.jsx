@@ -33,7 +33,7 @@ const FooterBlock = () => {
 						<NavLink to='/assign' className={cn(styles.text, styles.cursor)}>
 							Угода користувача
 						</NavLink>
-						<p className={styles.text}>Контакти</p>
+						{/* <p className={styles.text}>Контакти</p> */}
 						<NavLink to='/about_us' className={styles.text}>
 							Про нас
 						</NavLink>
