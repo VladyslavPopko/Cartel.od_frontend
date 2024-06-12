@@ -33,10 +33,10 @@ const CatalogItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
 	const path_who = filter_who[0]?.path
 	const filter_division = db.divisions.filter(el => el.division === division)
 	const path_division = filter_division[0]?.path
-	// const filter_category = db.categories.filter(el => el.category === category)
-	// const path_category = filter_category[0]?.path
+	const filter_category = db.categories.filter(el => el.category === category)
+	const path_category = filter_category[0]?.path
 
-	const page = `/${path_who}/${path_division}/${path_division}/${article}`
+	const page = `/${path_who}/${path_division}/${path_category}/${article}`
 	const dispatch = useDispatch()
 	const [isValue, setIsValue] = useState(false)
 	const handleSubmit = () => {
