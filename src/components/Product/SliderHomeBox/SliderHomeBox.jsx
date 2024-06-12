@@ -13,14 +13,16 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 	const indicators = index => <div className='slider_product_indicator'></div>
 	return (
 		<>
-			{productData?.heroImg && (
-				<Slide
-					className={styles.section}
-					transitionDuration='600'
-					indicators={indicators}
-					arrows={false}
-				>
-					{productData?.heroImg && (
+			{productData?.heroImg &&
+				productData?.sliderImg1 &&
+				productData?.sliderImg2 &&
+				productData?.sliderImg3 && (
+					<Slide
+						className={styles.section}
+						transitionDuration='600'
+						indicators={indicators}
+						arrows={false}
+					>
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img
 								onClick={handleOpenGalley}
@@ -30,9 +32,7 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								alt=''
 							/>
 						</div>
-					)}
 
-					{productData?.heroImg && (
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img
 								onClick={handleOpenGalley}
@@ -42,9 +42,7 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								alt=''
 							/>
 						</div>
-					)}
 
-					{productData?.heroImg && (
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img
 								onClick={handleOpenGalley}
@@ -54,9 +52,7 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								alt=''
 							/>
 						</div>
-					)}
 
-					{productData?.sliderImg3 && (
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img
 								onClick={handleOpenGalley}
@@ -66,114 +62,18 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								alt=''
 							/>
 						</div>
-					)}
-
-					{/* <div className={cn('each-slide-effect', styles.img_wrapper)}>
-						<img
-							onClick={handleOpenGalley}
-							draggable='false'
-							className={styles.img}
-							src={productData.heroImg}
-							alt=''
-						/>
-					</div>
-
-					{productData?.sliderImg1 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg1}
-								alt=''
-							/>
-						</div>
-					)}
-					{productData?.sliderImg2 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg2}
-								alt=''
-							/>
-						</div>
-					)}
-					{productData?.sliderImg3 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg3}
-								alt=''
-							/>
-						</div>
-					)}
-				</Slide>
-			) : productData?.sliderImg2 ? (
-				<Slide className={styles.section} transitionDuration='600'>
-					<div className={cn('each-slide-effect', styles.img_wrapper)}>
-						<img
-							onClick={handleOpenGalley}
-							draggable='false'
-							className={styles.img}
-							src={productData.heroImg}
-							alt=''
-						/>
-					</div>
-
-					{productData?.sliderImg1 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg1}
-								alt=''
-							/>
-						</div>
-					)}
-					{productData?.sliderImg2 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg2}
-								alt=''
-							/>
-						</div>
-					)}
-				</Slide>
-			) : productData?.sliderImg1 ? (
-				<Slide className={styles.section} transitionDuration='600'>
-					<div className={cn('each-slide-effect', styles.img_wrapper)}>
-						<img
-							onClick={handleOpenGalley}
-							draggable='false'
-							className={styles.img}
-							src={productData.heroImg}
-							alt=''
-						/>
-					</div>
-
-					{productData?.sliderImg1 && (
-						<div className={cn('each-slide-effect', styles.img_wrapper)}>
-							<img
-								onClick={handleOpenGalley}
-								draggable='false'
-								className={styles.img}
-								src={productData.sliderImg1}
-								alt=''
-							/>
-						</div>
-					)}
-				</Slide>
-			) : (
-				productData?.heroImg && (
-					<Slide className={styles.section} transitionDuration='600'>
+					</Slide>
+				)}
+			{productData?.heroImg &&
+				productData?.sliderImg1 &&
+				productData?.sliderImg2 &&
+				!productData?.sliderImg3 && (
+					<Slide
+						className={styles.section}
+						transitionDuration='600'
+						indicators={indicators}
+						arrows={false}
+					>
 						<div className={cn('each-slide-effect', styles.img_wrapper)}>
 							<img
 								onClick={handleOpenGalley}
@@ -182,9 +82,81 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 								src={productData.heroImg}
 								alt=''
 							/>
-						</div> */}
-				</Slide>
-			)}
+						</div>
+
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg1}
+								alt=''
+							/>
+						</div>
+
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg2}
+								alt=''
+							/>
+						</div>
+					</Slide>
+				)}
+			{productData?.heroImg &&
+				productData?.sliderImg1 &&
+				!productData?.sliderImg2 &&
+				!productData?.sliderImg3 && (
+					<Slide
+						className={styles.section}
+						transitionDuration='600'
+						indicators={indicators}
+						arrows={false}
+					>
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.heroImg}
+								alt=''
+							/>
+						</div>
+
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.sliderImg1}
+								alt=''
+							/>
+						</div>
+					</Slide>
+				)}
+			{productData?.heroImg &&
+				!productData?.sliderImg1 &&
+				!productData?.sliderImg2 &&
+				!productData?.sliderImg3 && (
+					<Slide
+						className={styles.section}
+						transitionDuration='600'
+						indicators={indicators}
+						arrows={false}
+					>
+						<div className={cn('each-slide-effect', styles.img_wrapper)}>
+							<img
+								onClick={handleOpenGalley}
+								draggable='false'
+								className={styles.img}
+								src={productData.heroImg}
+								alt=''
+							/>
+						</div>
+					</Slide>
+				)}
 		</>
 	)
 }
