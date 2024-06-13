@@ -18,5 +18,11 @@
 	align-items: center;
 	height: 100%;
 	justify-content: center;
+	position: relative;
 	// overflow: hidden;
+}
+.banner_img {
+	position: absolute;
+	top: 5px;
+	left: 5px;
 }

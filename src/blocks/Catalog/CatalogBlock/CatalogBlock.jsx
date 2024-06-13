@@ -59,6 +59,21 @@ const CatalogBlock = () => {
 				data.sort(function (a, b) {
 					return b.article - a.article
 				})
+				data.sort((a, b) => {
+					// Проверяем наличие и непустое значение свойства `bannerText`
+					const aHasBanner = a.bannerText && a.bannerText.trim() !== ''
+					const bHasBanner = b.bannerText && b.bannerText.trim() !== ''
+
+					// Сравниваем объекты
+					if (aHasBanner && !bHasBanner) {
+						return -1 // a с баннером, b без баннера - a идет первым
+					} else if (!aHasBanner && bHasBanner) {
+						return 1 // a без баннера, b с баннером - b идет первым
+					} else {
+						return 0 // оба или оба не имеют баннер - порядок не меняется
+					}
+				})
+
 				setAllProducts(data)
 			})
 	}
@@ -69,7 +84,7 @@ const CatalogBlock = () => {
 
 	const [isVisibleNotificationAddtoCart, setisVisibleNotificationAddtoCart] =
 		useState(false) // Notification Add to Cart
-	const [isValueSort, setIsValueSort] = useState('За новизною') // sort value
+	const [isValueSort, setIsValueSort] = useState(false) // sort value
 	const [isActiveFilter, setIsActiveFilter] = useState(false) // Нажата ли фильтр
 	const [isActiveSort, setIsActiveSort] = useState(false) // Нажата ли сортировка
 
