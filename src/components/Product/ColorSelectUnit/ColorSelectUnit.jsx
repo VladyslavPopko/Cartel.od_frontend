@@ -1,29 +1,26 @@
 import cn from 'classnames'
 import React, { memo } from 'react'
+import { NavLink, useParams } from 'react-router-dom'
 import styles from './style.module.scss'
 
-const ColorSelectUnit = ({
-	setIsActive,
-	isActive,
-	color,
-	count,
-	setIsActiveCount,
-	setIsNavigate,
-}) => {
+const ColorSelectUnit = ({ setIsActive, isActive, color, article }) => {
+	const params = useParams()
 	return (
 		<>
-			<div
-				onClick={() => {
-					setIsActiveCount(count)
-					setIsActive(color)
-					setIsNavigate(true)
-				}}
-				className={cn(
-					styles.section,
-					color,
-					isActive === color && styles.active
-				)}
-			></div>
+			<NavLink
+				to={`/${params.who}/${params.division}/${params.category}/${article}`}
+			>
+				<div
+					onClick={() => {
+						setIsActive(color)
+					}}
+					className={cn(
+						styles.section,
+						color,
+						isActive === color && styles.active
+					)}
+				></div>
+			</NavLink>
 		</>
 	)
 }
