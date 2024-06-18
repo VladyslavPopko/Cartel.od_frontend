@@ -8,7 +8,7 @@ const SizetableBlock = ({ setIsVisibleSizetable, productData }) => {
 
 	return (
 		<div className={styles.section}>
-			<hr className={styles.hr} />
+			{/* <hr className={styles.hr} /> */}
 			<div className=''>
 				{productData?.tableSize && (
 					<>

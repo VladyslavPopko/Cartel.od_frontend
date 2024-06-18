@@ -22,7 +22,7 @@ const PopularProducts = ({ setisVisibleNotificationAddtoCart }) => {
 	}
 
 	const fetchProduct = async () => {
-		await fetch(`${DB_API}/findproductsbywho`, {
+		await fetch(`${DB_API}/product/find/who`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',

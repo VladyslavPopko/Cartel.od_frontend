@@ -49,7 +49,6 @@ const CatalogItemBox = ({ element, setisVisibleNotificationAddtoCart }) => {
 	}
 	useEffect(() => {
 		if (isValue) {
-			console.log(isValue)
 			dispatch(addToCart(isValue))
 			setIsValue(false)
 			setisVisibleNotificationAddtoCart(true)

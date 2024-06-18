@@ -10,7 +10,7 @@ const SliderHomeBox = ({ setIsVisibleGallery, productData }) => {
 	const handleOpenGalley = () => {
 		setIsVisibleGallery(true)
 	}
-	console.log(productData)
+
 	const indicators = index => <div className='slider_product_indicator'></div>
 	return (
 		<>

@@ -13,7 +13,7 @@ const useFetchAllWhos = url => {
 		const getData = async () => {
 			try {
 				setIsLoading(true)
-				const res = await fetch(`${DB_API}/allwhos`)
+				const res = await fetch(`${DB_API}/who/all`)
 
 				if (!res.ok) {
 					throw new Error('Failed to fetch')

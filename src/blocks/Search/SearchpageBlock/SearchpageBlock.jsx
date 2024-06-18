@@ -31,7 +31,7 @@ const SearchpageBlock = () => {
 	}
 
 	const fetchProduct = async () => {
-		await fetch(`${DB_API}/search`, {
+		await fetch(`${DB_API}/product/search`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',

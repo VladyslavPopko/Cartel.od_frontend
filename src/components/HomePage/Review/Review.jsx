@@ -65,8 +65,6 @@ const Review = () => {
 					</div>
 				</Slide>
 			</div>
-
-			<hr className={styles.hr}></hr>
 		</div>
 	)
 }

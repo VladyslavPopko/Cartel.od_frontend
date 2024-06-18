@@ -17,9 +17,9 @@ import styles from '../style/styleformain.module.scss'
 
 const Main = ({ children }) => {
 	const dispatch = useDispatch()
-	const [dataWhos] = useFetch(`${DB_API}/allwhos`)
-	const [dataDivisions] = useFetch(`${DB_API}/alldivision`)
-	const [dataCategories] = useFetch(`${DB_API}/allcategory`)
+	const [dataWhos] = useFetch(`${DB_API}/who/all`)
+	const [dataDivisions] = useFetch(`${DB_API}/division/all`)
+	const [dataCategories] = useFetch(`${DB_API}/category/all`)
 
 	dispatch(changeWhos(dataWhos))
 	dispatch(changeDivisions(dataDivisions))

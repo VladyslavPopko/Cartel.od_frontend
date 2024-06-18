@@ -85,8 +85,8 @@ const SubmitBlock = ({
 			email: data.email,
 			cart: fullCart,
 		}
-		const fetchAllDivision = async () => {
-			await fetch(`${DB_API}/addorder`, {
+		const fetchAddOrder = async () => {
+			await fetch(`${DB_API}/order/add`, {
 				method: 'POST',
 				headers: {
 					Accept: 'application/json',
@@ -100,7 +100,7 @@ const SubmitBlock = ({
 				})
 		}
 
-		fetchAllDivision()
+		fetchAddOrder()
 
 		UseFetchToCRM(data_prod, setIsLoading)
 		dispatch(deleteCart())
@@ -110,7 +110,7 @@ const SubmitBlock = ({
 		setIsVisibleThankyou(true)
 
 		// start facebook event pixel
-		// fbq("track", "Purchase");
+		// fbq('track', 'Purchase')
 		// end facebook event pixel
 	}
 

@@ -28,21 +28,21 @@ const CatalogBlock = () => {
 	if (params.who && db.whos) {
 		valueWho = db.whos.filter(who => who.path === params.who)
 		dataParam = { who: valueWho[0]?.who }
-		path = 'findproductsbywho'
+		path = 'product/find/who'
 	}
 	if (params.division && db.divisions) {
 		valueDivision = db.divisions.filter(
 			division => division.path === params.division
 		)
 		dataParam.division = valueDivision[0]?.division
-		path = 'findproductsbydivision'
+		path = 'product/find/division'
 	}
 	if (params.category && db.categories) {
 		valueCategory = db.categories.filter(
 			category => category.path === params.category
 		)
 		dataParam.category = valueCategory[0]?.category
-		path = 'findproductsbycategory'
+		path = 'product/find/category'
 	}
 
 	const fetchProduct = async () => {

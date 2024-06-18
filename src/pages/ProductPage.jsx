@@ -20,6 +20,11 @@ import AnimationWrapper from '../wrappers/AnimationWrapper'
 import Main from './Main'
 
 const ProductPage = () => {
+	// start facebook event pixel
+	// fbq('track', 'ViewContent')
+	// end facebook event pixel
+
+	const [isActiveColor, setIsActiveColor] = useState(false)
 	function shuffle(array) {
 		array.sort(() => Math.random() - 0.5)
 	}
@@ -35,7 +40,7 @@ const ProductPage = () => {
 		currentDivisions = currentDivisions.filter(
 			e => !e.division.includes(productData[0].division)
 		)
-		shuffle(currentDivisions)
+		shuffle(productData)
 	}
 
 	const dataParam = {
@@ -54,7 +59,7 @@ const ProductPage = () => {
 	}
 
 	const fetchSimilarProduct = async () => {
-		await fetch(`${DB_API}/findproductsbycategory`, {
+		await fetch(`${DB_API}/product/find/category`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',
@@ -71,7 +76,7 @@ const ProductPage = () => {
 			})
 	}
 	const fetchRecommendedProduct = async () => {
-		await fetch(`${DB_API}/findproductsbydivision`, {
+		await fetch(`${DB_API}/product/find/division`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',
@@ -93,7 +98,7 @@ const ProductPage = () => {
 	}
 
 	const fetchProduct = async () => {
-		await fetch(`${DB_API}/findProducts`, {
+		await fetch(`${DB_API}/product/find`, {
 			method: 'POST',
 			headers: {
 				Accept: 'application/json',
@@ -147,6 +152,8 @@ const ProductPage = () => {
 				/>
 				<AnimationWrapper>
 					<HeroBlock
+						isActiveColor={isActiveColor}
+						setIsActiveColor={setIsActiveColor}
 						productData={productData[0]}
 						setIsVisibleSizetable={setIsVisibleSizetable}
 						addNotification={setisVisibleNotificationAddtoCart}
@@ -155,6 +162,17 @@ const ProductPage = () => {
 						selected2={selected2}
 						setSelected2={setSelected2}
 						setIsVisibleGallery={setIsVisibleGallery}
+					/>
+				</AnimationWrapper>
+
+				<AnimationWrapper>
+					<DescriptionBlock productData={productData[0]} />
+				</AnimationWrapper>
+
+				<AnimationWrapper>
+					<SizetableBlock
+						productData={productData[0]}
+						setIsVisibleSizetable={setIsVisibleSizetable}
 					/>
 				</AnimationWrapper>
 				<AnimationWrapper>
@@ -170,17 +188,6 @@ const ProductPage = () => {
 						title='СХОЖІ ТОВАРИ'
 					/>
 				</AnimationWrapper>
-				<AnimationWrapper>
-					<DescriptionBlock productData={productData[0]} />
-				</AnimationWrapper>
-
-				<AnimationWrapper>
-					<SizetableBlock
-						productData={productData[0]}
-						setIsVisibleSizetable={setIsVisibleSizetable}
-					/>
-				</AnimationWrapper>
-
 				<AnimationWrapper>
 					<ProducPageReviewBlock handleReview={handleReview} />
 				</AnimationWrapper>
@@ -199,6 +206,8 @@ const ProductPage = () => {
 				</AnimationWrapper>
 				<AnimationWrapper>
 					<HeroBlock
+						isActiveColor={isActiveColor}
+						setIsActiveColor={setIsActiveColor}
 						productData={productData[0]}
 						setIsVisibleSizetable={setIsVisibleSizetable}
 						addNotification={setisVisibleNotificationAddtoCart}

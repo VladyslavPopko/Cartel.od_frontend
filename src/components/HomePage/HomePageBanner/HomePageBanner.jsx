@@ -7,7 +7,7 @@ import styles from './style.module.scss'
 
 const HomePageBanner = () => {
 	const [data, setData] = useState([])
-	const [info] = useFetch(`${DB_API}/findpromoblocks`)
+	const [info] = useFetch(`${DB_API}/promoblock/find`)
 
 	useEffect(() => {
 		setData(info)

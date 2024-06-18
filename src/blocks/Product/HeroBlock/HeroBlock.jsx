@@ -4,6 +4,7 @@ import cn from 'classnames'
 import { memo, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import Button from '../../../components/Button/Button'
+import ColorSelectBox from '../../../components/Product/ColorSelectBox/ColorSelectBox'
 import SizeSelectorBox from '../../../components/Product/SizeSelectorBox/SizeSelectorBox'
 import SliderHomeBox from '../../../components/Product/SliderHomeBox/SliderHomeBox'
 import { addToCart } from '../../../redux/slices/cartSlice'
@@ -17,6 +18,8 @@ const HeroBlock = ({
 	addNotification,
 	setIsVisibleGallery,
 	productData,
+	isActiveColor,
+	setIsActiveColor,
 }) => {
 	const title = productData?.name
 	let article = productData?.article
@@ -174,6 +177,13 @@ const HeroBlock = ({
 									</>
 								)}
 							</>
+
+							<ColorSelectBox
+								productData={productData}
+								isActive={isActiveColor}
+								setIsActive={setIsActiveColor}
+							/>
+
 							{isAvailible ? (
 								<div className={styles.button}>
 									<Button

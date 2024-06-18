@@ -1,29 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "../constanses/constanses.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../constanses/constanses.scss';
+@import '../constanses/colors.scss';
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .link {
-  padding: 10px;
-  border: 1px solid black;
-  display: inline-block;
+	padding: 10px;
+	border: 1px solid black;
+	display: inline-block;
 }
 .link.active {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 }
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 body {
-  // -webkit-touch-callout: none;
-  // -webkit-user-select: none;
-  // -khtml-user-select: none;
-  // -moz-user-select: none;
-  // -ms-user-select: none;
-  // user-select: none;
-  background-color: var(--primary-color);
+	// -webkit-touch-callout: none;
+	// -webkit-user-select: none;
+	// -khtml-user-select: none;
+	// -moz-user-select: none;
+	// -ms-user-select: none;
+	// user-select: none;
+	background-color: var(--primary-color);
 }

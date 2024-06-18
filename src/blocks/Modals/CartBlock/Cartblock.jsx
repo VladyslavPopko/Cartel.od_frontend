@@ -29,7 +29,7 @@ const Cartblock = ({
 		setIsVivsibleCart(false)
 		setIsVisibleSubmit(true)
 		// start facebook event pixel
-		// fbq("track", "InitiateCheckout");
+		// fbq('track', 'InitiateCheckout')
 		// end facebook event pixel
 	}
 	let arrayPrice = String(finalPrice).split('')
