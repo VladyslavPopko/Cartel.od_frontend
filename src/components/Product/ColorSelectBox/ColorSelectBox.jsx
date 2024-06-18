@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { DB_API } from '../../../constanses/constanses'
 import ColorSelectUnit from '../ColorSelectUnit/ColorSelectUnit'
@@ -7,7 +7,7 @@ import styles from './style.module.scss'
 const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 	const [allProducts, setAllProducts] = useState([])
 	const params = useParams()
-
+	const [isNavigate, setIsNavigate] = useState(false)
 	const dataValue = {
 		name: productData?.name || null,
 		who: productData?.who || null,
@@ -29,9 +29,7 @@ const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 		})
 			.then(res => res.json())
 			.then(data => {
-				setAllProducts(
-					data.filter(product => product.category === productData.category)
-				)
+				setAllProducts(data)
 			})
 	}
 	useEffect(() => {
@@ -39,7 +37,6 @@ const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 	}, [productData])
 
 	const [isActiveCount, setIsActiveCount] = useState(false)
-	const [isNavigate, setisNavigate] = useState(false)
 
 	return (
 		<>
@@ -49,25 +46,30 @@ const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 					<div className={styles.section}>
 						{allProducts.map((product, index) => (
 							<ColorSelectUnit
+								allProducts={allProducts}
+								isActiveCount={isActiveCount}
 								setIsActiveCount={setIsActiveCount}
-								setisNavigate={setisNavigate}
 								key={index}
 								color={product?.color}
 								isActive={isActive || productData?.color}
 								count={index}
 								setIsActive={setIsActive}
+								setIsNavigate={setIsNavigate}
 							/>
 						))}
-						{isNavigate && (
-							<Navigate
-								to={`/${params?.who}/${params?.division}/${params?.category}/${allProducts[isActiveCount]?.article}`}
-							/>
-						)}
 					</div>
 				</div>
+			)}
+			{isNavigate && (
+				<>
+					<Navigate
+						to={`/${params?.who}/${params?.division}/${params?.category}/${allProducts[isActiveCount]?.article}`}
+					/>
+					{setIsNavigate(false)}
+				</>
 			)}
 		</>
 	)
 }
 
-export default ColorSelectBox
+export default memo(ColorSelectBox)
