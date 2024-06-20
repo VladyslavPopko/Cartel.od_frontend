@@ -27,9 +27,11 @@ const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 		})
 			.then(res => res.json())
 			.then(data => {
+				console.log(data)
 				setAllProducts(data)
 			})
 	}
+
 	useEffect(() => {
 		fetchProduct()
 	}, [productData])
@@ -43,7 +45,7 @@ const ColorSelectBox = ({ productData, isActive, setIsActive }) => {
 						{allProducts.map((product, index) => (
 							<ColorSelectUnit
 								key={index}
-								color={product?.color}
+								color={product?.colorForSelect}
 								isActive={isActive || productData?.color}
 								setIsActive={setIsActive}
 								article={product?.article}

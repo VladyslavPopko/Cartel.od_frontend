@@ -14,11 +14,8 @@ const ColorSelectUnit = ({ setIsActive, isActive, color, article }) => {
 					onClick={() => {
 						setIsActive(color)
 					}}
-					className={cn(
-						styles.section,
-						color,
-						isActive === color && styles.active
-					)}
+					style={{ background: color }}
+					className={cn(styles.section, isActive === color && styles.active)}
 				></div>
 			</NavLink>
 		</>

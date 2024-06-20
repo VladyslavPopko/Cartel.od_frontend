@@ -178,11 +178,13 @@ const HeroBlock = ({
 								)}
 							</>
 
-							<ColorSelectBox
-								productData={productData}
-								isActive={isActiveColor}
-								setIsActive={setIsActiveColor}
-							/>
+							{productData?.colorForSelect && (
+								<ColorSelectBox
+									productData={productData}
+									isActive={isActiveColor}
+									setIsActive={setIsActiveColor}
+								/>
+							)}
 
 							{isAvailible ? (
 								<div className={styles.button}>
