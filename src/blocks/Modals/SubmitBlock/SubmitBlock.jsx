@@ -142,6 +142,15 @@ const SubmitBlock = ({
 			</header>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<main className={styles.main}>
+					<h2 className={styles.notification_title}>ВАЖЛИВО!!!</h2>
+					<h3 className={styles.notification_text}>
+						Відправка здійснюється після повної або часткової оплати
+						(передплати){' '}
+						<span className={styles.bold}>
+							в розмірі <span className={styles.select}> 200 </span>
+							грн.
+						</span>
+					</h3>
 					<div className={styles.main_header}>
 						<div className=''>
 							<h3 className={styles.main_title}>Укажіть свої контактні дані</h3>

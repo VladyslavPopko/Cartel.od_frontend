@@ -139,3 +139,33 @@
 		}
 	}
 }
+.notification_title {
+	color: var(--select-color);
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.notification_text {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 110%;
+	text-align: center;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.bold {
+	font-weight: 800;
+}
+.select {
+	color: var(--select-color);
+}
+@media (max-width: 540px) {
+	.notification_title {
+		font-size: 24px;
+	}
+	.notification_text {
+		font-size: 16px;
+	}
+}
